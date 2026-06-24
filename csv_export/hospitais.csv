@@ -1,0 +1,60 @@
+hospital_id,nome,cidade,estado,latitude,longitude
+1,Hospital de Base Dr. Ary Pinheiro,Porto Velho,RO,-8.7362,-63.8901
+2,Hospital das Clinicas,Rio Branco,AC,-9.9669,-67.8553
+3,Hospital Adriano Jorge,Manaus,AM,-3.1192,-60.0054
+4,Hospital Universitário Getúlio Vargas,Manaus,AM,-3.1162,-60.019
+5,Hospital Universitário João de Barros Barreto,Belém,PA,-1.4573,-48.4652
+6,Hospital Santa Casa de Misericórdia do Pará,Belém,PA,-1.4397,-48.4815
+7,Hospital de Base Dr. Luiz Corrêa,Porto Velho,RO,-8.7361,-63.89
+8,Hospital Geral de Palmas,Palmas,TO,-10.196,-48.3358
+9,Hospital Universitário Presidente Dutra,São Luís,MA,-2.5242,-44.2942
+10,Hospital Universitário Federal do Piauí,Teresina,PI,-5.0599,-42.794
+11,Hospital Universitário Walter Cantídio,Fortaleza,CE,-3.7477,-38.5525
+12,Hospital de Messejana,Fortaleza,CE,-3.815,-38.4985
+13,Hospital Walfredo Gurgel,Natal,RN,-5.81,-35.2034
+14,Hospital das Clínicas UFPE,Recife,PE,-8.0474,-34.9462
+15,Real Hospital Português,Recife,PE,-8.0576,-34.9108
+16,Hospital Universitário Prof. Alberto Antunes,Maceió,AL,-9.5595,-35.7802
+17,Hospital Universitário Edgar Santos,Salvador,BA,-12.9928,-38.5205
+18,Hospital Rede D'Or Salvador,Salvador,BA,-12.9283,-38.4303
+19,Hospital Universitário Julio Müller,Cuiabá,MT,-15.581,-56.0791
+20,Hospital Santa Rosa,Cuiabá,MT,-15.579,-56.1112
+21,Hospital Universitário Maria Aparecida Pedrossian,Campo Grande,MS,-20.4989,-54.6161
+22,Hospital das Clínicas UFG,Goiânia,GO,-16.6743,-49.2448
+23,Hospital Rede D'Or Goiânia,Goiânia,GO,-16.6768,-49.2709
+24,Hospital Sírio-Libanês Brasília,Brasília,DF,-15.8343,-47.9112
+25,Hospital Santa Lúcia,Brasília,DF,-15.7349,-47.8951
+26,Hospital de Base de Araçatuba,Araçatuba,SP,-21.206,-50.42958
+27,Hospital Universitário da UNESP,Botucatu,SP,-22.929,-48.4618
+28,Hospital das Clínicas da FMRP,Ribeirão Preto,SP,-21.1632,-47.8518
+29,Hospital Universitário da UNICAMP,Campinas,SP,-22.8267,-47.064
+30,Hospital das Clínicas FMUSP,São Paulo,SP,-23.5577,-46.6698
+31,Hospital Israelita Albert Einstein,São Paulo,SP,-23.5998,-46.7152
+32,Hospital Sírio-Libanês,São Paulo,SP,-23.5571,-46.6537
+33,Hospital das Clínicas da UFMG,Belo Horizonte,MG,-19.9243,-43.928
+34,Hospital Vera Cruz,Belo Horizonte,MG,-19.9237,-43.9527
+35,Hospital Universitário da UFU,Uberlândia,MG,-18.8826,-48.2604
+36,Hospital Universitário da UFJF,Juiz de Fora,MG,-21.7492,-43.3581
+37,Hospital Universitário Cassiano Antonio de Moraes,Vitória,ES,-20.2997,-40.3181
+38,Hospital Universitário Gaffrée e Guinle,Rio de Janeiro,RJ,-22.916,-43.2213
+39,Hospital Copa Star,Rio de Janeiro,RJ,-22.9668,-43.1886
+40,Hospital Barra D'Or,Rio de Janeiro,RJ,-22.984,-43.3628
+41,Hospital de Clínicas de Londrina,Londrina,PR,-23.3228,-51.1946
+42,Hospital de Clínicas da UFPR,Curitiba,PR,-25.4239,-49.2617
+43,Hospital Nossa Senhora das Graças,Curitiba,PR,-25.4209,-49.2903
+44,Hospital Universitário de Maringá,Maringá,PR,-23.3997,-51.9557
+45,Hospital Regional de São Bento do Sul,São Bento do Sul,SC,-26.2494,-49.3841
+46,Hospital Universitário Prof. Polydoro Ernani de São Thiago,Florianópolis,SC,-27.5975,-48.5181
+47,Hospital Santa Catarina,Blumenau,SC,-26.9265,-49.0555
+48,Hospital Regional Norte Sobral,Sobral,CE,-3.6764,-40.3684
+49,Hospital Regional Jequié,Jequié,BA,-13.853,-40.0789
+50,Hospital de Santos,Santos,SP,-23.9439,-46.3362
+51,Hospital Regional do Sul de Minas,Varginha,MG,-21.5227,-45.3271
+52,Hospital Universitário de Ponta Grossa,Ponta Grossa,PR,-25.0977,-50.1012
+53,Hospital de Rio Grande,Rio Grande,RS,-32.0298,-52.1022
+54,Hospital de Clínicas de Santa Maria,Santa Maria,RS,-29.6848,-53.82687
+55,Hospital de Clínicas de Porto Alegre,Porto Alegre,RS,-30.0386,-51.2066
+56,Hospital São Lucas da PUCRS,Porto Alegre,RS,-30.05525,-51.17339
+57,Santa Casa de Misericórdia de Porto Alegre,Porto Alegre,RS,-30.0308,-51.2214
+58,Hospital Santa Casa de Misericórdia,Pelotas,RS,-31.76555,-52.34667
+59,Hospital Geral de Caxias do Sul,Caxias do Sul,RS,-29.1612,-51.1558
