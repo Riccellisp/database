@@ -1,0 +1,626 @@
+manutencao_id,equipamento_id,tecnico_id,chamado_id,data_manutencao,tipo_manutencao,descricao_problema,tempo_reparo,resultado_manutencao
+1,1,55,1,2026-05-27 12:48:00,corretiva,falha no slip ring,,em andamento
+2,2,54,2,2026-05-30 00:33:00,corretiva,superaquecimento do tubo,,em andamento
+3,3,28,3,2026-05-06 23:35:00,corretiva,superaquecimento do tubo,6,concluido
+4,5,4,5,2026-01-02 16:32:00,corretiva,superaquecimento do tubo,2,concluido
+5,6,4,6,2026-05-12 16:00:00,preventiva,desgaste elevado,2,concluido
+6,7,39,7,2026-03-14 16:07:00,corretiva,superaquecimento,4,concluido
+7,8,53,8,2025-12-24 04:00:00,preventiva,desgaste elevado,6,concluido
+8,10,36,10,2026-04-22 22:21:00,corretiva,quench,6,concluido
+9,12,18,12,2026-01-04 10:00:00,preventiva,desgaste elevado,2,concluido
+10,13,22,13,2026-05-29 00:53:00,corretiva,desgaste mecanico,,em andamento
+11,14,20,14,2026-05-04 07:51:00,corretiva,travamento mecanico,2,concluido
+12,16,44,16,2026-02-15 09:00:00,preventiva,MTBF proximo do vencimento,4,concluido
+13,18,42,18,2026-04-08 04:00:00,preventiva,desgaste elevado,6,concluido
+14,19,17,19,2026-04-01 11:00:00,preventiva,MTBF proximo do vencimento,5,concluido
+15,21,37,21,2026-01-03 22:42:00,corretiva,desalinhamento do gantry,7,concluido
+16,22,7,22,2026-05-29 08:06:00,corretiva,falha no slip ring,,em andamento
+17,24,6,24,2026-05-29 03:51:00,corretiva,falha HV,,em andamento
+18,25,55,25,2026-04-15 17:05:00,corretiva,falha no slip ring,4,concluido
+19,26,2,26,2026-04-07 15:37:00,corretiva,desgaste mecanico,7,concluido
+20,29,47,29,2026-06-04 16:53:00,corretiva,falha no slip ring,,em andamento
+21,30,25,30,2026-05-25 02:14:00,corretiva,falha HV,,em andamento
+22,32,56,32,2026-01-17 05:00:00,preventiva,desgaste elevado,3,concluido
+23,33,23,33,2026-05-28 04:11:00,corretiva,elemento da sonda queimado,,em andamento
+24,34,40,34,2026-05-02 15:00:00,preventiva,desgaste elevado,4,concluido
+25,36,12,36,2026-05-26 10:44:00,corretiva,desgaste mecanico,,em andamento
+26,39,57,39,2026-02-13 11:00:00,preventiva,desgaste elevado,6,concluido
+27,40,59,40,2026-01-16 17:48:00,corretiva,superaquecimento,9,concluido
+28,41,1,41,2026-02-07 22:58:00,corretiva,falha de gradiente,3,concluido
+29,42,21,42,2026-01-03 04:59:00,corretiva,falha HV,9,concluido
+30,43,31,43,2025-12-31 22:52:00,corretiva,superaquecimento do tubo,7,concluido
+31,44,3,44,2026-05-27 19:33:00,corretiva,superaquecimento do tubo,,em andamento
+32,45,49,45,2026-03-15 20:18:00,corretiva,falha no slip ring,2,concluido
+33,47,6,47,2026-01-06 00:15:00,corretiva,superaquecimento do tubo,9,concluido
+34,48,42,48,2026-05-02 00:21:00,corretiva,travamento mecanico,5,concluido
+35,49,29,49,2026-04-17 16:26:00,corretiva,travamento mecanico,5,concluido
+36,50,7,50,2026-05-20 05:00:00,preventiva,desgaste elevado,4,concluido
+37,53,49,53,2026-04-01 05:00:00,preventiva,MTBF proximo do vencimento,4,concluido
+38,55,21,55,2026-01-28 22:00:00,preventiva,desgaste elevado,4,concluido
+39,56,5,56,2026-04-22 17:49:00,corretiva,desgaste mecanico,4,concluido
+40,58,17,58,2026-05-10 14:35:00,corretiva,quench,7,concluido
+41,62,32,62,2026-06-01 23:37:00,corretiva,travamento mecanico,,em andamento
+42,64,48,64,2026-05-02 17:00:00,preventiva,MTBF proximo do vencimento,2,concluido
+43,65,56,65,2026-03-15 23:00:00,preventiva,desgaste elevado,3,concluido
+44,68,22,68,2026-04-24 13:58:00,corretiva,falha no slip ring,6,concluido
+45,69,55,69,2026-05-21 13:00:00,preventiva,MTBF proximo do vencimento,6,concluido
+46,70,31,70,2026-01-05 20:39:00,corretiva,desgaste do anodo,4,concluido
+47,72,35,72,2026-04-05 07:32:00,corretiva,superaquecimento do tubo,7,concluido
+48,73,28,73,2026-01-28 18:00:00,preventiva,MTBF proximo do vencimento,3,concluido
+49,74,54,74,2026-01-27 07:00:00,preventiva,desgaste elevado,6,concluido
+50,75,29,75,2026-02-07 11:45:00,corretiva,desgaste mecanico,5,concluido
+51,76,24,76,2026-02-10 18:13:00,corretiva,elemento da sonda queimado,7,concluido
+52,77,32,77,2026-02-28 03:05:00,corretiva,desgaste mecanico,6,concluido
+53,82,45,82,2026-04-19 04:00:00,preventiva,desgaste elevado,4,concluido
+54,85,50,85,2026-04-24 02:00:00,preventiva,MTBF proximo do vencimento,2,concluido
+55,86,40,86,2026-06-02 08:24:00,corretiva,elemento da sonda queimado,,em andamento
+56,87,30,87,2026-05-28 18:51:00,corretiva,elemento da sonda queimado,,em andamento
+57,88,59,88,2026-01-24 05:00:00,preventiva,MTBF proximo do vencimento,5,concluido
+58,89,15,89,2026-04-10 23:00:00,preventiva,desgaste elevado,4,concluido
+59,90,53,90,2026-03-14 03:46:00,corretiva,superaquecimento do tubo,4,concluido
+60,92,10,92,2026-01-10 11:00:00,preventiva,desgaste elevado,6,concluido
+61,94,18,94,2026-06-04 09:20:00,corretiva,falha HV,,em andamento
+62,95,32,95,2026-04-03 06:41:00,corretiva,falha HV,4,concluido
+63,99,19,99,2026-01-28 04:26:00,corretiva,superaquecimento do gerador,3,concluido
+64,100,32,100,2025-12-29 12:34:00,corretiva,falha HV,9,concluido
+65,101,44,101,2026-04-07 21:52:00,corretiva,elemento da sonda queimado,4,concluido
+66,102,16,102,2026-06-02 21:37:00,corretiva,falha no slip ring,,em andamento
+67,103,29,103,2026-05-14 13:22:00,corretiva,travamento mecanico,8,concluido
+68,105,53,105,2026-02-17 01:24:00,corretiva,falha de gradiente,5,concluido
+69,107,4,107,2026-02-17 12:37:00,corretiva,falha da fonte,7,concluido
+70,108,29,108,2026-06-04 01:20:00,corretiva,desgaste mecanico,,em andamento
+71,109,22,109,2026-03-02 16:00:00,preventiva,MTBF proximo do vencimento,2,concluido
+72,110,37,110,2026-03-01 13:00:00,preventiva,MTBF proximo do vencimento,4,concluido
+73,111,40,111,2026-01-15 23:00:00,preventiva,desgaste elevado,5,concluido
+74,113,16,113,2026-01-21 19:00:00,preventiva,desgaste elevado,4,concluido
+75,115,41,115,2026-01-12 15:00:00,preventiva,desgaste elevado,6,concluido
+76,117,60,117,2026-03-17 11:18:00,corretiva,superaquecimento do tubo,5,concluido
+77,118,15,118,2026-03-02 05:00:00,preventiva,MTBF proximo do vencimento,4,concluido
+78,119,14,119,2026-01-09 18:44:00,corretiva,degradacao detector,2,concluido
+79,121,7,121,2026-05-27 22:52:00,corretiva,superaquecimento do tubo,,em andamento
+80,122,48,122,2026-03-28 01:31:00,corretiva,quench,4,concluido
+81,123,47,123,2026-03-20 07:56:00,corretiva,superaquecimento do tubo,9,concluido
+82,124,53,124,2026-02-24 19:23:00,corretiva,quench,7,concluido
+83,127,54,127,2026-01-30 02:36:00,corretiva,quench,8,concluido
+84,132,10,132,2025-12-31 19:00:00,preventiva,desgaste elevado,5,concluido
+85,133,57,133,2026-05-29 21:42:00,corretiva,travamento mecanico,,em andamento
+86,134,58,134,2026-02-16 08:05:00,corretiva,falha no slip ring,5,concluido
+87,135,24,135,2026-02-14 02:00:00,preventiva,desgaste elevado,5,concluido
+88,136,18,136,2026-05-20 23:45:00,corretiva,superaquecimento do tubo,9,concluido
+89,137,8,137,2026-04-11 10:01:00,corretiva,travamento mecanico,4,concluido
+90,138,6,138,2026-02-25 23:00:00,preventiva,desgaste elevado,4,concluido
+91,140,31,140,2026-04-30 19:26:00,corretiva,falha no slip ring,4,concluido
+92,142,40,142,2026-03-06 22:27:00,corretiva,elemento da sonda queimado,9,concluido
+93,144,27,144,2026-01-29 14:16:00,corretiva,superaquecimento do tubo,3,concluido
+94,145,15,145,2026-04-07 18:00:00,preventiva,desgaste elevado,5,concluido
+95,146,44,146,2026-04-18 20:00:00,preventiva,MTBF proximo do vencimento,5,concluido
+96,148,7,148,2026-01-31 01:00:00,preventiva,MTBF proximo do vencimento,5,concluido
+97,149,40,149,2026-03-18 15:00:00,preventiva,MTBF proximo do vencimento,2,concluido
+98,150,4,150,2026-01-05 08:11:00,corretiva,elemento da sonda queimado,2,concluido
+99,151,4,151,2026-06-04 00:00:00,corretiva,falha no slip ring,,em andamento
+100,155,1,155,2026-05-30 22:50:00,corretiva,superaquecimento do tubo,,em andamento
+101,157,25,157,2025-12-31 11:05:00,corretiva,degradacao detector,5,concluido
+102,158,30,158,2026-02-03 02:00:00,preventiva,desgaste elevado,3,concluido
+103,159,32,159,2026-01-20 15:39:00,corretiva,superaquecimento do tubo,5,concluido
+104,161,10,161,2026-02-16 05:23:00,corretiva,desgaste mecanico,6,concluido
+105,162,46,162,2026-05-28 19:00:00,corretiva,falha no slip ring,,em andamento
+106,164,7,164,2026-02-05 10:32:00,corretiva,desgaste mecanico,3,concluido
+107,165,24,165,2026-01-22 09:12:00,corretiva,elemento da sonda queimado,9,concluido
+108,167,40,167,2026-05-26 01:47:00,corretiva,elemento da sonda queimado,,em andamento
+109,169,55,169,2026-02-28 13:36:00,corretiva,falha HV,4,concluido
+110,172,20,172,2026-02-05 02:46:00,corretiva,travamento mecanico,4,concluido
+111,173,25,173,2026-04-13 15:00:00,preventiva,desgaste elevado,6,concluido
+112,177,33,177,2026-06-03 17:00:00,corretiva,travamento mecanico,,em andamento
+113,178,7,178,2026-01-06 19:25:00,corretiva,desgaste mecanico,6,concluido
+114,181,49,181,2026-06-02 11:00:00,corretiva,desgaste mecanico,,em andamento
+115,182,51,182,2026-01-13 13:08:00,corretiva,desalinhamento do gantry,8,concluido
+116,183,4,183,2025-12-30 15:57:00,corretiva,falha nao classificada,6,concluido
+117,184,32,184,2026-01-05 00:31:00,corretiva,falha HV,3,concluido
+118,185,9,185,2026-06-01 19:52:00,corretiva,superaquecimento do tubo,,em andamento
+119,186,37,186,2026-04-16 12:11:00,corretiva,desgaste mecanico,8,concluido
+120,187,30,187,2026-02-05 16:00:00,preventiva,desgaste elevado,3,concluido
+121,188,25,188,2026-03-26 18:00:00,preventiva,desgaste elevado,5,concluido
+122,189,48,189,2026-01-29 15:00:00,preventiva,desgaste elevado,4,concluido
+123,192,23,192,2026-01-07 19:20:00,corretiva,falha HV,3,concluido
+124,193,17,193,2026-01-15 21:57:00,corretiva,falha HV,6,concluido
+125,196,8,196,2026-04-23 14:55:00,corretiva,travamento mecanico,6,concluido
+126,198,53,198,2026-05-06 16:41:00,corretiva,superaquecimento do tubo,6,concluido
+127,199,21,199,2026-05-07 23:19:00,corretiva,elemento da sonda queimado,4,concluido
+128,201,3,201,2026-02-15 09:19:00,corretiva,desgaste do anodo,3,concluido
+129,202,44,202,2026-02-12 23:31:00,corretiva,superaquecimento do tubo,3,concluido
+130,203,56,203,2026-03-05 08:00:00,preventiva,MTBF proximo do vencimento,4,concluido
+131,204,32,204,2026-02-24 18:00:00,preventiva,MTBF proximo do vencimento,6,concluido
+132,205,31,205,2026-02-02 03:22:00,corretiva,falha no slip ring,7,concluido
+133,206,35,206,2026-04-12 13:31:00,corretiva,falha no slip ring,5,concluido
+134,208,29,208,2026-04-08 17:29:00,corretiva,desgaste mecanico,3,concluido
+135,209,26,209,2026-01-14 23:40:00,corretiva,falha no slip ring,9,concluido
+136,211,27,211,2025-12-30 16:00:00,preventiva,MTBF proximo do vencimento,5,concluido
+137,213,21,213,2026-06-02 17:00:00,corretiva,falha HV,,em andamento
+138,215,59,215,2026-05-25 00:00:00,preventiva,MTBF proximo do vencimento,2,concluido
+139,216,6,216,2026-01-14 19:10:00,corretiva,falha no slip ring,6,concluido
+140,217,20,217,2026-01-30 10:05:00,corretiva,superaquecimento do tubo,3,concluido
+141,219,10,219,2026-01-13 14:00:00,preventiva,desgaste elevado,5,concluido
+142,221,32,221,2026-02-14 23:02:00,corretiva,superaquecimento do tubo,5,concluido
+143,223,59,223,2026-01-08 22:00:00,preventiva,MTBF proximo do vencimento,2,concluido
+144,224,20,224,2026-01-16 12:00:00,preventiva,MTBF proximo do vencimento,4,concluido
+145,225,59,225,2026-05-29 17:34:00,corretiva,elemento da sonda queimado,,em andamento
+146,226,37,226,2026-04-28 01:15:00,corretiva,falha no slip ring,7,concluido
+147,227,5,227,2026-03-25 21:34:00,corretiva,travamento mecanico,3,concluido
+148,228,57,228,2026-05-07 16:00:00,preventiva,MTBF proximo do vencimento,4,concluido
+149,229,15,229,2026-01-15 03:00:00,preventiva,desgaste elevado,5,concluido
+150,230,32,230,2025-12-27 19:01:00,corretiva,degradacao detector,5,concluido
+151,231,4,231,2026-04-03 19:32:00,corretiva,falha no slip ring,8,concluido
+152,234,7,234,2026-02-10 20:17:00,corretiva,superaquecimento do tubo,8,concluido
+153,238,13,238,2026-01-09 08:00:00,preventiva,desgaste elevado,6,concluido
+154,241,25,241,2026-02-27 18:00:00,preventiva,desgaste elevado,6,concluido
+155,242,43,242,2026-03-19 09:46:00,corretiva,desgaste mecanico,5,concluido
+156,243,23,243,2026-05-25 05:13:00,corretiva,falha HV,,em andamento
+157,244,56,244,2026-03-06 06:00:00,preventiva,desgaste elevado,2,concluido
+158,247,49,247,2026-05-19 02:31:00,corretiva,desgaste mecanico,9,concluido
+159,248,60,248,2026-02-21 22:34:00,corretiva,superaquecimento do tubo,9,concluido
+160,250,12,250,2026-04-13 21:21:00,corretiva,desgaste mecanico,9,concluido
+161,251,19,251,2026-05-28 04:15:00,corretiva,falha HV,,em andamento
+162,253,25,253,2026-01-25 21:00:00,preventiva,desgaste elevado,3,concluido
+163,255,11,255,2026-01-25 20:00:00,preventiva,desgaste elevado,3,concluido
+164,257,40,257,2026-04-19 07:29:00,corretiva,falha da fonte,9,concluido
+165,258,51,258,2026-01-19 03:21:00,corretiva,quench,6,concluido
+166,259,15,259,2026-02-06 09:00:00,preventiva,desgaste elevado,2,concluido
+167,260,30,260,2026-02-22 09:00:00,preventiva,MTBF proximo do vencimento,4,concluido
+168,261,2,261,2026-04-07 02:47:00,corretiva,desgaste mecanico,9,concluido
+169,262,37,262,2026-01-13 13:29:00,corretiva,superaquecimento do tubo,7,concluido
+170,263,22,263,2026-02-08 10:00:00,preventiva,MTBF proximo do vencimento,3,concluido
+171,264,53,264,2026-03-11 07:17:00,corretiva,desgaste mecanico,7,concluido
+172,265,24,265,2026-05-18 15:00:00,preventiva,desgaste elevado,5,concluido
+173,267,4,267,2026-05-31 05:01:00,corretiva,elemento da sonda queimado,,em andamento
+174,270,20,270,2026-06-04 12:10:00,corretiva,superaquecimento do tubo,,em andamento
+175,271,4,271,2026-02-22 10:12:00,corretiva,elemento da sonda queimado,8,concluido
+176,274,9,274,2026-02-26 14:00:00,preventiva,MTBF proximo do vencimento,2,concluido
+177,275,15,275,2026-05-30 07:01:00,corretiva,falha HV,,em andamento
+178,276,58,276,2026-01-14 16:00:00,preventiva,MTBF proximo do vencimento,2,concluido
+179,277,13,277,2025-12-31 19:00:00,preventiva,desgaste elevado,6,concluido
+180,279,51,279,2026-01-08 19:00:00,preventiva,MTBF proximo do vencimento,3,concluido
+181,281,16,281,2026-04-05 23:53:00,corretiva,travamento mecanico,6,concluido
+182,283,51,283,2026-03-06 05:01:00,corretiva,degradacao detector,2,concluido
+183,284,45,284,2026-01-26 09:38:00,corretiva,falha de gradiente,8,concluido
+184,286,10,286,2026-01-27 23:16:00,corretiva,superaquecimento,2,concluido
+185,288,24,288,2026-05-30 18:04:00,corretiva,elemento da sonda queimado,,em andamento
+186,289,24,289,2026-01-22 20:00:00,preventiva,desgaste elevado,2,concluido
+187,290,41,290,2026-02-16 23:58:00,corretiva,travamento mecanico,5,concluido
+188,291,19,291,2026-05-28 15:50:00,corretiva,travamento mecanico,,em andamento
+189,292,7,292,2026-02-14 15:57:00,corretiva,desgaste mecanico,9,concluido
+190,293,51,293,2026-01-09 08:00:00,preventiva,desgaste elevado,6,concluido
+191,294,37,294,2026-03-07 10:00:00,preventiva,desgaste elevado,3,concluido
+192,295,51,295,2026-03-02 09:00:00,preventiva,MTBF proximo do vencimento,2,concluido
+193,296,53,296,2026-06-01 14:32:00,corretiva,elemento da sonda queimado,,em andamento
+194,297,35,297,2025-12-31 18:48:00,corretiva,superaquecimento,8,concluido
+195,298,53,298,2026-02-11 05:00:00,preventiva,MTBF proximo do vencimento,5,concluido
+196,299,21,299,2026-04-22 02:50:00,corretiva,elemento da sonda queimado,9,concluido
+197,301,35,301,2026-02-10 13:24:00,corretiva,falha no slip ring,2,concluido
+198,302,10,302,2026-01-19 03:54:00,corretiva,elemento da sonda queimado,5,concluido
+199,303,26,303,2026-02-24 23:06:00,corretiva,desgaste mecanico,6,concluido
+200,304,22,304,2026-03-10 07:00:00,preventiva,desgaste elevado,3,concluido
+201,306,39,306,2026-01-23 07:57:00,corretiva,falha HV,7,concluido
+202,307,35,307,2026-01-18 17:02:00,corretiva,desalinhamento do gantry,9,concluido
+203,309,25,309,2026-01-19 06:44:00,corretiva,degradacao detector,3,concluido
+204,311,18,311,2026-03-27 10:56:00,corretiva,travamento mecanico,4,concluido
+205,312,42,312,2026-05-25 10:15:00,corretiva,falha no slip ring,,em andamento
+206,313,20,313,2026-04-20 01:00:00,preventiva,MTBF proximo do vencimento,4,concluido
+207,314,18,314,2026-02-20 02:00:00,preventiva,desgaste elevado,4,concluido
+208,315,7,315,2026-01-18 04:20:00,corretiva,travamento mecanico,9,concluido
+209,316,12,316,2026-06-01 08:50:00,corretiva,desgaste mecanico,,em andamento
+210,318,6,318,2026-05-26 15:40:00,corretiva,desgaste mecanico,,em andamento
+211,321,19,321,2026-01-10 21:14:00,corretiva,desgaste mecanico,5,concluido
+212,322,14,322,2026-02-15 16:00:00,preventiva,desgaste elevado,3,concluido
+213,324,48,324,2026-02-18 23:00:00,preventiva,desgaste elevado,2,concluido
+214,326,9,326,2026-04-08 08:00:00,preventiva,desgaste elevado,4,concluido
+215,329,28,329,2026-04-09 19:28:00,corretiva,falha no slip ring,8,concluido
+216,330,7,330,2026-05-02 04:34:00,corretiva,travamento mecanico,4,concluido
+217,331,58,331,2026-04-16 07:00:00,preventiva,MTBF proximo do vencimento,5,concluido
+218,332,53,332,2026-06-04 16:55:00,corretiva,falha de gradiente,,em andamento
+219,334,2,334,2026-05-31 21:12:00,corretiva,superaquecimento do tubo,,em andamento
+220,335,44,335,2026-03-30 20:00:00,preventiva,MTBF proximo do vencimento,5,concluido
+221,337,31,337,2026-03-12 23:47:00,corretiva,falha no slip ring,7,concluido
+222,338,30,338,2026-04-26 02:00:00,preventiva,desgaste elevado,4,concluido
+223,339,59,339,2026-02-16 18:51:00,corretiva,superaquecimento,7,concluido
+224,340,1,340,2026-03-22 06:00:00,preventiva,desgaste elevado,5,concluido
+225,343,7,343,2026-06-04 02:24:00,corretiva,desgaste mecanico,,em andamento
+226,347,50,347,2026-03-20 08:02:00,corretiva,quench,4,concluido
+227,349,38,349,2026-06-04 14:45:00,corretiva,quench,,em andamento
+228,350,51,350,2026-01-06 08:52:00,corretiva,superaquecimento,8,concluido
+229,351,18,351,2026-03-17 10:00:00,preventiva,MTBF proximo do vencimento,3,concluido
+230,352,20,352,2026-02-12 08:37:00,corretiva,quench,4,concluido
+231,353,1,353,2026-03-14 01:23:00,corretiva,superaquecimento do tubo,4,concluido
+232,354,7,354,2026-04-19 18:45:00,corretiva,falha no slip ring,2,concluido
+233,355,29,355,2026-02-15 19:01:00,corretiva,desgaste mecanico,2,concluido
+234,358,28,358,2026-05-13 17:29:00,corretiva,superaquecimento do tubo,2,concluido
+235,361,25,361,2026-04-05 20:00:00,preventiva,desgaste elevado,4,concluido
+236,363,15,363,2026-05-27 00:13:00,corretiva,quench,,em andamento
+237,364,7,364,2026-05-17 15:00:00,preventiva,MTBF proximo do vencimento,6,concluido
+238,366,4,366,2026-01-29 01:15:00,corretiva,superaquecimento do tubo,2,concluido
+239,367,46,367,2026-03-03 20:00:00,preventiva,desgaste elevado,4,concluido
+240,368,45,368,2026-03-26 08:00:00,preventiva,MTBF proximo do vencimento,3,concluido
+241,369,55,369,2026-03-26 07:00:00,preventiva,desgaste elevado,6,concluido
+242,370,44,370,2026-05-23 18:00:00,preventiva,desgaste elevado,6,concluido
+243,373,47,373,2026-03-02 17:00:00,preventiva,desgaste elevado,3,concluido
+244,374,45,374,2026-03-09 09:00:00,preventiva,desgaste elevado,4,concluido
+245,375,20,375,2026-05-14 21:00:00,corretiva,travamento mecanico,3,concluido
+246,376,51,376,2026-04-07 08:18:00,corretiva,falha no slip ring,3,concluido
+247,377,32,377,2026-05-20 16:40:00,corretiva,travamento mecanico,9,concluido
+248,378,55,378,2026-06-02 04:57:00,corretiva,superaquecimento do tubo,,em andamento
+249,382,26,382,2026-05-27 05:51:00,corretiva,travamento mecanico,,em andamento
+250,383,30,383,2026-03-24 14:00:00,preventiva,MTBF proximo do vencimento,5,concluido
+251,384,58,384,2026-05-07 04:00:00,preventiva,desgaste elevado,6,concluido
+252,387,29,387,2026-01-31 15:00:00,preventiva,desgaste elevado,4,concluido
+253,388,26,388,2025-12-31 12:55:00,corretiva,travamento mecanico,2,concluido
+254,390,23,390,2026-03-09 16:00:00,preventiva,desgaste elevado,6,concluido
+255,391,5,391,2026-01-14 13:10:00,corretiva,travamento mecanico,2,concluido
+256,394,18,394,2026-02-12 05:00:00,preventiva,MTBF proximo do vencimento,3,concluido
+257,396,15,396,2026-02-15 06:00:00,preventiva,desgaste elevado,2,concluido
+258,397,27,397,2026-01-21 23:52:00,corretiva,quench,3,concluido
+259,398,6,398,2026-04-23 01:00:00,preventiva,MTBF proximo do vencimento,3,concluido
+260,399,39,399,2025-12-22 21:00:00,preventiva,MTBF proximo do vencimento,5,concluido
+261,401,34,401,2026-02-09 12:00:00,preventiva,desgaste elevado,5,concluido
+262,402,23,402,2026-05-28 14:10:00,corretiva,elemento da sonda queimado,,em andamento
+263,403,47,403,2026-05-16 16:16:00,corretiva,falha HV,6,concluido
+264,404,14,404,2026-01-22 06:49:00,corretiva,degradacao detector,8,concluido
+265,405,1,405,2026-04-29 04:00:00,preventiva,MTBF proximo do vencimento,5,concluido
+266,408,9,408,2026-02-28 06:10:00,corretiva,falha HV,7,concluido
+267,411,23,411,2026-05-27 01:17:00,corretiva,falha HV,,em andamento
+268,413,27,413,2026-05-05 16:00:00,preventiva,desgaste elevado,4,concluido
+269,414,44,414,2026-02-08 18:33:00,corretiva,falha da fonte,2,concluido
+270,415,17,415,2026-05-06 20:46:00,corretiva,falha HV,9,concluido
+271,417,20,417,2026-02-02 08:00:00,preventiva,desgaste elevado,6,concluido
+272,418,38,418,2025-12-24 12:00:00,preventiva,desgaste elevado,5,concluido
+273,420,29,420,2026-05-12 16:00:00,preventiva,desgaste elevado,5,concluido
+274,422,9,422,2026-05-28 23:20:00,corretiva,falha no slip ring,,em andamento
+275,423,18,423,2026-01-04 22:22:00,corretiva,quench,5,concluido
+276,424,21,424,2026-03-10 00:00:00,preventiva,desgaste elevado,5,concluido
+277,425,7,425,2026-04-15 16:23:00,corretiva,falha no slip ring,3,concluido
+278,426,42,426,2026-03-09 16:00:00,preventiva,desgaste elevado,5,concluido
+279,427,40,427,2026-03-16 00:26:00,corretiva,falha HV,9,concluido
+280,428,42,428,2026-05-03 06:08:00,corretiva,superaquecimento do tubo,2,concluido
+281,429,21,429,2026-03-27 17:00:00,preventiva,desgaste elevado,5,concluido
+282,431,57,431,2026-03-29 18:38:00,corretiva,travamento mecanico,3,concluido
+283,433,35,433,2026-01-28 19:50:00,corretiva,superaquecimento do tubo,6,concluido
+284,435,57,435,2025-12-28 08:00:00,preventiva,MTBF proximo do vencimento,6,concluido
+285,439,25,439,2026-01-26 07:24:00,corretiva,falha de gradiente,9,concluido
+286,440,46,440,2026-03-13 12:00:00,preventiva,desgaste elevado,4,concluido
+287,441,51,441,2026-05-29 15:27:00,corretiva,falha no slip ring,,em andamento
+288,442,39,442,2026-05-27 08:09:00,corretiva,superaquecimento do tubo,,em andamento
+289,444,40,444,2026-04-23 05:25:00,corretiva,falha HV,4,concluido
+290,446,56,446,2026-05-13 06:31:00,corretiva,falha HV,2,concluido
+291,447,17,447,2025-12-31 19:40:00,corretiva,quench,8,concluido
+292,449,20,449,2026-04-21 10:00:00,preventiva,desgaste elevado,2,concluido
+293,454,59,454,2026-05-25 03:00:00,preventiva,desgaste elevado,5,concluido
+294,455,37,455,2026-05-27 10:34:00,corretiva,superaquecimento do tubo,,em andamento
+295,456,60,456,2026-05-29 00:31:00,corretiva,superaquecimento do tubo,,em andamento
+296,457,24,457,2026-03-03 00:49:00,corretiva,superaquecimento do tubo,9,concluido
+297,458,33,458,2026-05-19 13:14:00,corretiva,superaquecimento do tubo,7,concluido
+298,460,15,460,2026-01-27 19:00:00,preventiva,MTBF proximo do vencimento,6,concluido
+299,462,24,462,2026-01-07 17:00:00,preventiva,desgaste elevado,3,concluido
+300,463,50,463,2026-05-28 11:42:00,corretiva,falha no slip ring,,em andamento
+301,464,42,464,2026-01-18 10:19:00,corretiva,travamento mecanico,7,concluido
+302,465,18,465,2026-01-10 15:13:00,corretiva,falha HV,6,concluido
+303,469,58,469,2026-04-11 09:53:00,corretiva,falha no slip ring,6,concluido
+304,471,39,471,2026-02-12 08:00:00,preventiva,MTBF proximo do vencimento,2,concluido
+305,473,38,473,2026-02-13 14:59:00,corretiva,quench,8,concluido
+306,474,7,474,2026-05-24 04:00:00,preventiva,desgaste elevado,2,concluido
+307,478,8,478,2026-01-30 09:37:00,corretiva,travamento mecanico,4,concluido
+308,481,35,481,2026-05-25 08:46:00,corretiva,falha no slip ring,,em andamento
+309,484,7,484,2026-01-07 20:53:00,corretiva,superaquecimento do tubo,6,concluido
+310,486,36,486,2026-02-26 20:00:00,corretiva,quench,2,concluido
+311,487,4,487,2026-05-03 12:00:00,preventiva,desgaste elevado,5,concluido
+312,490,54,490,2026-05-28 08:02:00,corretiva,superaquecimento do tubo,,em andamento
+313,492,13,492,2026-02-05 22:00:00,preventiva,desgaste elevado,3,concluido
+314,495,53,495,2026-02-02 08:00:00,preventiva,desgaste elevado,2,concluido
+315,496,4,496,2026-02-14 22:00:00,preventiva,desgaste elevado,6,concluido
+316,497,51,497,2026-03-23 02:00:00,preventiva,MTBF proximo do vencimento,2,concluido
+317,498,25,498,2026-03-07 00:09:00,corretiva,superaquecimento do tubo,6,concluido
+318,499,47,499,2026-03-11 14:00:00,preventiva,MTBF proximo do vencimento,4,concluido
+319,501,18,501,2026-05-06 10:50:00,corretiva,falha HV,4,concluido
+320,503,20,503,2026-04-11 18:22:00,corretiva,superaquecimento do tubo,3,concluido
+321,505,54,505,2026-03-09 04:39:00,corretiva,falha HV,2,concluido
+322,507,35,507,2026-01-03 04:00:00,preventiva,MTBF proximo do vencimento,4,concluido
+323,508,38,508,2026-05-30 23:49:00,corretiva,desgaste mecanico,,em andamento
+324,510,52,510,2026-03-22 22:17:00,corretiva,quench,4,concluido
+325,511,15,511,2026-03-12 17:29:00,corretiva,degradacao detector,2,concluido
+326,512,32,512,2026-04-27 04:00:00,preventiva,desgaste elevado,6,concluido
+327,514,44,514,2026-01-30 20:00:00,preventiva,desgaste elevado,6,concluido
+328,515,24,515,2026-04-07 18:36:00,corretiva,quench,3,concluido
+329,516,38,516,2026-02-25 12:00:00,preventiva,MTBF proximo do vencimento,4,concluido
+330,517,3,517,2026-05-08 20:10:00,corretiva,superaquecimento do tubo,6,concluido
+331,518,51,518,2026-05-20 11:00:00,preventiva,desgaste elevado,4,concluido
+332,521,32,521,2026-04-15 17:00:00,preventiva,desgaste elevado,3,concluido
+333,522,11,522,2026-02-26 21:00:00,preventiva,desgaste elevado,5,concluido
+334,524,21,524,2026-04-30 12:59:00,corretiva,falha HV,6,concluido
+335,525,33,525,2026-01-16 11:49:00,corretiva,travamento mecanico,7,concluido
+336,526,24,526,2026-02-22 12:00:00,preventiva,desgaste elevado,4,concluido
+337,527,25,527,2026-02-09 21:00:00,preventiva,MTBF proximo do vencimento,4,concluido
+338,528,18,528,2026-01-14 13:43:00,corretiva,degradacao detector,3,concluido
+339,530,7,530,2026-04-06 02:32:00,corretiva,travamento mecanico,2,concluido
+340,534,20,534,2026-04-11 03:52:00,corretiva,quench,3,concluido
+341,535,27,535,2026-02-02 12:00:00,preventiva,MTBF proximo do vencimento,5,concluido
+342,536,42,536,2026-03-04 10:00:00,preventiva,desgaste elevado,3,concluido
+343,537,12,537,2026-06-02 16:48:00,corretiva,desgaste mecanico,,em andamento
+344,539,29,539,2026-01-16 17:00:00,preventiva,desgaste elevado,3,concluido
+345,540,20,540,2026-05-30 21:01:00,corretiva,falha HV,,em andamento
+346,544,23,544,2026-04-17 08:35:00,corretiva,elemento da sonda queimado,3,concluido
+347,545,48,545,2026-02-07 04:00:00,preventiva,MTBF proximo do vencimento,5,concluido
+348,546,3,546,2026-02-12 12:00:00,preventiva,desgaste elevado,3,concluido
+349,547,27,547,2026-01-22 22:59:00,corretiva,travamento mecanico,7,concluido
+350,548,5,548,2026-04-13 16:15:00,corretiva,travamento mecanico,3,concluido
+351,550,36,550,2026-01-10 09:13:00,corretiva,quench,9,concluido
+352,551,1,551,2026-01-22 19:00:00,preventiva,MTBF proximo do vencimento,3,concluido
+353,552,57,552,2026-06-02 15:58:00,corretiva,travamento mecanico,,em andamento
+354,553,57,553,2026-03-27 20:57:00,corretiva,falha da fonte,4,concluido
+355,554,1,554,2026-03-05 15:08:00,corretiva,quench,7,concluido
+356,555,20,555,2026-02-24 18:33:00,corretiva,falha de gradiente,8,concluido
+357,556,56,556,2026-02-02 04:42:00,corretiva,degradacao detector,2,concluido
+358,557,48,557,2025-12-30 22:00:00,preventiva,desgaste elevado,2,concluido
+359,559,13,559,2026-03-01 22:23:00,corretiva,falha no slip ring,8,concluido
+360,560,7,560,2026-01-25 14:00:00,preventiva,MTBF proximo do vencimento,6,concluido
+361,561,19,561,2026-01-08 19:00:00,preventiva,MTBF proximo do vencimento,4,concluido
+362,564,38,564,2026-05-09 01:00:00,preventiva,desgaste elevado,3,concluido
+363,566,21,566,2026-01-30 08:50:00,corretiva,degradacao detector,8,concluido
+364,567,57,567,2025-12-29 16:00:00,preventiva,MTBF proximo do vencimento,6,concluido
+365,569,19,569,2026-03-18 04:55:00,corretiva,travamento mecanico,5,concluido
+366,570,31,570,2026-04-30 14:00:00,preventiva,desgaste elevado,2,concluido
+367,572,35,572,2026-03-17 21:37:00,corretiva,superaquecimento do tubo,7,concluido
+368,573,55,573,2026-03-10 08:00:00,preventiva,desgaste elevado,4,concluido
+369,574,46,574,2026-05-27 13:43:00,corretiva,falha HV,,em andamento
+370,575,20,575,2026-03-03 05:00:00,preventiva,desgaste elevado,2,concluido
+371,576,53,576,2026-04-20 23:14:00,corretiva,quench,5,concluido
+372,579,57,579,2026-03-01 23:00:00,preventiva,MTBF proximo do vencimento,3,concluido
+373,580,2,580,2026-01-11 19:00:00,preventiva,desgaste elevado,3,concluido
+374,582,52,582,2026-06-01 02:24:00,corretiva,quench,,em andamento
+375,584,19,584,2026-05-18 23:00:00,preventiva,desgaste elevado,2,concluido
+376,585,47,585,2026-04-05 03:51:00,corretiva,falha no slip ring,8,concluido
+377,586,1,586,2026-05-08 01:15:00,corretiva,falha HV,3,concluido
+378,587,52,587,2026-02-09 02:00:00,preventiva,desgaste elevado,5,concluido
+379,589,38,589,2026-05-05 18:47:00,corretiva,desgaste mecanico,3,concluido
+380,593,51,593,2026-03-07 09:51:00,corretiva,quench,2,concluido
+381,594,43,594,2026-02-05 10:00:00,preventiva,desgaste elevado,3,concluido
+382,595,58,595,2026-01-12 16:00:00,preventiva,desgaste elevado,6,concluido
+383,596,27,596,2026-02-19 09:02:00,corretiva,quench,9,concluido
+384,597,42,597,2025-12-31 02:30:00,corretiva,desalinhamento do gantry,4,concluido
+385,598,6,598,2026-04-12 04:00:00,preventiva,desgaste elevado,2,concluido
+386,599,10,599,2026-05-10 17:18:00,corretiva,elemento da sonda queimado,8,concluido
+387,600,26,600,2026-03-28 12:00:00,preventiva,desgaste elevado,6,concluido
+388,602,42,602,2026-01-04 04:24:00,corretiva,desalinhamento do gantry,4,concluido
+389,603,24,603,2026-05-21 08:00:00,preventiva,desgaste elevado,2,concluido
+390,604,51,604,2026-03-16 08:01:00,corretiva,falha no slip ring,6,concluido
+391,606,18,606,2026-02-09 07:54:00,corretiva,degradacao detector,2,concluido
+392,607,19,607,2026-05-28 11:58:00,corretiva,travamento mecanico,,em andamento
+393,609,24,609,2026-03-05 01:12:00,corretiva,quench,9,concluido
+394,610,2,610,2026-06-02 09:33:00,corretiva,desgaste mecanico,,em andamento
+395,612,27,612,2026-02-14 09:00:00,preventiva,desgaste elevado,6,concluido
+396,615,18,615,2026-04-15 09:20:00,corretiva,superaquecimento do tubo,6,concluido
+397,617,52,617,2026-02-25 16:33:00,corretiva,desgaste mecanico,7,concluido
+398,618,58,618,2026-04-15 01:00:00,preventiva,desgaste elevado,4,concluido
+399,619,33,619,2026-04-22 08:00:00,preventiva,desgaste elevado,3,concluido
+400,621,19,621,2026-05-08 11:00:00,preventiva,MTBF proximo do vencimento,5,concluido
+401,622,26,622,2026-04-04 00:00:00,preventiva,desgaste elevado,4,concluido
+402,623,59,623,2026-02-08 23:06:00,corretiva,superaquecimento,9,concluido
+403,624,56,624,2025-12-27 15:00:00,preventiva,desgaste elevado,6,concluido
+404,625,39,625,2026-06-04 00:17:00,corretiva,falha HV,,em andamento
+405,626,11,626,2026-01-18 02:50:00,corretiva,elemento da sonda queimado,9,concluido
+406,628,29,628,2026-06-04 02:24:00,corretiva,desgaste mecanico,,em andamento
+407,629,35,629,2026-05-01 08:00:00,preventiva,desgaste elevado,4,concluido
+408,631,34,631,2026-01-31 16:00:00,preventiva,desgaste elevado,3,concluido
+409,632,50,632,2026-05-16 13:16:00,corretiva,elemento da sonda queimado,3,concluido
+410,634,19,634,2026-01-27 16:39:00,corretiva,desgaste mecanico,9,concluido
+411,635,21,635,2026-05-27 19:13:00,corretiva,falha da fonte,,em andamento
+412,636,18,636,2026-05-19 05:00:00,preventiva,desgaste elevado,5,concluido
+413,637,50,637,2026-04-17 01:47:00,corretiva,falha no slip ring,6,concluido
+414,638,53,638,2026-04-15 19:00:00,preventiva,desgaste elevado,5,concluido
+415,639,3,639,2026-05-25 15:46:00,corretiva,falha no slip ring,,em andamento
+416,640,20,640,2026-02-24 01:00:00,preventiva,MTBF proximo do vencimento,4,concluido
+417,641,39,641,2026-04-15 17:18:00,corretiva,falha HV,5,concluido
+418,644,59,644,2026-06-01 01:48:00,corretiva,desgaste mecanico,,em andamento
+419,645,29,645,2026-05-27 18:21:00,corretiva,travamento mecanico,,em andamento
+420,647,21,647,2026-02-22 12:14:00,corretiva,falha HV,7,concluido
+421,648,26,648,2026-01-27 20:17:00,corretiva,travamento mecanico,4,concluido
+422,649,40,649,2026-04-16 23:57:00,corretiva,superaquecimento do tubo,5,concluido
+423,650,7,650,2026-04-05 15:00:00,preventiva,MTBF proximo do vencimento,4,concluido
+424,652,4,652,2026-05-30 08:10:00,corretiva,desgaste mecanico,,em andamento
+425,653,47,653,2026-02-19 05:59:00,corretiva,falha no slip ring,2,concluido
+426,654,35,654,2026-02-02 18:45:00,corretiva,quench,3,concluido
+427,657,35,657,2026-01-04 15:02:00,corretiva,desgaste mecanico,3,concluido
+428,658,26,658,2026-02-22 21:00:00,preventiva,desgaste elevado,2,concluido
+429,659,41,659,2026-05-05 11:23:00,corretiva,superaquecimento do tubo,5,concluido
+430,660,15,660,2026-01-01 10:36:00,corretiva,quench,4,concluido
+431,662,50,662,2026-03-18 04:00:00,preventiva,desgaste elevado,2,concluido
+432,663,13,663,2026-04-17 11:16:00,corretiva,falha no slip ring,5,concluido
+433,664,6,664,2026-03-14 05:13:00,corretiva,falha no slip ring,9,concluido
+434,665,6,665,2026-05-18 02:34:00,corretiva,desgaste mecanico,3,concluido
+435,666,32,666,2026-01-08 05:41:00,corretiva,superaquecimento do tubo,9,concluido
+436,667,29,667,2026-03-18 02:26:00,corretiva,travamento mecanico,8,concluido
+437,669,5,669,2026-01-22 21:00:00,preventiva,desgaste elevado,3,concluido
+438,670,15,670,2026-03-16 23:14:00,corretiva,desalinhamento do gantry,4,concluido
+439,674,32,674,2026-04-16 12:00:00,preventiva,desgaste elevado,3,concluido
+440,675,29,675,2026-01-12 03:00:00,preventiva,desgaste elevado,4,concluido
+441,678,28,678,2025-12-30 19:41:00,corretiva,quench,9,concluido
+442,679,4,679,2026-02-16 17:33:00,corretiva,desgaste mecanico,5,concluido
+443,680,59,680,2026-05-08 02:13:00,corretiva,elemento da sonda queimado,4,concluido
+444,681,56,681,2026-04-22 19:38:00,corretiva,superaquecimento do tubo,6,concluido
+445,682,45,682,2026-01-25 07:19:00,corretiva,travamento mecanico,2,concluido
+446,683,30,683,2026-02-19 10:12:00,corretiva,superaquecimento do tubo,2,concluido
+447,684,10,684,2026-04-14 01:01:00,corretiva,travamento mecanico,5,concluido
+448,685,8,685,2026-05-31 16:00:00,preventiva,desgaste elevado,,em andamento
+449,687,43,687,2026-01-11 17:00:00,preventiva,MTBF proximo do vencimento,3,concluido
+450,688,54,688,2026-05-29 15:00:00,preventiva,MTBF proximo do vencimento,,em andamento
+451,689,20,689,2026-04-30 00:00:00,preventiva,desgaste elevado,4,concluido
+452,691,45,691,2026-01-14 10:00:00,preventiva,desgaste elevado,2,concluido
+453,692,31,692,2026-02-04 13:00:00,preventiva,desgaste elevado,5,concluido
+454,693,38,693,2026-05-27 17:00:00,preventiva,desgaste elevado,,em andamento
+455,694,58,694,2026-02-13 00:36:00,corretiva,degradacao detector,4,concluido
+456,695,42,695,2026-02-26 06:32:00,corretiva,falha HV,7,concluido
+457,696,28,696,2026-05-26 11:00:00,preventiva,MTBF proximo do vencimento,,em andamento
+458,697,27,697,2025-12-28 19:00:00,preventiva,MTBF proximo do vencimento,4,concluido
+459,698,30,698,2026-01-17 03:32:00,corretiva,falha da fonte,5,concluido
+460,699,28,699,2026-04-23 04:00:00,preventiva,desgaste elevado,3,concluido
+461,700,23,700,2026-04-25 12:01:00,corretiva,falha HV,8,concluido
+462,701,37,701,2026-06-02 06:00:00,preventiva,desgaste elevado,,em andamento
+463,702,58,702,2026-04-07 00:00:00,preventiva,desgaste elevado,3,concluido
+464,703,44,703,2026-03-07 23:35:00,corretiva,quench,2,concluido
+465,704,27,704,2026-04-17 19:31:00,corretiva,falha HV,5,concluido
+466,706,19,706,2026-04-21 21:32:00,corretiva,falha HV,3,concluido
+467,708,32,708,2026-05-11 18:40:00,corretiva,desgaste mecanico,5,concluido
+468,709,23,709,2026-01-20 00:03:00,corretiva,elemento da sonda queimado,6,concluido
+469,710,16,710,2026-01-24 17:15:00,corretiva,travamento mecanico,3,concluido
+470,711,40,711,2026-01-28 14:07:00,corretiva,elemento da sonda queimado,5,concluido
+471,712,18,712,2026-06-01 14:00:00,preventiva,MTBF proximo do vencimento,,em andamento
+472,713,15,713,2026-04-12 15:33:00,corretiva,falha HV,2,concluido
+473,714,45,714,2026-05-11 15:00:00,preventiva,desgaste elevado,5,concluido
+474,715,9,715,2026-05-15 09:18:00,corretiva,falha HV,2,concluido
+475,716,53,716,2026-05-12 11:53:00,corretiva,elemento da sonda queimado,6,concluido
+476,717,50,717,2026-03-03 05:00:00,preventiva,desgaste elevado,6,concluido
+477,718,6,718,2026-01-26 21:02:00,corretiva,desgaste do anodo,6,concluido
+478,719,19,719,2026-04-23 12:00:00,preventiva,MTBF proximo do vencimento,4,concluido
+479,720,41,720,2026-05-29 00:00:00,preventiva,desgaste elevado,,em andamento
+480,722,20,722,2026-03-30 05:00:00,preventiva,desgaste elevado,4,concluido
+481,723,34,723,2026-01-20 18:06:00,corretiva,desgaste mecanico,7,concluido
+482,724,31,724,2026-03-24 18:00:00,preventiva,desgaste elevado,3,concluido
+483,725,22,725,2026-05-30 04:00:00,preventiva,desgaste elevado,,em andamento
+484,726,6,726,2026-02-06 19:00:00,preventiva,desgaste elevado,3,concluido
+485,727,7,727,2026-02-14 09:20:00,corretiva,desgaste mecanico,4,concluido
+486,728,25,728,2026-05-12 12:38:00,corretiva,quench,9,concluido
+487,729,22,729,2026-01-20 14:19:00,corretiva,degradacao detector,2,concluido
+488,730,22,730,2026-01-04 14:47:00,corretiva,desgaste mecanico,8,concluido
+489,731,20,731,2026-05-31 02:00:00,preventiva,desgaste elevado,,em andamento
+490,732,10,732,2026-04-04 19:00:00,preventiva,desgaste elevado,2,concluido
+491,734,37,734,2026-02-01 08:29:00,corretiva,desalinhamento do gantry,2,concluido
+492,735,58,735,2026-03-12 13:00:00,preventiva,desgaste elevado,2,concluido
+493,736,10,736,2026-05-23 19:00:00,preventiva,desgaste elevado,,em andamento
+494,737,45,737,2026-05-25 22:00:00,preventiva,desgaste elevado,,em andamento
+495,739,21,739,2026-04-27 12:40:00,corretiva,degradacao detector,5,concluido
+496,740,35,740,2026-01-07 17:00:00,preventiva,MTBF proximo do vencimento,2,concluido
+497,741,36,741,2026-01-05 17:25:00,corretiva,elemento da sonda queimado,5,concluido
+498,742,53,742,2026-03-10 03:58:00,corretiva,superaquecimento,6,concluido
+499,746,26,746,2026-04-06 08:41:00,corretiva,falha no slip ring,6,concluido
+500,748,22,748,2026-03-05 12:25:00,corretiva,superaquecimento do tubo,3,concluido
+501,749,36,749,2026-03-08 01:00:00,preventiva,desgaste elevado,4,concluido
+502,751,27,751,2025-12-27 18:21:00,corretiva,falha HV,2,concluido
+503,753,32,753,2026-05-13 18:49:00,corretiva,travamento mecanico,4,concluido
+504,754,57,754,2026-01-09 01:00:00,preventiva,desgaste elevado,6,concluido
+505,755,20,755,2026-01-05 17:04:00,corretiva,quench,9,concluido
+506,756,23,756,2026-01-20 05:31:00,corretiva,degradacao detector,5,concluido
+507,757,49,757,2026-03-10 14:09:00,corretiva,falha no slip ring,9,concluido
+508,758,22,758,2026-03-03 04:00:00,preventiva,desgaste elevado,6,concluido
+509,759,51,759,2026-01-16 03:18:00,corretiva,desgaste mecanico,8,concluido
+510,760,59,760,2026-03-29 07:57:00,corretiva,elemento da sonda queimado,8,concluido
+511,761,6,761,2026-05-14 03:18:00,corretiva,falha HV,2,concluido
+512,765,18,765,2026-03-27 07:19:00,corretiva,superaquecimento do tubo,6,concluido
+513,766,48,766,2026-02-10 23:59:00,corretiva,quench,5,concluido
+514,767,57,767,2026-04-03 05:29:00,corretiva,falha da fonte,7,concluido
+515,769,42,769,2026-01-22 13:31:00,corretiva,travamento mecanico,4,concluido
+516,772,37,772,2026-01-31 04:12:00,corretiva,desgaste mecanico,8,concluido
+517,773,45,773,2026-04-14 02:00:00,preventiva,desgaste elevado,4,concluido
+518,774,16,774,2026-05-24 13:00:00,preventiva,desgaste elevado,,em andamento
+519,776,3,776,2026-04-29 01:40:00,corretiva,superaquecimento do tubo,3,concluido
+520,777,56,777,2026-05-23 15:00:00,preventiva,MTBF proximo do vencimento,,em andamento
+521,778,9,778,2026-05-02 10:00:00,preventiva,MTBF proximo do vencimento,2,concluido
+522,780,59,780,2026-02-02 20:00:00,preventiva,MTBF proximo do vencimento,6,concluido
+523,781,50,781,2025-12-28 04:42:00,corretiva,superaquecimento,4,concluido
+524,783,15,783,2026-05-27 20:00:00,preventiva,desgaste elevado,,em andamento
+525,785,50,785,2026-03-02 12:00:00,preventiva,desgaste elevado,4,concluido
+526,786,58,786,2026-05-25 18:00:00,preventiva,desgaste elevado,2,concluido
+527,788,17,788,2026-03-15 05:13:00,corretiva,degradacao detector,9,concluido
+528,791,23,791,2026-03-25 21:00:00,preventiva,desgaste elevado,5,concluido
+529,793,44,793,2026-02-09 06:00:00,preventiva,desgaste elevado,6,concluido
+530,795,26,795,2026-02-13 05:00:00,preventiva,MTBF proximo do vencimento,4,concluido
+531,796,19,796,2026-02-06 16:56:00,corretiva,falha HV,7,concluido
+532,797,30,797,2026-01-21 09:00:00,preventiva,desgaste elevado,4,concluido
+533,800,55,800,2026-01-17 18:55:00,corretiva,degradacao detector,6,concluido
+534,801,27,801,2026-03-13 02:47:00,corretiva,travamento mecanico,4,concluido
+535,802,14,802,2026-05-23 17:00:00,preventiva,desgaste elevado,,em andamento
+536,803,23,803,2026-02-22 11:16:00,corretiva,elemento da sonda queimado,7,concluido
+537,804,45,804,2026-02-26 09:59:00,corretiva,falha da fonte,9,concluido
+538,811,56,811,2026-01-08 05:31:00,corretiva,superaquecimento do tubo,3,concluido
+539,812,51,812,2026-05-04 04:00:00,preventiva,desgaste elevado,2,concluido
+540,813,48,813,2026-06-02 02:00:00,preventiva,MTBF proximo do vencimento,,em andamento
+541,816,54,816,2026-04-09 23:38:00,corretiva,superaquecimento do tubo,4,concluido
+542,817,52,817,2026-01-22 16:00:00,preventiva,desgaste elevado,4,concluido
+543,819,56,819,2026-04-30 19:59:00,corretiva,desgaste mecanico,9,concluido
+544,820,4,820,2026-03-26 00:42:00,corretiva,elemento da sonda queimado,4,concluido
+545,821,21,821,2026-06-05 22:00:00,preventiva,desgaste elevado,,em andamento
+546,822,53,822,2026-05-13 14:00:00,preventiva,desgaste elevado,3,concluido
+547,824,37,824,2026-03-21 13:52:00,corretiva,falha no slip ring,6,concluido
+548,825,58,825,2025-12-28 12:59:00,corretiva,degradacao detector,3,concluido
+549,826,29,826,2026-05-24 05:00:00,preventiva,desgaste elevado,,em andamento
+550,829,39,829,2026-05-06 19:00:00,preventiva,desgaste elevado,6,concluido
+551,832,55,832,2026-05-28 17:00:00,preventiva,desgaste elevado,,em andamento
+552,834,57,834,2026-05-27 09:00:00,preventiva,MTBF proximo do vencimento,,em andamento
+553,835,36,835,2026-01-14 00:00:00,preventiva,desgaste elevado,3,concluido
+554,836,27,836,2026-03-14 14:44:00,corretiva,superaquecimento do tubo,6,concluido
+555,840,36,840,2026-02-25 23:00:00,preventiva,desgaste elevado,4,concluido
+556,841,37,841,2026-03-14 23:15:00,corretiva,desgaste mecanico,6,concluido
+557,842,25,842,2026-02-23 06:21:00,corretiva,quench,8,concluido
+558,843,37,843,2026-04-21 09:00:00,preventiva,MTBF proximo do vencimento,2,concluido
+559,844,53,844,2026-02-07 12:13:00,corretiva,superaquecimento do tubo,8,concluido
+560,845,59,845,2026-04-19 06:00:00,preventiva,desgaste elevado,3,concluido
+561,846,35,846,2026-04-27 15:13:00,corretiva,quench,7,concluido
+562,847,9,847,2026-03-05 12:00:00,preventiva,desgaste elevado,2,concluido
+563,848,47,848,2026-06-01 13:00:00,preventiva,desgaste elevado,,em andamento
+564,850,57,850,2026-02-07 01:38:00,corretiva,elemento da sonda queimado,5,concluido
+565,851,25,851,2026-04-21 13:00:00,preventiva,desgaste elevado,6,concluido
+566,852,47,852,2026-02-25 06:52:00,corretiva,falha no slip ring,9,concluido
+567,857,15,857,2026-02-02 05:26:00,corretiva,degradacao detector,6,concluido
+568,858,23,858,2026-04-26 15:33:00,corretiva,falha HV,4,concluido
+569,859,49,859,2026-03-20 08:19:00,corretiva,desgaste mecanico,3,concluido
+570,861,40,861,2026-01-05 05:00:00,preventiva,MTBF proximo do vencimento,4,concluido
+571,862,33,862,2026-05-26 02:00:00,preventiva,desgaste elevado,,em andamento
+572,864,39,864,2026-03-16 10:01:00,corretiva,elemento da sonda queimado,7,concluido
+573,866,19,866,2026-04-22 13:00:00,preventiva,desgaste elevado,2,concluido
+574,867,45,867,2026-01-06 17:34:00,corretiva,superaquecimento,7,concluido
+575,868,42,868,2026-04-05 12:00:00,preventiva,MTBF proximo do vencimento,4,concluido
+576,869,18,869,2026-03-23 20:00:00,preventiva,desgaste elevado,4,concluido
+577,870,55,870,2026-01-15 13:00:00,preventiva,desgaste elevado,6,concluido
+578,871,21,871,2026-04-17 20:07:00,corretiva,falha HV,2,concluido
+579,872,42,872,2026-01-23 20:00:00,preventiva,desgaste elevado,3,concluido
+580,873,44,873,2026-01-31 14:00:00,preventiva,MTBF proximo do vencimento,6,concluido
+581,874,2,874,2025-12-26 03:00:00,preventiva,MTBF proximo do vencimento,5,concluido
+582,875,58,875,2026-02-23 14:37:00,corretiva,travamento mecanico,7,concluido
+583,876,50,876,2026-03-30 15:44:00,corretiva,falha de gradiente,7,concluido
+584,877,37,877,2026-04-15 12:21:00,corretiva,superaquecimento do tubo,5,concluido
+585,879,35,879,2026-05-27 18:00:00,preventiva,desgaste elevado,,em andamento
+586,881,48,881,2026-01-11 14:00:00,preventiva,desgaste elevado,3,concluido
+587,882,60,882,2026-01-26 06:00:00,preventiva,MTBF proximo do vencimento,3,concluido
+588,884,32,884,2026-06-02 22:00:00,preventiva,MTBF proximo do vencimento,,em andamento
+589,885,35,885,2026-03-12 07:23:00,corretiva,desalinhamento do gantry,8,concluido
+590,886,25,886,2026-03-25 01:36:00,corretiva,superaquecimento do tubo,2,concluido
+591,887,13,887,2026-04-30 20:00:00,preventiva,desgaste elevado,2,concluido
+592,888,20,888,2026-04-23 16:52:00,corretiva,falha de gradiente,6,concluido
+593,889,35,889,2026-01-27 19:59:00,corretiva,quench,9,concluido
+594,891,47,891,2026-02-11 03:51:00,corretiva,falha HV,2,concluido
+595,893,58,893,2026-02-01 15:00:00,corretiva,falha no slip ring,9,concluido
+596,895,8,895,2026-02-01 06:05:00,corretiva,travamento mecanico,7,concluido
+597,896,50,896,2026-01-24 07:00:00,preventiva,desgaste elevado,4,concluido
+598,897,17,897,2026-05-12 10:51:00,corretiva,degradacao detector,3,concluido
+599,898,22,898,2026-04-03 14:18:00,corretiva,degradacao detector,6,concluido
+600,899,51,899,2026-02-18 12:00:00,preventiva,desgaste elevado,6,concluido
+601,900,21,900,2026-06-04 09:00:00,preventiva,desgaste elevado,,em andamento
+602,905,25,905,2026-02-09 00:00:00,corretiva,superaquecimento do tubo,9,concluido
+603,908,18,908,2026-02-23 23:00:00,preventiva,desgaste elevado,2,concluido
+604,909,55,909,2026-05-19 06:00:00,preventiva,MTBF proximo do vencimento,5,concluido
+605,915,42,915,2026-02-07 07:12:00,corretiva,travamento mecanico,4,concluido
+606,917,58,917,2026-05-30 03:00:00,preventiva,MTBF proximo do vencimento,,em andamento
+607,918,29,918,2026-01-08 22:24:00,corretiva,travamento mecanico,2,concluido
+608,919,38,919,2026-04-13 16:01:00,corretiva,desgaste mecanico,5,concluido
+609,921,33,921,2026-03-29 12:00:00,preventiva,desgaste elevado,3,concluido
+610,922,44,922,2025-12-23 19:00:00,preventiva,desgaste elevado,5,concluido
+611,923,56,923,2026-06-05 11:00:00,preventiva,desgaste elevado,,em andamento
+612,924,23,924,2026-05-20 12:00:00,preventiva,MTBF proximo do vencimento,3,concluido
+613,928,14,928,2026-02-05 19:12:00,corretiva,desgaste mecanico,7,concluido
+614,929,14,929,2026-03-30 11:40:00,corretiva,desgaste mecanico,2,concluido
+615,930,35,930,2026-02-12 14:00:00,preventiva,desgaste elevado,4,concluido
+616,931,12,931,2026-04-06 02:59:00,corretiva,desgaste mecanico,5,concluido
+617,932,20,932,2026-03-07 22:56:00,corretiva,degradacao detector,5,concluido
+618,933,35,933,2026-02-27 11:00:00,preventiva,desgaste elevado,5,concluido
+619,934,29,934,2026-05-27 15:00:00,preventiva,MTBF proximo do vencimento,,em andamento
+620,935,33,935,2026-05-27 16:00:00,preventiva,MTBF proximo do vencimento,,em andamento
+621,936,19,936,2026-03-22 21:00:00,preventiva,desgaste elevado,5,concluido
+622,940,26,940,2026-05-24 01:00:00,preventiva,desgaste elevado,,em andamento
+623,942,44,942,2026-01-03 07:54:00,corretiva,quench,2,concluido
+624,943,44,943,2026-01-28 15:52:00,corretiva,elemento da sonda queimado,6,concluido
+625,944,8,944,2026-05-28 12:00:00,preventiva,desgaste elevado,,em andamento

@@ -1,0 +1,945 @@
+chamado_id,hospital_id,equipamento_id,falha_id,tecnico_id,tipo_chamado,status,data_abertura,data_fechamento,prioridade,descricao,tempo_resposta_horas
+1,1,1,1,55,corretiva,em andamento,2026-05-27 06:48:00,,alto,Parada por falha em tc. Prioridade alto.,
+2,1,2,2,54,corretiva,em andamento,2026-05-29 18:33:00,,baixo,Parada por falha em raio x. Prioridade baixo.,
+3,1,3,3,28,corretiva,concluido,2026-05-06 07:35:00,2026-05-07 05:35:00,alto,Parada por falha em tc. Prioridade alto.,22
+4,1,4,4,,corretiva,nao atribuido,2026-05-26 15:22:00,,alto,Parada por falha em ultrassom. Prioridade alto.,
+5,1,5,5,4,corretiva,concluido,2026-01-02 13:32:00,2026-01-02 18:32:00,baixo,Parada por falha em raio x. Prioridade baixo.,5
+6,1,6,,4,preventiva,concluido,2026-05-12 07:00:00,2026-05-12 18:00:00,alto,Chamado preventiva para ultrassom. Motivo: desgaste elevado. Prioridade alto.,11
+7,1,7,6,39,corretiva,concluido,2026-03-14 09:07:00,2026-03-14 20:07:00,alto,Parada por falha em ultrassom. Prioridade alto.,11
+8,1,8,,53,preventiva,concluido,2025-12-22 10:00:00,2025-12-24 10:00:00,baixo,Chamado preventiva para ressonancia magnetica. Motivo: desgaste elevado. Prioridade baixo.,48
+9,1,9,7,,corretiva,nao atribuido,2026-05-25 09:13:00,,medio,Parada por falha em angiografia. Prioridade medio.,
+10,1,10,8,36,corretiva,concluido,2026-04-22 16:21:00,2026-04-23 04:21:00,medio,Parada por falha em ressonancia magnetica. Prioridade medio.,12
+11,1,11,9,15,corretiva,atribuido,2026-05-31 06:13:00,,baixo,Parada por falha em ressonancia magnetica. Prioridade baixo.,
+12,1,12,,18,preventiva,concluido,2026-01-03 07:00:00,2026-01-04 12:00:00,baixo,Chamado preventiva para ressonancia magnetica. Motivo: desgaste elevado. Prioridade baixo.,29
+13,1,13,10,22,corretiva,em andamento,2026-05-28 21:53:00,,alto,Parada por falha em angiografia. Prioridade alto.,
+14,1,14,11,20,corretiva,concluido,2026-05-03 20:51:00,2026-05-04 09:51:00,baixo,Parada por falha em arco cirurgico. Prioridade baixo.,13
+15,1,15,12,,corretiva,nao atribuido,2026-06-03 22:42:00,,medio,Parada por falha em angiografia. Prioridade medio.,
+16,1,16,,44,preventiva,concluido,2026-02-13 11:00:00,2026-02-15 13:00:00,medio,Chamado preventiva para ressonancia magnetica. Motivo: MTBF proximo do vencimento. Prioridade medio.,50
+17,2,17,13,32,corretiva,atribuido,2026-05-31 04:02:00,,medio,Parada por falha em arco cirurgico. Prioridade medio.,
+18,2,18,,42,preventiva,concluido,2026-04-07 09:00:00,2026-04-08 10:00:00,medio,Chamado preventiva para arco cirurgico. Motivo: desgaste elevado. Prioridade medio.,25
+19,2,19,,17,preventiva,concluido,2026-04-01 00:00:00,2026-04-01 16:00:00,baixo,Chamado preventiva para pet. Motivo: MTBF proximo do vencimento. Prioridade baixo.,16
+20,2,20,14,,corretiva,nao atribuido,2026-05-29 03:11:00,,baixo,Parada por falha em ressonancia magnetica. Prioridade baixo.,
+21,2,21,15,37,corretiva,concluido,2026-01-03 10:42:00,2026-01-04 05:42:00,alto,Parada por falha em tc. Prioridade alto.,19
+22,2,22,16,7,corretiva,em andamento,2026-05-29 03:06:00,,alto,Parada por falha em tc. Prioridade alto.,
+23,2,23,17,,corretiva,nao atribuido,2026-06-02 11:24:00,,alto,Parada por falha em ultrassom. Prioridade alto.,
+24,2,24,18,6,corretiva,em andamento,2026-05-28 23:51:00,,baixo,Parada por falha em pet. Prioridade baixo.,
+25,2,25,19,55,corretiva,concluido,2026-04-15 12:05:00,2026-04-15 21:05:00,medio,Parada por falha em tc. Prioridade medio.,9
+26,2,26,20,2,corretiva,concluido,2026-04-07 08:37:00,2026-04-07 22:37:00,baixo,Parada por falha em angiografia. Prioridade baixo.,14
+27,2,27,21,22,corretiva,atribuido,2026-05-30 00:38:00,,alto,Parada por falha em angiografia. Prioridade alto.,
+28,2,28,22,56,corretiva,atribuido,2026-06-04 03:30:00,,alto,Parada por falha em ressonancia magnetica. Prioridade alto.,
+29,2,29,23,47,corretiva,em andamento,2026-06-04 11:53:00,,alto,Parada por falha em tc. Prioridade alto.,
+30,2,30,24,25,corretiva,em andamento,2026-05-24 23:14:00,,medio,Parada por falha em pet. Prioridade medio.,
+31,2,31,25,4,corretiva,atribuido,2026-05-27 10:56:00,,baixo,Parada por falha em raio x. Prioridade baixo.,
+32,2,32,,56,preventiva,concluido,2026-01-16 10:00:00,2026-01-17 08:00:00,alto,Chamado preventiva para ressonancia magnetica. Motivo: desgaste elevado. Prioridade alto.,22
+33,3,33,26,23,corretiva,em andamento,2026-05-28 02:11:00,,medio,Parada por falha em ultrassom. Prioridade medio.,
+34,3,34,,40,preventiva,concluido,2026-05-02 02:00:00,2026-05-02 19:00:00,medio,Chamado preventiva para ultrassom. Motivo: desgaste elevado. Prioridade medio.,17
+35,3,35,27,6,corretiva,atribuido,2026-05-27 01:51:00,,medio,Parada por falha em angiografia. Prioridade medio.,
+36,3,36,28,12,corretiva,em andamento,2026-05-26 02:44:00,,alto,Parada por falha em angiografia. Prioridade alto.,
+37,3,37,29,,corretiva,nao atribuido,2026-05-30 02:49:00,,medio,Parada por falha em pet. Prioridade medio.,
+38,3,38,30,,corretiva,nao atribuido,2026-05-25 01:56:00,,medio,Parada por falha em ultrassom. Prioridade medio.,
+39,3,39,,57,preventiva,concluido,2026-02-13 02:00:00,2026-02-13 17:00:00,medio,Chamado preventiva para arco cirurgico. Motivo: desgaste elevado. Prioridade medio.,15
+40,3,40,31,59,corretiva,concluido,2026-01-16 09:48:00,2026-01-17 02:48:00,alto,Parada por falha em ultrassom. Prioridade alto.,17
+41,3,41,32,1,corretiva,concluido,2026-02-07 14:58:00,2026-02-08 01:58:00,alto,Parada por falha em ressonancia magnetica. Prioridade alto.,11
+42,3,42,33,21,corretiva,concluido,2026-01-02 15:59:00,2026-01-03 13:59:00,medio,Parada por falha em pet. Prioridade medio.,22
+43,3,43,34,31,corretiva,concluido,2025-12-31 16:52:00,2026-01-01 05:52:00,baixo,Parada por falha em tc. Prioridade baixo.,13
+44,3,44,35,3,corretiva,em andamento,2026-05-27 15:33:00,,baixo,Parada por falha em raio x. Prioridade baixo.,
+45,3,45,36,49,corretiva,concluido,2026-03-15 06:18:00,2026-03-15 22:18:00,medio,Parada por falha em tc. Prioridade medio.,16
+46,3,46,37,23,corretiva,atribuido,2026-06-04 14:56:00,,medio,Parada por falha em ultrassom. Prioridade medio.,
+47,3,47,38,6,corretiva,concluido,2026-01-05 21:15:00,2026-01-06 09:15:00,medio,Parada por falha em raio x. Prioridade medio.,12
+48,3,48,39,42,corretiva,concluido,2026-05-01 21:21:00,2026-05-02 05:21:00,medio,Parada por falha em arco cirurgico. Prioridade medio.,8
+49,4,49,40,29,corretiva,concluido,2026-04-17 01:26:00,2026-04-17 21:26:00,alto,Parada por falha em arco cirurgico. Prioridade alto.,20
+50,4,50,,7,preventiva,concluido,2026-05-19 01:00:00,2026-05-20 09:00:00,medio,Chamado preventiva para angiografia. Motivo: desgaste elevado. Prioridade medio.,32
+51,4,51,41,,corretiva,nao atribuido,2026-05-29 17:12:00,,baixo,Parada por falha em ultrassom. Prioridade baixo.,
+52,4,52,42,,corretiva,nao atribuido,2026-06-03 01:12:00,,baixo,Parada por falha em angiografia. Prioridade baixo.,
+53,4,53,,49,preventiva,concluido,2026-03-31 16:00:00,2026-04-01 09:00:00,medio,Chamado preventiva para angiografia. Motivo: MTBF proximo do vencimento. Prioridade medio.,17
+54,4,54,43,50,corretiva,atribuido,2026-05-29 12:07:00,,medio,Parada por falha em ultrassom. Prioridade medio.,
+55,4,55,,21,preventiva,concluido,2026-01-27 20:00:00,2026-01-29 02:00:00,medio,Chamado preventiva para ultrassom. Motivo: desgaste elevado. Prioridade medio.,30
+56,4,56,44,5,corretiva,concluido,2026-04-22 02:49:00,2026-04-22 21:49:00,medio,Parada por falha em angiografia. Prioridade medio.,19
+57,4,57,45,,corretiva,nao atribuido,2026-05-26 06:30:00,,medio,Parada por falha em ressonancia magnetica. Prioridade medio.,
+58,4,58,46,17,corretiva,concluido,2026-05-10 12:35:00,2026-05-10 21:35:00,medio,Parada por falha em ressonancia magnetica. Prioridade medio.,9
+59,4,59,47,,corretiva,nao atribuido,2026-05-25 15:33:00,,medio,Parada por falha em arco cirurgico. Prioridade medio.,
+60,4,60,48,,corretiva,nao atribuido,2026-05-30 07:53:00,,medio,Parada por falha em arco cirurgico. Prioridade medio.,
+61,4,61,49,1,corretiva,atribuido,2026-05-26 02:18:00,,medio,Parada por falha em raio x. Prioridade medio.,
+62,4,62,50,32,corretiva,em andamento,2026-06-01 18:37:00,,alto,Parada por falha em arco cirurgico. Prioridade alto.,
+63,4,63,51,30,corretiva,atribuido,2026-05-28 12:11:00,,baixo,Parada por falha em angiografia. Prioridade baixo.,
+64,4,64,,48,preventiva,concluido,2026-05-01 11:00:00,2026-05-02 19:00:00,baixo,Chamado preventiva para ressonancia magnetica. Motivo: MTBF proximo do vencimento. Prioridade baixo.,32
+65,5,65,,56,preventiva,concluido,2026-03-15 14:00:00,2026-03-16 02:00:00,baixo,Chamado preventiva para raio x. Motivo: desgaste elevado. Prioridade baixo.,12
+66,5,66,52,,corretiva,nao atribuido,2026-05-25 16:16:00,,alto,Parada por falha em ultrassom. Prioridade alto.,
+67,5,67,53,14,corretiva,atribuido,2026-05-25 08:24:00,,baixo,Parada por falha em angiografia. Prioridade baixo.,
+68,5,68,54,22,corretiva,concluido,2026-04-24 00:58:00,2026-04-24 19:58:00,medio,Parada por falha em tc. Prioridade medio.,19
+69,5,69,,55,preventiva,concluido,2026-05-20 22:00:00,2026-05-21 19:00:00,alto,Chamado preventiva para pet. Motivo: MTBF proximo do vencimento. Prioridade alto.,21
+70,5,70,55,31,corretiva,concluido,2026-01-05 18:39:00,2026-01-06 00:39:00,baixo,Parada por falha em tc. Prioridade baixo.,6
+71,5,71,56,13,corretiva,atribuido,2026-06-04 12:41:00,,baixo,Parada por falha em tc. Prioridade baixo.,
+72,5,72,57,35,corretiva,concluido,2026-04-05 04:32:00,2026-04-05 14:32:00,alto,Parada por falha em raio x. Prioridade alto.,10
+73,5,73,,28,preventiva,concluido,2026-01-27 08:00:00,2026-01-28 21:00:00,baixo,Chamado preventiva para raio x. Motivo: MTBF proximo do vencimento. Prioridade baixo.,37
+74,5,74,,54,preventiva,concluido,2026-01-26 10:00:00,2026-01-27 13:00:00,alto,Chamado preventiva para raio x. Motivo: desgaste elevado. Prioridade alto.,27
+75,5,75,58,29,corretiva,concluido,2026-02-07 06:45:00,2026-02-07 16:45:00,baixo,Parada por falha em angiografia. Prioridade baixo.,10
+76,5,76,59,24,corretiva,concluido,2026-02-10 07:13:00,2026-02-11 01:13:00,baixo,Parada por falha em ultrassom. Prioridade baixo.,18
+77,5,77,60,32,corretiva,concluido,2026-02-27 22:05:00,2026-02-28 09:05:00,baixo,Parada por falha em angiografia. Prioridade baixo.,11
+78,5,78,61,51,corretiva,atribuido,2026-06-03 08:30:00,,alto,Parada por falha em pet. Prioridade alto.,
+79,5,79,62,,corretiva,nao atribuido,2026-05-25 01:55:00,,baixo,Parada por falha em arco cirurgico. Prioridade baixo.,
+80,5,80,63,,corretiva,nao atribuido,2026-05-30 03:33:00,,baixo,Parada por falha em ressonancia magnetica. Prioridade baixo.,
+81,6,81,64,,corretiva,nao atribuido,2026-05-30 00:05:00,,alto,Parada por falha em pet. Prioridade alto.,
+82,6,82,,45,preventiva,concluido,2026-04-17 19:00:00,2026-04-19 08:00:00,baixo,Chamado preventiva para ultrassom. Motivo: desgaste elevado. Prioridade baixo.,37
+83,6,83,65,,corretiva,nao atribuido,2026-05-24 22:04:00,,alto,Parada por falha em raio x. Prioridade alto.,
+84,6,84,66,30,corretiva,atribuido,2026-06-02 01:22:00,,baixo,Parada por falha em ultrassom. Prioridade baixo.,
+85,6,85,,50,preventiva,concluido,2026-04-22 08:00:00,2026-04-24 04:00:00,medio,Chamado preventiva para ressonancia magnetica. Motivo: MTBF proximo do vencimento. Prioridade medio.,44
+86,6,86,67,40,corretiva,em andamento,2026-06-02 04:24:00,,medio,Parada por falha em ultrassom. Prioridade medio.,
+87,6,87,68,30,corretiva,em andamento,2026-05-28 12:51:00,,medio,Parada por falha em ultrassom. Prioridade medio.,
+88,6,88,,59,preventiva,concluido,2026-01-23 00:00:00,2026-01-24 10:00:00,medio,Chamado preventiva para ultrassom. Motivo: MTBF proximo do vencimento. Prioridade medio.,34
+89,6,89,,15,preventiva,concluido,2026-04-09 21:00:00,2026-04-11 03:00:00,baixo,Chamado preventiva para pet. Motivo: desgaste elevado. Prioridade baixo.,30
+90,6,90,69,53,corretiva,concluido,2026-03-13 16:46:00,2026-03-14 07:46:00,medio,Parada por falha em raio x. Prioridade medio.,15
+91,6,91,70,18,corretiva,atribuido,2026-06-01 08:48:00,,alto,Parada por falha em arco cirurgico. Prioridade alto.,
+92,6,92,,10,preventiva,concluido,2026-01-08 11:00:00,2026-01-10 17:00:00,baixo,Chamado preventiva para ultrassom. Motivo: desgaste elevado. Prioridade baixo.,54
+93,6,93,71,47,corretiva,atribuido,2026-05-30 00:49:00,,alto,Parada por falha em tc. Prioridade alto.,
+94,6,94,72,18,corretiva,em andamento,2026-06-04 07:20:00,,alto,Parada por falha em pet. Prioridade alto.,
+95,6,95,73,32,corretiva,concluido,2026-04-02 23:41:00,2026-04-03 10:41:00,alto,Parada por falha em pet. Prioridade alto.,11
+96,6,96,74,,corretiva,nao atribuido,2026-06-03 15:37:00,,medio,Parada por falha em arco cirurgico. Prioridade medio.,
+97,7,97,75,27,corretiva,atribuido,2026-06-01 08:02:00,,alto,Parada por falha em arco cirurgico. Prioridade alto.,
+98,7,98,76,,corretiva,nao atribuido,2026-05-25 04:28:00,,alto,Parada por falha em ressonancia magnetica. Prioridade alto.,
+99,7,99,77,19,corretiva,concluido,2026-01-27 18:26:00,2026-01-28 07:26:00,medio,Parada por falha em arco cirurgico. Prioridade medio.,13
+100,7,100,78,32,corretiva,concluido,2025-12-29 06:34:00,2025-12-29 21:34:00,medio,Parada por falha em pet. Prioridade medio.,15
+101,7,101,79,44,corretiva,concluido,2026-04-07 08:52:00,2026-04-08 01:52:00,alto,Parada por falha em ultrassom. Prioridade alto.,17
+102,7,102,80,16,corretiva,em andamento,2026-06-02 17:37:00,,medio,Parada por falha em tc. Prioridade medio.,
+103,7,103,81,29,corretiva,concluido,2026-05-14 03:22:00,2026-05-14 21:22:00,baixo,Parada por falha em arco cirurgico. Prioridade baixo.,18
+104,7,104,82,,corretiva,nao atribuido,2026-06-04 05:51:00,,baixo,Parada por falha em arco cirurgico. Prioridade baixo.,
+105,7,105,83,53,corretiva,concluido,2026-02-16 23:24:00,2026-02-17 06:24:00,baixo,Parada por falha em ressonancia magnetica. Prioridade baixo.,7
+106,7,106,84,31,corretiva,atribuido,2026-05-25 21:17:00,,alto,Parada por falha em raio x. Prioridade alto.,
+107,7,107,85,4,corretiva,concluido,2026-02-17 09:37:00,2026-02-17 19:37:00,medio,Parada por falha em ultrassom. Prioridade medio.,10
+108,7,108,86,29,corretiva,em andamento,2026-06-03 22:20:00,,baixo,Parada por falha em angiografia. Prioridade baixo.,
+109,7,109,,22,preventiva,concluido,2026-02-28 21:00:00,2026-03-02 18:00:00,medio,Chamado preventiva para angiografia. Motivo: MTBF proximo do vencimento. Prioridade medio.,45
+110,7,110,,37,preventiva,concluido,2026-02-28 09:00:00,2026-03-01 17:00:00,medio,Chamado preventiva para angiografia. Motivo: MTBF proximo do vencimento. Prioridade medio.,32
+111,7,111,,40,preventiva,concluido,2026-01-14 10:00:00,2026-01-16 04:00:00,alto,Chamado preventiva para raio x. Motivo: desgaste elevado. Prioridade alto.,42
+112,7,112,87,18,corretiva,atribuido,2026-05-24 19:12:00,,medio,Parada por falha em pet. Prioridade medio.,
+113,8,113,,16,preventiva,concluido,2026-01-20 13:00:00,2026-01-21 23:00:00,alto,Chamado preventiva para tc. Motivo: desgaste elevado. Prioridade alto.,34
+114,8,114,88,,corretiva,nao atribuido,2026-06-04 00:38:00,,medio,Parada por falha em ressonancia magnetica. Prioridade medio.,
+115,8,115,,41,preventiva,concluido,2026-01-10 20:00:00,2026-01-12 21:00:00,baixo,Chamado preventiva para raio x. Motivo: desgaste elevado. Prioridade baixo.,49
+116,8,116,89,34,corretiva,atribuido,2026-05-30 05:55:00,,medio,Parada por falha em angiografia. Prioridade medio.,
+117,8,117,90,60,corretiva,concluido,2026-03-17 03:18:00,2026-03-17 16:18:00,baixo,Parada por falha em raio x. Prioridade baixo.,13
+118,8,118,,15,preventiva,concluido,2026-02-28 19:00:00,2026-03-02 09:00:00,medio,Chamado preventiva para ressonancia magnetica. Motivo: MTBF proximo do vencimento. Prioridade medio.,38
+119,8,119,91,14,corretiva,concluido,2026-01-09 11:44:00,2026-01-09 20:44:00,baixo,Parada por falha em pet. Prioridade baixo.,9
+120,8,120,92,,corretiva,nao atribuido,2026-06-02 11:55:00,,medio,Parada por falha em angiografia. Prioridade medio.,
+121,8,121,93,7,corretiva,em andamento,2026-05-27 15:52:00,,medio,Parada por falha em raio x. Prioridade medio.,
+122,8,122,94,48,corretiva,concluido,2026-03-27 23:31:00,2026-03-28 05:31:00,alto,Parada por falha em ressonancia magnetica. Prioridade alto.,6
+123,8,123,95,47,corretiva,concluido,2026-03-20 03:56:00,2026-03-20 16:56:00,alto,Parada por falha em tc. Prioridade alto.,13
+124,8,124,96,53,corretiva,concluido,2026-02-24 15:23:00,2026-02-25 02:23:00,baixo,Parada por falha em ressonancia magnetica. Prioridade baixo.,11
+125,8,125,97,,corretiva,nao atribuido,2026-05-27 00:00:00,,alto,Parada por falha em pet. Prioridade alto.,
+126,8,126,98,,corretiva,nao atribuido,2026-06-04 07:28:00,,baixo,Parada por falha em raio x. Prioridade baixo.,
+127,8,127,99,54,corretiva,concluido,2026-01-29 20:36:00,2026-01-30 10:36:00,alto,Parada por falha em ressonancia magnetica. Prioridade alto.,14
+128,8,128,100,,corretiva,nao atribuido,2026-05-28 12:39:00,,baixo,Parada por falha em raio x. Prioridade baixo.,
+129,9,129,101,,corretiva,nao atribuido,2026-06-03 23:14:00,,alto,Parada por falha em ressonancia magnetica. Prioridade alto.,
+130,9,130,102,,corretiva,nao atribuido,2026-06-01 06:54:00,,medio,Parada por falha em ressonancia magnetica. Prioridade medio.,
+131,9,131,103,,corretiva,nao atribuido,2026-05-27 03:00:00,,alto,Parada por falha em tc. Prioridade alto.,
+132,9,132,,10,preventiva,concluido,2025-12-29 21:00:00,2026-01-01 00:00:00,baixo,Chamado preventiva para arco cirurgico. Motivo: desgaste elevado. Prioridade baixo.,51
+133,9,133,104,57,corretiva,em andamento,2026-05-29 20:42:00,,baixo,Parada por falha em arco cirurgico. Prioridade baixo.,
+134,9,134,105,58,corretiva,concluido,2026-02-16 05:05:00,2026-02-16 13:05:00,medio,Parada por falha em tc. Prioridade medio.,8
+135,9,135,,24,preventiva,concluido,2026-02-13 21:00:00,2026-02-14 07:00:00,medio,Chamado preventiva para ultrassom. Motivo: desgaste elevado. Prioridade medio.,10
+136,9,136,106,18,corretiva,concluido,2026-05-20 16:45:00,2026-05-21 08:45:00,alto,Parada por falha em raio x. Prioridade alto.,16
+137,9,137,107,8,corretiva,concluido,2026-04-11 05:01:00,2026-04-11 14:01:00,medio,Parada por falha em arco cirurgico. Prioridade medio.,9
+138,9,138,,6,preventiva,concluido,2026-02-25 01:00:00,2026-02-26 03:00:00,medio,Chamado preventiva para tc. Motivo: desgaste elevado. Prioridade medio.,26
+139,9,139,108,,corretiva,nao atribuido,2026-05-26 00:46:00,,alto,Parada por falha em tc. Prioridade alto.,
+140,9,140,109,31,corretiva,concluido,2026-04-30 13:26:00,2026-04-30 23:26:00,alto,Parada por falha em tc. Prioridade alto.,10
+141,9,141,110,51,corretiva,atribuido,2026-06-03 10:10:00,,alto,Parada por falha em angiografia. Prioridade alto.,
+142,9,142,111,40,corretiva,concluido,2026-03-06 16:27:00,2026-03-07 07:27:00,medio,Parada por falha em ultrassom. Prioridade medio.,15
+143,9,143,112,,corretiva,nao atribuido,2026-06-02 03:22:00,,alto,Parada por falha em pet. Prioridade alto.,
+144,9,144,113,27,corretiva,concluido,2026-01-29 12:16:00,2026-01-29 17:16:00,alto,Parada por falha em raio x. Prioridade alto.,5
+145,10,145,,15,preventiva,concluido,2026-04-06 11:00:00,2026-04-07 23:00:00,alto,Chamado preventiva para tc. Motivo: desgaste elevado. Prioridade alto.,36
+146,10,146,,44,preventiva,concluido,2026-04-17 07:00:00,2026-04-19 01:00:00,baixo,Chamado preventiva para ultrassom. Motivo: MTBF proximo do vencimento. Prioridade baixo.,42
+147,10,147,114,,corretiva,nao atribuido,2026-06-04 12:11:00,,alto,Parada por falha em arco cirurgico. Prioridade alto.,
+148,10,148,,7,preventiva,concluido,2026-01-30 02:00:00,2026-01-31 06:00:00,medio,Chamado preventiva para angiografia. Motivo: MTBF proximo do vencimento. Prioridade medio.,28
+149,10,149,,40,preventiva,concluido,2026-03-18 09:00:00,2026-03-18 17:00:00,baixo,Chamado preventiva para pet. Motivo: MTBF proximo do vencimento. Prioridade baixo.,8
+150,10,150,115,4,corretiva,concluido,2026-01-04 22:11:00,2026-01-05 10:11:00,alto,Parada por falha em ultrassom. Prioridade alto.,12
+151,10,151,116,4,corretiva,em andamento,2026-06-03 23:00:00,,medio,Parada por falha em tc. Prioridade medio.,
+152,10,152,117,,corretiva,nao atribuido,2026-05-27 08:13:00,,baixo,Parada por falha em ultrassom. Prioridade baixo.,
+153,10,153,118,,corretiva,nao atribuido,2026-05-26 03:46:00,,alto,Parada por falha em arco cirurgico. Prioridade alto.,
+154,10,154,119,,corretiva,nao atribuido,2026-05-31 15:00:00,,baixo,Parada por falha em tc. Prioridade baixo.,
+155,10,155,120,1,corretiva,em andamento,2026-05-30 14:50:00,,medio,Parada por falha em raio x. Prioridade medio.,
+156,10,156,121,40,corretiva,atribuido,2026-06-02 05:26:00,,alto,Parada por falha em ultrassom. Prioridade alto.,
+157,10,157,122,25,corretiva,concluido,2025-12-31 01:05:00,2025-12-31 16:05:00,alto,Parada por falha em pet. Prioridade alto.,15
+158,10,158,,30,preventiva,concluido,2026-02-01 23:00:00,2026-02-03 05:00:00,medio,Chamado preventiva para tc. Motivo: desgaste elevado. Prioridade medio.,30
+159,10,159,123,32,corretiva,concluido,2026-01-20 09:39:00,2026-01-20 20:39:00,medio,Parada por falha em raio x. Prioridade medio.,11
+160,10,160,124,,corretiva,nao atribuido,2026-05-25 17:49:00,,medio,Parada por falha em angiografia. Prioridade medio.,
+161,11,161,125,10,corretiva,concluido,2026-02-15 15:23:00,2026-02-16 11:23:00,baixo,Parada por falha em angiografia. Prioridade baixo.,20
+162,11,162,126,46,corretiva,em andamento,2026-05-28 13:00:00,,baixo,Parada por falha em tc. Prioridade baixo.,
+163,11,163,127,,corretiva,nao atribuido,2026-05-24 18:56:00,,baixo,Parada por falha em raio x. Prioridade baixo.,
+164,11,164,128,7,corretiva,concluido,2026-02-05 07:32:00,2026-02-05 13:32:00,medio,Parada por falha em angiografia. Prioridade medio.,6
+165,11,165,129,24,corretiva,concluido,2026-01-21 23:12:00,2026-01-22 18:12:00,baixo,Parada por falha em ultrassom. Prioridade baixo.,19
+166,11,166,130,,corretiva,nao atribuido,2026-06-01 16:56:00,,baixo,Parada por falha em pet. Prioridade baixo.,
+167,11,167,131,40,corretiva,em andamento,2026-05-25 18:47:00,,alto,Parada por falha em ultrassom. Prioridade alto.,
+168,11,168,132,17,corretiva,atribuido,2026-06-01 07:15:00,,medio,Parada por falha em pet. Prioridade medio.,
+169,11,169,133,55,corretiva,concluido,2026-02-28 09:36:00,2026-02-28 17:36:00,alto,Parada por falha em pet. Prioridade alto.,8
+170,11,170,134,37,corretiva,atribuido,2026-06-04 00:25:00,,alto,Parada por falha em tc. Prioridade alto.,
+171,11,171,135,14,corretiva,atribuido,2026-05-28 04:19:00,,medio,Parada por falha em pet. Prioridade medio.,
+172,11,172,136,20,corretiva,concluido,2026-02-04 23:46:00,2026-02-05 06:46:00,baixo,Parada por falha em arco cirurgico. Prioridade baixo.,7
+173,11,173,,25,preventiva,concluido,2026-04-12 12:00:00,2026-04-13 21:00:00,alto,Chamado preventiva para ressonancia magnetica. Motivo: desgaste elevado. Prioridade alto.,33
+174,11,174,137,18,corretiva,atribuido,2026-05-28 05:44:00,,alto,Parada por falha em raio x. Prioridade alto.,
+175,11,175,138,,corretiva,nao atribuido,2026-05-28 15:36:00,,medio,Parada por falha em raio x. Prioridade medio.,
+176,11,176,139,,corretiva,nao atribuido,2026-06-01 11:48:00,,baixo,Parada por falha em pet. Prioridade baixo.,
+177,12,177,140,33,corretiva,em andamento,2026-06-03 15:00:00,,alto,Parada por falha em arco cirurgico. Prioridade alto.,
+178,12,178,141,7,corretiva,concluido,2026-01-06 12:25:00,2026-01-07 01:25:00,alto,Parada por falha em angiografia. Prioridade alto.,13
+179,12,179,142,9,corretiva,atribuido,2026-06-01 15:30:00,,baixo,Parada por falha em angiografia. Prioridade baixo.,
+180,12,180,143,42,corretiva,atribuido,2026-06-03 00:20:00,,baixo,Parada por falha em arco cirurgico. Prioridade baixo.,
+181,12,181,144,49,corretiva,em andamento,2026-06-02 04:00:00,,medio,Parada por falha em angiografia. Prioridade medio.,
+182,12,182,145,51,corretiva,concluido,2026-01-13 10:08:00,2026-01-13 21:08:00,medio,Parada por falha em tc. Prioridade medio.,11
+183,12,183,146,4,corretiva,concluido,2025-12-30 06:57:00,2025-12-30 21:57:00,baixo,Parada por falha em raio x. Prioridade baixo.,15
+184,12,184,147,32,corretiva,concluido,2026-01-04 21:31:00,2026-01-05 03:31:00,alto,Parada por falha em pet. Prioridade alto.,6
+185,12,185,148,9,corretiva,em andamento,2026-06-01 12:52:00,,alto,Parada por falha em tc. Prioridade alto.,
+186,12,186,149,37,corretiva,concluido,2026-04-15 21:11:00,2026-04-16 20:11:00,alto,Parada por falha em angiografia. Prioridade alto.,23
+187,12,187,,30,preventiva,concluido,2026-02-04 07:00:00,2026-02-05 19:00:00,baixo,Chamado preventiva para ultrassom. Motivo: desgaste elevado. Prioridade baixo.,36
+188,12,188,,25,preventiva,concluido,2026-03-26 06:00:00,2026-03-26 23:00:00,baixo,Chamado preventiva para ultrassom. Motivo: desgaste elevado. Prioridade baixo.,17
+189,12,189,,48,preventiva,concluido,2026-01-29 07:00:00,2026-01-29 19:00:00,medio,Chamado preventiva para pet. Motivo: desgaste elevado. Prioridade medio.,12
+190,12,190,150,,corretiva,nao atribuido,2026-05-29 07:24:00,,medio,Parada por falha em arco cirurgico. Prioridade medio.,
+191,12,191,151,,corretiva,nao atribuido,2026-06-01 14:44:00,,medio,Parada por falha em pet. Prioridade medio.,
+192,12,192,152,23,corretiva,concluido,2026-01-07 03:20:00,2026-01-07 22:20:00,medio,Parada por falha em pet. Prioridade medio.,19
+193,13,193,153,17,corretiva,concluido,2026-01-15 18:57:00,2026-01-16 03:57:00,baixo,Parada por falha em pet. Prioridade baixo.,9
+194,13,194,154,13,corretiva,atribuido,2026-06-01 13:39:00,,baixo,Parada por falha em arco cirurgico. Prioridade baixo.,
+195,13,195,155,37,corretiva,atribuido,2026-05-31 11:41:00,,medio,Parada por falha em raio x. Prioridade medio.,
+196,13,196,156,8,corretiva,concluido,2026-04-23 05:55:00,2026-04-23 20:55:00,baixo,Parada por falha em arco cirurgico. Prioridade baixo.,15
+197,13,197,157,37,corretiva,atribuido,2026-06-02 12:15:00,,baixo,Parada por falha em raio x. Prioridade baixo.,
+198,13,198,158,53,corretiva,concluido,2026-05-06 02:41:00,2026-05-06 22:41:00,baixo,Parada por falha em raio x. Prioridade baixo.,20
+199,13,199,159,21,corretiva,concluido,2026-05-07 16:19:00,2026-05-08 03:19:00,baixo,Parada por falha em ultrassom. Prioridade baixo.,11
+200,13,200,160,7,corretiva,atribuido,2026-05-28 09:11:00,,medio,Parada por falha em angiografia. Prioridade medio.,
+201,13,201,161,3,corretiva,concluido,2026-02-15 02:19:00,2026-02-15 12:19:00,medio,Parada por falha em tc. Prioridade medio.,10
+202,13,202,162,44,corretiva,concluido,2026-02-12 18:31:00,2026-02-13 02:31:00,medio,Parada por falha em raio x. Prioridade medio.,8
+203,13,203,,56,preventiva,concluido,2026-03-04 12:00:00,2026-03-05 12:00:00,alto,Chamado preventiva para ressonancia magnetica. Motivo: MTBF proximo do vencimento. Prioridade alto.,24
+204,13,204,,32,preventiva,concluido,2026-02-23 18:00:00,2026-02-25 00:00:00,alto,Chamado preventiva para pet. Motivo: MTBF proximo do vencimento. Prioridade alto.,30
+205,13,205,163,31,corretiva,concluido,2026-02-02 00:22:00,2026-02-02 10:22:00,medio,Parada por falha em tc. Prioridade medio.,10
+206,13,206,164,35,corretiva,concluido,2026-04-12 02:31:00,2026-04-12 18:31:00,alto,Parada por falha em tc. Prioridade alto.,16
+207,13,207,165,,corretiva,nao atribuido,2026-05-31 22:43:00,,alto,Parada por falha em ultrassom. Prioridade alto.,
+208,13,208,166,29,corretiva,concluido,2026-04-08 04:29:00,2026-04-08 20:29:00,baixo,Parada por falha em angiografia. Prioridade baixo.,16
+209,14,209,167,26,corretiva,concluido,2026-01-14 11:40:00,2026-01-15 08:40:00,alto,Parada por falha em tc. Prioridade alto.,21
+210,14,210,168,51,corretiva,atribuido,2026-05-29 09:51:00,,baixo,Parada por falha em ressonancia magnetica. Prioridade baixo.,
+211,14,211,,27,preventiva,concluido,2025-12-30 08:00:00,2025-12-30 21:00:00,medio,Chamado preventiva para pet. Motivo: MTBF proximo do vencimento. Prioridade medio.,13
+212,14,212,169,26,corretiva,atribuido,2026-06-02 16:22:00,,baixo,Parada por falha em tc. Prioridade baixo.,
+213,14,213,170,21,corretiva,em andamento,2026-06-02 16:00:00,,medio,Parada por falha em pet. Prioridade medio.,
+214,14,214,171,25,corretiva,atribuido,2026-05-27 18:10:00,,medio,Parada por falha em ressonancia magnetica. Prioridade medio.,
+215,14,215,,59,preventiva,concluido,2026-05-23 09:00:00,2026-05-25 02:00:00,alto,Chamado preventiva para angiografia. Motivo: MTBF proximo do vencimento. Prioridade alto.,41
+216,14,216,172,6,corretiva,concluido,2026-01-14 09:10:00,2026-01-15 01:10:00,medio,Parada por falha em tc. Prioridade medio.,16
+217,14,217,173,20,corretiva,concluido,2026-01-30 07:05:00,2026-01-30 13:05:00,alto,Parada por falha em raio x. Prioridade alto.,6
+218,14,218,174,,corretiva,nao atribuido,2026-05-27 05:50:00,,baixo,Parada por falha em pet. Prioridade baixo.,
+219,14,219,,10,preventiva,concluido,2026-01-13 01:00:00,2026-01-13 19:00:00,medio,Chamado preventiva para ultrassom. Motivo: desgaste elevado. Prioridade medio.,18
+220,14,220,175,9,corretiva,atribuido,2026-05-24 19:26:00,,alto,Parada por falha em pet. Prioridade alto.,
+221,14,221,176,32,corretiva,concluido,2026-02-14 14:02:00,2026-02-15 04:02:00,alto,Parada por falha em raio x. Prioridade alto.,14
+222,14,222,177,,corretiva,nao atribuido,2026-05-27 13:17:00,,medio,Parada por falha em ressonancia magnetica. Prioridade medio.,
+223,14,223,,59,preventiva,concluido,2026-01-07 05:00:00,2026-01-09 00:00:00,baixo,Chamado preventiva para ultrassom. Motivo: MTBF proximo do vencimento. Prioridade baixo.,43
+224,14,224,,20,preventiva,concluido,2026-01-15 03:00:00,2026-01-16 16:00:00,medio,Chamado preventiva para arco cirurgico. Motivo: MTBF proximo do vencimento. Prioridade medio.,37
+225,15,225,178,59,corretiva,em andamento,2026-05-29 12:34:00,,baixo,Parada por falha em ultrassom. Prioridade baixo.,
+226,15,226,179,37,corretiva,concluido,2026-04-27 21:15:00,2026-04-28 08:15:00,baixo,Parada por falha em tc. Prioridade baixo.,11
+227,15,227,180,5,corretiva,concluido,2026-03-25 17:34:00,2026-03-26 00:34:00,baixo,Parada por falha em arco cirurgico. Prioridade baixo.,7
+228,15,228,,57,preventiva,concluido,2026-05-05 20:00:00,2026-05-07 20:00:00,alto,Chamado preventiva para tc. Motivo: MTBF proximo do vencimento. Prioridade alto.,48
+229,15,229,,15,preventiva,concluido,2026-01-13 05:00:00,2026-01-15 08:00:00,alto,Chamado preventiva para ressonancia magnetica. Motivo: desgaste elevado. Prioridade alto.,51
+230,15,230,181,32,corretiva,concluido,2025-12-27 11:01:00,2025-12-28 00:01:00,alto,Parada por falha em pet. Prioridade alto.,13
+231,15,231,182,4,corretiva,concluido,2026-04-03 06:32:00,2026-04-04 03:32:00,baixo,Parada por falha em tc. Prioridade baixo.,21
+232,15,232,183,60,corretiva,atribuido,2026-05-29 12:27:00,,baixo,Parada por falha em raio x. Prioridade baixo.,
+233,15,233,184,,corretiva,nao atribuido,2026-05-24 20:11:00,,medio,Parada por falha em arco cirurgico. Prioridade medio.,
+234,15,234,185,7,corretiva,concluido,2026-02-10 12:17:00,2026-02-11 04:17:00,baixo,Parada por falha em tc. Prioridade baixo.,16
+235,15,235,186,,corretiva,nao atribuido,2026-05-31 21:53:00,,alto,Parada por falha em pet. Prioridade alto.,
+236,15,236,187,,corretiva,nao atribuido,2026-06-02 17:46:00,,baixo,Parada por falha em ultrassom. Prioridade baixo.,
+237,15,237,188,26,corretiva,atribuido,2026-05-30 16:42:00,,alto,Parada por falha em angiografia. Prioridade alto.,
+238,15,238,,13,preventiva,concluido,2026-01-07 22:00:00,2026-01-09 14:00:00,alto,Chamado preventiva para raio x. Motivo: desgaste elevado. Prioridade alto.,40
+239,15,239,189,24,corretiva,atribuido,2026-05-26 05:39:00,,baixo,Parada por falha em raio x. Prioridade baixo.,
+240,15,240,190,59,corretiva,atribuido,2026-05-28 21:17:00,,alto,Parada por falha em ultrassom. Prioridade alto.,
+241,16,241,,25,preventiva,concluido,2026-02-26 16:00:00,2026-02-28 00:00:00,medio,Chamado preventiva para tc. Motivo: desgaste elevado. Prioridade medio.,32
+242,16,242,191,43,corretiva,concluido,2026-03-19 05:46:00,2026-03-19 14:46:00,alto,Parada por falha em angiografia. Prioridade alto.,9
+243,16,243,192,23,corretiva,em andamento,2026-05-25 04:13:00,,medio,Parada por falha em pet. Prioridade medio.,
+244,16,244,,56,preventiva,concluido,2026-03-04 16:00:00,2026-03-06 08:00:00,alto,Chamado preventiva para ressonancia magnetica. Motivo: desgaste elevado. Prioridade alto.,40
+245,16,245,193,,corretiva,nao atribuido,2026-05-25 23:12:00,,medio,Parada por falha em arco cirurgico. Prioridade medio.,
+246,16,246,194,,corretiva,nao atribuido,2026-05-27 08:04:00,,medio,Parada por falha em tc. Prioridade medio.,
+247,16,247,195,49,corretiva,concluido,2026-05-18 18:31:00,2026-05-19 11:31:00,alto,Parada por falha em angiografia. Prioridade alto.,17
+248,16,248,196,60,corretiva,concluido,2026-02-21 14:34:00,2026-02-22 07:34:00,alto,Parada por falha em raio x. Prioridade alto.,17
+249,16,249,197,4,corretiva,atribuido,2026-05-31 14:14:00,,alto,Parada por falha em ultrassom. Prioridade alto.,
+250,16,250,198,12,corretiva,concluido,2026-04-13 15:21:00,2026-04-14 06:21:00,baixo,Parada por falha em angiografia. Prioridade baixo.,15
+251,16,251,199,19,corretiva,em andamento,2026-05-27 20:15:00,,medio,Parada por falha em pet. Prioridade medio.,
+252,16,252,200,,corretiva,nao atribuido,2026-05-31 09:57:00,,baixo,Parada por falha em ressonancia magnetica. Prioridade baixo.,
+253,16,253,,25,preventiva,concluido,2026-01-24 14:00:00,2026-01-26 00:00:00,baixo,Chamado preventiva para tc. Motivo: desgaste elevado. Prioridade baixo.,34
+254,16,254,201,13,corretiva,atribuido,2026-05-29 20:03:00,,medio,Parada por falha em tc. Prioridade medio.,
+255,16,255,,11,preventiva,concluido,2026-01-25 02:00:00,2026-01-25 23:00:00,alto,Chamado preventiva para raio x. Motivo: desgaste elevado. Prioridade alto.,21
+256,16,256,202,32,corretiva,atribuido,2026-05-31 10:33:00,,baixo,Parada por falha em raio x. Prioridade baixo.,
+257,17,257,203,40,corretiva,concluido,2026-04-18 17:29:00,2026-04-19 16:29:00,medio,Parada por falha em ultrassom. Prioridade medio.,23
+258,17,258,204,51,corretiva,concluido,2026-01-18 12:21:00,2026-01-19 09:21:00,alto,Parada por falha em ressonancia magnetica. Prioridade alto.,21
+259,17,259,,15,preventiva,concluido,2026-02-04 22:00:00,2026-02-06 11:00:00,medio,Chamado preventiva para pet. Motivo: desgaste elevado. Prioridade medio.,37
+260,17,260,,30,preventiva,concluido,2026-02-21 06:00:00,2026-02-22 13:00:00,alto,Chamado preventiva para angiografia. Motivo: MTBF proximo do vencimento. Prioridade alto.,31
+261,17,261,205,2,corretiva,concluido,2026-04-06 18:47:00,2026-04-07 11:47:00,medio,Parada por falha em angiografia. Prioridade medio.,17
+262,17,262,206,37,corretiva,concluido,2026-01-13 05:29:00,2026-01-13 20:29:00,alto,Parada por falha em raio x. Prioridade alto.,15
+263,17,263,,22,preventiva,concluido,2026-02-07 20:00:00,2026-02-08 13:00:00,medio,Chamado preventiva para angiografia. Motivo: MTBF proximo do vencimento. Prioridade medio.,17
+264,17,264,207,53,corretiva,concluido,2026-03-10 15:17:00,2026-03-11 14:17:00,baixo,Parada por falha em angiografia. Prioridade baixo.,23
+265,17,265,,24,preventiva,concluido,2026-05-17 07:00:00,2026-05-18 20:00:00,alto,Chamado preventiva para ultrassom. Motivo: desgaste elevado. Prioridade alto.,37
+266,17,266,208,37,corretiva,atribuido,2026-05-29 02:39:00,,medio,Parada por falha em tc. Prioridade medio.,
+267,17,267,209,4,corretiva,em andamento,2026-05-31 02:01:00,,baixo,Parada por falha em ultrassom. Prioridade baixo.,
+268,17,268,210,60,corretiva,atribuido,2026-05-25 17:54:00,,medio,Parada por falha em ultrassom. Prioridade medio.,
+269,17,269,211,35,corretiva,atribuido,2026-05-29 12:16:00,,baixo,Parada por falha em ressonancia magnetica. Prioridade baixo.,
+270,17,270,212,20,corretiva,em andamento,2026-06-04 05:10:00,,baixo,Parada por falha em raio x. Prioridade baixo.,
+271,17,271,213,4,corretiva,concluido,2026-02-22 08:12:00,2026-02-22 18:12:00,baixo,Parada por falha em ultrassom. Prioridade baixo.,10
+272,17,272,214,,corretiva,nao atribuido,2026-06-02 12:54:00,,alto,Parada por falha em angiografia. Prioridade alto.,
+273,18,273,215,,corretiva,nao atribuido,2026-06-01 05:21:00,,alto,Parada por falha em angiografia. Prioridade alto.,
+274,18,274,,9,preventiva,concluido,2026-02-26 09:00:00,2026-02-26 16:00:00,medio,Chamado preventiva para pet. Motivo: MTBF proximo do vencimento. Prioridade medio.,7
+275,18,275,216,15,corretiva,em andamento,2026-05-30 06:01:00,,baixo,Parada por falha em pet. Prioridade baixo.,
+276,18,276,,58,preventiva,concluido,2026-01-12 19:00:00,2026-01-14 18:00:00,baixo,Chamado preventiva para pet. Motivo: MTBF proximo do vencimento. Prioridade baixo.,47
+277,18,277,,13,preventiva,concluido,2025-12-29 23:00:00,2026-01-01 01:00:00,alto,Chamado preventiva para tc. Motivo: desgaste elevado. Prioridade alto.,50
+278,18,278,217,,corretiva,nao atribuido,2026-06-03 02:17:00,,baixo,Parada por falha em pet. Prioridade baixo.,
+279,18,279,,51,preventiva,concluido,2026-01-06 21:00:00,2026-01-08 22:00:00,baixo,Chamado preventiva para pet. Motivo: MTBF proximo do vencimento. Prioridade baixo.,49
+280,18,280,218,,corretiva,nao atribuido,2026-05-26 02:27:00,,baixo,Parada por falha em pet. Prioridade baixo.,
+281,18,281,219,16,corretiva,concluido,2026-04-05 21:53:00,2026-04-06 05:53:00,medio,Parada por falha em arco cirurgico. Prioridade medio.,8
+282,18,282,220,32,corretiva,atribuido,2026-05-26 10:55:00,,baixo,Parada por falha em angiografia. Prioridade baixo.,
+283,18,283,221,51,corretiva,concluido,2026-03-05 17:01:00,2026-03-06 07:01:00,medio,Parada por falha em pet. Prioridade medio.,14
+284,18,284,222,45,corretiva,concluido,2026-01-26 07:38:00,2026-01-26 17:38:00,medio,Parada por falha em ressonancia magnetica. Prioridade medio.,10
+285,18,285,223,,corretiva,nao atribuido,2026-06-03 09:11:00,,baixo,Parada por falha em pet. Prioridade baixo.,
+286,18,286,224,10,corretiva,concluido,2026-01-27 21:16:00,2026-01-28 01:16:00,alto,Parada por falha em ultrassom. Prioridade alto.,4
+287,18,287,225,,corretiva,nao atribuido,2026-05-31 12:31:00,,baixo,Parada por falha em tc. Prioridade baixo.,
+288,18,288,226,24,corretiva,em andamento,2026-05-30 11:04:00,,alto,Parada por falha em ultrassom. Prioridade alto.,
+289,19,289,,24,preventiva,concluido,2026-01-22 05:00:00,2026-01-22 22:00:00,alto,Chamado preventiva para ressonancia magnetica. Motivo: desgaste elevado. Prioridade alto.,17
+290,19,290,227,41,corretiva,concluido,2026-02-16 17:58:00,2026-02-17 04:58:00,baixo,Parada por falha em arco cirurgico. Prioridade baixo.,11
+291,19,291,228,19,corretiva,em andamento,2026-05-28 10:50:00,,alto,Parada por falha em arco cirurgico. Prioridade alto.,
+292,19,292,229,7,corretiva,concluido,2026-02-14 11:57:00,2026-02-15 00:57:00,baixo,Parada por falha em angiografia. Prioridade baixo.,13
+293,19,293,,51,preventiva,concluido,2026-01-09 03:00:00,2026-01-09 14:00:00,alto,Chamado preventiva para ressonancia magnetica. Motivo: desgaste elevado. Prioridade alto.,11
+294,19,294,,37,preventiva,concluido,2026-03-07 05:00:00,2026-03-07 13:00:00,alto,Chamado preventiva para angiografia. Motivo: desgaste elevado. Prioridade alto.,8
+295,19,295,,51,preventiva,concluido,2026-02-28 19:00:00,2026-03-02 11:00:00,alto,Chamado preventiva para pet. Motivo: MTBF proximo do vencimento. Prioridade alto.,40
+296,19,296,230,53,corretiva,em andamento,2026-06-01 10:32:00,,alto,Parada por falha em ultrassom. Prioridade alto.,
+297,19,297,231,35,corretiva,concluido,2025-12-31 10:48:00,2026-01-01 02:48:00,medio,Parada por falha em angiografia. Prioridade medio.,16
+298,19,298,,53,preventiva,concluido,2026-02-10 23:00:00,2026-02-11 10:00:00,baixo,Chamado preventiva para angiografia. Motivo: MTBF proximo do vencimento. Prioridade baixo.,11
+299,19,299,232,21,corretiva,concluido,2026-04-21 14:50:00,2026-04-22 11:50:00,alto,Parada por falha em ultrassom. Prioridade alto.,21
+300,19,300,233,13,corretiva,atribuido,2026-05-31 08:24:00,,baixo,Parada por falha em tc. Prioridade baixo.,
+301,19,301,234,35,corretiva,concluido,2026-02-10 10:24:00,2026-02-10 15:24:00,alto,Parada por falha em tc. Prioridade alto.,5
+302,19,302,235,10,corretiva,concluido,2026-01-18 16:54:00,2026-01-19 08:54:00,baixo,Parada por falha em ultrassom. Prioridade baixo.,16
+303,19,303,236,26,corretiva,concluido,2026-02-24 07:06:00,2026-02-25 05:06:00,medio,Parada por falha em angiografia. Prioridade medio.,22
+304,19,304,,22,preventiva,concluido,2026-03-09 12:00:00,2026-03-10 10:00:00,medio,Chamado preventiva para angiografia. Motivo: desgaste elevado. Prioridade medio.,22
+305,20,305,237,,corretiva,nao atribuido,2026-05-28 16:17:00,,baixo,Parada por falha em ultrassom. Prioridade baixo.,
+306,20,306,238,39,corretiva,concluido,2026-01-23 04:57:00,2026-01-23 14:57:00,baixo,Parada por falha em pet. Prioridade baixo.,10
+307,20,307,239,35,corretiva,concluido,2026-01-18 03:02:00,2026-01-19 02:02:00,alto,Parada por falha em tc. Prioridade alto.,23
+308,20,308,240,38,corretiva,atribuido,2026-05-30 06:50:00,,alto,Parada por falha em angiografia. Prioridade alto.,
+309,20,309,241,25,corretiva,concluido,2026-01-18 18:44:00,2026-01-19 09:44:00,medio,Parada por falha em pet. Prioridade medio.,15
+310,20,310,242,,corretiva,nao atribuido,2026-05-31 18:38:00,,alto,Parada por falha em ressonancia magnetica. Prioridade alto.,
+311,20,311,243,18,corretiva,concluido,2026-03-27 01:56:00,2026-03-27 14:56:00,baixo,Parada por falha em arco cirurgico. Prioridade baixo.,13
+312,20,312,244,42,corretiva,em andamento,2026-05-25 04:15:00,,baixo,Parada por falha em tc. Prioridade baixo.,
+313,20,313,,20,preventiva,concluido,2026-04-18 12:00:00,2026-04-20 05:00:00,medio,Chamado preventiva para raio x. Motivo: MTBF proximo do vencimento. Prioridade medio.,41
+314,20,314,,18,preventiva,concluido,2026-02-19 12:00:00,2026-02-20 06:00:00,medio,Chamado preventiva para ressonancia magnetica. Motivo: desgaste elevado. Prioridade medio.,18
+315,20,315,245,7,corretiva,concluido,2026-01-17 13:20:00,2026-01-18 13:20:00,alto,Parada por falha em arco cirurgico. Prioridade alto.,24
+316,20,316,246,12,corretiva,em andamento,2026-06-01 00:50:00,,medio,Parada por falha em angiografia. Prioridade medio.,
+317,20,317,247,,corretiva,nao atribuido,2026-06-02 08:55:00,,alto,Parada por falha em tc. Prioridade alto.,
+318,20,318,248,6,corretiva,em andamento,2026-05-26 11:40:00,,alto,Parada por falha em angiografia. Prioridade alto.,
+319,20,319,249,35,corretiva,atribuido,2026-05-24 19:39:00,,baixo,Parada por falha em raio x. Prioridade baixo.,
+320,20,320,250,,corretiva,nao atribuido,2026-05-26 11:05:00,,alto,Parada por falha em raio x. Prioridade alto.,
+321,21,321,251,19,corretiva,concluido,2026-01-10 17:14:00,2026-01-11 02:14:00,baixo,Parada por falha em angiografia. Prioridade baixo.,9
+322,21,322,,14,preventiva,concluido,2026-02-14 09:00:00,2026-02-15 19:00:00,medio,Chamado preventiva para pet. Motivo: desgaste elevado. Prioridade medio.,34
+323,21,323,252,33,corretiva,atribuido,2026-05-25 15:16:00,,alto,Parada por falha em arco cirurgico. Prioridade alto.,
+324,21,324,,48,preventiva,concluido,2026-02-17 21:00:00,2026-02-19 01:00:00,medio,Chamado preventiva para ressonancia magnetica. Motivo: desgaste elevado. Prioridade medio.,28
+325,21,325,253,33,corretiva,atribuido,2026-05-29 00:04:00,,medio,Parada por falha em raio x. Prioridade medio.,
+326,21,326,,9,preventiva,concluido,2026-04-07 03:00:00,2026-04-08 12:00:00,baixo,Chamado preventiva para angiografia. Motivo: desgaste elevado. Prioridade baixo.,33
+327,21,327,254,,corretiva,nao atribuido,2026-06-03 22:13:00,,medio,Parada por falha em ultrassom. Prioridade medio.,
+328,21,328,255,,corretiva,nao atribuido,2026-05-28 00:19:00,,baixo,Parada por falha em pet. Prioridade baixo.,
+329,21,329,256,28,corretiva,concluido,2026-04-09 03:28:00,2026-04-10 03:28:00,medio,Parada por falha em tc. Prioridade medio.,24
+330,21,330,257,7,corretiva,concluido,2026-05-01 17:34:00,2026-05-02 08:34:00,medio,Parada por falha em arco cirurgico. Prioridade medio.,15
+331,21,331,,58,preventiva,concluido,2026-04-14 12:00:00,2026-04-16 12:00:00,alto,Chamado preventiva para tc. Motivo: MTBF proximo do vencimento. Prioridade alto.,48
+332,21,332,258,53,corretiva,em andamento,2026-06-04 14:55:00,,alto,Parada por falha em ressonancia magnetica. Prioridade alto.,
+333,21,333,259,,corretiva,nao atribuido,2026-05-31 15:11:00,,baixo,Parada por falha em tc. Prioridade baixo.,
+334,21,334,260,2,corretiva,em andamento,2026-05-31 15:12:00,,medio,Parada por falha em raio x. Prioridade medio.,
+335,21,335,,44,preventiva,concluido,2026-03-30 13:00:00,2026-03-31 01:00:00,alto,Chamado preventiva para raio x. Motivo: MTBF proximo do vencimento. Prioridade alto.,12
+336,21,336,261,,corretiva,nao atribuido,2026-05-27 10:01:00,,baixo,Parada por falha em ressonancia magnetica. Prioridade baixo.,
+337,22,337,262,31,corretiva,concluido,2026-03-12 21:47:00,2026-03-13 06:47:00,baixo,Parada por falha em tc. Prioridade baixo.,9
+338,22,338,,30,preventiva,concluido,2026-04-25 07:00:00,2026-04-26 06:00:00,baixo,Chamado preventiva para angiografia. Motivo: desgaste elevado. Prioridade baixo.,23
+339,22,339,263,59,corretiva,concluido,2026-02-16 03:51:00,2026-02-17 01:51:00,alto,Parada por falha em ultrassom. Prioridade alto.,22
+340,22,340,,1,preventiva,concluido,2026-03-20 16:00:00,2026-03-22 11:00:00,baixo,Chamado preventiva para ressonancia magnetica. Motivo: desgaste elevado. Prioridade baixo.,43
+341,22,341,264,,corretiva,nao atribuido,2026-05-26 01:26:00,,baixo,Parada por falha em angiografia. Prioridade baixo.,
+342,22,342,265,24,corretiva,atribuido,2026-05-28 04:41:00,,alto,Parada por falha em ultrassom. Prioridade alto.,
+343,22,343,266,7,corretiva,em andamento,2026-06-03 19:24:00,,alto,Parada por falha em angiografia. Prioridade alto.,
+344,22,344,267,,corretiva,nao atribuido,2026-05-25 08:43:00,,alto,Parada por falha em tc. Prioridade alto.,
+345,22,345,268,10,corretiva,atribuido,2026-05-29 18:12:00,,medio,Parada por falha em arco cirurgico. Prioridade medio.,
+346,22,346,269,,corretiva,nao atribuido,2026-06-04 17:18:00,,baixo,Parada por falha em ultrassom. Prioridade baixo.,
+347,22,347,270,50,corretiva,concluido,2026-03-19 23:02:00,2026-03-20 12:02:00,alto,Parada por falha em ressonancia magnetica. Prioridade alto.,13
+348,22,348,271,4,corretiva,atribuido,2026-06-02 22:07:00,,baixo,Parada por falha em raio x. Prioridade baixo.,
+349,22,349,272,38,corretiva,em andamento,2026-06-04 11:45:00,,medio,Parada por falha em ressonancia magnetica. Prioridade medio.,
+350,22,350,273,51,corretiva,concluido,2026-01-05 17:52:00,2026-01-06 16:52:00,baixo,Parada por falha em angiografia. Prioridade baixo.,23
+351,22,351,,18,preventiva,concluido,2026-03-15 17:00:00,2026-03-17 13:00:00,alto,Chamado preventiva para pet. Motivo: MTBF proximo do vencimento. Prioridade alto.,44
+352,22,352,274,20,corretiva,concluido,2026-02-11 18:37:00,2026-02-12 12:37:00,alto,Parada por falha em ressonancia magnetica. Prioridade alto.,18
+353,23,353,275,1,corretiva,concluido,2026-03-13 13:23:00,2026-03-14 05:23:00,alto,Parada por falha em raio x. Prioridade alto.,16
+354,23,354,276,7,corretiva,concluido,2026-04-19 14:45:00,2026-04-19 20:45:00,medio,Parada por falha em tc. Prioridade medio.,6
+355,23,355,277,29,corretiva,concluido,2026-02-15 09:01:00,2026-02-15 21:01:00,alto,Parada por falha em angiografia. Prioridade alto.,12
+356,23,356,278,,corretiva,nao atribuido,2026-05-28 08:39:00,,alto,Parada por falha em angiografia. Prioridade alto.,
+357,23,357,279,,corretiva,nao atribuido,2026-05-27 14:45:00,,medio,Parada por falha em arco cirurgico. Prioridade medio.,
+358,23,358,280,28,corretiva,concluido,2026-05-13 04:29:00,2026-05-13 19:29:00,baixo,Parada por falha em tc. Prioridade baixo.,15
+359,23,359,281,28,corretiva,atribuido,2026-06-02 09:33:00,,alto,Parada por falha em tc. Prioridade alto.,
+360,23,360,282,,corretiva,nao atribuido,2026-05-26 09:06:00,,alto,Parada por falha em pet. Prioridade alto.,
+361,23,361,,25,preventiva,concluido,2026-04-04 15:00:00,2026-04-06 00:00:00,medio,Chamado preventiva para ressonancia magnetica. Motivo: desgaste elevado. Prioridade medio.,33
+362,23,362,283,,corretiva,nao atribuido,2026-05-30 18:43:00,,medio,Parada por falha em tc. Prioridade medio.,
+363,23,363,284,15,corretiva,em andamento,2026-05-26 18:13:00,,baixo,Parada por falha em ressonancia magnetica. Prioridade baixo.,
+364,23,364,,7,preventiva,concluido,2026-05-16 15:00:00,2026-05-17 21:00:00,medio,Chamado preventiva para arco cirurgico. Motivo: MTBF proximo do vencimento. Prioridade medio.,30
+365,23,365,285,,corretiva,nao atribuido,2026-05-29 14:16:00,,medio,Parada por falha em arco cirurgico. Prioridade medio.,
+366,23,366,286,4,corretiva,concluido,2026-01-28 10:15:00,2026-01-29 03:15:00,baixo,Parada por falha em raio x. Prioridade baixo.,17
+367,23,367,,46,preventiva,concluido,2026-03-03 15:00:00,2026-03-04 00:00:00,medio,Chamado preventiva para tc. Motivo: desgaste elevado. Prioridade medio.,9
+368,23,368,,45,preventiva,concluido,2026-03-24 13:00:00,2026-03-26 11:00:00,alto,Chamado preventiva para ultrassom. Motivo: MTBF proximo do vencimento. Prioridade alto.,46
+369,24,369,,55,preventiva,concluido,2026-03-24 14:00:00,2026-03-26 13:00:00,medio,Chamado preventiva para pet. Motivo: desgaste elevado. Prioridade medio.,47
+370,24,370,,44,preventiva,concluido,2026-05-21 20:00:00,2026-05-24 00:00:00,alto,Chamado preventiva para ultrassom. Motivo: desgaste elevado. Prioridade alto.,52
+371,24,371,287,,corretiva,nao atribuido,2026-05-30 00:15:00,,baixo,Parada por falha em arco cirurgico. Prioridade baixo.,
+372,24,372,288,,corretiva,nao atribuido,2026-05-27 18:03:00,,alto,Parada por falha em pet. Prioridade alto.,
+373,24,373,,47,preventiva,concluido,2026-03-01 14:00:00,2026-03-02 20:00:00,alto,Chamado preventiva para tc. Motivo: desgaste elevado. Prioridade alto.,30
+374,24,374,,45,preventiva,concluido,2026-03-08 13:00:00,2026-03-09 13:00:00,medio,Chamado preventiva para ressonancia magnetica. Motivo: desgaste elevado. Prioridade medio.,24
+375,24,375,289,20,corretiva,concluido,2026-05-14 13:00:00,2026-05-15 00:00:00,alto,Parada por falha em arco cirurgico. Prioridade alto.,11
+376,24,376,290,51,corretiva,concluido,2026-04-06 19:18:00,2026-04-07 11:18:00,alto,Parada por falha em tc. Prioridade alto.,16
+377,24,377,291,32,corretiva,concluido,2026-05-20 09:40:00,2026-05-21 01:40:00,alto,Parada por falha em arco cirurgico. Prioridade alto.,16
+378,24,378,292,55,corretiva,em andamento,2026-06-01 20:57:00,,medio,Parada por falha em raio x. Prioridade medio.,
+379,24,379,293,,corretiva,nao atribuido,2026-05-30 00:15:00,,medio,Parada por falha em angiografia. Prioridade medio.,
+380,24,380,294,11,corretiva,atribuido,2026-05-25 17:14:00,,baixo,Parada por falha em raio x. Prioridade baixo.,
+381,24,381,295,12,corretiva,atribuido,2026-06-02 16:16:00,,baixo,Parada por falha em angiografia. Prioridade baixo.,
+382,24,382,296,26,corretiva,em andamento,2026-05-26 22:51:00,,medio,Parada por falha em arco cirurgico. Prioridade medio.,
+383,24,383,,30,preventiva,concluido,2026-03-23 05:00:00,2026-03-24 19:00:00,medio,Chamado preventiva para raio x. Motivo: MTBF proximo do vencimento. Prioridade medio.,38
+384,24,384,,58,preventiva,concluido,2026-05-06 18:00:00,2026-05-07 10:00:00,alto,Chamado preventiva para arco cirurgico. Motivo: desgaste elevado. Prioridade alto.,16
+385,25,385,297,,corretiva,nao atribuido,2026-06-03 17:08:00,,baixo,Parada por falha em arco cirurgico. Prioridade baixo.,
+386,25,386,298,,corretiva,nao atribuido,2026-06-03 01:19:00,,medio,Parada por falha em ultrassom. Prioridade medio.,
+387,25,387,,29,preventiva,concluido,2026-01-30 04:00:00,2026-01-31 19:00:00,alto,Chamado preventiva para arco cirurgico. Motivo: desgaste elevado. Prioridade alto.,39
+388,25,388,299,26,corretiva,concluido,2025-12-31 05:55:00,2025-12-31 14:55:00,alto,Parada por falha em arco cirurgico. Prioridade alto.,9
+389,25,389,300,19,corretiva,atribuido,2026-05-28 10:41:00,,medio,Parada por falha em angiografia. Prioridade medio.,
+390,25,390,,23,preventiva,concluido,2026-03-08 06:00:00,2026-03-09 22:00:00,alto,Chamado preventiva para pet. Motivo: desgaste elevado. Prioridade alto.,40
+391,25,391,301,5,corretiva,concluido,2026-01-13 21:10:00,2026-01-14 15:10:00,baixo,Parada por falha em arco cirurgico. Prioridade baixo.,18
+392,25,392,302,13,corretiva,atribuido,2026-05-30 11:33:00,,alto,Parada por falha em tc. Prioridade alto.,
+393,25,393,303,42,corretiva,atribuido,2026-06-03 22:49:00,,baixo,Parada por falha em arco cirurgico. Prioridade baixo.,
+394,25,394,,18,preventiva,concluido,2026-02-11 19:00:00,2026-02-12 08:00:00,medio,Chamado preventiva para pet. Motivo: MTBF proximo do vencimento. Prioridade medio.,13
+395,25,395,304,,corretiva,nao atribuido,2026-06-01 15:49:00,,medio,Parada por falha em tc. Prioridade medio.,
+396,25,396,,15,preventiva,concluido,2026-02-14 08:00:00,2026-02-15 08:00:00,alto,Chamado preventiva para ressonancia magnetica. Motivo: desgaste elevado. Prioridade alto.,24
+397,25,397,305,27,corretiva,concluido,2026-01-21 21:52:00,2026-01-22 02:52:00,medio,Parada por falha em ressonancia magnetica. Prioridade medio.,5
+398,25,398,,6,preventiva,concluido,2026-04-21 11:00:00,2026-04-23 04:00:00,alto,Chamado preventiva para tc. Motivo: MTBF proximo do vencimento. Prioridade alto.,41
+399,25,399,,39,preventiva,concluido,2025-12-21 11:00:00,2025-12-23 02:00:00,alto,Chamado preventiva para ultrassom. Motivo: MTBF proximo do vencimento. Prioridade alto.,39
+400,25,400,306,27,corretiva,atribuido,2026-06-03 18:50:00,,medio,Parada por falha em pet. Prioridade medio.,
+401,26,401,,34,preventiva,concluido,2026-02-08 07:00:00,2026-02-09 17:00:00,alto,Chamado preventiva para angiografia. Motivo: desgaste elevado. Prioridade alto.,34
+402,26,402,307,23,corretiva,em andamento,2026-05-28 09:10:00,,baixo,Parada por falha em ultrassom. Prioridade baixo.,
+403,26,403,308,47,corretiva,concluido,2026-05-16 12:16:00,2026-05-16 22:16:00,baixo,Parada por falha em pet. Prioridade baixo.,10
+404,26,404,309,14,corretiva,concluido,2026-01-21 20:49:00,2026-01-22 14:49:00,alto,Parada por falha em pet. Prioridade alto.,18
+405,26,405,,1,preventiva,concluido,2026-04-28 06:00:00,2026-04-29 09:00:00,alto,Chamado preventiva para ressonancia magnetica. Motivo: MTBF proximo do vencimento. Prioridade alto.,27
+406,26,406,310,,corretiva,nao atribuido,2026-06-04 06:27:00,,medio,Parada por falha em ressonancia magnetica. Prioridade medio.,
+407,26,407,311,,corretiva,nao atribuido,2026-06-01 23:48:00,,medio,Parada por falha em arco cirurgico. Prioridade medio.,
+408,26,408,312,9,corretiva,concluido,2026-02-28 00:10:00,2026-02-28 13:10:00,alto,Parada por falha em pet. Prioridade alto.,13
+409,26,409,313,,corretiva,nao atribuido,2026-05-24 19:14:00,,alto,Parada por falha em angiografia. Prioridade alto.,
+410,26,410,314,11,corretiva,atribuido,2026-06-02 02:14:00,,alto,Parada por falha em ultrassom. Prioridade alto.,
+411,26,411,315,23,corretiva,em andamento,2026-05-26 18:17:00,,medio,Parada por falha em pet. Prioridade medio.,
+412,26,412,316,,corretiva,nao atribuido,2026-05-28 07:24:00,,alto,Parada por falha em pet. Prioridade alto.,
+413,26,413,,27,preventiva,concluido,2026-05-04 18:00:00,2026-05-05 20:00:00,alto,Chamado preventiva para ressonancia magnetica. Motivo: desgaste elevado. Prioridade alto.,26
+414,26,414,317,44,corretiva,concluido,2026-02-08 07:33:00,2026-02-08 20:33:00,alto,Parada por falha em ultrassom. Prioridade alto.,13
+415,26,415,318,17,corretiva,concluido,2026-05-06 05:46:00,2026-05-07 05:46:00,medio,Parada por falha em pet. Prioridade medio.,24
+416,26,416,319,19,corretiva,atribuido,2026-05-29 11:40:00,,medio,Parada por falha em angiografia. Prioridade medio.,
+417,27,417,,20,preventiva,concluido,2026-01-31 08:00:00,2026-02-02 14:00:00,medio,Chamado preventiva para ressonancia magnetica. Motivo: desgaste elevado. Prioridade medio.,54
+418,27,418,,38,preventiva,concluido,2025-12-23 06:00:00,2025-12-24 17:00:00,baixo,Chamado preventiva para angiografia. Motivo: desgaste elevado. Prioridade baixo.,35
+419,27,419,320,,corretiva,nao atribuido,2026-05-28 06:27:00,,alto,Parada por falha em ultrassom. Prioridade alto.,
+420,27,420,,29,preventiva,concluido,2026-05-11 09:00:00,2026-05-12 21:00:00,baixo,Chamado preventiva para arco cirurgico. Motivo: desgaste elevado. Prioridade baixo.,36
+421,27,421,321,,corretiva,nao atribuido,2026-05-27 15:37:00,,medio,Parada por falha em tc. Prioridade medio.,
+422,27,422,322,9,corretiva,em andamento,2026-05-28 21:20:00,,alto,Parada por falha em tc. Prioridade alto.,
+423,27,423,323,18,corretiva,concluido,2026-01-04 09:22:00,2026-01-05 03:22:00,medio,Parada por falha em ressonancia magnetica. Prioridade medio.,18
+424,27,424,,21,preventiva,concluido,2026-03-09 08:00:00,2026-03-10 05:00:00,baixo,Chamado preventiva para ultrassom. Motivo: desgaste elevado. Prioridade baixo.,21
+425,27,425,324,7,corretiva,concluido,2026-04-15 04:23:00,2026-04-15 19:23:00,baixo,Parada por falha em tc. Prioridade baixo.,15
+426,27,426,,42,preventiva,concluido,2026-03-08 00:00:00,2026-03-09 21:00:00,medio,Chamado preventiva para tc. Motivo: desgaste elevado. Prioridade medio.,45
+427,27,427,325,40,corretiva,concluido,2026-03-15 21:26:00,2026-03-16 09:26:00,baixo,Parada por falha em pet. Prioridade baixo.,12
+428,27,428,326,42,corretiva,concluido,2026-05-02 23:08:00,2026-05-03 08:08:00,baixo,Parada por falha em tc. Prioridade baixo.,9
+429,27,429,,21,preventiva,concluido,2026-03-25 20:00:00,2026-03-27 22:00:00,baixo,Chamado preventiva para ultrassom. Motivo: desgaste elevado. Prioridade baixo.,50
+430,27,430,327,,corretiva,nao atribuido,2026-05-31 21:53:00,,alto,Parada por falha em raio x. Prioridade alto.,
+431,27,431,328,57,corretiva,concluido,2026-03-29 04:38:00,2026-03-29 21:38:00,baixo,Parada por falha em arco cirurgico. Prioridade baixo.,17
+432,27,432,329,,corretiva,nao atribuido,2026-05-31 10:40:00,,alto,Parada por falha em pet. Prioridade alto.,
+433,28,433,330,35,corretiva,concluido,2026-01-28 15:50:00,2026-01-29 01:50:00,alto,Parada por falha em raio x. Prioridade alto.,10
+434,28,434,331,,corretiva,nao atribuido,2026-05-30 20:07:00,,alto,Parada por falha em pet. Prioridade alto.,
+435,28,435,,57,preventiva,concluido,2025-12-26 13:00:00,2025-12-28 14:00:00,medio,Chamado preventiva para ultrassom. Motivo: MTBF proximo do vencimento. Prioridade medio.,49
+436,28,436,332,16,corretiva,atribuido,2026-05-28 15:43:00,,alto,Parada por falha em arco cirurgico. Prioridade alto.,
+437,28,437,333,18,corretiva,atribuido,2026-05-28 23:34:00,,alto,Parada por falha em arco cirurgico. Prioridade alto.,
+438,28,438,334,,corretiva,nao atribuido,2026-05-26 17:35:00,,alto,Parada por falha em angiografia. Prioridade alto.,
+439,28,439,335,25,corretiva,concluido,2026-01-25 21:24:00,2026-01-26 16:24:00,alto,Parada por falha em ressonancia magnetica. Prioridade alto.,19
+440,28,440,,46,preventiva,concluido,2026-03-13 02:00:00,2026-03-13 16:00:00,medio,Chamado preventiva para pet. Motivo: desgaste elevado. Prioridade medio.,14
+441,28,441,336,51,corretiva,em andamento,2026-05-29 13:27:00,,alto,Parada por falha em tc. Prioridade alto.,
+442,28,442,337,39,corretiva,em andamento,2026-05-27 00:09:00,,baixo,Parada por falha em tc. Prioridade baixo.,
+443,28,443,338,,corretiva,nao atribuido,2026-05-29 03:46:00,,medio,Parada por falha em angiografia. Prioridade medio.,
+444,28,444,339,40,corretiva,concluido,2026-04-22 21:25:00,2026-04-23 09:25:00,alto,Parada por falha em pet. Prioridade alto.,12
+445,28,445,340,,corretiva,nao atribuido,2026-05-27 17:19:00,,baixo,Parada por falha em pet. Prioridade baixo.,
+446,28,446,341,56,corretiva,concluido,2026-05-12 22:31:00,2026-05-13 08:31:00,baixo,Parada por falha em pet. Prioridade baixo.,10
+447,28,447,342,17,corretiva,concluido,2025-12-31 05:40:00,2026-01-01 03:40:00,medio,Parada por falha em ressonancia magnetica. Prioridade medio.,22
+448,28,448,343,,corretiva,nao atribuido,2026-05-30 10:19:00,,medio,Parada por falha em pet. Prioridade medio.,
+449,29,449,,20,preventiva,concluido,2026-04-19 20:00:00,2026-04-21 12:00:00,alto,Chamado preventiva para arco cirurgico. Motivo: desgaste elevado. Prioridade alto.,40
+450,29,450,344,6,corretiva,atribuido,2026-05-30 10:13:00,,medio,Parada por falha em pet. Prioridade medio.,
+451,29,451,345,,corretiva,nao atribuido,2026-06-02 11:13:00,,alto,Parada por falha em pet. Prioridade alto.,
+452,29,452,346,18,corretiva,atribuido,2026-05-30 17:44:00,,baixo,Parada por falha em ressonancia magnetica. Prioridade baixo.,
+453,29,453,347,49,corretiva,atribuido,2026-06-02 08:08:00,,medio,Parada por falha em tc. Prioridade medio.,
+454,29,454,,59,preventiva,concluido,2026-05-23 12:00:00,2026-05-25 08:00:00,medio,Chamado preventiva para angiografia. Motivo: desgaste elevado. Prioridade medio.,44
+455,29,455,348,37,corretiva,em andamento,2026-05-27 06:34:00,,medio,Parada por falha em tc. Prioridade medio.,
+456,29,456,349,60,corretiva,em andamento,2026-05-28 19:31:00,,baixo,Parada por falha em raio x. Prioridade baixo.,
+457,29,457,350,24,corretiva,concluido,2026-03-02 18:49:00,2026-03-03 09:49:00,baixo,Parada por falha em raio x. Prioridade baixo.,15
+458,29,458,351,33,corretiva,concluido,2026-05-19 01:14:00,2026-05-19 20:14:00,medio,Parada por falha em raio x. Prioridade medio.,19
+459,29,459,352,,corretiva,nao atribuido,2026-06-02 13:42:00,,alto,Parada por falha em angiografia. Prioridade alto.,
+460,29,460,,15,preventiva,concluido,2026-01-26 00:00:00,2026-01-28 01:00:00,baixo,Chamado preventiva para tc. Motivo: MTBF proximo do vencimento. Prioridade baixo.,49
+461,29,461,353,36,corretiva,atribuido,2026-05-27 13:33:00,,medio,Parada por falha em ressonancia magnetica. Prioridade medio.,
+462,29,462,,24,preventiva,concluido,2026-01-07 04:00:00,2026-01-07 20:00:00,medio,Chamado preventiva para raio x. Motivo: desgaste elevado. Prioridade medio.,16
+463,29,463,354,50,corretiva,em andamento,2026-05-28 07:42:00,,alto,Parada por falha em tc. Prioridade alto.,
+464,29,464,355,42,corretiva,concluido,2026-01-18 07:19:00,2026-01-18 17:19:00,medio,Parada por falha em arco cirurgico. Prioridade medio.,10
+465,30,465,356,18,corretiva,concluido,2026-01-10 01:13:00,2026-01-10 21:13:00,medio,Parada por falha em pet. Prioridade medio.,20
+466,30,466,357,34,corretiva,atribuido,2026-05-28 18:33:00,,baixo,Parada por falha em angiografia. Prioridade baixo.,
+467,30,467,358,,corretiva,nao atribuido,2026-06-01 04:51:00,,baixo,Parada por falha em angiografia. Prioridade baixo.,
+468,30,468,359,14,corretiva,atribuido,2026-05-25 00:31:00,,medio,Parada por falha em pet. Prioridade medio.,
+469,30,469,360,58,corretiva,concluido,2026-04-10 20:53:00,2026-04-11 15:53:00,baixo,Parada por falha em tc. Prioridade baixo.,19
+470,30,470,361,,corretiva,nao atribuido,2026-06-01 14:36:00,,baixo,Parada por falha em ultrassom. Prioridade baixo.,
+471,30,471,,39,preventiva,concluido,2026-02-10 10:00:00,2026-02-12 10:00:00,alto,Chamado preventiva para pet. Motivo: MTBF proximo do vencimento. Prioridade alto.,48
+472,30,472,362,,corretiva,nao atribuido,2026-05-28 23:53:00,,baixo,Parada por falha em pet. Prioridade baixo.,
+473,30,473,363,38,corretiva,concluido,2026-02-13 05:59:00,2026-02-13 22:59:00,baixo,Parada por falha em ressonancia magnetica. Prioridade baixo.,17
+474,30,474,,7,preventiva,concluido,2026-05-23 02:00:00,2026-05-24 06:00:00,medio,Chamado preventiva para raio x. Motivo: desgaste elevado. Prioridade medio.,28
+475,30,475,364,58,corretiva,atribuido,2026-05-26 04:48:00,,medio,Parada por falha em pet. Prioridade medio.,
+476,30,476,365,38,corretiva,atribuido,2026-06-02 12:27:00,,alto,Parada por falha em ressonancia magnetica. Prioridade alto.,
+477,30,477,366,18,corretiva,atribuido,2026-05-28 01:22:00,,alto,Parada por falha em pet. Prioridade alto.,
+478,30,478,367,8,corretiva,concluido,2026-01-30 07:37:00,2026-01-30 13:37:00,alto,Parada por falha em arco cirurgico. Prioridade alto.,6
+479,30,479,368,,corretiva,nao atribuido,2026-06-01 08:14:00,,medio,Parada por falha em arco cirurgico. Prioridade medio.,
+480,30,480,369,,corretiva,nao atribuido,2026-05-26 05:45:00,,baixo,Parada por falha em pet. Prioridade baixo.,
+481,31,481,370,35,corretiva,em andamento,2026-05-25 01:46:00,,baixo,Parada por falha em tc. Prioridade baixo.,
+482,31,482,371,20,corretiva,atribuido,2026-06-04 00:33:00,,medio,Parada por falha em arco cirurgico. Prioridade medio.,
+483,31,483,372,,corretiva,nao atribuido,2026-06-01 02:49:00,,baixo,Parada por falha em ressonancia magnetica. Prioridade baixo.,
+484,31,484,373,7,corretiva,concluido,2026-01-07 18:53:00,2026-01-08 02:53:00,baixo,Parada por falha em raio x. Prioridade baixo.,8
+485,31,485,374,53,corretiva,atribuido,2026-05-29 20:57:00,,medio,Parada por falha em ressonancia magnetica. Prioridade medio.,
+486,31,486,375,36,corretiva,concluido,2026-02-26 18:00:00,2026-02-26 22:00:00,alto,Parada por falha em ressonancia magnetica. Prioridade alto.,4
+487,31,487,,4,preventiva,concluido,2026-05-02 16:00:00,2026-05-03 17:00:00,alto,Chamado preventiva para angiografia. Motivo: desgaste elevado. Prioridade alto.,25
+488,31,488,376,,corretiva,nao atribuido,2026-05-31 20:55:00,,baixo,Parada por falha em ultrassom. Prioridade baixo.,
+489,31,489,377,,corretiva,nao atribuido,2026-06-03 05:16:00,,alto,Parada por falha em ultrassom. Prioridade alto.,
+490,31,490,378,54,corretiva,em andamento,2026-05-28 06:02:00,,alto,Parada por falha em raio x. Prioridade alto.,
+491,31,491,379,,corretiva,nao atribuido,2026-05-27 13:21:00,,medio,Parada por falha em pet. Prioridade medio.,
+492,31,492,,13,preventiva,concluido,2026-02-04 13:00:00,2026-02-06 01:00:00,alto,Chamado preventiva para raio x. Motivo: desgaste elevado. Prioridade alto.,36
+493,31,493,380,,corretiva,nao atribuido,2026-05-30 13:00:00,,medio,Parada por falha em arco cirurgico. Prioridade medio.,
+494,31,494,381,46,corretiva,atribuido,2026-05-27 01:14:00,,alto,Parada por falha em tc. Prioridade alto.,
+495,31,495,,53,preventiva,concluido,2026-02-01 15:00:00,2026-02-02 10:00:00,medio,Chamado preventiva para angiografia. Motivo: desgaste elevado. Prioridade medio.,19
+496,31,496,,4,preventiva,concluido,2026-02-14 16:00:00,2026-02-15 04:00:00,medio,Chamado preventiva para raio x. Motivo: desgaste elevado. Prioridade medio.,12
+497,32,497,,51,preventiva,concluido,2026-03-22 08:00:00,2026-03-23 04:00:00,medio,Chamado preventiva para angiografia. Motivo: MTBF proximo do vencimento. Prioridade medio.,20
+498,32,498,382,25,corretiva,concluido,2026-03-06 18:09:00,2026-03-07 06:09:00,alto,Parada por falha em tc. Prioridade alto.,12
+499,32,499,,47,preventiva,concluido,2026-03-11 05:00:00,2026-03-11 18:00:00,baixo,Chamado preventiva para tc. Motivo: MTBF proximo do vencimento. Prioridade baixo.,13
+500,32,500,383,25,corretiva,atribuido,2026-06-03 22:14:00,,alto,Parada por falha em ultrassom. Prioridade alto.,
+501,32,501,384,18,corretiva,concluido,2026-05-05 18:50:00,2026-05-06 14:50:00,baixo,Parada por falha em pet. Prioridade baixo.,20
+502,32,502,385,,corretiva,nao atribuido,2026-05-25 23:24:00,,alto,Parada por falha em angiografia. Prioridade alto.,
+503,32,503,386,20,corretiva,concluido,2026-04-11 05:22:00,2026-04-11 21:22:00,alto,Parada por falha em raio x. Prioridade alto.,16
+504,32,504,387,,corretiva,nao atribuido,2026-05-27 19:23:00,,medio,Parada por falha em pet. Prioridade medio.,
+505,32,505,388,54,corretiva,concluido,2026-03-09 02:39:00,2026-03-09 06:39:00,baixo,Parada por falha em pet. Prioridade baixo.,4
+506,32,506,389,,corretiva,nao atribuido,2026-05-31 16:03:00,,alto,Parada por falha em angiografia. Prioridade alto.,
+507,32,507,,35,preventiva,concluido,2026-01-02 19:00:00,2026-01-03 08:00:00,baixo,Chamado preventiva para angiografia. Motivo: MTBF proximo do vencimento. Prioridade baixo.,13
+508,32,508,390,38,corretiva,em andamento,2026-05-30 15:49:00,,alto,Parada por falha em angiografia. Prioridade alto.,
+509,32,509,391,7,corretiva,atribuido,2026-05-25 06:00:00,,baixo,Parada por falha em tc. Prioridade baixo.,
+510,32,510,392,52,corretiva,concluido,2026-03-22 16:17:00,2026-03-23 02:17:00,medio,Parada por falha em ressonancia magnetica. Prioridade medio.,10
+511,32,511,393,15,corretiva,concluido,2026-03-12 07:29:00,2026-03-12 19:29:00,medio,Parada por falha em pet. Prioridade medio.,12
+512,32,512,,32,preventiva,concluido,2026-04-26 04:00:00,2026-04-27 10:00:00,baixo,Chamado preventiva para arco cirurgico. Motivo: desgaste elevado. Prioridade baixo.,30
+513,33,513,394,,corretiva,nao atribuido,2026-05-29 06:50:00,,alto,Parada por falha em ressonancia magnetica. Prioridade alto.,
+514,33,514,,44,preventiva,concluido,2026-01-29 04:00:00,2026-01-31 02:00:00,medio,Chamado preventiva para ultrassom. Motivo: desgaste elevado. Prioridade medio.,46
+515,33,515,395,24,corretiva,concluido,2026-04-07 16:36:00,2026-04-07 21:36:00,medio,Parada por falha em ressonancia magnetica. Prioridade medio.,5
+516,33,516,,38,preventiva,concluido,2026-02-24 01:00:00,2026-02-25 16:00:00,alto,Chamado preventiva para angiografia. Motivo: MTBF proximo do vencimento. Prioridade alto.,39
+517,33,517,396,3,corretiva,concluido,2026-05-08 14:10:00,2026-05-09 02:10:00,baixo,Parada por falha em raio x. Prioridade baixo.,12
+518,33,518,,51,preventiva,concluido,2026-05-18 13:00:00,2026-05-20 15:00:00,alto,Chamado preventiva para pet. Motivo: desgaste elevado. Prioridade alto.,50
+519,33,519,397,6,corretiva,atribuido,2026-05-26 09:35:00,,baixo,Parada por falha em tc. Prioridade baixo.,
+520,33,520,398,,corretiva,nao atribuido,2026-05-27 12:19:00,,medio,Parada por falha em arco cirurgico. Prioridade medio.,
+521,33,521,,32,preventiva,concluido,2026-04-15 05:00:00,2026-04-15 20:00:00,medio,Chamado preventiva para raio x. Motivo: desgaste elevado. Prioridade medio.,15
+522,33,522,,11,preventiva,concluido,2026-02-26 15:00:00,2026-02-27 02:00:00,baixo,Chamado preventiva para ultrassom. Motivo: desgaste elevado. Prioridade baixo.,11
+523,33,523,399,,corretiva,nao atribuido,2026-06-02 14:31:00,,alto,Parada por falha em raio x. Prioridade alto.,
+524,33,524,400,21,corretiva,concluido,2026-04-29 23:59:00,2026-04-30 18:59:00,baixo,Parada por falha em pet. Prioridade baixo.,19
+525,33,525,401,33,corretiva,concluido,2026-01-15 20:49:00,2026-01-16 18:49:00,baixo,Parada por falha em arco cirurgico. Prioridade baixo.,22
+526,33,526,,24,preventiva,concluido,2026-02-22 07:00:00,2026-02-22 16:00:00,alto,Chamado preventiva para ultrassom. Motivo: desgaste elevado. Prioridade alto.,9
+527,33,527,,25,preventiva,concluido,2026-02-08 15:00:00,2026-02-10 01:00:00,medio,Chamado preventiva para ultrassom. Motivo: MTBF proximo do vencimento. Prioridade medio.,34
+528,33,528,402,18,corretiva,concluido,2026-01-14 00:43:00,2026-01-14 16:43:00,baixo,Parada por falha em pet. Prioridade baixo.,16
+529,34,529,403,,corretiva,nao atribuido,2026-06-01 01:34:00,,alto,Parada por falha em ultrassom. Prioridade alto.,
+530,34,530,404,7,corretiva,concluido,2026-04-05 21:32:00,2026-04-06 04:32:00,medio,Parada por falha em arco cirurgico. Prioridade medio.,7
+531,34,531,405,44,corretiva,atribuido,2026-05-30 10:58:00,,medio,Parada por falha em ultrassom. Prioridade medio.,
+532,34,532,406,44,corretiva,atribuido,2026-05-31 08:56:00,,medio,Parada por falha em ultrassom. Prioridade medio.,
+533,34,533,407,8,corretiva,atribuido,2026-06-01 03:29:00,,baixo,Parada por falha em arco cirurgico. Prioridade baixo.,
+534,34,534,408,20,corretiva,concluido,2026-04-10 19:52:00,2026-04-11 06:52:00,baixo,Parada por falha em ressonancia magnetica. Prioridade baixo.,11
+535,34,535,,27,preventiva,concluido,2026-02-02 04:00:00,2026-02-02 17:00:00,alto,Chamado preventiva para arco cirurgico. Motivo: MTBF proximo do vencimento. Prioridade alto.,13
+536,34,536,,42,preventiva,concluido,2026-03-03 03:00:00,2026-03-04 13:00:00,alto,Chamado preventiva para tc. Motivo: desgaste elevado. Prioridade alto.,34
+537,34,537,409,12,corretiva,em andamento,2026-06-02 15:48:00,,medio,Parada por falha em angiografia. Prioridade medio.,
+538,34,538,410,45,corretiva,atribuido,2026-05-31 16:45:00,,baixo,Parada por falha em ultrassom. Prioridade baixo.,
+539,34,539,,29,preventiva,concluido,2026-01-16 01:00:00,2026-01-16 20:00:00,medio,Chamado preventiva para angiografia. Motivo: desgaste elevado. Prioridade medio.,19
+540,34,540,411,20,corretiva,em andamento,2026-05-30 18:01:00,,medio,Parada por falha em pet. Prioridade medio.,
+541,34,541,412,5,corretiva,atribuido,2026-06-01 12:32:00,,alto,Parada por falha em arco cirurgico. Prioridade alto.,
+542,34,542,413,,corretiva,nao atribuido,2026-06-01 03:02:00,,medio,Parada por falha em arco cirurgico. Prioridade medio.,
+543,34,543,414,,corretiva,nao atribuido,2026-05-26 23:18:00,,medio,Parada por falha em raio x. Prioridade medio.,
+544,34,544,415,23,corretiva,concluido,2026-04-17 06:35:00,2026-04-17 11:35:00,medio,Parada por falha em ultrassom. Prioridade medio.,5
+545,35,545,,48,preventiva,concluido,2026-02-05 11:00:00,2026-02-07 09:00:00,baixo,Chamado preventiva para pet. Motivo: MTBF proximo do vencimento. Prioridade baixo.,46
+546,35,546,,3,preventiva,concluido,2026-02-11 15:00:00,2026-02-12 15:00:00,alto,Chamado preventiva para raio x. Motivo: desgaste elevado. Prioridade alto.,24
+547,35,547,416,27,corretiva,concluido,2026-01-22 17:59:00,2026-01-23 05:59:00,alto,Parada por falha em arco cirurgico. Prioridade alto.,12
+548,35,548,417,5,corretiva,concluido,2026-04-13 13:15:00,2026-04-13 19:15:00,medio,Parada por falha em arco cirurgico. Prioridade medio.,6
+549,35,549,418,,corretiva,nao atribuido,2026-05-30 23:56:00,,alto,Parada por falha em pet. Prioridade alto.,
+550,35,550,419,36,corretiva,concluido,2026-01-10 03:13:00,2026-01-10 18:13:00,baixo,Parada por falha em ressonancia magnetica. Prioridade baixo.,15
+551,35,551,,1,preventiva,concluido,2026-01-21 23:00:00,2026-01-22 22:00:00,medio,Chamado preventiva para ressonancia magnetica. Motivo: MTBF proximo do vencimento. Prioridade medio.,23
+552,35,552,420,57,corretiva,em andamento,2026-06-02 12:58:00,,medio,Parada por falha em arco cirurgico. Prioridade medio.,
+553,35,553,421,57,corretiva,concluido,2026-03-27 11:57:00,2026-03-28 00:57:00,medio,Parada por falha em ultrassom. Prioridade medio.,13
+554,35,554,422,1,corretiva,concluido,2026-03-05 09:08:00,2026-03-05 22:08:00,alto,Parada por falha em ressonancia magnetica. Prioridade alto.,13
+555,35,555,423,20,corretiva,concluido,2026-02-24 10:33:00,2026-02-25 02:33:00,baixo,Parada por falha em ressonancia magnetica. Prioridade baixo.,16
+556,35,556,424,56,corretiva,concluido,2026-02-01 19:42:00,2026-02-02 06:42:00,baixo,Parada por falha em pet. Prioridade baixo.,11
+557,35,557,,48,preventiva,concluido,2025-12-30 09:00:00,2025-12-31 00:00:00,baixo,Chamado preventiva para pet. Motivo: desgaste elevado. Prioridade baixo.,15
+558,35,558,425,,corretiva,nao atribuido,2026-06-03 22:28:00,,medio,Parada por falha em ressonancia magnetica. Prioridade medio.,
+559,35,559,426,13,corretiva,concluido,2026-03-01 15:23:00,2026-03-02 06:23:00,alto,Parada por falha em tc. Prioridade alto.,15
+560,35,560,,7,preventiva,concluido,2026-01-25 03:00:00,2026-01-25 20:00:00,baixo,Chamado preventiva para tc. Motivo: MTBF proximo do vencimento. Prioridade baixo.,17
+561,36,561,,19,preventiva,concluido,2026-01-07 14:00:00,2026-01-08 23:00:00,baixo,Chamado preventiva para angiografia. Motivo: MTBF proximo do vencimento. Prioridade baixo.,33
+562,36,562,427,,corretiva,nao atribuido,2026-05-25 21:52:00,,alto,Parada por falha em raio x. Prioridade alto.,
+563,36,563,428,14,corretiva,atribuido,2026-05-29 05:55:00,,medio,Parada por falha em pet. Prioridade medio.,
+564,36,564,,38,preventiva,concluido,2026-05-07 11:00:00,2026-05-09 04:00:00,baixo,Chamado preventiva para angiografia. Motivo: desgaste elevado. Prioridade baixo.,41
+565,36,565,429,53,corretiva,atribuido,2026-06-03 15:38:00,,baixo,Parada por falha em ultrassom. Prioridade baixo.,
+566,36,566,430,21,corretiva,concluido,2026-01-29 20:50:00,2026-01-30 16:50:00,baixo,Parada por falha em pet. Prioridade baixo.,20
+567,36,567,,57,preventiva,concluido,2025-12-27 20:00:00,2025-12-29 22:00:00,baixo,Chamado preventiva para arco cirurgico. Motivo: MTBF proximo do vencimento. Prioridade baixo.,50
+568,36,568,431,12,corretiva,atribuido,2026-06-04 14:57:00,,medio,Parada por falha em pet. Prioridade medio.,
+569,36,569,432,19,corretiva,concluido,2026-03-18 02:55:00,2026-03-18 09:55:00,baixo,Parada por falha em arco cirurgico. Prioridade baixo.,7
+570,36,570,,31,preventiva,concluido,2026-04-29 02:00:00,2026-04-30 16:00:00,medio,Chamado preventiva para ultrassom. Motivo: desgaste elevado. Prioridade medio.,38
+571,36,571,433,,corretiva,nao atribuido,2026-06-04 12:56:00,,baixo,Parada por falha em ressonancia magnetica. Prioridade baixo.,
+572,36,572,434,35,corretiva,concluido,2026-03-17 17:37:00,2026-03-18 04:37:00,medio,Parada por falha em raio x. Prioridade medio.,11
+573,36,573,,55,preventiva,concluido,2026-03-09 14:00:00,2026-03-10 12:00:00,baixo,Chamado preventiva para raio x. Motivo: desgaste elevado. Prioridade baixo.,22
+574,36,574,435,46,corretiva,em andamento,2026-05-27 06:43:00,,baixo,Parada por falha em pet. Prioridade baixo.,
+575,36,575,,20,preventiva,concluido,2026-03-01 09:00:00,2026-03-03 07:00:00,alto,Chamado preventiva para arco cirurgico. Motivo: desgaste elevado. Prioridade alto.,46
+576,36,576,436,53,corretiva,concluido,2026-04-20 07:14:00,2026-04-21 04:14:00,alto,Parada por falha em ressonancia magnetica. Prioridade alto.,21
+577,37,577,437,,corretiva,nao atribuido,2026-05-28 16:56:00,,alto,Parada por falha em ultrassom. Prioridade alto.,
+578,37,578,438,,corretiva,nao atribuido,2026-06-02 22:06:00,,alto,Parada por falha em angiografia. Prioridade alto.,
+579,37,579,,57,preventiva,concluido,2026-03-01 08:00:00,2026-03-02 02:00:00,baixo,Chamado preventiva para tc. Motivo: MTBF proximo do vencimento. Prioridade baixo.,18
+580,37,580,,2,preventiva,concluido,2026-01-10 14:00:00,2026-01-11 22:00:00,alto,Chamado preventiva para raio x. Motivo: desgaste elevado. Prioridade alto.,32
+581,37,581,439,40,corretiva,atribuido,2026-05-26 23:18:00,,baixo,Parada por falha em raio x. Prioridade baixo.,
+582,37,582,440,52,corretiva,em andamento,2026-05-31 18:24:00,,alto,Parada por falha em ressonancia magnetica. Prioridade alto.,
+583,37,583,441,53,corretiva,atribuido,2026-05-27 16:45:00,,alto,Parada por falha em angiografia. Prioridade alto.,
+584,37,584,,19,preventiva,concluido,2026-05-18 12:00:00,2026-05-19 01:00:00,alto,Chamado preventiva para arco cirurgico. Motivo: desgaste elevado. Prioridade alto.,13
+585,37,585,442,47,corretiva,concluido,2026-04-04 16:51:00,2026-04-05 11:51:00,alto,Parada por falha em tc. Prioridade alto.,19
+586,37,586,443,1,corretiva,concluido,2026-05-07 09:15:00,2026-05-08 04:15:00,medio,Parada por falha em pet. Prioridade medio.,19
+587,37,587,,52,preventiva,concluido,2026-02-07 22:00:00,2026-02-09 07:00:00,alto,Chamado preventiva para ressonancia magnetica. Motivo: desgaste elevado. Prioridade alto.,33
+588,37,588,444,7,corretiva,atribuido,2026-06-03 06:12:00,,alto,Parada por falha em tc. Prioridade alto.,
+589,37,589,445,38,corretiva,concluido,2026-05-05 10:47:00,2026-05-05 21:47:00,medio,Parada por falha em angiografia. Prioridade medio.,11
+590,37,590,446,,corretiva,nao atribuido,2026-06-02 09:47:00,,medio,Parada por falha em raio x. Prioridade medio.,
+591,37,591,447,60,corretiva,atribuido,2026-05-26 23:51:00,,medio,Parada por falha em ultrassom. Prioridade medio.,
+592,37,592,448,,corretiva,nao atribuido,2026-06-03 13:15:00,,baixo,Parada por falha em ultrassom. Prioridade baixo.,
+593,38,593,449,51,corretiva,concluido,2026-03-07 07:51:00,2026-03-07 11:51:00,medio,Parada por falha em ressonancia magnetica. Prioridade medio.,4
+594,38,594,,43,preventiva,concluido,2026-02-04 00:00:00,2026-02-05 13:00:00,alto,Chamado preventiva para ressonancia magnetica. Motivo: desgaste elevado. Prioridade alto.,37
+595,38,595,,58,preventiva,concluido,2026-01-11 12:00:00,2026-01-12 22:00:00,baixo,Chamado preventiva para tc. Motivo: desgaste elevado. Prioridade baixo.,34
+596,38,596,450,27,corretiva,concluido,2026-02-19 00:02:00,2026-02-19 18:02:00,alto,Parada por falha em ressonancia magnetica. Prioridade alto.,18
+597,38,597,451,42,corretiva,concluido,2025-12-31 00:30:00,2025-12-31 06:30:00,alto,Parada por falha em tc. Prioridade alto.,6
+598,38,598,,6,preventiva,concluido,2026-04-10 05:00:00,2026-04-12 06:00:00,medio,Chamado preventiva para raio x. Motivo: desgaste elevado. Prioridade medio.,49
+599,38,599,452,10,corretiva,concluido,2026-05-10 01:18:00,2026-05-11 01:18:00,medio,Parada por falha em ultrassom. Prioridade medio.,24
+600,38,600,,26,preventiva,concluido,2026-03-27 12:00:00,2026-03-28 18:00:00,baixo,Chamado preventiva para arco cirurgico. Motivo: desgaste elevado. Prioridade baixo.,30
+601,38,601,453,58,corretiva,atribuido,2026-05-29 17:41:00,,alto,Parada por falha em arco cirurgico. Prioridade alto.,
+602,38,602,454,42,corretiva,concluido,2026-01-03 20:24:00,2026-01-04 08:24:00,medio,Parada por falha em tc. Prioridade medio.,12
+603,38,603,,24,preventiva,concluido,2026-05-19 19:00:00,2026-05-21 10:00:00,alto,Chamado preventiva para ultrassom. Motivo: desgaste elevado. Prioridade alto.,39
+604,38,604,455,51,corretiva,concluido,2026-03-16 06:01:00,2026-03-16 14:01:00,baixo,Parada por falha em tc. Prioridade baixo.,8
+605,38,605,456,,corretiva,nao atribuido,2026-05-26 16:43:00,,baixo,Parada por falha em pet. Prioridade baixo.,
+606,38,606,457,18,corretiva,concluido,2026-02-09 04:54:00,2026-02-09 09:54:00,medio,Parada por falha em pet. Prioridade medio.,5
+607,38,607,458,19,corretiva,em andamento,2026-05-28 07:58:00,,medio,Parada por falha em arco cirurgico. Prioridade medio.,
+608,38,608,459,,corretiva,nao atribuido,2026-06-02 18:57:00,,alto,Parada por falha em pet. Prioridade alto.,
+609,39,609,460,24,corretiva,concluido,2026-03-04 12:12:00,2026-03-05 10:12:00,alto,Parada por falha em ressonancia magnetica. Prioridade alto.,22
+610,39,610,461,2,corretiva,em andamento,2026-06-02 02:33:00,,medio,Parada por falha em angiografia. Prioridade medio.,
+611,39,611,462,,corretiva,nao atribuido,2026-05-26 04:50:00,,alto,Parada por falha em angiografia. Prioridade alto.,
+612,39,612,,27,preventiva,concluido,2026-02-13 15:00:00,2026-02-14 15:00:00,alto,Chamado preventiva para ressonancia magnetica. Motivo: desgaste elevado. Prioridade alto.,24
+613,39,613,463,42,corretiva,atribuido,2026-05-28 16:41:00,,medio,Parada por falha em pet. Prioridade medio.,
+614,39,614,464,,corretiva,nao atribuido,2026-05-27 06:03:00,,alto,Parada por falha em ressonancia magnetica. Prioridade alto.,
+615,39,615,465,18,corretiva,concluido,2026-04-14 23:20:00,2026-04-15 15:20:00,baixo,Parada por falha em raio x. Prioridade baixo.,16
+616,39,616,466,,corretiva,nao atribuido,2026-05-30 18:58:00,,medio,Parada por falha em ressonancia magnetica. Prioridade medio.,
+617,39,617,467,52,corretiva,concluido,2026-02-25 13:33:00,2026-02-25 23:33:00,baixo,Parada por falha em angiografia. Prioridade baixo.,10
+618,39,618,,58,preventiva,concluido,2026-04-13 15:00:00,2026-04-15 05:00:00,baixo,Chamado preventiva para pet. Motivo: desgaste elevado. Prioridade baixo.,38
+619,39,619,,33,preventiva,concluido,2026-04-21 08:00:00,2026-04-22 11:00:00,baixo,Chamado preventiva para arco cirurgico. Motivo: desgaste elevado. Prioridade baixo.,27
+620,39,620,468,20,corretiva,atribuido,2026-06-03 09:21:00,,baixo,Parada por falha em pet. Prioridade baixo.,
+621,39,621,,19,preventiva,concluido,2026-05-07 16:00:00,2026-05-08 16:00:00,baixo,Chamado preventiva para arco cirurgico. Motivo: MTBF proximo do vencimento. Prioridade baixo.,24
+622,39,622,,26,preventiva,concluido,2026-04-02 09:00:00,2026-04-04 04:00:00,medio,Chamado preventiva para angiografia. Motivo: desgaste elevado. Prioridade medio.,43
+623,39,623,469,59,corretiva,concluido,2026-02-08 11:06:00,2026-02-09 08:06:00,alto,Parada por falha em ultrassom. Prioridade alto.,21
+624,39,624,,56,preventiva,concluido,2025-12-25 18:00:00,2025-12-27 21:00:00,medio,Chamado preventiva para raio x. Motivo: desgaste elevado. Prioridade medio.,51
+625,40,625,470,39,corretiva,em andamento,2026-06-03 17:17:00,,medio,Parada por falha em pet. Prioridade medio.,
+626,40,626,471,11,corretiva,concluido,2026-01-17 13:50:00,2026-01-18 11:50:00,medio,Parada por falha em ultrassom. Prioridade medio.,22
+627,40,627,472,,corretiva,nao atribuido,2026-05-30 16:41:00,,alto,Parada por falha em ressonancia magnetica. Prioridade alto.,
+628,40,628,473,29,corretiva,em andamento,2026-06-04 00:24:00,,baixo,Parada por falha em angiografia. Prioridade baixo.,
+629,40,629,,35,preventiva,concluido,2026-04-30 19:00:00,2026-05-01 12:00:00,baixo,Chamado preventiva para tc. Motivo: desgaste elevado. Prioridade baixo.,17
+630,40,630,474,27,corretiva,atribuido,2026-06-03 11:00:00,,alto,Parada por falha em pet. Prioridade alto.,
+631,40,631,,34,preventiva,concluido,2026-01-30 02:00:00,2026-01-31 19:00:00,baixo,Chamado preventiva para ultrassom. Motivo: desgaste elevado. Prioridade baixo.,41
+632,40,632,475,50,corretiva,concluido,2026-05-16 01:16:00,2026-05-16 16:16:00,baixo,Parada por falha em ultrassom. Prioridade baixo.,15
+633,40,633,476,58,corretiva,atribuido,2026-05-28 12:45:00,,alto,Parada por falha em arco cirurgico. Prioridade alto.,
+634,40,634,477,19,corretiva,concluido,2026-01-27 07:39:00,2026-01-28 01:39:00,baixo,Parada por falha em angiografia. Prioridade baixo.,18
+635,40,635,478,21,corretiva,em andamento,2026-05-27 13:13:00,,alto,Parada por falha em ultrassom. Prioridade alto.,
+636,40,636,,18,preventiva,concluido,2026-05-18 19:00:00,2026-05-19 10:00:00,medio,Chamado preventiva para ressonancia magnetica. Motivo: desgaste elevado. Prioridade medio.,15
+637,40,637,479,50,corretiva,concluido,2026-04-16 11:47:00,2026-04-17 07:47:00,alto,Parada por falha em tc. Prioridade alto.,20
+638,40,638,,53,preventiva,concluido,2026-04-15 04:00:00,2026-04-16 00:00:00,baixo,Chamado preventiva para ultrassom. Motivo: desgaste elevado. Prioridade baixo.,20
+639,40,639,480,3,corretiva,em andamento,2026-05-25 12:46:00,,medio,Parada por falha em tc. Prioridade medio.,
+640,40,640,,20,preventiva,concluido,2026-02-22 04:00:00,2026-02-24 05:00:00,medio,Chamado preventiva para arco cirurgico. Motivo: MTBF proximo do vencimento. Prioridade medio.,49
+641,41,641,481,39,corretiva,concluido,2026-04-15 15:18:00,2026-04-15 22:18:00,medio,Parada por falha em pet. Prioridade medio.,7
+642,41,642,482,,corretiva,nao atribuido,2026-05-27 14:11:00,,alto,Parada por falha em tc. Prioridade alto.,
+643,41,643,483,20,corretiva,atribuido,2026-05-31 05:06:00,,baixo,Parada por falha em pet. Prioridade baixo.,
+644,41,644,484,59,corretiva,em andamento,2026-05-31 21:48:00,,baixo,Parada por falha em angiografia. Prioridade baixo.,
+645,41,645,485,29,corretiva,em andamento,2026-05-27 14:21:00,,baixo,Parada por falha em arco cirurgico. Prioridade baixo.,
+646,41,646,486,,corretiva,nao atribuido,2026-06-02 09:13:00,,baixo,Parada por falha em tc. Prioridade baixo.,
+647,41,647,487,21,corretiva,concluido,2026-02-22 05:14:00,2026-02-22 19:14:00,alto,Parada por falha em pet. Prioridade alto.,14
+648,41,648,488,26,corretiva,concluido,2026-01-27 04:17:00,2026-01-28 00:17:00,baixo,Parada por falha em arco cirurgico. Prioridade baixo.,20
+649,41,649,489,40,corretiva,concluido,2026-04-16 13:57:00,2026-04-17 04:57:00,baixo,Parada por falha em raio x. Prioridade baixo.,15
+650,41,650,,7,preventiva,concluido,2026-04-04 05:00:00,2026-04-05 19:00:00,alto,Chamado preventiva para raio x. Motivo: MTBF proximo do vencimento. Prioridade alto.,38
+651,41,651,490,,corretiva,nao atribuido,2026-06-01 14:29:00,,alto,Parada por falha em ultrassom. Prioridade alto.,
+652,41,652,491,4,corretiva,em andamento,2026-05-30 01:10:00,,medio,Parada por falha em angiografia. Prioridade medio.,
+653,41,653,492,47,corretiva,concluido,2026-02-18 21:59:00,2026-02-19 07:59:00,baixo,Parada por falha em tc. Prioridade baixo.,10
+654,41,654,493,35,corretiva,concluido,2026-02-02 12:45:00,2026-02-02 21:45:00,baixo,Parada por falha em ressonancia magnetica. Prioridade baixo.,9
+655,41,655,494,,corretiva,nao atribuido,2026-05-25 15:21:00,,alto,Parada por falha em ressonancia magnetica. Prioridade alto.,
+656,41,656,495,,corretiva,nao atribuido,2026-06-03 15:27:00,,medio,Parada por falha em ressonancia magnetica. Prioridade medio.,
+657,42,657,496,35,corretiva,concluido,2026-01-04 03:02:00,2026-01-04 18:02:00,medio,Parada por falha em angiografia. Prioridade medio.,15
+658,42,658,,26,preventiva,concluido,2026-02-21 05:00:00,2026-02-22 23:00:00,alto,Chamado preventiva para tc. Motivo: desgaste elevado. Prioridade alto.,42
+659,42,659,497,41,corretiva,concluido,2026-05-05 08:23:00,2026-05-05 16:23:00,baixo,Parada por falha em raio x. Prioridade baixo.,8
+660,42,660,498,15,corretiva,concluido,2026-01-01 01:36:00,2026-01-01 14:36:00,medio,Parada por falha em ressonancia magnetica. Prioridade medio.,13
+661,42,661,,3,preventiva,atribuido,2026-05-31 18:00:00,,baixo,Chamado preventiva para tc. Motivo: desgaste elevado. Prioridade baixo.,
+662,42,662,,50,preventiva,concluido,2026-03-16 04:00:00,2026-03-18 06:00:00,medio,Chamado preventiva para ressonancia magnetica. Motivo: desgaste elevado. Prioridade medio.,50
+663,42,663,499,13,corretiva,concluido,2026-04-16 20:16:00,2026-04-17 16:16:00,baixo,Parada por falha em tc. Prioridade baixo.,20
+664,42,664,500,6,corretiva,concluido,2026-03-13 20:13:00,2026-03-14 14:13:00,alto,Parada por falha em tc. Prioridade alto.,18
+665,42,665,501,6,corretiva,concluido,2026-05-17 17:34:00,2026-05-18 05:34:00,alto,Parada por falha em angiografia. Prioridade alto.,12
+666,42,666,502,32,corretiva,concluido,2026-01-07 17:41:00,2026-01-08 14:41:00,medio,Parada por falha em raio x. Prioridade medio.,21
+667,42,667,503,29,corretiva,concluido,2026-03-17 22:26:00,2026-03-18 10:26:00,medio,Parada por falha em arco cirurgico. Prioridade medio.,12
+668,42,668,,,preventiva,nao atribuido,2026-05-27 21:00:00,,alto,Chamado preventiva para ressonancia magnetica. Motivo: desgaste elevado. Prioridade alto.,
+669,42,669,,5,preventiva,concluido,2026-01-21 23:00:00,2026-01-23 00:00:00,baixo,Chamado preventiva para angiografia. Motivo: desgaste elevado. Prioridade baixo.,25
+670,42,670,504,15,corretiva,concluido,2026-03-16 19:14:00,2026-03-17 03:14:00,alto,Parada por falha em tc. Prioridade alto.,8
+671,42,671,,30,preventiva,atribuido,2026-05-24 15:00:00,,medio,Chamado preventiva para tc. Motivo: desgaste elevado. Prioridade medio.,
+672,42,672,,,preventiva,nao atribuido,2026-05-30 19:00:00,,baixo,Chamado preventiva para tc. Motivo: MTBF proximo do vencimento. Prioridade baixo.,
+673,43,673,,27,preventiva,atribuido,2026-05-23 02:00:00,,alto,Chamado preventiva para arco cirurgico. Motivo: desgaste elevado. Prioridade alto.,
+674,43,674,,32,preventiva,concluido,2026-04-14 20:00:00,2026-04-16 15:00:00,alto,Chamado preventiva para pet. Motivo: desgaste elevado. Prioridade alto.,43
+675,43,675,,29,preventiva,concluido,2026-01-11 06:00:00,2026-01-12 07:00:00,alto,Chamado preventiva para arco cirurgico. Motivo: desgaste elevado. Prioridade alto.,25
+676,43,676,,55,preventiva,atribuido,2026-06-05 09:00:00,,medio,Chamado preventiva para pet. Motivo: desgaste elevado. Prioridade medio.,
+677,43,677,,9,preventiva,atribuido,2026-05-25 07:00:00,,alto,Chamado preventiva para pet. Motivo: MTBF proximo do vencimento. Prioridade alto.,
+678,43,678,505,28,corretiva,concluido,2025-12-30 08:41:00,2025-12-31 04:41:00,medio,Parada por falha em ressonancia magnetica. Prioridade medio.,20
+679,43,679,506,4,corretiva,concluido,2026-02-16 09:33:00,2026-02-16 22:33:00,alto,Parada por falha em angiografia. Prioridade alto.,13
+680,43,680,507,59,corretiva,concluido,2026-05-07 22:13:00,2026-05-08 06:13:00,medio,Parada por falha em ultrassom. Prioridade medio.,8
+681,43,681,508,56,corretiva,concluido,2026-04-22 15:38:00,2026-04-23 01:38:00,medio,Parada por falha em raio x. Prioridade medio.,10
+682,43,682,509,45,corretiva,concluido,2026-01-24 18:19:00,2026-01-25 09:19:00,alto,Parada por falha em arco cirurgico. Prioridade alto.,15
+683,43,683,510,30,corretiva,concluido,2026-02-19 04:12:00,2026-02-19 12:12:00,baixo,Parada por falha em raio x. Prioridade baixo.,8
+684,43,684,511,10,corretiva,concluido,2026-04-13 22:01:00,2026-04-14 06:01:00,baixo,Parada por falha em arco cirurgico. Prioridade baixo.,8
+685,43,685,,8,preventiva,em andamento,2026-05-30 16:00:00,,medio,Chamado preventiva para arco cirurgico. Motivo: desgaste elevado. Prioridade medio.,
+686,43,686,,,preventiva,nao atribuido,2026-05-30 12:00:00,,alto,Chamado preventiva para ultrassom. Motivo: desgaste elevado. Prioridade alto.,
+687,43,687,,43,preventiva,concluido,2026-01-10 13:00:00,2026-01-11 20:00:00,baixo,Chamado preventiva para angiografia. Motivo: MTBF proximo do vencimento. Prioridade baixo.,31
+688,43,688,,54,preventiva,em andamento,2026-05-29 04:00:00,,alto,Chamado preventiva para angiografia. Motivo: MTBF proximo do vencimento. Prioridade alto.,
+689,44,689,,20,preventiva,concluido,2026-04-29 06:00:00,2026-04-30 04:00:00,baixo,Chamado preventiva para pet. Motivo: desgaste elevado. Prioridade baixo.,22
+690,44,690,,18,preventiva,atribuido,2026-05-29 06:00:00,,alto,Chamado preventiva para arco cirurgico. Motivo: MTBF proximo do vencimento. Prioridade alto.,
+691,44,691,,45,preventiva,concluido,2026-01-13 04:00:00,2026-01-14 12:00:00,medio,Chamado preventiva para ultrassom. Motivo: desgaste elevado. Prioridade medio.,32
+692,44,692,,31,preventiva,concluido,2026-02-04 07:00:00,2026-02-04 18:00:00,baixo,Chamado preventiva para ultrassom. Motivo: desgaste elevado. Prioridade baixo.,11
+693,44,693,,38,preventiva,em andamento,2026-05-27 01:00:00,,alto,Chamado preventiva para angiografia. Motivo: desgaste elevado. Prioridade alto.,
+694,44,694,512,58,corretiva,concluido,2026-02-12 10:36:00,2026-02-13 04:36:00,alto,Parada por falha em pet. Prioridade alto.,18
+695,44,695,513,42,corretiva,concluido,2026-02-26 00:32:00,2026-02-26 13:32:00,alto,Parada por falha em pet. Prioridade alto.,13
+696,44,696,,28,preventiva,em andamento,2026-05-25 19:00:00,,baixo,Chamado preventiva para ressonancia magnetica. Motivo: MTBF proximo do vencimento. Prioridade baixo.,
+697,44,697,,27,preventiva,concluido,2025-12-26 22:00:00,2025-12-28 23:00:00,medio,Chamado preventiva para ressonancia magnetica. Motivo: MTBF proximo do vencimento. Prioridade medio.,49
+698,44,698,514,30,corretiva,concluido,2026-01-17 00:32:00,2026-01-17 08:32:00,alto,Parada por falha em ultrassom. Prioridade alto.,8
+699,44,699,,28,preventiva,concluido,2026-04-22 07:00:00,2026-04-23 07:00:00,baixo,Chamado preventiva para tc. Motivo: desgaste elevado. Prioridade baixo.,24
+700,44,700,515,23,corretiva,concluido,2026-04-24 22:01:00,2026-04-25 20:01:00,baixo,Parada por falha em pet. Prioridade baixo.,22
+701,44,701,,37,preventiva,em andamento,2026-06-01 22:00:00,,medio,Chamado preventiva para ultrassom. Motivo: desgaste elevado. Prioridade medio.,
+702,44,702,,58,preventiva,concluido,2026-04-06 20:00:00,2026-04-07 03:00:00,alto,Chamado preventiva para arco cirurgico. Motivo: desgaste elevado. Prioridade alto.,7
+703,44,703,516,44,corretiva,concluido,2026-03-07 18:35:00,2026-03-08 01:35:00,baixo,Parada por falha em ressonancia magnetica. Prioridade baixo.,7
+704,44,704,517,27,corretiva,concluido,2026-04-17 17:31:00,2026-04-18 00:31:00,medio,Parada por falha em pet. Prioridade medio.,7
+705,45,705,,,preventiva,nao atribuido,2026-05-27 17:00:00,,medio,Chamado preventiva para ressonancia magnetica. Motivo: MTBF proximo do vencimento. Prioridade medio.,
+706,45,706,518,19,corretiva,concluido,2026-04-21 15:32:00,2026-04-22 00:32:00,baixo,Parada por falha em pet. Prioridade baixo.,9
+707,45,707,,,preventiva,nao atribuido,2026-05-28 10:00:00,,baixo,Chamado preventiva para angiografia. Motivo: desgaste elevado. Prioridade baixo.,
+708,45,708,519,32,corretiva,concluido,2026-05-11 16:40:00,2026-05-11 23:40:00,medio,Parada por falha em angiografia. Prioridade medio.,7
+709,45,709,520,23,corretiva,concluido,2026-01-19 18:03:00,2026-01-20 06:03:00,alto,Parada por falha em ultrassom. Prioridade alto.,12
+710,45,710,521,16,corretiva,concluido,2026-01-24 02:15:00,2026-01-24 20:15:00,medio,Parada por falha em arco cirurgico. Prioridade medio.,18
+711,45,711,522,40,corretiva,concluido,2026-01-28 02:07:00,2026-01-28 19:07:00,baixo,Parada por falha em ultrassom. Prioridade baixo.,17
+712,45,712,,18,preventiva,em andamento,2026-05-31 16:00:00,,baixo,Chamado preventiva para raio x. Motivo: MTBF proximo do vencimento. Prioridade baixo.,
+713,45,713,523,15,corretiva,concluido,2026-04-12 05:33:00,2026-04-12 17:33:00,baixo,Parada por falha em pet. Prioridade baixo.,12
+714,45,714,,45,preventiva,concluido,2026-05-10 10:00:00,2026-05-11 20:00:00,alto,Chamado preventiva para ultrassom. Motivo: desgaste elevado. Prioridade alto.,34
+715,45,715,524,9,corretiva,concluido,2026-05-15 04:18:00,2026-05-15 11:18:00,baixo,Parada por falha em pet. Prioridade baixo.,7
+716,45,716,525,53,corretiva,concluido,2026-05-12 00:53:00,2026-05-12 17:53:00,alto,Parada por falha em ultrassom. Prioridade alto.,17
+717,45,717,,50,preventiva,concluido,2026-03-02 09:00:00,2026-03-03 11:00:00,alto,Chamado preventiva para ultrassom. Motivo: desgaste elevado. Prioridade alto.,26
+718,45,718,526,6,corretiva,concluido,2026-01-26 17:02:00,2026-01-27 03:02:00,alto,Parada por falha em tc. Prioridade alto.,10
+719,45,719,,19,preventiva,concluido,2026-04-22 12:00:00,2026-04-23 16:00:00,alto,Chamado preventiva para arco cirurgico. Motivo: MTBF proximo do vencimento. Prioridade alto.,28
+720,45,720,,41,preventiva,em andamento,2026-05-28 15:00:00,,medio,Chamado preventiva para arco cirurgico. Motivo: desgaste elevado. Prioridade medio.,
+721,46,721,,40,preventiva,atribuido,2026-05-26 20:00:00,,alto,Chamado preventiva para ultrassom. Motivo: desgaste elevado. Prioridade alto.,
+722,46,722,,20,preventiva,concluido,2026-03-28 13:00:00,2026-03-30 09:00:00,baixo,Chamado preventiva para pet. Motivo: desgaste elevado. Prioridade baixo.,44
+723,46,723,527,34,corretiva,concluido,2026-01-20 15:06:00,2026-01-21 01:06:00,medio,Parada por falha em angiografia. Prioridade medio.,10
+724,46,724,,31,preventiva,concluido,2026-03-24 12:00:00,2026-03-24 21:00:00,medio,Chamado preventiva para tc. Motivo: desgaste elevado. Prioridade medio.,9
+725,46,725,,22,preventiva,em andamento,2026-05-29 16:00:00,,baixo,Chamado preventiva para pet. Motivo: desgaste elevado. Prioridade baixo.,
+726,46,726,,6,preventiva,concluido,2026-02-06 11:00:00,2026-02-06 22:00:00,baixo,Chamado preventiva para pet. Motivo: desgaste elevado. Prioridade baixo.,11
+727,46,727,528,7,corretiva,concluido,2026-02-14 07:20:00,2026-02-14 13:20:00,medio,Parada por falha em angiografia. Prioridade medio.,6
+728,46,728,529,25,corretiva,concluido,2026-05-12 00:38:00,2026-05-12 21:38:00,baixo,Parada por falha em ressonancia magnetica. Prioridade baixo.,21
+729,46,729,530,22,corretiva,concluido,2026-01-20 12:19:00,2026-01-20 16:19:00,baixo,Parada por falha em pet. Prioridade baixo.,4
+730,46,730,531,22,corretiva,concluido,2026-01-04 04:47:00,2026-01-04 22:47:00,baixo,Parada por falha em angiografia. Prioridade baixo.,18
+731,46,731,,20,preventiva,em andamento,2026-05-30 21:00:00,,alto,Chamado preventiva para pet. Motivo: desgaste elevado. Prioridade alto.,
+732,46,732,,10,preventiva,concluido,2026-04-04 02:00:00,2026-04-04 21:00:00,medio,Chamado preventiva para ultrassom. Motivo: desgaste elevado. Prioridade medio.,19
+733,46,733,,,preventiva,nao atribuido,2026-05-29 07:00:00,,medio,Chamado preventiva para pet. Motivo: MTBF proximo do vencimento. Prioridade medio.,
+734,46,734,532,37,corretiva,concluido,2026-01-31 21:29:00,2026-02-01 10:29:00,baixo,Parada por falha em tc. Prioridade baixo.,13
+735,46,735,,58,preventiva,concluido,2026-03-10 18:00:00,2026-03-12 15:00:00,alto,Chamado preventiva para tc. Motivo: desgaste elevado. Prioridade alto.,45
+736,46,736,,10,preventiva,em andamento,2026-05-23 04:00:00,,baixo,Chamado preventiva para arco cirurgico. Motivo: desgaste elevado. Prioridade baixo.,
+737,47,737,,45,preventiva,em andamento,2026-05-25 11:00:00,,baixo,Chamado preventiva para ultrassom. Motivo: desgaste elevado. Prioridade baixo.,
+738,47,738,,,preventiva,nao atribuido,2026-06-03 11:00:00,,baixo,Chamado preventiva para tc. Motivo: desgaste elevado. Prioridade baixo.,
+739,47,739,533,21,corretiva,concluido,2026-04-27 09:40:00,2026-04-27 17:40:00,medio,Parada por falha em pet. Prioridade medio.,8
+740,47,740,,35,preventiva,concluido,2026-01-05 18:00:00,2026-01-07 19:00:00,medio,Chamado preventiva para angiografia. Motivo: MTBF proximo do vencimento. Prioridade medio.,49
+741,47,741,534,36,corretiva,concluido,2026-01-05 06:25:00,2026-01-05 22:25:00,baixo,Parada por falha em ultrassom. Prioridade baixo.,16
+742,47,742,535,53,corretiva,concluido,2026-03-09 14:58:00,2026-03-10 09:58:00,alto,Parada por falha em ultrassom. Prioridade alto.,19
+743,47,743,,33,preventiva,atribuido,2026-05-29 21:00:00,,baixo,Chamado preventiva para tc. Motivo: desgaste elevado. Prioridade baixo.,
+744,47,744,,40,preventiva,atribuido,2026-06-01 14:00:00,,baixo,Chamado preventiva para raio x. Motivo: desgaste elevado. Prioridade baixo.,
+745,47,745,,38,preventiva,atribuido,2026-05-24 02:00:00,,medio,Chamado preventiva para ressonancia magnetica. Motivo: MTBF proximo do vencimento. Prioridade medio.,
+746,47,746,536,26,corretiva,concluido,2026-04-05 17:41:00,2026-04-06 14:41:00,medio,Parada por falha em tc. Prioridade medio.,21
+747,47,747,,,preventiva,nao atribuido,2026-06-01 13:00:00,,baixo,Chamado preventiva para ultrassom. Motivo: MTBF proximo do vencimento. Prioridade baixo.,
+748,47,748,537,22,corretiva,concluido,2026-03-05 10:25:00,2026-03-05 15:25:00,baixo,Parada por falha em tc. Prioridade baixo.,5
+749,47,749,,36,preventiva,concluido,2026-03-06 06:00:00,2026-03-08 05:00:00,alto,Chamado preventiva para ressonancia magnetica. Motivo: desgaste elevado. Prioridade alto.,47
+750,47,750,,56,preventiva,atribuido,2026-05-27 19:00:00,,medio,Chamado preventiva para ressonancia magnetica. Motivo: MTBF proximo do vencimento. Prioridade medio.,
+751,47,751,538,27,corretiva,concluido,2025-12-27 13:21:00,2025-12-27 20:21:00,baixo,Parada por falha em pet. Prioridade baixo.,7
+752,47,752,,,preventiva,nao atribuido,2026-05-27 09:00:00,,baixo,Chamado preventiva para angiografia. Motivo: desgaste elevado. Prioridade baixo.,
+753,48,753,539,32,corretiva,concluido,2026-05-13 10:49:00,2026-05-13 22:49:00,alto,Parada por falha em arco cirurgico. Prioridade alto.,12
+754,48,754,,57,preventiva,concluido,2026-01-07 05:00:00,2026-01-09 07:00:00,alto,Chamado preventiva para ultrassom. Motivo: desgaste elevado. Prioridade alto.,50
+755,48,755,540,20,corretiva,concluido,2026-01-05 13:04:00,2026-01-06 02:04:00,baixo,Parada por falha em ressonancia magnetica. Prioridade baixo.,13
+756,48,756,541,23,corretiva,concluido,2026-01-19 20:31:00,2026-01-20 10:31:00,medio,Parada por falha em pet. Prioridade medio.,14
+757,48,757,542,49,corretiva,concluido,2026-03-10 02:09:00,2026-03-10 23:09:00,baixo,Parada por falha em tc. Prioridade baixo.,21
+758,48,758,,22,preventiva,concluido,2026-03-01 17:00:00,2026-03-03 10:00:00,medio,Chamado preventiva para pet. Motivo: desgaste elevado. Prioridade medio.,41
+759,48,759,543,51,corretiva,concluido,2026-01-15 12:18:00,2026-01-16 11:18:00,medio,Parada por falha em angiografia. Prioridade medio.,23
+760,48,760,544,59,corretiva,concluido,2026-03-29 05:57:00,2026-03-29 15:57:00,alto,Parada por falha em ultrassom. Prioridade alto.,10
+761,48,761,545,6,corretiva,concluido,2026-05-13 20:18:00,2026-05-14 05:18:00,baixo,Parada por falha em pet. Prioridade baixo.,9
+762,48,762,,48,preventiva,atribuido,2026-06-02 23:00:00,,alto,Chamado preventiva para ressonancia magnetica. Motivo: desgaste elevado. Prioridade alto.,
+763,48,763,,,preventiva,nao atribuido,2026-05-28 00:00:00,,alto,Chamado preventiva para tc. Motivo: desgaste elevado. Prioridade alto.,
+764,48,764,,,preventiva,nao atribuido,2026-06-01 22:00:00,,medio,Chamado preventiva para pet. Motivo: MTBF proximo do vencimento. Prioridade medio.,
+765,48,765,546,18,corretiva,concluido,2026-03-27 05:19:00,2026-03-27 13:19:00,alto,Parada por falha em raio x. Prioridade alto.,8
+766,48,766,547,48,corretiva,concluido,2026-02-10 15:59:00,2026-02-11 04:59:00,baixo,Parada por falha em ressonancia magnetica. Prioridade baixo.,13
+767,48,767,548,57,corretiva,concluido,2026-04-03 00:29:00,2026-04-03 12:29:00,alto,Parada por falha em ultrassom. Prioridade alto.,12
+768,48,768,,53,preventiva,atribuido,2026-06-04 17:00:00,,alto,Chamado preventiva para ressonancia magnetica. Motivo: desgaste elevado. Prioridade alto.,
+769,49,769,549,42,corretiva,concluido,2026-01-21 21:31:00,2026-01-22 17:31:00,alto,Parada por falha em arco cirurgico. Prioridade alto.,20
+770,49,770,,9,preventiva,atribuido,2026-06-05 01:00:00,,baixo,Chamado preventiva para angiografia. Motivo: MTBF proximo do vencimento. Prioridade baixo.,
+771,49,771,,20,preventiva,atribuido,2026-05-28 16:00:00,,baixo,Chamado preventiva para ressonancia magnetica. Motivo: desgaste elevado. Prioridade baixo.,
+772,49,772,550,37,corretiva,concluido,2026-01-30 12:12:00,2026-01-31 12:12:00,baixo,Parada por falha em angiografia. Prioridade baixo.,24
+773,49,773,,45,preventiva,concluido,2026-04-12 18:00:00,2026-04-14 06:00:00,baixo,Chamado preventiva para ressonancia magnetica. Motivo: desgaste elevado. Prioridade baixo.,36
+774,49,774,,16,preventiva,em andamento,2026-05-24 01:00:00,,baixo,Chamado preventiva para tc. Motivo: desgaste elevado. Prioridade baixo.,
+775,49,775,,,preventiva,nao atribuido,2026-05-28 00:00:00,,medio,Chamado preventiva para ressonancia magnetica. Motivo: MTBF proximo do vencimento. Prioridade medio.,
+776,49,776,551,3,corretiva,concluido,2026-04-28 23:40:00,2026-04-29 04:40:00,baixo,Parada por falha em raio x. Prioridade baixo.,5
+777,49,777,,56,preventiva,em andamento,2026-05-23 00:00:00,,medio,Chamado preventiva para ressonancia magnetica. Motivo: MTBF proximo do vencimento. Prioridade medio.,
+778,49,778,,9,preventiva,concluido,2026-05-01 00:00:00,2026-05-02 12:00:00,alto,Chamado preventiva para tc. Motivo: MTBF proximo do vencimento. Prioridade alto.,36
+779,49,779,,,preventiva,nao atribuido,2026-05-30 17:00:00,,medio,Chamado preventiva para raio x. Motivo: desgaste elevado. Prioridade medio.,
+780,49,780,,59,preventiva,concluido,2026-02-02 00:00:00,2026-02-03 02:00:00,medio,Chamado preventiva para raio x. Motivo: MTBF proximo do vencimento. Prioridade medio.,26
+781,49,781,552,50,corretiva,concluido,2025-12-27 23:42:00,2025-12-28 08:42:00,medio,Parada por falha em ultrassom. Prioridade medio.,9
+782,49,782,,19,preventiva,atribuido,2026-05-29 02:00:00,,baixo,Chamado preventiva para arco cirurgico. Motivo: desgaste elevado. Prioridade baixo.,
+783,49,783,,15,preventiva,em andamento,2026-05-27 15:00:00,,baixo,Chamado preventiva para tc. Motivo: desgaste elevado. Prioridade baixo.,
+784,49,784,,,preventiva,nao atribuido,2026-05-28 14:00:00,,medio,Chamado preventiva para raio x. Motivo: desgaste elevado. Prioridade medio.,
+785,50,785,,50,preventiva,concluido,2026-03-02 04:00:00,2026-03-02 16:00:00,alto,Chamado preventiva para tc. Motivo: desgaste elevado. Prioridade alto.,12
+786,50,786,,58,preventiva,concluido,2026-05-23 19:00:00,2026-05-25 20:00:00,baixo,Chamado preventiva para pet. Motivo: desgaste elevado. Prioridade baixo.,49
+787,50,787,,,preventiva,nao atribuido,2026-05-22 17:00:00,,baixo,Chamado preventiva para tc. Motivo: desgaste elevado. Prioridade baixo.,
+788,50,788,553,17,corretiva,concluido,2026-03-14 13:13:00,2026-03-15 14:13:00,medio,Parada por falha em pet. Prioridade medio.,25
+789,50,789,,21,preventiva,atribuido,2026-06-04 10:00:00,,baixo,Chamado preventiva para pet. Motivo: desgaste elevado. Prioridade baixo.,
+790,50,790,,15,preventiva,atribuido,2026-05-27 04:00:00,,medio,Chamado preventiva para ressonancia magnetica. Motivo: desgaste elevado. Prioridade medio.,
+791,50,791,,23,preventiva,concluido,2026-03-25 02:00:00,2026-03-26 02:00:00,medio,Chamado preventiva para ultrassom. Motivo: desgaste elevado. Prioridade medio.,24
+792,50,792,,37,preventiva,atribuido,2026-05-27 02:00:00,,baixo,Chamado preventiva para angiografia. Motivo: desgaste elevado. Prioridade baixo.,
+793,50,793,,44,preventiva,concluido,2026-02-07 13:00:00,2026-02-09 12:00:00,baixo,Chamado preventiva para ultrassom. Motivo: desgaste elevado. Prioridade baixo.,47
+794,50,794,,,preventiva,nao atribuido,2026-05-30 14:00:00,,baixo,Chamado preventiva para ultrassom. Motivo: desgaste elevado. Prioridade baixo.,
+795,50,795,,26,preventiva,concluido,2026-02-11 12:00:00,2026-02-13 09:00:00,medio,Chamado preventiva para angiografia. Motivo: MTBF proximo do vencimento. Prioridade medio.,45
+796,50,796,554,19,corretiva,concluido,2026-02-06 00:56:00,2026-02-06 23:56:00,alto,Parada por falha em pet. Prioridade alto.,23
+797,50,797,,30,preventiva,concluido,2026-01-20 02:00:00,2026-01-21 13:00:00,alto,Chamado preventiva para raio x. Motivo: desgaste elevado. Prioridade alto.,35
+798,50,798,,20,preventiva,atribuido,2026-05-31 10:00:00,,alto,Chamado preventiva para arco cirurgico. Motivo: desgaste elevado. Prioridade alto.,
+799,50,799,,,preventiva,nao atribuido,2026-05-29 07:00:00,,alto,Chamado preventiva para angiografia. Motivo: desgaste elevado. Prioridade alto.,
+800,50,800,555,55,corretiva,concluido,2026-01-17 05:55:00,2026-01-18 00:55:00,medio,Parada por falha em pet. Prioridade medio.,19
+801,51,801,556,27,corretiva,concluido,2026-03-12 19:47:00,2026-03-13 06:47:00,alto,Parada por falha em arco cirurgico. Prioridade alto.,11
+802,51,802,,14,preventiva,em andamento,2026-05-23 12:00:00,,baixo,Chamado preventiva para angiografia. Motivo: desgaste elevado. Prioridade baixo.,
+803,51,803,557,23,corretiva,concluido,2026-02-22 01:16:00,2026-02-22 18:16:00,alto,Parada por falha em ultrassom. Prioridade alto.,17
+804,51,804,558,45,corretiva,concluido,2026-02-25 18:59:00,2026-02-26 18:59:00,medio,Parada por falha em ultrassom. Prioridade medio.,24
+805,51,805,,,preventiva,nao atribuido,2026-06-01 06:00:00,,alto,Chamado preventiva para angiografia. Motivo: desgaste elevado. Prioridade alto.,
+806,51,806,,,preventiva,nao atribuido,2026-05-25 13:00:00,,baixo,Chamado preventiva para ressonancia magnetica. Motivo: desgaste elevado. Prioridade baixo.,
+807,51,807,,,preventiva,nao atribuido,2026-05-29 10:00:00,,alto,Chamado preventiva para ressonancia magnetica. Motivo: desgaste elevado. Prioridade alto.,
+808,51,808,,4,preventiva,atribuido,2026-05-23 21:00:00,,alto,Chamado preventiva para raio x. Motivo: MTBF proximo do vencimento. Prioridade alto.,
+809,51,809,,44,preventiva,atribuido,2026-05-23 10:00:00,,medio,Chamado preventiva para ultrassom. Motivo: MTBF proximo do vencimento. Prioridade medio.,
+810,51,810,,,preventiva,nao atribuido,2026-06-01 08:00:00,,alto,Chamado preventiva para angiografia. Motivo: desgaste elevado. Prioridade alto.,
+811,51,811,559,56,corretiva,concluido,2026-01-07 23:31:00,2026-01-08 08:31:00,baixo,Parada por falha em raio x. Prioridade baixo.,9
+812,51,812,,51,preventiva,concluido,2026-05-03 21:00:00,2026-05-04 06:00:00,medio,Chamado preventiva para angiografia. Motivo: desgaste elevado. Prioridade medio.,9
+813,51,813,,48,preventiva,em andamento,2026-06-01 02:00:00,,alto,Chamado preventiva para ressonancia magnetica. Motivo: MTBF proximo do vencimento. Prioridade alto.,
+814,51,814,,5,preventiva,atribuido,2026-05-26 09:00:00,,baixo,Chamado preventiva para angiografia. Motivo: desgaste elevado. Prioridade baixo.,
+815,51,815,,4,preventiva,atribuido,2026-05-25 22:00:00,,baixo,Chamado preventiva para tc. Motivo: desgaste elevado. Prioridade baixo.,
+816,51,816,560,54,corretiva,concluido,2026-04-09 12:38:00,2026-04-10 03:38:00,medio,Parada por falha em raio x. Prioridade medio.,15
+817,52,817,,52,preventiva,concluido,2026-01-22 04:00:00,2026-01-22 20:00:00,alto,Chamado preventiva para angiografia. Motivo: desgaste elevado. Prioridade alto.,16
+818,52,818,,,preventiva,nao atribuido,2026-05-25 17:00:00,,baixo,Chamado preventiva para angiografia. Motivo: MTBF proximo do vencimento. Prioridade baixo.,
+819,52,819,561,56,corretiva,concluido,2026-04-30 12:59:00,2026-05-01 04:59:00,baixo,Parada por falha em angiografia. Prioridade baixo.,16
+820,52,820,562,4,corretiva,concluido,2026-03-25 22:42:00,2026-03-26 04:42:00,baixo,Parada por falha em ultrassom. Prioridade baixo.,6
+821,52,821,,21,preventiva,em andamento,2026-06-05 08:00:00,,baixo,Chamado preventiva para ultrassom. Motivo: desgaste elevado. Prioridade baixo.,
+822,52,822,,53,preventiva,concluido,2026-05-12 21:00:00,2026-05-13 17:00:00,baixo,Chamado preventiva para ultrassom. Motivo: desgaste elevado. Prioridade baixo.,20
+823,52,823,,,preventiva,nao atribuido,2026-06-01 03:00:00,,medio,Chamado preventiva para arco cirurgico. Motivo: desgaste elevado. Prioridade medio.,
+824,52,824,563,37,corretiva,concluido,2026-03-20 23:52:00,2026-03-21 19:52:00,baixo,Parada por falha em tc. Prioridade baixo.,20
+825,52,825,564,58,corretiva,concluido,2025-12-27 23:59:00,2025-12-28 15:59:00,baixo,Parada por falha em pet. Prioridade baixo.,16
+826,52,826,,29,preventiva,em andamento,2026-05-23 06:00:00,,baixo,Chamado preventiva para arco cirurgico. Motivo: desgaste elevado. Prioridade baixo.,
+827,52,827,,,preventiva,nao atribuido,2026-05-30 06:00:00,,baixo,Chamado preventiva para ressonancia magnetica. Motivo: desgaste elevado. Prioridade baixo.,
+828,52,828,,,preventiva,nao atribuido,2026-06-02 04:00:00,,alto,Chamado preventiva para pet. Motivo: desgaste elevado. Prioridade alto.,
+829,52,829,,39,preventiva,concluido,2026-05-05 10:00:00,2026-05-07 01:00:00,alto,Chamado preventiva para pet. Motivo: desgaste elevado. Prioridade alto.,39
+830,52,830,,,preventiva,nao atribuido,2026-06-04 09:00:00,,medio,Chamado preventiva para ultrassom. Motivo: desgaste elevado. Prioridade medio.,
+831,52,831,,,preventiva,nao atribuido,2026-06-03 05:00:00,,baixo,Chamado preventiva para ressonancia magnetica. Motivo: MTBF proximo do vencimento. Prioridade baixo.,
+832,52,832,,55,preventiva,em andamento,2026-05-28 07:00:00,,medio,Chamado preventiva para pet. Motivo: desgaste elevado. Prioridade medio.,
+833,53,833,,,preventiva,nao atribuido,2026-05-25 16:00:00,,baixo,Chamado preventiva para ultrassom. Motivo: MTBF proximo do vencimento. Prioridade baixo.,
+834,53,834,,57,preventiva,em andamento,2026-05-26 21:00:00,,baixo,Chamado preventiva para tc. Motivo: MTBF proximo do vencimento. Prioridade baixo.,
+835,53,835,,36,preventiva,concluido,2026-01-12 08:00:00,2026-01-14 03:00:00,alto,Chamado preventiva para ressonancia magnetica. Motivo: desgaste elevado. Prioridade alto.,43
+836,53,836,565,27,corretiva,concluido,2026-03-14 08:44:00,2026-03-14 20:44:00,alto,Parada por falha em raio x. Prioridade alto.,12
+837,53,837,,,preventiva,nao atribuido,2026-05-26 10:00:00,,baixo,Chamado preventiva para pet. Motivo: desgaste elevado. Prioridade baixo.,
+838,53,838,,,preventiva,nao atribuido,2026-06-05 12:00:00,,medio,Chamado preventiva para raio x. Motivo: desgaste elevado. Prioridade medio.,
+839,53,839,,,preventiva,nao atribuido,2026-05-31 05:00:00,,medio,Chamado preventiva para ultrassom. Motivo: desgaste elevado. Prioridade medio.,
+840,53,840,,36,preventiva,concluido,2026-02-25 06:00:00,2026-02-26 03:00:00,alto,Chamado preventiva para ressonancia magnetica. Motivo: desgaste elevado. Prioridade alto.,21
+841,53,841,566,37,corretiva,concluido,2026-03-14 16:15:00,2026-03-15 05:15:00,medio,Parada por falha em angiografia. Prioridade medio.,13
+842,53,842,567,25,corretiva,concluido,2026-02-22 22:21:00,2026-02-23 14:21:00,medio,Parada por falha em ressonancia magnetica. Prioridade medio.,16
+843,53,843,,37,preventiva,concluido,2026-04-20 22:00:00,2026-04-21 11:00:00,alto,Chamado preventiva para angiografia. Motivo: MTBF proximo do vencimento. Prioridade alto.,13
+844,53,844,568,53,corretiva,concluido,2026-02-07 03:13:00,2026-02-07 20:13:00,medio,Parada por falha em raio x. Prioridade medio.,17
+845,53,845,,59,preventiva,concluido,2026-04-17 09:00:00,2026-04-19 09:00:00,alto,Chamado preventiva para raio x. Motivo: desgaste elevado. Prioridade alto.,48
+846,53,846,569,35,corretiva,concluido,2026-04-26 23:13:00,2026-04-27 22:13:00,medio,Parada por falha em ressonancia magnetica. Prioridade medio.,23
+847,53,847,,9,preventiva,concluido,2026-03-04 09:00:00,2026-03-05 14:00:00,alto,Chamado preventiva para pet. Motivo: desgaste elevado. Prioridade alto.,29
+848,53,848,,47,preventiva,em andamento,2026-06-01 01:00:00,,medio,Chamado preventiva para pet. Motivo: desgaste elevado. Prioridade medio.,
+849,54,849,,,preventiva,nao atribuido,2026-05-25 15:00:00,,medio,Chamado preventiva para ressonancia magnetica. Motivo: desgaste elevado. Prioridade medio.,
+850,54,850,570,57,corretiva,concluido,2026-02-06 10:38:00,2026-02-07 06:38:00,medio,Parada por falha em ultrassom. Prioridade medio.,20
+851,54,851,,25,preventiva,concluido,2026-04-20 19:00:00,2026-04-21 19:00:00,medio,Chamado preventiva para ultrassom. Motivo: desgaste elevado. Prioridade medio.,24
+852,54,852,571,47,corretiva,concluido,2026-02-25 03:52:00,2026-02-25 15:52:00,medio,Parada por falha em tc. Prioridade medio.,12
+853,54,853,,29,preventiva,atribuido,2026-06-01 08:00:00,,baixo,Chamado preventiva para angiografia. Motivo: desgaste elevado. Prioridade baixo.,
+854,54,854,,2,preventiva,atribuido,2026-06-03 10:00:00,,medio,Chamado preventiva para angiografia. Motivo: desgaste elevado. Prioridade medio.,
+855,54,855,,,preventiva,nao atribuido,2026-05-23 06:00:00,,baixo,Chamado preventiva para raio x. Motivo: MTBF proximo do vencimento. Prioridade baixo.,
+856,54,856,,,preventiva,nao atribuido,2026-06-04 18:00:00,,alto,Chamado preventiva para tc. Motivo: desgaste elevado. Prioridade alto.,
+857,54,857,572,15,corretiva,concluido,2026-02-01 16:26:00,2026-02-02 11:26:00,baixo,Parada por falha em pet. Prioridade baixo.,19
+858,54,858,573,23,corretiva,concluido,2026-04-26 12:33:00,2026-04-26 19:33:00,baixo,Parada por falha em pet. Prioridade baixo.,7
+859,54,859,574,49,corretiva,concluido,2026-03-20 01:19:00,2026-03-20 11:19:00,alto,Parada por falha em angiografia. Prioridade alto.,10
+860,54,860,,49,preventiva,atribuido,2026-06-02 15:00:00,,alto,Chamado preventiva para angiografia. Motivo: desgaste elevado. Prioridade alto.,
+861,54,861,,40,preventiva,concluido,2026-01-04 15:00:00,2026-01-05 09:00:00,alto,Chamado preventiva para ultrassom. Motivo: MTBF proximo do vencimento. Prioridade alto.,18
+862,54,862,,33,preventiva,em andamento,2026-05-25 02:00:00,,medio,Chamado preventiva para arco cirurgico. Motivo: desgaste elevado. Prioridade medio.,
+863,54,863,,24,preventiva,atribuido,2026-05-24 10:00:00,,medio,Chamado preventiva para ressonancia magnetica. Motivo: MTBF proximo do vencimento. Prioridade medio.,
+864,54,864,575,39,corretiva,concluido,2026-03-15 21:01:00,2026-03-16 17:01:00,medio,Parada por falha em ultrassom. Prioridade medio.,20
+865,55,865,,26,preventiva,atribuido,2026-06-02 07:00:00,,medio,Chamado preventiva para angiografia. Motivo: desgaste elevado. Prioridade medio.,
+866,55,866,,19,preventiva,concluido,2026-04-21 01:00:00,2026-04-22 15:00:00,baixo,Chamado preventiva para arco cirurgico. Motivo: desgaste elevado. Prioridade baixo.,38
+867,55,867,576,45,corretiva,concluido,2026-01-06 14:34:00,2026-01-07 00:34:00,medio,Parada por falha em ultrassom. Prioridade medio.,10
+868,55,868,,42,preventiva,concluido,2026-04-05 04:00:00,2026-04-05 16:00:00,baixo,Chamado preventiva para tc. Motivo: MTBF proximo do vencimento. Prioridade baixo.,12
+869,55,869,,18,preventiva,concluido,2026-03-23 15:00:00,2026-03-24 00:00:00,alto,Chamado preventiva para pet. Motivo: desgaste elevado. Prioridade alto.,9
+870,55,870,,55,preventiva,concluido,2026-01-14 10:00:00,2026-01-15 19:00:00,alto,Chamado preventiva para tc. Motivo: desgaste elevado. Prioridade alto.,33
+871,55,871,577,21,corretiva,concluido,2026-04-17 11:07:00,2026-04-17 22:07:00,medio,Parada por falha em pet. Prioridade medio.,11
+872,55,872,,42,preventiva,concluido,2026-01-22 03:00:00,2026-01-23 23:00:00,baixo,Chamado preventiva para arco cirurgico. Motivo: desgaste elevado. Prioridade baixo.,44
+873,55,873,,44,preventiva,concluido,2026-01-31 06:00:00,2026-01-31 20:00:00,baixo,Chamado preventiva para ressonancia magnetica. Motivo: MTBF proximo do vencimento. Prioridade baixo.,14
+874,55,874,,2,preventiva,concluido,2025-12-25 04:00:00,2025-12-26 08:00:00,baixo,Chamado preventiva para raio x. Motivo: MTBF proximo do vencimento. Prioridade baixo.,28
+875,55,875,578,58,corretiva,concluido,2026-02-23 02:37:00,2026-02-23 21:37:00,alto,Parada por falha em arco cirurgico. Prioridade alto.,19
+876,55,876,579,50,corretiva,concluido,2026-03-30 06:44:00,2026-03-30 22:44:00,alto,Parada por falha em ressonancia magnetica. Prioridade alto.,16
+877,55,877,580,37,corretiva,concluido,2026-04-15 03:21:00,2026-04-15 17:21:00,medio,Parada por falha em tc. Prioridade medio.,14
+878,55,878,,,preventiva,nao atribuido,2026-05-30 05:00:00,,medio,Chamado preventiva para tc. Motivo: desgaste elevado. Prioridade medio.,
+879,55,879,,35,preventiva,em andamento,2026-05-27 03:00:00,,alto,Chamado preventiva para tc. Motivo: desgaste elevado. Prioridade alto.,
+880,55,880,,,preventiva,nao atribuido,2026-06-04 01:00:00,,alto,Chamado preventiva para raio x. Motivo: desgaste elevado. Prioridade alto.,
+881,56,881,,48,preventiva,concluido,2026-01-11 03:00:00,2026-01-11 17:00:00,medio,Chamado preventiva para raio x. Motivo: desgaste elevado. Prioridade medio.,14
+882,56,882,,60,preventiva,concluido,2026-01-25 12:00:00,2026-01-26 09:00:00,baixo,Chamado preventiva para raio x. Motivo: MTBF proximo do vencimento. Prioridade baixo.,21
+883,56,883,,,preventiva,nao atribuido,2026-05-31 18:00:00,,alto,Chamado preventiva para arco cirurgico. Motivo: MTBF proximo do vencimento. Prioridade alto.,
+884,56,884,,32,preventiva,em andamento,2026-06-01 22:00:00,,baixo,Chamado preventiva para pet. Motivo: MTBF proximo do vencimento. Prioridade baixo.,
+885,56,885,581,35,corretiva,concluido,2026-03-12 04:23:00,2026-03-12 15:23:00,medio,Parada por falha em tc. Prioridade medio.,11
+886,56,886,582,25,corretiva,concluido,2026-03-24 11:36:00,2026-03-25 03:36:00,baixo,Parada por falha em tc. Prioridade baixo.,16
+887,56,887,,13,preventiva,concluido,2026-04-29 04:00:00,2026-04-30 22:00:00,medio,Chamado preventiva para arco cirurgico. Motivo: desgaste elevado. Prioridade medio.,42
+888,56,888,583,20,corretiva,concluido,2026-04-23 07:52:00,2026-04-23 22:52:00,alto,Parada por falha em ressonancia magnetica. Prioridade alto.,15
+889,56,889,584,35,corretiva,concluido,2026-01-27 17:59:00,2026-01-28 04:59:00,baixo,Parada por falha em ressonancia magnetica. Prioridade baixo.,11
+890,56,890,,37,preventiva,atribuido,2026-05-30 13:00:00,,medio,Chamado preventiva para tc. Motivo: MTBF proximo do vencimento. Prioridade medio.,
+891,56,891,585,47,corretiva,concluido,2026-02-11 00:51:00,2026-02-11 05:51:00,medio,Parada por falha em pet. Prioridade medio.,5
+892,56,892,,34,preventiva,atribuido,2026-05-30 04:00:00,,alto,Chamado preventiva para angiografia. Motivo: desgaste elevado. Prioridade alto.,
+893,56,893,586,58,corretiva,concluido,2026-02-01 13:00:00,2026-02-02 00:00:00,alto,Parada por falha em tc. Prioridade alto.,11
+894,56,894,,23,preventiva,atribuido,2026-05-25 02:00:00,,baixo,Chamado preventiva para ultrassom. Motivo: MTBF proximo do vencimento. Prioridade baixo.,
+895,56,895,587,8,corretiva,concluido,2026-02-01 04:05:00,2026-02-01 13:05:00,alto,Parada por falha em arco cirurgico. Prioridade alto.,9
+896,56,896,,50,preventiva,concluido,2026-01-23 03:00:00,2026-01-24 11:00:00,baixo,Chamado preventiva para ressonancia magnetica. Motivo: desgaste elevado. Prioridade baixo.,32
+897,57,897,588,17,corretiva,concluido,2026-05-12 04:51:00,2026-05-12 13:51:00,medio,Parada por falha em pet. Prioridade medio.,9
+898,57,898,589,22,corretiva,concluido,2026-04-03 02:18:00,2026-04-03 20:18:00,alto,Parada por falha em pet. Prioridade alto.,18
+899,57,899,,51,preventiva,concluido,2026-02-16 18:00:00,2026-02-18 18:00:00,baixo,Chamado preventiva para tc. Motivo: desgaste elevado. Prioridade baixo.,48
+900,57,900,,21,preventiva,em andamento,2026-06-03 21:00:00,,baixo,Chamado preventiva para ultrassom. Motivo: desgaste elevado. Prioridade baixo.,
+901,57,901,,,preventiva,nao atribuido,2026-05-24 23:00:00,,medio,Chamado preventiva para raio x. Motivo: desgaste elevado. Prioridade medio.,
+902,57,902,,45,preventiva,atribuido,2026-06-03 17:00:00,,baixo,Chamado preventiva para arco cirurgico. Motivo: desgaste elevado. Prioridade baixo.,
+903,57,903,,39,preventiva,atribuido,2026-05-29 10:00:00,,alto,Chamado preventiva para pet. Motivo: MTBF proximo do vencimento. Prioridade alto.,
+904,57,904,,23,preventiva,atribuido,2026-05-23 03:00:00,,medio,Chamado preventiva para ultrassom. Motivo: MTBF proximo do vencimento. Prioridade medio.,
+905,57,905,590,25,corretiva,concluido,2026-02-08 20:00:00,2026-02-09 09:00:00,alto,Parada por falha em tc. Prioridade alto.,13
+906,57,906,,,preventiva,nao atribuido,2026-05-23 23:00:00,,baixo,Chamado preventiva para pet. Motivo: desgaste elevado. Prioridade baixo.,
+907,57,907,,,preventiva,nao atribuido,2026-05-24 13:00:00,,baixo,Chamado preventiva para arco cirurgico. Motivo: desgaste elevado. Prioridade baixo.,
+908,57,908,,18,preventiva,concluido,2026-02-23 06:00:00,2026-02-24 01:00:00,baixo,Chamado preventiva para arco cirurgico. Motivo: desgaste elevado. Prioridade baixo.,19
+909,57,909,,55,preventiva,concluido,2026-05-18 12:00:00,2026-05-19 11:00:00,alto,Chamado preventiva para raio x. Motivo: MTBF proximo do vencimento. Prioridade alto.,23
+910,57,910,,7,preventiva,atribuido,2026-05-29 23:00:00,,alto,Chamado preventiva para angiografia. Motivo: desgaste elevado. Prioridade alto.,
+911,57,911,,,preventiva,nao atribuido,2026-06-01 06:00:00,,baixo,Chamado preventiva para arco cirurgico. Motivo: desgaste elevado. Prioridade baixo.,
+912,57,912,,40,preventiva,atribuido,2026-05-28 11:00:00,,medio,Chamado preventiva para ultrassom. Motivo: desgaste elevado. Prioridade medio.,
+913,58,913,,50,preventiva,atribuido,2026-05-24 21:00:00,,medio,Chamado preventiva para angiografia. Motivo: desgaste elevado. Prioridade medio.,
+914,58,914,,6,preventiva,atribuido,2026-06-01 19:00:00,,baixo,Chamado preventiva para pet. Motivo: desgaste elevado. Prioridade baixo.,
+915,58,915,591,42,corretiva,concluido,2026-02-06 16:12:00,2026-02-07 11:12:00,baixo,Parada por falha em arco cirurgico. Prioridade baixo.,19
+916,58,916,,3,preventiva,atribuido,2026-05-23 01:00:00,,alto,Chamado preventiva para raio x. Motivo: desgaste elevado. Prioridade alto.,
+917,58,917,,58,preventiva,em andamento,2026-05-29 07:00:00,,alto,Chamado preventiva para pet. Motivo: MTBF proximo do vencimento. Prioridade alto.,
+918,58,918,592,29,corretiva,concluido,2026-01-08 19:24:00,2026-01-09 00:24:00,alto,Parada por falha em arco cirurgico. Prioridade alto.,5
+919,58,919,593,38,corretiva,concluido,2026-04-13 13:01:00,2026-04-13 21:01:00,medio,Parada por falha em angiografia. Prioridade medio.,8
+920,58,920,,,preventiva,nao atribuido,2026-05-28 19:00:00,,baixo,Chamado preventiva para tc. Motivo: desgaste elevado. Prioridade baixo.,
+921,58,921,,33,preventiva,concluido,2026-03-28 22:00:00,2026-03-29 15:00:00,baixo,Chamado preventiva para tc. Motivo: desgaste elevado. Prioridade baixo.,17
+922,58,922,,44,preventiva,concluido,2025-12-22 08:00:00,2025-12-24 00:00:00,medio,Chamado preventiva para ultrassom. Motivo: desgaste elevado. Prioridade medio.,40
+923,58,923,,56,preventiva,em andamento,2026-06-04 15:00:00,,baixo,Chamado preventiva para raio x. Motivo: desgaste elevado. Prioridade baixo.,
+924,58,924,,23,preventiva,concluido,2026-05-19 10:00:00,2026-05-20 15:00:00,baixo,Chamado preventiva para ultrassom. Motivo: MTBF proximo do vencimento. Prioridade baixo.,29
+925,58,925,,20,preventiva,atribuido,2026-05-24 12:00:00,,medio,Chamado preventiva para ressonancia magnetica. Motivo: desgaste elevado. Prioridade medio.,
+926,58,926,,27,preventiva,atribuido,2026-05-28 03:00:00,,medio,Chamado preventiva para ressonancia magnetica. Motivo: desgaste elevado. Prioridade medio.,
+927,58,927,,,preventiva,nao atribuido,2026-05-29 06:00:00,,medio,Chamado preventiva para tc. Motivo: desgaste elevado. Prioridade medio.,
+928,58,928,594,14,corretiva,concluido,2026-02-05 10:12:00,2026-02-06 02:12:00,alto,Parada por falha em angiografia. Prioridade alto.,16
+929,59,929,595,14,corretiva,concluido,2026-03-30 07:40:00,2026-03-30 13:40:00,alto,Parada por falha em angiografia. Prioridade alto.,6
+930,59,930,,35,preventiva,concluido,2026-02-10 14:00:00,2026-02-12 18:00:00,baixo,Chamado preventiva para raio x. Motivo: desgaste elevado. Prioridade baixo.,52
+931,59,931,596,12,corretiva,concluido,2026-04-05 19:59:00,2026-04-06 07:59:00,medio,Parada por falha em angiografia. Prioridade medio.,12
+932,59,932,597,20,corretiva,concluido,2026-03-07 14:56:00,2026-03-08 03:56:00,medio,Parada por falha em pet. Prioridade medio.,13
+933,59,933,,35,preventiva,concluido,2026-02-27 01:00:00,2026-02-27 16:00:00,baixo,Chamado preventiva para ressonancia magnetica. Motivo: desgaste elevado. Prioridade baixo.,15
+934,59,934,,29,preventiva,em andamento,2026-05-27 00:00:00,,alto,Chamado preventiva para arco cirurgico. Motivo: MTBF proximo do vencimento. Prioridade alto.,
+935,59,935,,33,preventiva,em andamento,2026-05-27 03:00:00,,medio,Chamado preventiva para arco cirurgico. Motivo: MTBF proximo do vencimento. Prioridade medio.,
+936,59,936,,19,preventiva,concluido,2026-03-21 19:00:00,2026-03-23 02:00:00,medio,Chamado preventiva para tc. Motivo: desgaste elevado. Prioridade medio.,31
+937,59,937,,,preventiva,nao atribuido,2026-05-27 06:00:00,,medio,Chamado preventiva para ressonancia magnetica. Motivo: desgaste elevado. Prioridade medio.,
+938,59,938,,,preventiva,nao atribuido,2026-05-31 07:00:00,,baixo,Chamado preventiva para angiografia. Motivo: desgaste elevado. Prioridade baixo.,
+939,59,939,,30,preventiva,atribuido,2026-05-31 21:00:00,,alto,Chamado preventiva para tc. Motivo: desgaste elevado. Prioridade alto.,
+940,59,940,,26,preventiva,em andamento,2026-05-23 18:00:00,,alto,Chamado preventiva para arco cirurgico. Motivo: desgaste elevado. Prioridade alto.,
+941,59,941,,,preventiva,nao atribuido,2026-05-25 18:00:00,,baixo,Chamado preventiva para pet. Motivo: desgaste elevado. Prioridade baixo.,
+942,59,942,598,44,corretiva,concluido,2026-01-02 18:54:00,2026-01-03 09:54:00,baixo,Parada por falha em ressonancia magnetica. Prioridade baixo.,15
+943,59,943,599,44,corretiva,concluido,2026-01-28 06:52:00,2026-01-28 21:52:00,medio,Parada por falha em ultrassom. Prioridade medio.,15
+944,59,944,,8,preventiva,em andamento,2026-05-27 20:00:00,,alto,Chamado preventiva para angiografia. Motivo: desgaste elevado. Prioridade alto.,

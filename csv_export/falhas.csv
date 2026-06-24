@@ -1,0 +1,600 @@
+falha_id,equipamento_id,data_hora_falha,tipo_falha,origem_falha,descricao_falha,severidade,status_falha,log_id
+1,1,2026-05-27 04:00:00,falha no slip ring,hardware,slip_ring_error_rate acima do limite operacional (0.16 vs 0.075).,alto,aberta,4068
+2,2,2026-05-29 17:00:00,superaquecimento do tubo,hardware,tube_heat_units acima do limite operacional (1200000.0 vs 790000).,alto,aberta,8449
+3,3,2026-05-06 06:00:00,superaquecimento do tubo,hardware,tube_temp acima do limite operacional (105.0 vs 79).,alto,fechada,12206
+4,4,2026-05-26 15:00:00,superaquecimento,hardware,transducer_temp acima do limite operacional (58.0 vs 46).,medio,aberta,17015
+5,5,2026-01-02 12:00:00,superaquecimento do tubo,hardware,tube_heat_units acima do limite operacional (1147661.636 vs 790000).,alto,fechada,17876
+6,7,2026-03-14 08:00:00,superaquecimento,hardware,transducer_temp acima do limite operacional (58.0 vs 46).,medio,fechada,28216
+7,9,2026-05-25 07:00:00,desgaste mecanico,mecanica,vibration acima do limite operacional (2.8 vs 1.45).,medio,aberta,38583
+8,10,2026-04-22 15:00:00,quench,criogenia,magnet_temp acima do limite operacional (9.5 vs 7.0).,critico,fechada,42119
+9,11,2026-05-31 05:00:00,quench,criogenia,magnet_temp acima do limite operacional (9.5 vs 7.0).,critico,aberta,47365
+10,13,2026-05-28 19:00:00,desgaste mecanico,mecanica,vibration acima do limite operacional (2.8 vs 1.45).,medio,aberta,55947
+11,14,2026-05-03 19:00:00,travamento mecanico,mecanica,vibration acima do limite operacional (2.8 vs 1.45).,alto,fechada,59667
+12,15,2026-06-03 21:00:00,desgaste mecanico,mecanica,vibration acima do limite operacional (2.8 vs 1.45).,medio,aberta,64733
+13,17,2026-05-31 02:00:00,travamento mecanico,mecanica,vibration acima do limite operacional (2.8 vs 1.45).,alto,aberta,73282
+14,20,2026-05-29 03:00:00,quench,criogenia,magnet_temp acima do limite operacional (9.5 vs 7.0).,critico,aberta,86195
+15,21,2026-01-03 10:00:00,desalinhamento do gantry,hardware,gantry_vibration_fft acima do limite operacional (3.2 vs 1.85).,medio,fechada,87018
+16,22,2026-05-29 01:00:00,falha no slip ring,hardware,slip_ring_error_rate acima do limite operacional (0.16 vs 0.075).,alto,aberta,94833
+17,23,2026-06-02 11:00:00,elemento da sonda queimado,hardware,probe_element_status abaixo do limite operacional (35.0 vs 63).,medio,aberta,99259
+18,24,2026-05-28 22:00:00,falha HV,eletrica,hv_power_stability abaixo do limite operacional (86.0 vs 91).,alto,aberta,103470
+19,25,2026-04-15 11:00:00,falha no slip ring,hardware,slip_ring_error_rate acima do limite operacional (0.16 vs 0.075).,alto,fechada,106747
+20,26,2026-04-07 08:00:00,desgaste mecanico,mecanica,vibration acima do limite operacional (2.8 vs 1.45).,medio,fechada,110872
+21,27,2026-05-30 00:00:00,desgaste mecanico,mecanica,vibration acima do limite operacional (2.8 vs 1.45).,medio,aberta,116456
+22,28,2026-06-04 03:00:00,falha de gradiente,hardware,gradient_coil_temp acima do limite operacional (72.0 vs 49).,alto,aberta,120899
+23,29,2026-06-04 10:00:00,falha no slip ring,hardware,slip_ring_error_rate acima do limite operacional (0.16 vs 0.075).,alto,aberta,125226
+24,30,2026-05-24 22:00:00,falha HV,eletrica,hv_power_stability abaixo do limite operacional (87.1 vs 91).,alto,aberta,129294
+25,31,2026-05-27 09:00:00,superaquecimento do tubo,hardware,tube_heat_units acima do limite operacional (1185800.0 vs 790000).,alto,aberta,133673
+26,33,2026-05-28 02:00:00,elemento da sonda queimado,hardware,probe_element_status abaixo do limite operacional (47.964 vs 63).,medio,aberta,142330
+27,35,2026-05-27 00:00:00,desgaste mecanico,mecanica,vibration acima do limite operacional (2.8 vs 1.45).,medio,aberta,150944
+28,36,2026-05-26 02:00:00,desgaste mecanico,mecanica,vibration acima do limite operacional (2.8 vs 1.45).,medio,aberta,155242
+29,37,2026-05-30 00:00:00,falha HV,eletrica,hv_power_stability abaixo do limite operacional (86.009 vs 91).,alto,aberta,159656
+30,38,2026-05-25 01:00:00,elemento da sonda queimado,hardware,probe_element_status abaixo do limite operacional (35.0 vs 63).,medio,aberta,163857
+31,40,2026-01-16 08:00:00,superaquecimento,hardware,transducer_temp acima do limite operacional (58.0 vs 46).,medio,fechada,169408
+32,41,2026-02-07 13:00:00,falha de gradiente,hardware,gradient_coil_temp acima do limite operacional (72.0 vs 49).,alto,fechada,174261
+33,42,2026-01-02 13:00:00,falha HV,eletrica,hv_power_stability abaixo do limite operacional (86.0 vs 91).,alto,fechada,177717
+34,43,2025-12-31 15:00:00,superaquecimento do tubo,hardware,tube_temp acima do limite operacional (105.0 vs 79).,alto,fechada,181991
+35,44,2026-05-27 15:00:00,superaquecimento do tubo,hardware,tube_heat_units acima do limite operacional (1200000.0 vs 790000).,alto,aberta,189839
+36,45,2026-03-15 06:00:00,falha no slip ring,hardware,slip_ring_error_rate acima do limite operacional (0.16 vs 0.075).,alto,fechada,192398
+37,46,2026-06-04 12:00:00,falha da fonte,eletrica,psu_voltage_rails abaixo do limite operacional (10.8 vs 11.35).,alto,aberta,198668
+38,47,2026-01-05 20:00:00,superaquecimento do tubo,hardware,tube_heat_units acima do limite operacional (1200000.0 vs 790000).,alto,fechada,199396
+39,48,2026-05-01 19:00:00,travamento mecanico,mecanica,vibration acima do limite operacional (2.8 vs 1.45).,alto,fechada,206499
+40,49,2026-04-17 01:00:00,travamento mecanico,mecanica,vibration acima do limite operacional (2.8 vs 1.45).,alto,fechada,210465
+41,51,2026-05-29 15:00:00,falha da fonte,eletrica,psu_voltage_rails abaixo do limite operacional (10.8 vs 11.35).,alto,aberta,220127
+42,52,2026-06-02 23:00:00,desgaste mecanico,mecanica,vibration acima do limite operacional (2.8 vs 1.45).,medio,aberta,224551
+43,54,2026-05-29 10:00:00,elemento da sonda queimado,hardware,probe_element_status abaixo do limite operacional (57.059 vs 63).,medio,aberta,233082
+44,56,2026-04-22 01:00:00,desgaste mecanico,mecanica,vibration acima do limite operacional (2.8 vs 1.45).,medio,fechada,240825
+45,57,2026-05-26 06:00:00,quench,criogenia,magnet_temp acima do limite operacional (9.5 vs 7.0).,critico,aberta,245966
+46,58,2026-05-10 12:00:00,quench,criogenia,magnet_temp acima do limite operacional (9.5 vs 7.0).,critico,fechada,249908
+47,59,2026-05-25 14:00:00,travamento mecanico,mecanica,vibration acima do limite operacional (2.8 vs 1.45).,alto,aberta,254590
+48,60,2026-05-30 05:00:00,travamento mecanico,mecanica,vibration acima do limite operacional (2.8 vs 1.45).,alto,aberta,259021
+49,61,2026-05-26 00:00:00,superaquecimento do tubo,hardware,tube_heat_units acima do limite operacional (1198425.719 vs 790000).,alto,aberta,263240
+50,62,2026-06-01 17:00:00,travamento mecanico,mecanica,vibration acima do limite operacional (2.8 vs 1.45).,alto,aberta,267721
+51,63,2026-05-28 10:00:00,desgaste mecanico,mecanica,vibration acima do limite operacional (2.8 vs 1.45).,medio,aberta,271938
+52,66,2026-05-25 14:00:00,elemento da sonda queimado,hardware,probe_element_status abaixo do limite operacional (58.499 vs 63).,medio,aberta,284830
+53,67,2026-05-25 06:00:00,desgaste mecanico,mecanica,vibration acima do limite operacional (2.8 vs 1.45).,medio,aberta,289142
+54,68,2026-04-23 23:00:00,falha no slip ring,hardware,slip_ring_error_rate acima do limite operacional (0.16 vs 0.075).,alto,fechada,292711
+55,70,2026-01-05 18:00:00,desgaste do anodo,hardware,anode_rotation_speed abaixo do limite operacional (7800.0 vs 8500).,medio,fechada,298754
+56,71,2026-06-04 10:00:00,superaquecimento do tubo,hardware,tube_temp acima do limite operacional (105.0 vs 79).,alto,aberta,306666
+57,72,2026-04-05 03:00:00,superaquecimento do tubo,hardware,tube_heat_units acima do limite operacional (1151067.118 vs 790000).,alto,fechada,309539
+58,75,2026-02-07 05:00:00,desgaste mecanico,mecanica,vibration acima do limite operacional (2.8 vs 1.45).,medio,fechada,321133
+59,76,2026-02-10 07:00:00,elemento da sonda queimado,hardware,probe_element_status abaixo do limite operacional (35.0 vs 63).,medio,fechada,325527
+60,77,2026-02-27 21:00:00,desgaste mecanico,mecanica,vibration acima do limite operacional (2.8 vs 1.45).,medio,fechada,330269
+61,78,2026-06-03 08:00:00,falha HV,eletrica,hv_power_stability abaixo do limite operacional (89.144 vs 91).,alto,aberta,336880
+62,79,2026-05-25 00:00:00,travamento mecanico,mecanica,vibration acima do limite operacional (2.8 vs 1.45).,alto,aberta,340976
+63,80,2026-05-30 02:00:00,quench,criogenia,magnet_temp acima do limite operacional (9.5 vs 7.0).,critico,aberta,345418
+64,81,2026-05-29 22:00:00,falha HV,eletrica,hv_power_stability abaixo do limite operacional (86.0 vs 91).,alto,aberta,349734
+65,83,2026-05-24 20:00:00,superaquecimento do tubo,hardware,tube_heat_units acima do limite operacional (1200000.0 vs 790000).,alto,aberta,358252
+66,84,2026-06-01 23:00:00,elemento da sonda queimado,hardware,probe_element_status abaixo do limite operacional (35.0 vs 63).,medio,aberta,362767
+67,86,2026-06-02 02:00:00,elemento da sonda queimado,hardware,probe_element_status abaixo do limite operacional (35.0 vs 63).,medio,aberta,371410
+68,87,2026-05-28 11:00:00,elemento da sonda queimado,hardware,probe_element_status abaixo do limite operacional (35.0 vs 63).,medio,aberta,375619
+69,90,2026-03-13 14:00:00,superaquecimento do tubo,hardware,tube_heat_units acima do limite operacional (1200000.0 vs 790000).,alto,fechada,386758
+70,91,2026-06-01 08:00:00,travamento mecanico,mecanica,vibration acima do limite operacional (2.8 vs 1.45).,alto,aberta,392992
+71,93,2026-05-30 00:00:00,falha no slip ring,hardware,slip_ring_error_rate acima do limite operacional (0.16 vs 0.075).,alto,aberta,401576
+72,94,2026-06-04 05:00:00,falha HV,eletrica,hv_power_stability abaixo do limite operacional (86.042 vs 91).,alto,aberta,406021
+73,95,2026-04-02 21:00:00,falha HV,eletrica,hv_power_stability abaixo do limite operacional (86.0 vs 91).,alto,fechada,408845
+74,96,2026-06-03 13:00:00,travamento mecanico,mecanica,vibration acima do limite operacional (2.8 vs 1.45).,alto,aberta,414645
+75,97,2026-06-01 07:00:00,travamento mecanico,mecanica,vibration acima do limite operacional (2.8 vs 1.45).,alto,aberta,418911
+76,98,2026-05-25 02:00:00,quench,criogenia,magnet_temp acima do limite operacional (9.5 vs 7.0).,critico,aberta,423058
+77,99,2026-01-27 16:00:00,superaquecimento do gerador,hardware,continuous_heat_rate acima do limite operacional (72.0 vs 48).,alto,fechada,424560
+78,100,2025-12-29 06:00:00,falha HV,eletrica,hv_power_stability abaixo do limite operacional (86.0 vs 91).,alto,fechada,428174
+79,101,2026-04-07 07:00:00,elemento da sonda queimado,hardware,probe_element_status abaixo do limite operacional (49.875 vs 63).,medio,fechada,434871
+80,102,2026-06-02 17:00:00,falha no slip ring,hardware,slip_ring_error_rate acima do limite operacional (0.16 vs 0.075).,alto,aberta,440545
+81,103,2026-05-14 02:00:00,travamento mecanico,mecanica,vibration acima do limite operacional (2.8 vs 1.45).,alto,fechada,444394
+82,104,2026-06-04 03:00:00,travamento mecanico,mecanica,vibration acima do limite operacional (2.8 vs 1.45).,alto,aberta,449219
+83,105,2026-02-16 21:00:00,falha de gradiente,hardware,gradient_coil_temp acima do limite operacional (72.0 vs 49).,alto,fechada,450965
+84,106,2026-05-25 20:00:00,superaquecimento do tubo,hardware,tube_heat_units acima do limite operacional (1200000.0 vs 790000).,alto,aberta,457636
+85,107,2026-02-17 09:00:00,falha da fonte,eletrica,psu_voltage_rails abaixo do limite operacional (10.8 vs 11.35).,alto,fechada,459617
+86,108,2026-06-03 21:00:00,desgaste mecanico,mecanica,vibration acima do limite operacional (2.8 vs 1.45).,medio,aberta,466493
+87,112,2026-05-24 18:00:00,degradacao detector,hardware,coincidence_timing acima do limite operacional (520.0 vs 430).,medio,aberta,483530
+88,114,2026-06-03 22:00:00,quench,criogenia,magnet_temp acima do limite operacional (9.5 vs 7.0).,critico,aberta,492414
+89,116,2026-05-30 05:00:00,desgaste mecanico,mecanica,vibration acima do limite operacional (2.8 vs 1.45).,medio,aberta,500941
+90,117,2026-03-17 01:00:00,superaquecimento do tubo,hardware,tube_heat_units acima do limite operacional (1190327.977 vs 790000).,alto,fechada,503481
+91,119,2026-01-09 11:00:00,degradacao detector,hardware,coincidence_timing acima do limite operacional (520.0 vs 430).,medio,fechada,510523
+92,120,2026-06-02 10:00:00,desgaste mecanico,mecanica,vibration acima do limite operacional (2.8 vs 1.45).,medio,aberta,518298
+93,121,2026-05-27 14:00:00,superaquecimento do tubo,hardware,tube_heat_units acima do limite operacional (1200000.0 vs 790000).,alto,aberta,522478
+94,122,2026-03-27 23:00:00,quench,criogenia,magnet_temp acima do limite operacional (9.5 vs 7.0).,critico,fechada,525343
+95,123,2026-03-20 01:00:00,superaquecimento do tubo,hardware,tube_temp acima do limite operacional (105.0 vs 79).,alto,fechada,529473
+96,124,2026-02-24 15:00:00,quench,criogenia,magnet_temp acima do limite operacional (9.5 vs 7.0).,critico,fechada,533231
+97,125,2026-05-26 23:00:00,falha HV,eletrica,hv_power_stability abaixo do limite operacional (86.002 vs 91).,alto,aberta,539743
+98,126,2026-06-04 05:00:00,superaquecimento do tubo,hardware,tube_heat_units acima do limite operacional (1162200.0 vs 790000).,alto,aberta,544261
+99,127,2026-01-29 19:00:00,quench,criogenia,magnet_temp acima do limite operacional (9.5 vs 7.0).,critico,fechada,545571
+100,128,2026-05-28 11:00:00,superaquecimento do tubo,hardware,tube_heat_units acima do limite operacional (1200000.0 vs 790000).,alto,aberta,552739
+101,129,2026-06-03 22:00:00,quench,criogenia,magnet_temp acima do limite operacional (9.5 vs 7.0).,critico,aberta,557214
+102,130,2026-06-01 05:00:00,quench,criogenia,magnet_temp acima do limite operacional (9.5 vs 7.0).,critico,aberta,561469
+103,131,2026-05-27 01:00:00,superaquecimento do tubo,hardware,tube_temp acima do limite operacional (105.0 vs 79).,alto,aberta,565665
+104,133,2026-05-29 18:00:00,travamento mecanico,mecanica,vibration acima do limite operacional (2.8 vs 1.45).,alto,aberta,574370
+105,134,2026-02-16 04:00:00,falha no slip ring,hardware,slip_ring_error_rate acima do limite operacional (0.16 vs 0.075).,alto,fechada,576228
+106,136,2026-05-20 14:00:00,superaquecimento do tubo,hardware,tube_heat_units acima do limite operacional (1200000.0 vs 790000).,alto,fechada,587110
+107,137,2026-04-11 04:00:00,travamento mecanico,mecanica,vibration acima do limite operacional (2.8 vs 1.45).,alto,fechada,590484
+108,139,2026-05-25 23:00:00,falha no slip ring,hardware,slip_ring_error_rate acima do limite operacional (0.16 vs 0.075).,alto,aberta,600199
+109,140,2026-04-30 11:00:00,falha no slip ring,hardware,slip_ring_error_rate acima do limite operacional (0.16 vs 0.075).,alto,fechada,603907
+110,141,2026-06-03 09:00:00,desgaste mecanico,mecanica,vibration acima do limite operacional (2.8 vs 1.45).,medio,aberta,609041
+111,142,2026-03-06 16:00:00,elemento da sonda queimado,hardware,probe_element_status abaixo do limite operacional (35.0 vs 63).,medio,fechada,611232
+112,143,2026-06-02 03:00:00,falha HV,eletrica,hv_power_stability abaixo do limite operacional (86.0 vs 91).,alto,aberta,617651
+113,144,2026-01-29 11:00:00,superaquecimento do tubo,hardware,tube_heat_units acima do limite operacional (1200000.0 vs 790000).,alto,fechada,619003
+114,147,2026-06-04 10:00:00,travamento mecanico,mecanica,vibration acima do limite operacional (2.8 vs 1.45).,alto,aberta,634986
+115,150,2026-01-04 20:00:00,elemento da sonda queimado,hardware,probe_element_status abaixo do limite operacional (35.0 vs 63).,medio,fechada,644332
+116,151,2026-06-03 22:00:00,falha no slip ring,hardware,slip_ring_error_rate acima do limite operacional (0.16 vs 0.075).,alto,aberta,652254
+117,152,2026-05-27 08:00:00,elemento da sonda queimado,hardware,probe_element_status abaixo do limite operacional (35.0 vs 63).,medio,aberta,656392
+118,153,2026-05-26 03:00:00,travamento mecanico,mecanica,vibration acima do limite operacional (2.8 vs 1.45).,alto,aberta,660683
+119,154,2026-05-31 12:00:00,falha no slip ring,hardware,slip_ring_error_rate acima do limite operacional (0.16 vs 0.075).,alto,aberta,665132
+120,155,2026-05-30 13:00:00,superaquecimento do tubo,hardware,tube_heat_units acima do limite operacional (1172147.99 vs 790000).,alto,aberta,669429
+121,156,2026-06-02 04:00:00,elemento da sonda queimado,hardware,probe_element_status abaixo do limite operacional (35.0 vs 63).,medio,aberta,673812
+122,157,2025-12-31 00:00:00,degradacao detector,hardware,coincidence_timing acima do limite operacional (520.0 vs 430).,medio,fechada,674456
+123,159,2026-01-20 08:00:00,superaquecimento do tubo,hardware,tube_heat_units acima do limite operacional (1164617.195 vs 790000).,alto,fechada,683584
+124,160,2026-05-25 16:00:00,desgaste mecanico,mecanica,vibration acima do limite operacional (2.8 vs 1.45).,medio,aberta,690912
+125,161,2026-02-15 14:00:00,desgaste mecanico,mecanica,vibration acima do limite operacional (2.8 vs 1.45).,medio,fechada,692854
+126,162,2026-05-28 12:00:00,falha no slip ring,hardware,slip_ring_error_rate acima do limite operacional (0.16 vs 0.075).,alto,aberta,699620
+127,163,2026-05-24 18:00:00,superaquecimento do tubo,hardware,tube_heat_units acima do limite operacional (1200000.0 vs 790000).,alto,aberta,703850
+128,164,2026-02-05 06:00:00,desgaste mecanico,mecanica,vibration acima do limite operacional (2.8 vs 1.45).,medio,fechada,705566
+129,165,2026-01-21 23:00:00,elemento da sonda queimado,hardware,probe_element_status abaixo do limite operacional (35.0 vs 63).,medio,fechada,709543
+130,166,2026-06-01 14:00:00,falha HV,eletrica,hv_power_stability abaixo do limite operacional (86.0 vs 91).,alto,aberta,716998
+131,167,2026-05-25 18:00:00,elemento da sonda queimado,hardware,probe_element_status abaixo do limite operacional (35.0 vs 63).,medio,aberta,721154
+132,168,2026-06-01 05:00:00,falha HV,eletrica,hv_power_stability abaixo do limite operacional (86.0 vs 91).,alto,aberta,725629
+133,169,2026-02-28 07:00:00,falha HV,eletrica,hv_power_stability abaixo do limite operacional (86.0 vs 91).,alto,fechada,727719
+134,170,2026-06-04 00:00:00,falha no slip ring,hardware,slip_ring_error_rate acima do limite operacional (0.16 vs 0.075).,alto,aberta,734336
+135,171,2026-05-28 02:00:00,falha HV,eletrica,hv_power_stability abaixo do limite operacional (86.0 vs 91).,alto,aberta,738490
+136,172,2026-02-04 22:00:00,travamento mecanico,mecanica,vibration acima do limite operacional (1.551 vs 1.45).,alto,fechada,740118
+137,174,2026-05-28 05:00:00,superaquecimento do tubo,hardware,tube_heat_units acima do limite operacional (1200000.0 vs 790000).,alto,aberta,751453
+138,175,2026-05-28 15:00:00,superaquecimento do tubo,hardware,tube_heat_units acima do limite operacional (1200000.0 vs 790000).,alto,aberta,755783
+139,176,2026-06-01 11:00:00,falha HV,eletrica,hv_power_stability abaixo do limite operacional (86.148 vs 91).,alto,aberta,760195
+140,177,2026-06-03 14:00:00,travamento mecanico,mecanica,vibration acima do limite operacional (2.8 vs 1.45).,alto,aberta,764566
+141,178,2026-01-06 12:00:00,desgaste mecanico,mecanica,vibration acima do limite operacional (2.8 vs 1.45).,medio,fechada,765332
+142,179,2026-06-01 13:00:00,desgaste mecanico,mecanica,vibration acima do limite operacional (2.8 vs 1.45).,medio,aberta,773157
+143,180,2026-06-03 00:00:00,travamento mecanico,mecanica,vibration acima do limite operacional (2.8 vs 1.45).,alto,aberta,777512
+144,181,2026-06-02 02:00:00,desgaste mecanico,mecanica,vibration acima do limite operacional (2.8 vs 1.45).,medio,aberta,781810
+145,182,2026-01-13 08:00:00,desalinhamento do gantry,hardware,gantry_vibration_fft acima do limite operacional (3.2 vs 1.85).,medio,fechada,782776
+146,183,2025-12-30 06:00:00,falha nao classificada,hardware,Anomalia detectada nos parametros.,medio,fechada,786758
+147,184,2026-01-04 20:00:00,falha HV,eletrica,hv_power_stability abaixo do limite operacional (86.0 vs 91).,alto,fechada,791212
+148,185,2026-06-01 12:00:00,superaquecimento do tubo,hardware,tube_temp acima do limite operacional (105.0 vs 79).,alto,aberta,799076
+149,186,2026-04-15 21:00:00,desgaste mecanico,mecanica,vibration acima do limite operacional (2.8 vs 1.45).,medio,fechada,802277
+150,190,2026-05-29 07:00:00,travamento mecanico,mecanica,vibration acima do limite operacional (2.8 vs 1.45).,alto,aberta,820599
+151,191,2026-06-01 13:00:00,falha HV,eletrica,hv_power_stability abaixo do limite operacional (89.064 vs 91).,alto,aberta,824997
+152,192,2026-01-07 02:00:00,falha HV,eletrica,hv_power_stability abaixo do limite operacional (86.0 vs 91).,alto,fechada,825826
+153,193,2026-01-15 16:00:00,falha HV,eletrica,hv_power_stability abaixo do limite operacional (86.0 vs 91).,alto,fechada,830352
+154,194,2026-06-01 12:00:00,travamento mecanico,mecanica,vibration acima do limite operacional (2.8 vs 1.45).,alto,aberta,837956
+155,195,2026-05-31 11:00:00,superaquecimento do tubo,hardware,tube_heat_units acima do limite operacional (1140724.968 vs 790000).,alto,aberta,842251
+156,196,2026-04-23 03:00:00,travamento mecanico,mecanica,vibration acima do limite operacional (2.8 vs 1.45).,alto,fechada,845651
+157,197,2026-06-02 10:00:00,superaquecimento do tubo,hardware,tube_heat_units acima do limite operacional (1200000.0 vs 790000).,alto,aberta,850938
+158,198,2026-05-06 02:00:00,superaquecimento do tubo,hardware,tube_heat_units acima do limite operacional (1180505.079 vs 790000).,alto,fechada,854602
+159,199,2026-05-07 16:00:00,elemento da sonda queimado,hardware,probe_element_status abaixo do limite operacional (51.499 vs 63).,medio,fechada,858960
+160,200,2026-05-28 09:00:00,desgaste mecanico,mecanica,vibration acima do limite operacional (2.8 vs 1.45).,medio,aberta,863777
+161,201,2026-02-15 02:00:00,desgaste do anodo,hardware,anode_rotation_speed abaixo do limite operacional (7800.0 vs 8500).,medio,fechada,865642
+162,202,2026-02-12 18:00:00,superaquecimento do tubo,hardware,tube_heat_units acima do limite operacional (1200000.0 vs 790000).,alto,fechada,869906
+163,205,2026-02-02 00:00:00,falha no slip ring,hardware,slip_ring_error_rate acima do limite operacional (0.16 vs 0.075).,alto,fechada,882608
+164,206,2026-04-12 02:00:00,falha no slip ring,hardware,slip_ring_error_rate acima do limite operacional (0.16 vs 0.075).,alto,fechada,888586
+165,207,2026-05-31 22:00:00,elemento da sonda queimado,hardware,probe_element_status abaixo do limite operacional (35.0 vs 63).,medio,aberta,894102
+166,208,2026-04-08 02:00:00,desgaste mecanico,mecanica,vibration acima do limite operacional (2.8 vs 1.45).,medio,fechada,897130
+167,209,2026-01-14 11:00:00,falha no slip ring,hardware,slip_ring_error_rate acima do limite operacional (0.16 vs 0.075).,alto,fechada,899443
+168,210,2026-05-29 09:00:00,quench,criogenia,magnet_temp acima do limite operacional (9.5 vs 7.0).,critico,aberta,907001
+169,212,2026-06-02 16:00:00,falha no slip ring,hardware,slip_ring_error_rate acima do limite operacional (0.16 vs 0.075).,alto,aberta,915744
+170,213,2026-06-02 15:00:00,falha HV,eletrica,hv_power_stability abaixo do limite operacional (86.0 vs 91).,alto,aberta,920063
+171,214,2026-05-27 16:00:00,falha de gradiente,hardware,gradient_coil_temp acima do limite operacional (72.0 vs 49).,alto,aberta,924240
+172,216,2026-01-14 07:00:00,falha no slip ring,hardware,slip_ring_error_rate acima do limite operacional (0.16 vs 0.075).,alto,fechada,929679
+173,217,2026-01-30 05:00:00,superaquecimento do tubo,hardware,tube_heat_units acima do limite operacional (1159122.66 vs 790000).,alto,fechada,934381
+174,218,2026-05-27 05:00:00,falha HV,eletrica,hv_power_stability abaixo do limite operacional (86.021 vs 91).,alto,aberta,941509
+175,220,2026-05-24 18:00:00,falha HV,eletrica,hv_power_stability abaixo do limite operacional (88.378 vs 91).,alto,aberta,950090
+176,221,2026-02-14 13:00:00,superaquecimento do tubo,hardware,tube_heat_units acima do limite operacional (1157396.654 vs 790000).,alto,fechada,952029
+177,222,2026-05-27 13:00:00,quench,criogenia,magnet_temp acima do limite operacional (9.5 vs 7.0).,critico,aberta,958797
+178,225,2026-05-29 11:00:00,elemento da sonda queimado,hardware,probe_element_status abaixo do limite operacional (58.261 vs 63).,medio,aberta,971803
+179,226,2026-04-27 21:00:00,falha no slip ring,hardware,slip_ring_error_rate acima do limite operacional (0.16 vs 0.075).,alto,fechada,975365
+180,227,2026-03-25 17:00:00,travamento mecanico,mecanica,vibration acima do limite operacional (2.8 vs 1.45).,alto,fechada,978889
+181,230,2025-12-27 09:00:00,degradacao detector,hardware,coincidence_timing acima do limite operacional (520.0 vs 430).,medio,fechada,989729
+182,231,2026-04-03 04:00:00,falha no slip ring,hardware,slip_ring_error_rate acima do limite operacional (0.16 vs 0.075).,alto,fechada,996372
+183,232,2026-05-29 11:00:00,superaquecimento do tubo,hardware,tube_heat_units acima do limite operacional (1200000.0 vs 790000).,alto,aberta,1002043
+184,233,2026-05-24 20:00:00,travamento mecanico,mecanica,vibration acima do limite operacional (2.8 vs 1.45).,alto,aberta,1006252
+185,234,2026-02-10 10:00:00,superaquecimento do tubo,hardware,tube_temp acima do limite operacional (105.0 vs 79).,alto,fechada,1008090
+186,235,2026-05-31 21:00:00,falha HV,eletrica,hv_power_stability abaixo do limite operacional (86.0 vs 91).,alto,aberta,1015061
+187,236,2026-06-02 15:00:00,elemento da sonda queimado,hardware,probe_element_status abaixo do limite operacional (35.0 vs 63).,medio,aberta,1019423
+188,237,2026-05-30 16:00:00,desgaste mecanico,mecanica,vibration acima do limite operacional (2.8 vs 1.45).,medio,aberta,1023672
+189,239,2026-05-26 04:00:00,superaquecimento do tubo,hardware,tube_heat_units acima do limite operacional (1161069.748 vs 790000).,alto,aberta,1032204
+190,240,2026-05-28 21:00:00,elemento da sonda queimado,hardware,probe_element_status abaixo do limite operacional (35.0 vs 63).,medio,aberta,1036589
+191,242,2026-03-19 03:00:00,desgaste mecanico,mecanica,vibration acima do limite operacional (2.8 vs 1.45).,medio,fechada,1043531
+192,243,2026-05-25 02:00:00,falha HV,eletrica,hv_power_stability abaixo do limite operacional (86.0 vs 91).,alto,aberta,1049458
+193,245,2026-05-25 22:00:00,travamento mecanico,mecanica,vibration acima do limite operacional (2.8 vs 1.45).,alto,aberta,1058118
+194,246,2026-05-27 06:00:00,falha no slip ring,hardware,slip_ring_error_rate acima do limite operacional (0.16 vs 0.075).,alto,aberta,1062470
+195,247,2026-05-18 16:00:00,desgaste mecanico,mecanica,vibration acima do limite operacional (2.8 vs 1.45).,medio,fechada,1066584
+196,248,2026-02-21 13:00:00,superaquecimento do tubo,hardware,tube_heat_units acima do limite operacional (1164976.007 vs 790000).,alto,fechada,1068837
+197,249,2026-05-31 13:00:00,elemento da sonda queimado,hardware,probe_element_status abaixo do limite operacional (35.0 vs 63).,medio,aberta,1075533
+198,250,2026-04-13 15:00:00,desgaste mecanico,mecanica,vibration acima do limite operacional (2.8 vs 1.45).,medio,fechada,1078703
+199,251,2026-05-27 20:00:00,falha HV,eletrica,hv_power_stability abaixo do limite operacional (86.017 vs 91).,alto,aberta,1084084
+200,252,2026-05-31 07:00:00,quench,criogenia,magnet_temp acima do limite operacional (9.5 vs 7.0).,critico,aberta,1088487
+201,254,2026-05-29 18:00:00,falha no slip ring,hardware,slip_ring_error_rate acima do limite operacional (0.16 vs 0.075).,alto,aberta,1097090
+202,256,2026-05-31 08:00:00,superaquecimento do tubo,hardware,tube_heat_units acima do limite operacional (1200000.0 vs 790000).,alto,aberta,1105768
+203,257,2026-04-18 16:00:00,falha da fonte,eletrica,psu_voltage_rails abaixo do limite operacional (10.8 vs 11.35).,alto,fechada,1109064
+204,258,2026-01-18 12:00:00,quench,criogenia,magnet_temp acima do limite operacional (9.5 vs 7.0).,critico,fechada,1111220
+205,261,2026-04-06 18:00:00,desgaste mecanico,mecanica,vibration acima do limite operacional (2.8 vs 1.45).,medio,fechada,1126058
+206,262,2026-01-13 03:00:00,superaquecimento do tubo,hardware,tube_heat_units acima do limite operacional (1200000.0 vs 790000).,alto,fechada,1128371
+207,264,2026-03-10 14:00:00,desgaste mecanico,mecanica,vibration acima do limite operacional (2.8 vs 1.45).,medio,fechada,1138366
+208,266,2026-05-29 02:00:00,falha no slip ring,hardware,slip_ring_error_rate acima do limite operacional (0.16 vs 0.075).,alto,aberta,1148914
+209,267,2026-05-31 01:00:00,elemento da sonda queimado,hardware,probe_element_status abaixo do limite operacional (35.0 vs 63).,medio,aberta,1153281
+210,268,2026-05-25 17:00:00,elemento da sonda queimado,hardware,probe_element_status abaixo do limite operacional (35.0 vs 63).,medio,aberta,1157473
+211,269,2026-05-29 12:00:00,falha de gradiente,hardware,gradient_coil_temp acima do limite operacional (72.0 vs 49).,alto,aberta,1161884
+212,270,2026-06-04 05:00:00,superaquecimento do tubo,hardware,tube_heat_units acima do limite operacional (1200000.0 vs 790000).,alto,aberta,1166341
+213,271,2026-02-22 06:00:00,elemento da sonda queimado,hardware,probe_element_status abaixo do limite operacional (35.0 vs 63).,medio,fechada,1168214
+214,272,2026-06-02 10:00:00,desgaste mecanico,mecanica,vibration acima do limite operacional (2.8 vs 1.45).,medio,aberta,1174938
+215,273,2026-06-01 03:00:00,desgaste mecanico,mecanica,vibration acima do limite operacional (2.8 vs 1.45).,medio,aberta,1179227
+216,275,2026-05-30 04:00:00,falha HV,eletrica,hv_power_stability abaixo do limite operacional (86.0 vs 91).,alto,aberta,1187820
+217,278,2026-06-03 00:00:00,falha HV,eletrica,hv_power_stability abaixo do limite operacional (86.0 vs 91).,alto,aberta,1200872
+218,280,2026-05-26 02:00:00,falha HV,eletrica,hv_power_stability abaixo do limite operacional (89.222 vs 91).,alto,aberta,1209322
+219,281,2026-04-05 21:00:00,travamento mecanico,mecanica,vibration acima do limite operacional (2.8 vs 1.45).,alto,fechada,1212437
+220,282,2026-05-26 08:00:00,desgaste mecanico,mecanica,vibration acima do limite operacional (2.8 vs 1.45).,medio,aberta,1217968
+221,283,2026-03-05 16:00:00,degradacao detector,hardware,coincidence_timing acima do limite operacional (520.0 vs 430).,medio,fechada,1220328
+222,284,2026-01-26 05:00:00,falha de gradiente,hardware,gradient_coil_temp acima do limite operacional (72.0 vs 49).,alto,fechada,1223725
+223,285,2026-06-03 09:00:00,degradacao detector,hardware,coincidence_timing acima do limite operacional (520.0 vs 430).,medio,aberta,1231121
+224,286,2026-01-27 21:00:00,superaquecimento,hardware,transducer_temp acima do limite operacional (58.0 vs 46).,medio,fechada,1232405
+225,287,2026-05-31 10:00:00,superaquecimento do tubo,hardware,tube_temp acima do limite operacional (105.0 vs 79).,alto,aberta,1239690
+226,288,2026-05-30 10:00:00,elemento da sonda queimado,hardware,probe_element_status abaixo do limite operacional (60.164 vs 63).,medio,aberta,1243986
+227,290,2026-02-16 16:00:00,travamento mecanico,mecanica,vibration acima do limite operacional (2.8 vs 1.45).,alto,fechada,1250160
+228,291,2026-05-28 09:00:00,travamento mecanico,mecanica,vibration acima do limite operacional (2.8 vs 1.45).,alto,aberta,1256897
+229,292,2026-02-14 11:00:00,desgaste mecanico,mecanica,vibration acima do limite operacional (2.8 vs 1.45).,medio,fechada,1258747
+230,296,2026-06-01 10:00:00,elemento da sonda queimado,hardware,probe_element_status abaixo do limite operacional (35.0 vs 63).,medio,aberta,1278594
+231,297,2025-12-31 10:00:00,superaquecimento,hardware,continuous_heat_rate acima do limite operacional (78.0 vs 54).,medio,fechada,1279266
+232,299,2026-04-21 14:00:00,elemento da sonda queimado,hardware,probe_element_status abaixo do limite operacional (35.0 vs 63).,medio,fechada,1290574
+233,300,2026-05-31 08:00:00,falha no slip ring,hardware,slip_ring_error_rate acima do limite operacional (0.16 vs 0.075).,alto,aberta,1295848
+234,301,2026-02-10 10:00:00,falha no slip ring,hardware,slip_ring_error_rate acima do limite operacional (0.16 vs 0.075).,alto,fechada,1297530
+235,302,2026-01-18 15:00:00,elemento da sonda queimado,hardware,probe_element_status abaixo do limite operacional (35.0 vs 63).,medio,fechada,1301303
+236,303,2026-02-24 05:00:00,desgaste mecanico,mecanica,vibration acima do limite operacional (2.8 vs 1.45).,medio,fechada,1306501
+237,305,2026-05-28 15:00:00,elemento da sonda queimado,hardware,probe_element_status abaixo do limite operacional (58.165 vs 63).,medio,aberta,1317383
+238,306,2026-01-23 03:00:00,falha HV,eletrica,hv_power_stability abaixo do limite operacional (86.0 vs 91).,alto,fechada,1318691
+239,307,2026-01-18 02:00:00,desalinhamento do gantry,hardware,gantry_vibration_fft acima do limite operacional (3.2 vs 1.85).,medio,fechada,1322890
+240,308,2026-05-30 06:00:00,desgaste mecanico,mecanica,vibration acima do limite operacional (2.8 vs 1.45).,medio,aberta,1330382
+241,309,2026-01-18 18:00:00,degradacao detector,hardware,coincidence_timing acima do limite operacional (520.0 vs 430).,medio,fechada,1331546
+242,310,2026-05-31 16:00:00,quench,criogenia,magnet_temp acima do limite operacional (9.5 vs 7.0).,critico,aberta,1339056
+243,311,2026-03-27 01:00:00,travamento mecanico,mecanica,vibration acima do limite operacional (2.8 vs 1.45).,alto,fechada,1341801
+244,312,2026-05-25 04:00:00,falha no slip ring,hardware,slip_ring_error_rate acima do limite operacional (0.16 vs 0.075).,alto,aberta,1347540
+245,315,2026-01-17 13:00:00,travamento mecanico,mecanica,vibration acima do limite operacional (2.8 vs 1.45).,alto,fechada,1357437
+246,316,2026-05-31 23:00:00,desgaste mecanico,mecanica,vibration acima do limite operacional (2.8 vs 1.45).,medio,aberta,1364983
+247,317,2026-06-02 07:00:00,superaquecimento do tubo,hardware,tube_temp acima do limite operacional (105.0 vs 79).,alto,aberta,1369335
+248,318,2026-05-26 11:00:00,desgaste mecanico,mecanica,vibration acima do limite operacional (2.8 vs 1.45).,medio,aberta,1373491
+249,319,2026-05-24 19:00:00,superaquecimento do tubo,hardware,tube_heat_units acima do limite operacional (1200000.0 vs 790000).,alto,aberta,1377771
+250,320,2026-05-26 10:00:00,superaquecimento do tubo,hardware,tube_heat_units acima do limite operacional (1182678.522 vs 790000).,alto,aberta,1382130
+251,321,2026-01-10 17:00:00,desgaste mecanico,mecanica,vibration acima do limite operacional (2.8 vs 1.45).,medio,fechada,1383193
+252,323,2026-05-25 13:00:00,travamento mecanico,mecanica,vibration acima do limite operacional (2.8 vs 1.45).,alto,aberta,1395069
+253,325,2026-05-28 22:00:00,superaquecimento do tubo,hardware,tube_heat_units acima do limite operacional (1200000.0 vs 790000).,alto,aberta,1403790
+254,327,2026-06-03 22:00:00,elemento da sonda queimado,hardware,probe_element_status abaixo do limite operacional (35.0 vs 63).,medio,aberta,1412574
+255,328,2026-05-27 23:00:00,degradacao detector,hardware,coincidence_timing acima do limite operacional (520.0 vs 430).,medio,aberta,1416727
+256,329,2026-04-09 02:00:00,falha no slip ring,hardware,slip_ring_error_rate acima do limite operacional (0.16 vs 0.075).,alto,fechada,1419874
+257,330,2026-05-01 16:00:00,travamento mecanico,mecanica,vibration acima do limite operacional (2.8 vs 1.45).,alto,fechada,1424736
+258,332,2026-06-04 12:00:00,falha de gradiente,hardware,gradient_coil_temp acima do limite operacional (72.0 vs 49).,alto,aberta,1434188
+259,333,2026-05-31 13:00:00,superaquecimento do tubo,hardware,tube_temp acima do limite operacional (105.0 vs 79).,alto,aberta,1438413
+260,334,2026-05-31 15:00:00,superaquecimento do tubo,hardware,tube_heat_units acima do limite operacional (1185400.0 vs 790000).,alto,aberta,1442735
+261,336,2026-05-27 08:00:00,quench,criogenia,magnet_temp acima do limite operacional (9.5 vs 7.0).,critico,aberta,1451272
+262,337,2026-03-12 20:00:00,falha no slip ring,hardware,slip_ring_error_rate acima do limite operacional (0.137 vs 0.075).,alto,fechada,1453780
+263,339,2026-02-16 02:00:00,superaquecimento,hardware,transducer_temp acima do limite operacional (58.0 vs 46).,medio,fechada,1461826
+264,341,2026-05-26 00:00:00,desgaste mecanico,mecanica,vibration acima do limite operacional (2.8 vs 1.45).,medio,aberta,1472840
+265,342,2026-05-28 04:00:00,elemento da sonda queimado,hardware,probe_element_status abaixo do limite operacional (35.0 vs 63).,medio,aberta,1477212
+266,343,2026-06-03 17:00:00,desgaste mecanico,mecanica,vibration acima do limite operacional (2.8 vs 1.45).,medio,aberta,1481689
+267,344,2026-05-25 06:00:00,falha no slip ring,hardware,slip_ring_error_rate acima do limite operacional (0.16 vs 0.075).,alto,aberta,1485782
+268,345,2026-05-29 16:00:00,travamento mecanico,mecanica,vibration acima do limite operacional (2.8 vs 1.45).,alto,aberta,1490208
+269,346,2026-06-04 15:00:00,elemento da sonda queimado,hardware,probe_element_status abaixo do limite operacional (35.0 vs 63).,medio,aberta,1494671
+270,347,2026-03-19 21:00:00,quench,criogenia,magnet_temp acima do limite operacional (9.5 vs 7.0).,critico,fechada,1497149
+271,348,2026-06-02 21:00:00,superaquecimento do tubo,hardware,tube_heat_units acima do limite operacional (1200000.0 vs 790000).,alto,aberta,1503269
+272,349,2026-06-04 09:00:00,quench,criogenia,magnet_temp acima do limite operacional (9.5 vs 7.0).,critico,aberta,1507625
+273,350,2026-01-05 17:00:00,superaquecimento,hardware,continuous_heat_rate acima do limite operacional (78.0 vs 54).,medio,fechada,1508353
+274,352,2026-02-11 18:00:00,quench,criogenia,magnet_temp acima do limite operacional (9.5 vs 7.0).,critico,fechada,1517882
+275,353,2026-03-13 12:00:00,superaquecimento do tubo,hardware,tube_heat_units acima do limite operacional (1200000.0 vs 790000).,alto,fechada,1522916
+276,354,2026-04-19 14:00:00,falha no slip ring,hardware,slip_ring_error_rate acima do limite operacional (0.16 vs 0.075).,alto,fechada,1528126
+277,355,2026-02-15 07:00:00,desgaste mecanico,mecanica,vibration acima do limite operacional (2.8 vs 1.45).,medio,fechada,1530927
+278,356,2026-05-28 07:00:00,desgaste mecanico,mecanica,vibration acima do limite operacional (2.8 vs 1.45).,medio,aberta,1537695
+279,357,2026-05-27 12:00:00,travamento mecanico,mecanica,vibration acima do limite operacional (2.8 vs 1.45).,alto,aberta,1541996
+280,358,2026-05-13 02:00:00,superaquecimento do tubo,hardware,tube_temp acima do limite operacional (105.0 vs 79).,alto,fechada,1545970
+281,359,2026-06-02 09:00:00,falha no slip ring,hardware,slip_ring_error_rate acima do limite operacional (0.16 vs 0.075).,alto,aberta,1550777
+282,360,2026-05-26 08:00:00,falha HV,eletrica,hv_power_stability abaixo do limite operacional (86.0 vs 91).,alto,aberta,1554928
+283,362,2026-05-30 18:00:00,falha no slip ring,hardware,slip_ring_error_rate acima do limite operacional (0.16 vs 0.075).,alto,aberta,1563674
+284,363,2026-05-26 17:00:00,quench,criogenia,magnet_temp acima do limite operacional (9.5 vs 7.0).,critico,aberta,1567897
+285,365,2026-05-29 14:00:00,travamento mecanico,mecanica,vibration acima do limite operacional (2.8 vs 1.45).,alto,aberta,1576606
+286,366,2026-01-28 08:00:00,superaquecimento do tubo,hardware,tube_heat_units acima do limite operacional (1160265.061 vs 790000).,alto,fechada,1578016
+287,371,2026-05-29 23:00:00,travamento mecanico,mecanica,vibration acima do limite operacional (2.8 vs 1.45).,alto,aberta,1602535
+288,372,2026-05-27 16:00:00,falha HV,eletrica,hv_power_stability abaixo do limite operacional (86.001 vs 91).,alto,aberta,1606800
+289,375,2026-05-14 10:00:00,travamento mecanico,mecanica,vibration acima do limite operacional (2.8 vs 1.45).,alto,fechada,1619442
+290,376,2026-04-06 17:00:00,falha no slip ring,hardware,slip_ring_error_rate acima do limite operacional (0.16 vs 0.075).,alto,fechada,1622857
+291,377,2026-05-20 07:00:00,travamento mecanico,mecanica,vibration acima do limite operacional (2.8 vs 1.45).,alto,fechada,1628223
+292,378,2026-06-01 19:00:00,superaquecimento do tubo,hardware,tube_heat_units acima do limite operacional (1200000.0 vs 790000).,alto,aberta,1632843
+293,379,2026-05-30 00:00:00,desgaste mecanico,mecanica,vibration acima do limite operacional (2.8 vs 1.45).,medio,aberta,1637096
+294,380,2026-05-25 17:00:00,superaquecimento do tubo,hardware,tube_heat_units acima do limite operacional (1200000.0 vs 790000).,alto,aberta,1641313
+295,381,2026-06-02 14:00:00,desgaste mecanico,mecanica,vibration acima do limite operacional (2.8 vs 1.45).,medio,aberta,1645822
+296,382,2026-05-26 22:00:00,travamento mecanico,mecanica,vibration acima do limite operacional (2.8 vs 1.45).,alto,aberta,1649982
+297,385,2026-06-03 15:00:00,travamento mecanico,mecanica,vibration acima do limite operacional (2.8 vs 1.45).,alto,aberta,1663127
+298,386,2026-06-03 00:00:00,elemento da sonda queimado,hardware,probe_element_status abaixo do limite operacional (35.0 vs 63).,medio,aberta,1667432
+299,388,2025-12-31 03:00:00,travamento mecanico,mecanica,vibration acima do limite operacional (2.8 vs 1.45).,alto,fechada,1672379
+300,389,2026-05-28 09:00:00,desgaste mecanico,mecanica,vibration acima do limite operacional (2.8 vs 1.45).,medio,aberta,1680257
+301,391,2026-01-13 19:00:00,travamento mecanico,mecanica,vibration acima do limite operacional (2.8 vs 1.45).,alto,fechada,1685667
+302,392,2026-05-30 09:00:00,falha no slip ring,hardware,slip_ring_error_rate acima do limite operacional (0.16 vs 0.075).,alto,aberta,1693265
+303,393,2026-06-03 20:00:00,travamento mecanico,mecanica,vibration acima do limite operacional (2.8 vs 1.45).,alto,aberta,1697692
+304,395,2026-06-01 13:00:00,falha no slip ring,hardware,slip_ring_error_rate acima do limite operacional (0.16 vs 0.075).,alto,aberta,1706277
+305,397,2026-01-21 21:00:00,quench,criogenia,magnet_temp acima do limite operacional (9.5 vs 7.0).,critico,fechada,1711781
+306,400,2026-06-03 18:00:00,falha HV,eletrica,hv_power_stability abaixo do limite operacional (86.0 vs 91).,alto,aberta,1727930
+307,402,2026-05-28 07:00:00,elemento da sonda queimado,hardware,probe_element_status abaixo do limite operacional (35.0 vs 63).,medio,aberta,1736415
+308,403,2026-05-16 11:00:00,falha HV,eletrica,hv_power_stability abaixo do limite operacional (87.599 vs 91).,alto,fechada,1740451
+309,404,2026-01-21 19:00:00,degradacao detector,hardware,coincidence_timing acima do limite operacional (520.0 vs 430).,medio,fechada,1742019
+310,406,2026-06-04 05:00:00,quench,criogenia,magnet_temp acima do limite operacional (9.5 vs 7.0).,critico,aberta,1753861
+311,407,2026-06-01 22:00:00,travamento mecanico,mecanica,vibration acima do limite operacional (2.8 vs 1.45).,alto,aberta,1758126
+312,408,2026-02-27 23:00:00,falha HV,eletrica,hv_power_stability abaixo do limite operacional (90.545 vs 91).,alto,fechada,1760191
+313,409,2026-05-24 18:00:00,desgaste mecanico,mecanica,vibration acima do limite operacional (2.8 vs 1.45).,medio,aberta,1766570
+314,410,2026-06-02 00:00:00,elemento da sonda queimado,hardware,probe_element_status abaixo do limite operacional (50.639 vs 63).,medio,aberta,1771088
+315,411,2026-05-26 17:00:00,falha HV,eletrica,hv_power_stability abaixo do limite operacional (86.0 vs 91).,alto,aberta,1775257
+316,412,2026-05-28 06:00:00,falha HV,eletrica,hv_power_stability abaixo do limite operacional (86.0 vs 91).,alto,aberta,1779614
+317,414,2026-02-08 06:00:00,falha da fonte,eletrica,psu_voltage_rails abaixo do limite operacional (11.313 vs 11.35).,alto,fechada,1785638
+318,415,2026-05-06 03:00:00,falha HV,eletrica,hv_power_stability abaixo do limite operacional (86.0 vs 91).,alto,fechada,1792043
+319,416,2026-05-29 10:00:00,desgaste mecanico,mecanica,vibration acima do limite operacional (2.8 vs 1.45).,medio,aberta,1796922
+320,419,2026-05-28 04:00:00,elemento da sonda queimado,hardware,probe_element_status abaixo do limite operacional (35.0 vs 63).,medio,aberta,1809852
+321,421,2026-05-27 15:00:00,falha no slip ring,hardware,slip_ring_error_rate acima do limite operacional (0.16 vs 0.075).,alto,aberta,1818479
+322,422,2026-05-28 19:00:00,falha no slip ring,hardware,slip_ring_error_rate acima do limite operacional (0.16 vs 0.075).,alto,aberta,1822827
+323,423,2026-01-04 09:00:00,quench,criogenia,magnet_temp acima do limite operacional (9.5 vs 7.0).,critico,fechada,1823681
+324,425,2026-04-15 04:00:00,falha no slip ring,hardware,slip_ring_error_rate acima do limite operacional (0.16 vs 0.075).,alto,fechada,1834740
+325,427,2026-03-15 20:00:00,falha HV,eletrica,hv_power_stability abaixo do limite operacional (86.0 vs 91).,alto,fechada,1842652
+326,428,2026-05-02 22:00:00,superaquecimento do tubo,hardware,tube_temp acima do limite operacional (105.0 vs 79).,alto,fechada,1848126
+327,430,2026-05-31 21:00:00,superaquecimento do tubo,hardware,tube_heat_units acima do limite operacional (1200000.0 vs 790000).,alto,aberta,1857461
+328,431,2026-03-29 03:00:00,travamento mecanico,mecanica,vibration acima do limite operacional (2.8 vs 1.45).,alto,fechada,1860251
+329,432,2026-05-31 10:00:00,falha HV,eletrica,hv_power_stability abaixo do limite operacional (87.424 vs 91).,alto,aberta,1866090
+330,433,2026-01-28 13:00:00,superaquecimento do tubo,hardware,tube_heat_units acima do limite operacional (1200000.0 vs 790000).,alto,fechada,1867461
+331,434,2026-05-30 18:00:00,falha HV,eletrica,hv_power_stability abaixo do limite operacional (86.0 vs 91).,alto,aberta,1874714
+332,436,2026-05-28 14:00:00,travamento mecanico,mecanica,vibration acima do limite operacional (2.8 vs 1.45).,alto,aberta,1883302
+333,437,2026-05-28 23:00:00,travamento mecanico,mecanica,vibration acima do limite operacional (2.8 vs 1.45).,alto,aberta,1887631
+334,438,2026-05-26 15:00:00,desgaste mecanico,mecanica,vibration acima do limite operacional (2.8 vs 1.45).,medio,aberta,1891895
+335,439,2026-01-25 19:00:00,falha de gradiente,hardware,gradient_coil_temp acima do limite operacional (72.0 vs 49).,alto,fechada,1893315
+336,441,2026-05-29 13:00:00,falha no slip ring,hardware,slip_ring_error_rate acima do limite operacional (0.16 vs 0.075).,alto,aberta,1904925
+337,442,2026-05-26 22:00:00,superaquecimento do tubo,hardware,tube_temp acima do limite operacional (105.0 vs 79).,alto,aberta,1909182
+338,443,2026-05-29 02:00:00,desgaste mecanico,mecanica,vibration acima do limite operacional (2.8 vs 1.45).,medio,aberta,1913554
+339,444,2026-04-22 21:00:00,falha HV,eletrica,hv_power_stability abaixo do limite operacional (86.015 vs 91).,alto,fechada,1917005
+340,445,2026-05-27 15:00:00,falha HV,eletrica,hv_power_stability abaixo do limite operacional (86.0 vs 91).,alto,aberta,1922159
+341,446,2026-05-12 22:00:00,falha HV,eletrica,hv_power_stability abaixo do limite operacional (86.0 vs 91).,alto,fechada,1926126
+342,447,2025-12-31 04:00:00,quench,criogenia,magnet_temp acima do limite operacional (9.5 vs 7.0).,critico,fechada,1927260
+343,448,2026-05-30 09:00:00,falha HV,eletrica,hv_power_stability abaixo do limite operacional (86.04 vs 91).,alto,aberta,1935185
+344,450,2026-05-30 09:00:00,falha HV,eletrica,hv_power_stability abaixo do limite operacional (86.0 vs 91).,alto,aberta,1943825
+345,451,2026-06-02 09:00:00,falha HV,eletrica,hv_power_stability abaixo do limite operacional (86.0 vs 91).,alto,aberta,1948217
+346,452,2026-05-30 17:00:00,quench,criogenia,magnet_temp acima do limite operacional (9.5 vs 7.0).,critico,aberta,1952473
+347,453,2026-06-02 06:00:00,falha no slip ring,hardware,slip_ring_error_rate acima do limite operacional (0.16 vs 0.075).,alto,aberta,1956854
+348,455,2026-05-27 05:00:00,superaquecimento do tubo,hardware,tube_temp acima do limite operacional (105.0 vs 79).,alto,aberta,1965349
+349,456,2026-05-28 18:00:00,superaquecimento do tubo,hardware,tube_heat_units acima do limite operacional (1200000.0 vs 790000).,alto,aberta,1969706
+350,457,2026-03-02 16:00:00,superaquecimento do tubo,hardware,tube_heat_units acima do limite operacional (1200000.0 vs 790000).,alto,fechada,1971936
+351,458,2026-05-19 01:00:00,superaquecimento do tubo,hardware,tube_heat_units acima do limite operacional (1200000.0 vs 790000).,alto,fechada,1978113
+352,459,2026-06-02 12:00:00,desgaste mecanico,mecanica,vibration acima do limite operacional (2.8 vs 1.45).,medio,aberta,1982780
+353,461,2026-05-27 12:00:00,falha de gradiente,hardware,gradient_coil_temp acima do limite operacional (72.0 vs 49).,alto,aberta,1991276
+354,463,2026-05-28 05:00:00,falha no slip ring,hardware,slip_ring_error_rate acima do limite operacional (0.16 vs 0.075).,alto,aberta,1999933
+355,464,2026-01-18 07:00:00,travamento mecanico,mecanica,vibration acima do limite operacional (2.8 vs 1.45).,alto,fechada,2001135
+356,465,2026-01-09 23:00:00,falha HV,eletrica,hv_power_stability abaixo do limite operacional (86.0 vs 91).,alto,fechada,2005255
+357,466,2026-05-28 18:00:00,desgaste mecanico,mecanica,vibration acima do limite operacional (2.8 vs 1.45).,medio,aberta,2012906
+358,467,2026-06-01 02:00:00,desgaste mecanico,mecanica,vibration acima do limite operacional (2.8 vs 1.45).,medio,aberta,2017306
+359,468,2026-05-25 00:00:00,falha HV,eletrica,hv_power_stability abaixo do limite operacional (86.0 vs 91).,alto,aberta,2021456
+360,469,2026-04-10 19:00:00,falha no slip ring,hardware,slip_ring_error_rate acima do limite operacional (0.135 vs 0.075).,alto,fechada,2024715
+361,470,2026-06-01 14:00:00,elemento da sonda queimado,hardware,probe_element_status abaixo do limite operacional (60.606 vs 63).,medio,aberta,2030278
+362,472,2026-05-28 21:00:00,falha HV,eletrica,hv_power_stability abaixo do limite operacional (86.012 vs 91).,alto,aberta,2038829
+363,473,2026-02-13 03:00:00,quench,criogenia,magnet_temp acima do limite operacional (9.5 vs 7.0).,critico,fechada,2040635
+364,475,2026-05-26 02:00:00,falha HV,eletrica,hv_power_stability abaixo do limite operacional (86.029 vs 91).,alto,aberta,2051722
+365,476,2026-06-02 11:00:00,falha de gradiente,hardware,gradient_coil_temp acima do limite operacional (72.0 vs 49).,alto,aberta,2056219
+366,477,2026-05-27 23:00:00,falha HV,eletrica,hv_power_stability abaixo do limite operacional (87.732 vs 91).,alto,aberta,2060407
+367,478,2026-01-30 06:00:00,travamento mecanico,mecanica,vibration acima do limite operacional (2.8 vs 1.45).,alto,fechada,2061902
+368,479,2026-06-01 07:00:00,travamento mecanico,mecanica,vibration acima do limite operacional (2.8 vs 1.45).,alto,aberta,2069151
+369,480,2026-05-26 05:00:00,falha HV,eletrica,hv_power_stability abaixo do limite operacional (90.354 vs 91).,alto,aberta,2073325
+370,481,2026-05-24 23:00:00,falha no slip ring,hardware,slip_ring_error_rate acima do limite operacional (0.16 vs 0.075).,alto,aberta,2077615
+371,482,2026-06-04 00:00:00,travamento mecanico,mecanica,vibration acima do limite operacional (2.8 vs 1.45).,alto,aberta,2082176
+372,483,2026-06-01 02:00:00,quench,criogenia,magnet_temp acima do limite operacional (9.5 vs 7.0).,critico,aberta,2086426
+373,484,2026-01-07 16:00:00,superaquecimento do tubo,hardware,tube_heat_units acima do limite operacional (1200000.0 vs 790000).,alto,fechada,2087280
+374,485,2026-05-29 20:00:00,quench,criogenia,magnet_temp acima do limite operacional (9.5 vs 7.0).,critico,aberta,2095012
+375,486,2026-02-26 17:00:00,quench,criogenia,magnet_temp acima do limite operacional (9.5 vs 7.0).,critico,fechada,2097121
+376,488,2026-05-31 19:00:00,elemento da sonda queimado,hardware,probe_element_status abaixo do limite operacional (35.0 vs 63).,medio,aberta,2108019
+377,489,2026-06-03 05:00:00,falha da fonte,eletrica,psu_voltage_rails abaixo do limite operacional (10.8 vs 11.35).,alto,aberta,2112397
+378,490,2026-05-28 04:00:00,superaquecimento do tubo,hardware,tube_heat_units acima do limite operacional (1200000.0 vs 790000).,alto,aberta,2116572
+379,491,2026-05-27 11:00:00,falha HV,eletrica,hv_power_stability abaixo do limite operacional (86.0 vs 91).,alto,aberta,2120875
+380,493,2026-05-30 10:00:00,travamento mecanico,mecanica,vibration acima do limite operacional (2.8 vs 1.45).,alto,aberta,2129586
+381,494,2026-05-27 01:00:00,falha no slip ring,hardware,slip_ring_error_rate acima do limite operacional (0.16 vs 0.075).,alto,aberta,2133825
+382,498,2026-03-06 16:00:00,superaquecimento do tubo,hardware,tube_temp acima do limite operacional (105.0 vs 79).,alto,fechada,2149152
+383,500,2026-06-03 21:00:00,elemento da sonda queimado,hardware,probe_element_status abaixo do limite operacional (35.0 vs 63).,medio,aberta,2159933
+384,501,2026-05-05 17:00:00,falha HV,eletrica,hv_power_stability abaixo do limite operacional (87.773 vs 91).,alto,fechada,2163553
+385,502,2026-05-25 23:00:00,desgaste mecanico,mecanica,vibration acima do limite operacional (2.8 vs 1.45).,medio,aberta,2168359
+386,503,2026-04-11 03:00:00,superaquecimento do tubo,hardware,tube_heat_units acima do limite operacional (1200000.0 vs 790000).,alto,fechada,2171603
+387,504,2026-05-27 19:00:00,falha HV,eletrica,hv_power_stability abaixo do limite operacional (86.0 vs 91).,alto,aberta,2177043
+388,505,2026-03-09 00:00:00,falha HV,eletrica,hv_power_stability abaixo do limite operacional (86.0 vs 91).,alto,fechada,2179448
+389,506,2026-05-31 15:00:00,desgaste mecanico,mecanica,vibration acima do limite operacional (2.8 vs 1.45).,medio,aberta,2185775
+390,508,2026-05-30 14:00:00,desgaste mecanico,mecanica,vibration acima do limite operacional (2.8 vs 1.45).,medio,aberta,2194390
+391,509,2026-05-25 04:00:00,superaquecimento do tubo,hardware,tube_temp acima do limite operacional (105.0 vs 79).,alto,aberta,2198580
+392,510,2026-03-22 15:00:00,quench,criogenia,magnet_temp acima do limite operacional (9.5 vs 7.0).,critico,fechada,2201375
+393,511,2026-03-12 05:00:00,degradacao detector,hardware,coincidence_timing acima do limite operacional (520.0 vs 430).,medio,fechada,2205445
+394,513,2026-05-29 06:00:00,quench,criogenia,magnet_temp acima do limite operacional (9.5 vs 7.0).,critico,aberta,2215958
+395,515,2026-04-07 14:00:00,quench,criogenia,magnet_temp acima do limite operacional (9.5 vs 7.0).,critico,fechada,2223358
+396,517,2026-05-08 14:00:00,superaquecimento do tubo,hardware,tube_heat_units acima do limite operacional (1200000.0 vs 790000).,alto,fechada,2232742
+397,519,2026-05-26 08:00:00,superaquecimento do tubo,hardware,tube_temp acima do limite operacional (105.0 vs 79).,alto,aberta,2241808
+398,520,2026-05-27 11:00:00,travamento mecanico,mecanica,vibration acima do limite operacional (2.8 vs 1.45).,alto,aberta,2246155
+399,523,2026-06-02 13:00:00,superaquecimento do tubo,hardware,tube_heat_units acima do limite operacional (1200000.0 vs 790000).,alto,aberta,2259261
+400,524,2026-04-29 23:00:00,falha HV,eletrica,hv_power_stability abaixo do limite operacional (86.042 vs 91).,alto,fechada,2262775
+401,525,2026-01-15 20:00:00,travamento mecanico,mecanica,vibration acima do limite operacional (2.8 vs 1.45).,alto,fechada,2264596
+402,528,2026-01-13 23:00:00,degradacao detector,hardware,coincidence_timing acima do limite operacional (520.0 vs 430).,medio,fechada,2277511
+403,529,2026-06-01 01:00:00,elemento da sonda queimado,hardware,probe_element_status abaixo do limite operacional (61.529 vs 63).,medio,aberta,2285145
+404,530,2026-04-05 19:00:00,travamento mecanico,mecanica,vibration acima do limite operacional (2.8 vs 1.45).,alto,fechada,2288115
+405,531,2026-05-30 09:00:00,elemento da sonda queimado,hardware,probe_element_status abaixo do limite operacional (35.0 vs 63).,medio,aberta,2293745
+406,532,2026-05-31 06:00:00,elemento da sonda queimado,hardware,probe_element_status abaixo do limite operacional (35.0 vs 63).,medio,aberta,2298086
+407,533,2026-06-01 03:00:00,travamento mecanico,mecanica,vibration acima do limite operacional (2.8 vs 1.45).,alto,aberta,2302427
+408,534,2026-04-10 17:00:00,quench,criogenia,magnet_temp acima do limite operacional (9.5 vs 7.0).,critico,fechada,2305513
+409,537,2026-06-02 14:00:00,desgaste mecanico,mecanica,vibration acima do limite operacional (2.8 vs 1.45).,medio,aberta,2319742
+410,538,2026-05-31 16:00:00,elemento da sonda queimado,hardware,probe_element_status abaixo do limite operacional (35.0 vs 63).,medio,aberta,2324016
+411,540,2026-05-30 16:00:00,falha HV,eletrica,hv_power_stability abaixo do limite operacional (89.793 vs 91).,alto,aberta,2332632
+412,541,2026-06-01 10:00:00,travamento mecanico,mecanica,vibration acima do limite operacional (2.8 vs 1.45).,alto,aberta,2336994
+413,542,2026-06-01 01:00:00,travamento mecanico,mecanica,vibration acima do limite operacional (2.8 vs 1.45).,alto,aberta,2341305
+414,543,2026-05-26 21:00:00,superaquecimento do tubo,hardware,tube_heat_units acima do limite operacional (1200000.0 vs 790000).,alto,aberta,2345501
+415,544,2026-04-17 05:00:00,elemento da sonda queimado,hardware,probe_element_status abaixo do limite operacional (35.0 vs 63).,medio,fechada,2348869
+416,547,2026-01-22 15:00:00,travamento mecanico,mecanica,vibration acima do limite operacional (2.8 vs 1.45).,alto,fechada,2359799
+417,548,2026-04-13 13:00:00,travamento mecanico,mecanica,vibration acima do limite operacional (2.8 vs 1.45).,alto,fechada,2366061
+418,549,2026-05-30 23:00:00,falha HV,eletrica,hv_power_stability abaixo do limite operacional (86.0 vs 91).,alto,aberta,2371519
+419,550,2026-01-10 03:00:00,quench,criogenia,magnet_temp acima do limite operacional (9.5 vs 7.0).,critico,fechada,2372459
+420,552,2026-06-02 11:00:00,travamento mecanico,mecanica,vibration acima do limite operacional (2.8 vs 1.45).,alto,aberta,2384539
+421,553,2026-03-27 10:00:00,falha da fonte,eletrica,psu_voltage_rails abaixo do limite operacional (10.8 vs 11.35).,alto,fechada,2387250
+422,554,2026-03-05 08:00:00,quench,criogenia,magnet_temp acima do limite operacional (9.5 vs 7.0).,critico,fechada,2391040
+423,555,2026-02-24 08:00:00,falha de gradiente,hardware,gradient_coil_temp acima do limite operacional (72.0 vs 49).,alto,fechada,2395144
+424,556,2026-02-01 19:00:00,degradacao detector,hardware,coincidence_timing acima do limite operacional (520.0 vs 430).,medio,fechada,2398923
+425,558,2026-06-03 22:00:00,quench,criogenia,magnet_temp acima do limite operacional (9.5 vs 7.0).,critico,aberta,2410494
+426,559,2026-03-01 15:00:00,falha no slip ring,hardware,slip_ring_error_rate acima do limite operacional (0.16 vs 0.075).,alto,fechada,2412551
+427,562,2026-05-25 19:00:00,superaquecimento do tubo,hardware,tube_heat_units acima do limite operacional (1200000.0 vs 790000).,alto,aberta,2427555
+428,563,2026-05-29 05:00:00,falha HV,eletrica,hv_power_stability abaixo do limite operacional (86.0 vs 91).,alto,aberta,2431957
+429,565,2026-06-03 15:00:00,elemento da sonda queimado,hardware,probe_element_status abaixo do limite operacional (35.0 vs 63).,medio,aberta,2440727
+430,566,2026-01-29 20:00:00,degradacao detector,hardware,coincidence_timing acima do limite operacional (520.0 vs 430).,medio,fechada,2442052
+431,568,2026-06-04 14:00:00,falha HV,eletrica,hv_power_stability abaixo do limite operacional (86.0 vs 91).,alto,aberta,2453710
+432,569,2026-03-18 00:00:00,travamento mecanico,mecanica,vibration acima do limite operacional (2.8 vs 1.45).,alto,fechada,2456144
+433,571,2026-06-04 10:00:00,quench,criogenia,magnet_temp acima do limite operacional (9.5 vs 7.0).,critico,aberta,2466666
+434,572,2026-03-17 16:00:00,superaquecimento do tubo,hardware,tube_heat_units acima do limite operacional (1200000.0 vs 790000).,alto,fechada,2469096
+435,574,2026-05-27 04:00:00,falha HV,eletrica,hv_power_stability abaixo do limite operacional (86.0 vs 91).,alto,aberta,2479428
+436,576,2026-04-20 06:00:00,quench,criogenia,magnet_temp acima do limite operacional (9.5 vs 7.0).,critico,fechada,2487182
+437,577,2026-05-28 14:00:00,elemento da sonda queimado,hardware,probe_element_status abaixo do limite operacional (54.249 vs 63).,medio,aberta,2492422
+438,578,2026-06-02 20:00:00,desgaste mecanico,mecanica,vibration acima do limite operacional (2.8 vs 1.45).,medio,aberta,2496868
+439,581,2026-05-26 21:00:00,superaquecimento do tubo,hardware,tube_heat_units acima do limite operacional (1200000.0 vs 790000).,alto,aberta,2509661
+440,582,2026-05-31 16:00:00,quench,criogenia,magnet_temp acima do limite operacional (9.5 vs 7.0).,critico,aberta,2514096
+441,583,2026-05-27 14:00:00,desgaste mecanico,mecanica,vibration acima do limite operacional (2.8 vs 1.45).,medio,aberta,2518318
+442,585,2026-04-04 14:00:00,falha no slip ring,hardware,slip_ring_error_rate acima do limite operacional (0.149 vs 0.075).,alto,fechada,2525686
+443,586,2026-05-07 07:00:00,falha HV,eletrica,hv_power_stability abaixo do limite operacional (87.48 vs 91).,alto,fechada,2530791
+444,588,2026-06-03 06:00:00,falha no slip ring,hardware,slip_ring_error_rate acima do limite operacional (0.16 vs 0.075).,alto,aberta,2540078
+445,589,2026-05-05 09:00:00,desgaste mecanico,mecanica,vibration acima do limite operacional (2.8 vs 1.45).,medio,fechada,2543705
+446,590,2026-06-02 07:00:00,superaquecimento do tubo,hardware,tube_heat_units acima do limite operacional (1157800.0 vs 790000).,alto,aberta,2548695
+447,591,2026-05-26 21:00:00,elemento da sonda queimado,hardware,probe_element_status abaixo do limite operacional (35.0 vs 63).,medio,aberta,2552861
+448,592,2026-06-03 12:00:00,elemento da sonda queimado,hardware,probe_element_status abaixo do limite operacional (35.0 vs 63).,medio,aberta,2557364
+449,593,2026-03-07 05:00:00,quench,criogenia,magnet_temp acima do limite operacional (9.5 vs 7.0).,critico,fechada,2559565
+450,596,2026-02-18 22:00:00,quench,criogenia,magnet_temp acima do limite operacional (9.5 vs 7.0).,critico,fechada,2572134
+451,597,2025-12-30 23:00:00,desalinhamento do gantry,hardware,gantry_vibration_fft acima do limite operacional (3.2 vs 1.85).,medio,fechada,2575255
+452,599,2026-05-10 00:00:00,elemento da sonda queimado,hardware,probe_element_status abaixo do limite operacional (35.0 vs 63).,medio,fechada,2587016
+453,601,2026-05-29 16:00:00,travamento mecanico,mecanica,vibration acima do limite operacional (2.8 vs 1.45).,alto,aberta,2596128
+454,602,2026-01-03 18:00:00,desalinhamento do gantry,hardware,gantry_vibration_fft acima do limite operacional (3.2 vs 1.85).,medio,fechada,2596946
+455,604,2026-03-16 05:00:00,falha no slip ring,hardware,slip_ring_error_rate acima do limite operacional (0.125 vs 0.075).,alto,fechada,2607301
+456,605,2026-05-26 15:00:00,falha HV,eletrica,hv_power_stability abaixo do limite operacional (86.0 vs 91).,alto,aberta,2613335
+457,606,2026-02-09 04:00:00,degradacao detector,hardware,coincidence_timing acima do limite operacional (520.0 vs 430).,medio,fechada,2615100
+458,607,2026-05-28 06:00:00,travamento mecanico,mecanica,vibration acima do limite operacional (2.8 vs 1.45).,alto,aberta,2622014
+459,608,2026-06-02 18:00:00,falha HV,eletrica,hv_power_stability abaixo do limite operacional (86.0 vs 91).,alto,aberta,2626466
+460,609,2026-03-04 11:00:00,quench,criogenia,magnet_temp acima do limite operacional (9.5 vs 7.0).,critico,fechada,2628619
+461,610,2026-06-02 02:00:00,desgaste mecanico,mecanica,vibration acima do limite operacional (2.8 vs 1.45).,medio,aberta,2635090
+462,611,2026-05-26 02:00:00,desgaste mecanico,mecanica,vibration acima do limite operacional (2.8 vs 1.45).,medio,aberta,2639242
+463,613,2026-05-28 14:00:00,falha HV,eletrica,hv_power_stability abaixo do limite operacional (86.0 vs 91).,alto,aberta,2647942
+464,614,2026-05-27 05:00:00,quench,criogenia,magnet_temp acima do limite operacional (9.5 vs 7.0).,critico,aberta,2652229
+465,615,2026-04-14 21:00:00,superaquecimento do tubo,hardware,tube_heat_units acima do limite operacional (1200000.0 vs 790000).,alto,fechada,2655533
+466,616,2026-05-30 17:00:00,quench,criogenia,magnet_temp acima do limite operacional (9.5 vs 7.0).,critico,aberta,2660953
+467,617,2026-02-25 13:00:00,desgaste mecanico,mecanica,vibration acima do limite operacional (2.8 vs 1.45).,medio,fechada,2663013
+468,620,2026-06-03 09:00:00,falha HV,eletrica,hv_power_stability abaixo do limite operacional (89.609 vs 91).,alto,aberta,2678321
+469,623,2026-02-08 10:00:00,superaquecimento,hardware,transducer_temp acima do limite operacional (58.0 vs 46).,medio,fechada,2688522
+470,625,2026-06-03 16:00:00,falha HV,eletrica,hv_power_stability abaixo do limite operacional (86.0 vs 91).,alto,aberta,2699928
+471,626,2026-01-17 13:00:00,elemento da sonda queimado,hardware,probe_element_status abaixo do limite operacional (35.0 vs 63).,medio,fechada,2700957
+472,627,2026-05-30 15:00:00,quench,criogenia,magnet_temp acima do limite operacional (9.5 vs 7.0).,critico,aberta,2708471
+473,628,2026-06-03 23:00:00,desgaste mecanico,mecanica,vibration acima do limite operacional (2.8 vs 1.45).,medio,aberta,2712895
+474,630,2026-06-03 09:00:00,falha HV,eletrica,hv_power_stability abaixo do limite operacional (86.0 vs 91).,alto,aberta,2721521
+475,632,2026-05-16 00:00:00,elemento da sonda queimado,hardware,probe_element_status abaixo do limite operacional (51.179 vs 63).,medio,fechada,2729720
+476,633,2026-05-28 11:00:00,travamento mecanico,mecanica,vibration acima do limite operacional (2.8 vs 1.45).,alto,aberta,2734339
+477,634,2026-01-27 07:00:00,desgaste mecanico,mecanica,vibration acima do limite operacional (2.8 vs 1.45).,medio,fechada,2735751
+478,635,2026-05-27 13:00:00,falha da fonte,eletrica,psu_voltage_rails abaixo do limite operacional (10.8 vs 11.35).,alto,aberta,2742957
+479,637,2026-04-16 11:00:00,falha no slip ring,hardware,slip_ring_error_rate acima do limite operacional (0.16 vs 0.075).,alto,fechada,2750611
+480,639,2026-05-25 12:00:00,falha no slip ring,hardware,slip_ring_error_rate acima do limite operacional (0.16 vs 0.075).,alto,aberta,2760188
+481,641,2026-04-15 15:00:00,falha HV,eletrica,hv_power_stability abaixo do limite operacional (86.0 vs 91).,alto,fechada,2767871
+482,642,2026-05-27 12:00:00,falha no slip ring,hardware,slip_ring_error_rate acima do limite operacional (0.16 vs 0.075).,alto,aberta,2773196
+483,643,2026-05-31 04:00:00,falha HV,eletrica,hv_power_stability abaixo do limite operacional (86.0 vs 91).,alto,aberta,2777604
+484,644,2026-05-31 21:00:00,desgaste mecanico,mecanica,vibration acima do limite operacional (2.8 vs 1.45).,medio,aberta,2781941
+485,645,2026-05-27 14:00:00,travamento mecanico,mecanica,vibration acima do limite operacional (2.8 vs 1.45).,alto,aberta,2786158
+486,646,2026-06-02 07:00:00,falha no slip ring,hardware,slip_ring_error_rate acima do limite operacional (0.16 vs 0.075).,alto,aberta,2790615
+487,647,2026-02-22 03:00:00,falha HV,eletrica,hv_power_stability abaixo do limite operacional (90.658 vs 91).,alto,fechada,2792531
+488,648,2026-01-27 02:00:00,travamento mecanico,mecanica,vibration acima do limite operacional (2.8 vs 1.45).,alto,fechada,2796226
+489,649,2026-04-16 11:00:00,superaquecimento do tubo,hardware,tube_heat_units acima do limite operacional (1200000.0 vs 790000).,alto,fechada,2802451
+490,651,2026-06-01 13:00:00,elemento da sonda queimado,hardware,probe_element_status abaixo do limite operacional (35.0 vs 63).,medio,aberta,2812197
+491,652,2026-05-29 23:00:00,desgaste mecanico,mecanica,vibration acima do limite operacional (2.8 vs 1.45).,medio,aberta,2816455
+492,653,2026-02-18 20:00:00,falha no slip ring,hardware,slip_ring_error_rate acima do limite operacional (0.098 vs 0.075).,alto,fechada,2818372
+493,654,2026-02-02 12:00:00,quench,criogenia,magnet_temp acima do limite operacional (9.5 vs 7.0).,critico,fechada,2822300
+494,655,2026-05-25 14:00:00,quench,criogenia,magnet_temp acima do limite operacional (9.5 vs 7.0).,critico,aberta,2829310
+495,656,2026-06-03 14:00:00,quench,criogenia,magnet_temp acima do limite operacional (9.5 vs 7.0).,critico,aberta,2833846
+496,657,2026-01-04 02:00:00,desgaste mecanico,mecanica,vibration acima do limite operacional (2.8 vs 1.45).,medio,fechada,2834554
+497,659,2026-05-05 07:00:00,superaquecimento do tubo,hardware,tube_heat_units acima do limite operacional (1200000.0 vs 790000).,alto,fechada,2846103
+498,660,2025-12-31 23:00:00,quench,criogenia,magnet_temp acima do limite operacional (9.5 vs 7.0).,critico,fechada,2847439
+499,663,2026-04-16 19:00:00,falha no slip ring,hardware,slip_ring_error_rate acima do limite operacional (0.16 vs 0.075).,alto,fechada,2862939
+500,664,2026-03-13 18:00:00,falha no slip ring,hardware,slip_ring_error_rate acima do limite operacional (0.097 vs 0.075).,alto,fechada,2866442
+501,665,2026-05-17 16:00:00,desgaste mecanico,mecanica,vibration acima do limite operacional (2.8 vs 1.45).,medio,fechada,2872320
+502,666,2026-01-07 15:00:00,superaquecimento do tubo,hardware,tube_heat_units acima do limite operacional (1200000.0 vs 790000).,alto,fechada,2873519
+503,667,2026-03-17 20:00:00,travamento mecanico,mecanica,vibration acima do limite operacional (2.8 vs 1.45).,alto,fechada,2879500
+504,670,2026-03-16 18:00:00,desalinhamento do gantry,hardware,gantry_vibration_fft acima do limite operacional (3.2 vs 1.85).,medio,fechada,2892434
+505,678,2025-12-30 06:00:00,quench,criogenia,magnet_temp acima do limite operacional (9.5 vs 7.0).,critico,fechada,2925158
+506,679,2026-02-16 07:00:00,desgaste mecanico,mecanica,vibration acima do limite operacional (2.8 vs 1.45).,medio,fechada,2930631
+507,680,2026-05-07 21:00:00,elemento da sonda queimado,hardware,probe_element_status abaixo do limite operacional (35.0 vs 63).,medio,fechada,2936885
+508,681,2026-04-22 15:00:00,superaquecimento do tubo,hardware,tube_heat_units acima do limite operacional (1200000.0 vs 790000).,alto,fechada,2940839
+509,682,2026-01-24 18:00:00,travamento mecanico,mecanica,vibration acima do limite operacional (2.8 vs 1.45).,alto,fechada,2943050
+510,683,2026-02-19 04:00:00,superaquecimento do tubo,hardware,tube_heat_units acima do limite operacional (1200000.0 vs 790000).,alto,fechada,2947980
+511,684,2026-04-13 20:00:00,travamento mecanico,mecanica,vibration acima do limite operacional (2.8 vs 1.45).,alto,fechada,2953588
+512,694,2026-02-12 08:00:00,degradacao detector,hardware,coincidence_timing acima do limite operacional (520.0 vs 430).,medio,fechada,2995336
+513,695,2026-02-26 00:00:00,falha HV,eletrica,hv_power_stability abaixo do limite operacional (88.955 vs 91).,alto,fechada,2999984
+514,698,2026-01-16 22:00:00,falha da fonte,eletrica,psu_voltage_rails abaixo do limite operacional (10.8 vs 11.35).,alto,fechada,3011982
+515,700,2026-04-24 20:00:00,falha HV,eletrica,hv_power_stability abaixo do limite operacional (86.0 vs 91).,alto,fechada,3022972
+516,703,2026-03-07 16:00:00,quench,criogenia,magnet_temp acima do limite operacional (9.5 vs 7.0).,critico,fechada,3034776
+517,704,2026-04-17 16:00:00,falha HV,eletrica,hv_power_stability abaixo do limite operacional (89.661 vs 91).,alto,fechada,3040080
+518,706,2026-04-21 15:00:00,falha HV,eletrica,hv_power_stability abaixo do limite operacional (88.562 vs 91).,alto,fechada,3048815
+519,708,2026-05-11 15:00:00,desgaste mecanico,mecanica,vibration acima do limite operacional (2.8 vs 1.45).,medio,fechada,3057935
+520,709,2026-01-19 16:00:00,elemento da sonda queimado,hardware,probe_element_status abaixo do limite operacional (35.0 vs 63).,medio,fechada,3059568
+521,710,2026-01-24 00:00:00,travamento mecanico,mecanica,vibration acima do limite operacional (2.8 vs 1.45).,alto,fechada,3063992
+522,711,2026-01-28 01:00:00,elemento da sonda queimado,hardware,probe_element_status abaixo do limite operacional (35.0 vs 63).,medio,fechada,3068409
+523,713,2026-04-12 05:00:00,falha HV,eletrica,hv_power_stability abaixo do limite operacional (87.463 vs 91).,alto,fechada,3078829
+524,715,2026-05-15 03:00:00,falha HV,eletrica,hv_power_stability abaixo do limite operacional (86.0 vs 91).,alto,fechada,3088259
+525,716,2026-05-12 00:00:00,elemento da sonda queimado,hardware,probe_element_status abaixo do limite operacional (49.878 vs 63).,medio,fechada,3092504
+526,718,2026-01-26 15:00:00,desgaste do anodo,hardware,anode_rotation_speed abaixo do limite operacional (7800.0 vs 8500).,medio,fechada,3098615
+527,723,2026-01-20 14:00:00,desgaste mecanico,mecanica,vibration acima do limite operacional (2.8 vs 1.45).,medio,fechada,3120070
+528,727,2026-02-14 07:00:00,desgaste mecanico,mecanica,vibration acima do limite operacional (2.8 vs 1.45).,medio,fechada,3137943
+529,728,2026-05-11 23:00:00,quench,criogenia,magnet_temp acima do limite operacional (9.5 vs 7.0).,critico,fechada,3144343
+530,729,2026-01-20 11:00:00,degradacao detector,hardware,coincidence_timing acima do limite operacional (520.0 vs 430).,medio,fechada,3145987
+531,730,2026-01-04 02:00:00,desgaste mecanico,mecanica,vibration acima do limite operacional (2.8 vs 1.45).,medio,fechada,3149914
+532,734,2026-01-31 19:00:00,desalinhamento do gantry,hardware,gantry_vibration_fft acima do limite operacional (3.2 vs 1.85).,medio,fechada,3167859
+533,739,2026-04-27 07:00:00,degradacao detector,hardware,coincidence_timing acima do limite operacional (520.0 vs 430).,medio,fechada,3191511
+534,741,2026-01-05 06:00:00,elemento da sonda queimado,hardware,probe_element_status abaixo do limite operacional (35.0 vs 63).,medio,fechada,3197462
+535,742,2026-03-09 13:00:00,superaquecimento,hardware,transducer_temp acima do limite operacional (58.0 vs 46).,medio,fechada,3203301
+536,746,2026-04-05 15:00:00,falha no slip ring,hardware,slip_ring_error_rate acima do limite operacional (0.143 vs 0.075).,alto,fechada,3221231
+537,748,2026-03-05 10:00:00,superaquecimento do tubo,hardware,tube_temp acima do limite operacional (105.0 vs 79).,alto,fechada,3229122
+538,751,2025-12-27 13:00:00,falha HV,eletrica,hv_power_stability abaixo do limite operacional (86.0 vs 91).,alto,fechada,3240453
+539,753,2026-05-13 10:00:00,travamento mecanico,mecanica,vibration acima do limite operacional (2.8 vs 1.45).,alto,fechada,3252378
+540,755,2026-01-05 11:00:00,quench,criogenia,magnet_temp acima do limite operacional (9.5 vs 7.0).,critico,fechada,3257947
+541,756,2026-01-19 20:00:00,degradacao detector,hardware,coincidence_timing acima do limite operacional (520.0 vs 430).,medio,fechada,3262612
+542,757,2026-03-10 01:00:00,falha no slip ring,hardware,slip_ring_error_rate acima do limite operacional (0.16 vs 0.075).,alto,fechada,3268113
+543,759,2026-01-15 10:00:00,desgaste mecanico,mecanica,vibration acima do limite operacional (2.8 vs 1.45).,medio,fechada,3275466
+544,760,2026-03-29 03:00:00,elemento da sonda queimado,hardware,probe_element_status abaixo do limite operacional (35.0 vs 63).,medio,fechada,3281531
+545,761,2026-05-13 19:00:00,falha HV,eletrica,hv_power_stability abaixo do limite operacional (86.0 vs 91).,alto,fechada,3286947
+546,765,2026-03-27 03:00:00,superaquecimento do tubo,hardware,tube_heat_units acima do limite operacional (1172000.0 vs 790000).,alto,fechada,3303083
+547,766,2026-02-10 13:00:00,quench,criogenia,magnet_temp acima do limite operacional (9.5 vs 7.0).,critico,fechada,3306333
+548,767,2026-04-02 23:00:00,falha da fonte,eletrica,psu_voltage_rails abaixo do limite operacional (10.8 vs 11.35).,alto,fechada,3311887
+549,769,2026-01-21 21:00:00,travamento mecanico,mecanica,vibration acima do limite operacional (2.8 vs 1.45).,alto,fechada,3318821
+550,772,2026-01-30 10:00:00,desgaste mecanico,mecanica,vibration acima do limite operacional (2.8 vs 1.45).,medio,fechada,3331986
+551,776,2026-04-28 23:00:00,superaquecimento do tubo,hardware,tube_heat_units acima do limite operacional (1200000.0 vs 790000).,alto,fechada,3351391
+552,781,2025-12-27 21:00:00,superaquecimento,hardware,transducer_temp acima do limite operacional (58.0 vs 46).,medio,fechada,3370061
+553,788,2026-03-14 12:00:00,degradacao detector,hardware,coincidence_timing acima do limite operacional (520.0 vs 430).,medio,fechada,3402140
+554,796,2026-02-05 23:00:00,falha HV,eletrica,hv_power_stability abaixo do limite operacional (86.0 vs 91).,alto,fechada,3435823
+555,800,2026-01-17 03:00:00,degradacao detector,hardware,coincidence_timing acima do limite operacional (520.0 vs 430).,medio,fechada,3452627
+556,801,2026-03-12 17:00:00,travamento mecanico,mecanica,vibration acima do limite operacional (2.8 vs 1.45).,alto,fechada,3458257
+557,803,2026-02-21 23:00:00,elemento da sonda queimado,hardware,probe_element_status abaixo do limite operacional (53.239 vs 63).,medio,fechada,3466447
+558,804,2026-02-25 17:00:00,falha da fonte,eletrica,psu_voltage_rails abaixo do limite operacional (10.8 vs 11.35).,alto,fechada,3470857
+559,811,2026-01-07 21:00:00,superaquecimento do tubo,hardware,tube_heat_units acima do limite operacional (895055.151 vs 790000).,alto,fechada,3499925
+560,816,2026-04-09 10:00:00,superaquecimento do tubo,hardware,tube_heat_units acima do limite operacional (1171389.312 vs 790000).,alto,fechada,3523722
+561,819,2026-04-30 10:00:00,desgaste mecanico,mecanica,vibration acima do limite operacional (2.8 vs 1.45).,medio,fechada,3537186
+562,820,2026-03-25 21:00:00,elemento da sonda queimado,hardware,probe_element_status abaixo do limite operacional (35.0 vs 63).,medio,fechada,3540653
+563,824,2026-03-20 22:00:00,falha no slip ring,hardware,slip_ring_error_rate acima do limite operacional (0.16 vs 0.075).,alto,fechada,3557814
+564,825,2025-12-27 22:00:00,degradacao detector,hardware,coincidence_timing acima do limite operacional (520.0 vs 430).,medio,fechada,3560142
+565,836,2026-03-14 08:00:00,superaquecimento do tubo,hardware,tube_heat_units acima do limite operacional (1200000.0 vs 790000).,alto,fechada,3609496
+566,841,2026-03-14 15:00:00,desgaste mecanico,mecanica,vibration acima do limite operacional (2.8 vs 1.45).,medio,fechada,3631103
+567,842,2026-02-22 22:00:00,quench,criogenia,magnet_temp acima do limite operacional (9.5 vs 7.0).,critico,fechada,3634950
+568,844,2026-02-07 03:00:00,superaquecimento do tubo,hardware,tube_heat_units acima do limite operacional (1166465.96 vs 790000).,alto,fechada,3643211
+569,846,2026-04-26 23:00:00,quench,criogenia,magnet_temp acima do limite operacional (9.5 vs 7.0).,critico,fechada,3653743
+570,850,2026-02-06 09:00:00,elemento da sonda queimado,hardware,probe_element_status abaixo do limite operacional (35.0 vs 63).,medio,fechada,3669113
+571,852,2026-02-25 01:00:00,falha no slip ring,hardware,slip_ring_error_rate acima do limite operacional (0.16 vs 0.075).,alto,fechada,3678201
+572,857,2026-02-01 16:00:00,degradacao detector,hardware,coincidence_timing acima do limite operacional (520.0 vs 430).,medio,fechada,3699240
+573,858,2026-04-26 12:00:00,falha HV,eletrica,hv_power_stability abaixo do limite operacional (89.484 vs 91).,alto,fechada,3705572
+574,859,2026-03-20 01:00:00,desgaste mecanico,mecanica,vibration acima do limite operacional (2.8 vs 1.45).,medio,fechada,3708993
+575,864,2026-03-15 20:00:00,elemento da sonda queimado,hardware,probe_element_status abaixo do limite operacional (35.0 vs 63).,medio,fechada,3730492
+576,867,2026-01-06 14:00:00,superaquecimento,hardware,transducer_temp acima do limite operacional (58.0 vs 46).,medio,fechada,3741814
+577,871,2026-04-17 09:00:00,falha HV,eletrica,hv_power_stability abaixo do limite operacional (86.0 vs 91).,alto,fechada,3761513
+578,875,2026-02-23 00:00:00,travamento mecanico,mecanica,vibration acima do limite operacional (2.8 vs 1.45).,alto,fechada,3777512
+579,876,2026-03-30 05:00:00,falha de gradiente,hardware,gradient_coil_temp acima do limite operacional (72.0 vs 49).,alto,fechada,3782677
+580,877,2026-04-15 02:00:00,superaquecimento do tubo,hardware,tube_temp acima do limite operacional (105.0 vs 79).,alto,fechada,3787378
+581,885,2026-03-12 04:00:00,desalinhamento do gantry,hardware,gantry_vibration_fft acima do limite operacional (3.2 vs 1.85).,medio,fechada,3821124
+582,886,2026-03-24 09:00:00,superaquecimento do tubo,hardware,tube_temp acima do limite operacional (105.0 vs 79).,alto,fechada,3825737
+583,888,2026-04-23 07:00:00,falha de gradiente,hardware,gradient_coil_temp acima do limite operacional (72.0 vs 49).,alto,fechada,3835095
+584,889,2026-01-27 15:00:00,quench,criogenia,magnet_temp acima do limite operacional (9.5 vs 7.0).,critico,fechada,3837359
+585,891,2026-02-10 23:00:00,falha HV,eletrica,hv_power_stability abaixo do limite operacional (86.0 vs 91).,alto,fechada,3846343
+586,893,2026-02-01 11:00:00,falha no slip ring,hardware,slip_ring_error_rate acima do limite operacional (0.16 vs 0.075).,alto,fechada,3854755
+587,895,2026-02-01 03:00:00,travamento mecanico,mecanica,vibration acima do limite operacional (2.8 vs 1.45).,alto,fechada,3863387
+588,897,2026-05-12 02:00:00,degradacao detector,hardware,coincidence_timing acima do limite operacional (520.0 vs 430).,medio,fechada,3874426
+589,898,2026-04-03 01:00:00,degradacao detector,hardware,coincidence_timing acima do limite operacional (520.0 vs 430).,medio,fechada,3877809
+590,905,2026-02-08 17:00:00,superaquecimento do tubo,hardware,tube_temp acima do limite operacional (105.0 vs 79).,alto,fechada,3906769
+591,915,2026-02-06 15:00:00,travamento mecanico,mecanica,vibration acima do limite operacional (2.8 vs 1.45).,alto,fechada,3949919
+592,918,2026-01-08 19:00:00,travamento mecanico,mecanica,vibration acima do limite operacional (2.8 vs 1.45).,alto,fechada,3962187
+593,919,2026-04-13 11:00:00,desgaste mecanico,mecanica,vibration acima do limite operacional (2.8 vs 1.45).,medio,fechada,3968779
+594,928,2026-02-05 08:00:00,desgaste mecanico,mecanica,vibration acima do limite operacional (2.8 vs 1.45).,medio,fechada,4006048
+595,929,2026-03-30 07:00:00,desgaste mecanico,mecanica,vibration acima do limite operacional (2.8 vs 1.45).,medio,fechada,4011639
+596,931,2026-04-05 19:00:00,desgaste mecanico,mecanica,vibration acima do limite operacional (2.8 vs 1.45).,medio,fechada,4020435
+597,932,2026-03-07 12:00:00,degradacao detector,hardware,coincidence_timing acima do limite operacional (520.0 vs 430).,medio,fechada,4024052
+598,942,2026-01-02 16:00:00,quench,criogenia,magnet_temp acima do limite operacional (9.5 vs 7.0).,critico,fechada,4065720
+599,943,2026-01-28 06:00:00,elemento da sonda queimado,hardware,probe_element_status abaixo do limite operacional (35.0 vs 63).,medio,fechada,4070654

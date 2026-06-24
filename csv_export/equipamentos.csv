@@ -1,0 +1,945 @@
+equipamento_id,hospital_id,tipo_equipamento,modelo,fabricante,status_operacao,data_instalacao,data_ultima_manutencao,desgaste_acumulado
+1,1,tc,SOMATOM go.Top,Siemens Healthineers,em manutencao,2024-12-07,2026-03-21,0.044
+2,1,raio x,DigitalDiagnost C90,Philips,em manutencao,2023-09-06,2026-05-04,0.11
+3,1,tc,SOMATOM go.Top,Siemens Healthineers,ativo,2017-11-17,2026-05-07,0.92
+4,1,ultrassom,EPIQ Elite,Philips,indisponivel,2021-06-14,2026-05-07,0.6900123911811763
+5,1,raio x,DigitalDiagnost C90,Philips,ativo,2023-07-30,2026-01-02,0.92
+6,1,ultrassom,LOGIQ E10,GE HealthCare,ativo,2023-12-15,2026-05-12,0.9
+7,1,ultrassom,LOGIQ E10,GE HealthCare,ativo,2021-06-24,2026-03-14,0.7028038036919525
+8,1,ressonancia magnetica,Magnetom Altea,Siemens Healthineers,ativo,2017-02-08,2025-12-24,0.9
+9,1,angiografia,Azurion 7,Philips,em falha,2024-05-24,2026-03-04,0.9627453339414589
+10,1,ressonancia magnetica,Magnetom Altea,Siemens Healthineers,ativo,2024-06-10,2026-04-23,0.52362122713861
+11,1,ressonancia magnetica,SIGNA Explorer,GE HealthCare,em falha,2025-01-14,2026-05-06,0.5544346938913729
+12,1,ressonancia magnetica,SIGNA Explorer,GE HealthCare,ativo,2016-09-05,2026-01-04,0.6826325599721386
+13,1,angiografia,Azurion 7,Philips,em manutencao,2025-09-12,2026-01-13,0.446
+14,1,arco cirurgico,OEC One CFD,GE HealthCare,ativo,2021-12-09,2026-05-04,0.3712793475092427
+15,1,angiografia,Artis Q,Siemens Healthineers,em falha,2019-02-19,2025-10-22,0.8799935874783822
+16,1,ressonancia magnetica,SIGNA Explorer,GE HealthCare,ativo,2019-09-17,2026-02-15,0.567818585231772
+17,2,arco cirurgico,Cios Alpha,Siemens Healthineers,em falha,2018-10-08,2026-03-17,0.5620167026236331
+18,2,arco cirurgico,OEC One CFD,GE HealthCare,ativo,2016-08-04,2026-04-08,0.47445618628459596
+19,2,pet,Biograph Vision,Siemens Healthineers,ativo,2023-01-25,2026-04-01,0.6288355258236281
+20,2,ressonancia magnetica,SIGNA Explorer,GE HealthCare,em falha,2024-05-11,2026-04-07,0.7445886119117866
+21,2,tc,SOMATOM go.Top,Siemens Healthineers,ativo,2023-03-11,2026-01-04,0.92
+22,2,tc,SOMATOM go.Top,Siemens Healthineers,em manutencao,2025-05-20,2026-04-17,0.377
+23,2,ultrassom,LOGIQ E10,GE HealthCare,indisponivel,2018-01-03,2026-02-01,0.8182737550807788
+24,2,pet,Biograph Vision,Siemens Healthineers,em manutencao,2023-02-27,2025-12-18,0.594
+25,2,tc,Revolution Apex,GE HealthCare,ativo,2019-12-09,2026-04-15,0.7324921400628388
+26,2,angiografia,Artis Q,Siemens Healthineers,ativo,2017-07-26,2026-04-07,0.8956511964849732
+27,2,angiografia,Artis Q,Siemens Healthineers,indisponivel,2025-10-28,2026-02-17,1.0
+28,2,ressonancia magnetica,Magnetom Altea,Siemens Healthineers,indisponivel,2025-06-10,2026-01-05,0.6077905310555006
+29,2,tc,Revolution Apex,GE HealthCare,em manutencao,2022-08-28,2026-01-23,0.151
+30,2,pet,Biograph Vision,Siemens Healthineers,em manutencao,2018-12-22,2026-03-24,0.292
+31,2,raio x,Definium Tempo,GE HealthCare,em falha,2023-06-02,2026-01-13,1.0
+32,2,ressonancia magnetica,Magnetom Altea,Siemens Healthineers,ativo,2017-10-22,2026-01-17,0.8091980841929083
+33,3,ultrassom,EPIQ Elite,Philips,em manutencao,2021-09-15,2026-04-25,0.236
+34,3,ultrassom,LOGIQ E10,GE HealthCare,ativo,2020-08-25,2026-05-02,0.598986740178861
+35,3,angiografia,Artis Q,Siemens Healthineers,em falha,2024-12-14,2026-04-20,0.58013419913554
+36,3,angiografia,Azurion 7,Philips,em manutencao,2018-07-21,2026-05-14,0.271
+37,3,pet,Biograph Vision,Siemens Healthineers,em falha,2021-11-26,2026-01-31,0.8445531767456776
+38,3,ultrassom,LOGIQ E10,GE HealthCare,em falha,2023-05-14,2025-10-22,1.0
+39,3,arco cirurgico,Cios Alpha,Siemens Healthineers,ativo,2018-07-22,2026-02-13,0.7811916806228897
+40,3,ultrassom,LOGIQ E10,GE HealthCare,ativo,2017-10-06,2026-01-17,0.7282764209812023
+41,3,ressonancia magnetica,SIGNA Explorer,GE HealthCare,ativo,2024-12-07,2026-02-08,0.5817062878633731
+42,3,pet,Discovery MI,GE HealthCare,ativo,2026-02-23,2026-01-03,0.92
+43,3,tc,Revolution Apex,GE HealthCare,ativo,2023-03-26,2026-01-01,0.92
+44,3,raio x,Definium Tempo,GE HealthCare,em manutencao,2020-06-28,2025-10-20,0.55
+45,3,tc,SOMATOM go.Top,Siemens Healthineers,ativo,2022-11-02,2026-03-15,0.92
+46,3,ultrassom,EPIQ Elite,Philips,em falha,2023-12-15,2025-11-16,0.7408462860013921
+47,3,raio x,Definium Tempo,GE HealthCare,ativo,2020-02-19,2026-01-06,0.92
+48,3,arco cirurgico,Cios Alpha,Siemens Healthineers,ativo,2019-06-20,2026-05-02,0.5124367228182954
+49,4,arco cirurgico,OEC One CFD,GE HealthCare,ativo,2022-02-11,2026-04-17,0.9172193287162573
+50,4,angiografia,Azurion 7,Philips,ativo,2022-09-26,2026-05-20,0.5029703941676897
+51,4,ultrassom,EPIQ Elite,Philips,em falha,2025-04-20,2026-01-26,0.7134097553093688
+52,4,angiografia,Artis Q,Siemens Healthineers,em falha,2025-05-29,2026-01-14,1.0
+53,4,angiografia,Azurion 7,Philips,ativo,2024-10-09,2026-04-01,0.47083589266510495
+54,4,ultrassom,LOGIQ E10,GE HealthCare,em falha,2024-05-01,2025-10-19,0.8471022903158686
+55,4,ultrassom,EPIQ Elite,Philips,ativo,2021-06-09,2026-01-29,0.9
+56,4,angiografia,Azurion 7,Philips,ativo,2017-12-31,2026-04-22,0.8363675998772344
+57,4,ressonancia magnetica,Magnetom Altea,Siemens Healthineers,em falha,2021-09-16,2025-12-15,1.0
+58,4,ressonancia magnetica,SIGNA Explorer,GE HealthCare,ativo,2021-04-09,2026-05-10,0.92
+59,4,arco cirurgico,OEC One CFD,GE HealthCare,em falha,2023-05-28,2026-03-05,0.5754250315836267
+60,4,arco cirurgico,Cios Alpha,Siemens Healthineers,em falha,2019-08-03,2025-12-31,0.7837667830842615
+61,4,raio x,DigitalDiagnost C90,Philips,em falha,2026-02-07,2025-12-20,0.790897932483917
+62,4,arco cirurgico,Cios Alpha,Siemens Healthineers,em manutencao,2023-08-14,2026-05-22,0.068
+63,4,angiografia,Artis Q,Siemens Healthineers,em falha,2022-06-24,2026-03-31,0.5289452254367455
+64,4,ressonancia magnetica,Magnetom Altea,Siemens Healthineers,ativo,2018-09-06,2026-05-02,0.6940131996396008
+65,5,raio x,Definium Tempo,GE HealthCare,ativo,2018-01-27,2026-03-16,0.9
+66,5,ultrassom,EPIQ Elite,Philips,indisponivel,2020-11-18,2026-01-29,0.8521027629915805
+67,5,angiografia,Azurion 7,Philips,em falha,2021-08-14,2026-05-06,0.6082253914735025
+68,5,tc,SOMATOM go.Top,Siemens Healthineers,ativo,2021-05-08,2026-04-24,0.8239590261151061
+69,5,pet,Discovery MI,GE HealthCare,ativo,2016-06-30,2026-05-21,0.8086314800981798
+70,5,tc,SOMATOM go.Top,Siemens Healthineers,ativo,2018-12-09,2026-01-06,0.6342833560939906
+71,5,tc,Revolution Apex,GE HealthCare,em falha,2022-05-19,2026-05-03,1.0
+72,5,raio x,DigitalDiagnost C90,Philips,ativo,2024-01-14,2026-04-05,0.7346538984493427
+73,5,raio x,Definium Tempo,GE HealthCare,ativo,2021-06-14,2026-01-28,0.8082158528627013
+74,5,raio x,DigitalDiagnost C90,Philips,ativo,2025-05-04,2026-01-27,0.9
+75,5,angiografia,Artis Q,Siemens Healthineers,ativo,2020-01-05,2026-02-07,0.42922902976387595
+76,5,ultrassom,LOGIQ E10,GE HealthCare,ativo,2016-10-22,2026-02-11,0.5446708893087617
+77,5,angiografia,Azurion 7,Philips,ativo,2016-08-31,2026-02-28,0.5081296579479949
+78,5,pet,Discovery MI,GE HealthCare,indisponivel,2020-10-14,2026-02-17,0.5669019796482182
+79,5,arco cirurgico,Cios Alpha,Siemens Healthineers,em falha,2024-05-03,2026-02-20,0.6683282792234586
+80,5,ressonancia magnetica,Magnetom Altea,Siemens Healthineers,em falha,2017-05-23,2026-03-18,1.0
+81,6,pet,Biograph Vision,Siemens Healthineers,indisponivel,2018-05-16,2025-11-11,1.0
+82,6,ultrassom,LOGIQ E10,GE HealthCare,ativo,2018-10-05,2026-04-19,0.9
+83,6,raio x,DigitalDiagnost C90,Philips,indisponivel,2022-11-09,2026-05-16,0.9043361680857629
+84,6,ultrassom,EPIQ Elite,Philips,em falha,2017-12-07,2025-11-20,1.0
+85,6,ressonancia magnetica,SIGNA Explorer,GE HealthCare,ativo,2025-07-17,2026-04-24,0.44015260145534674
+86,6,ultrassom,LOGIQ E10,GE HealthCare,em manutencao,2016-08-15,2026-05-16,0.333
+87,6,ultrassom,LOGIQ E10,GE HealthCare,em manutencao,2025-04-14,2026-05-13,0.515
+88,6,ultrassom,EPIQ Elite,Philips,ativo,2025-06-03,2026-01-24,0.9
+89,6,pet,Biograph Vision,Siemens Healthineers,ativo,2024-11-02,2026-04-11,0.9
+90,6,raio x,DigitalDiagnost C90,Philips,ativo,2019-09-10,2026-03-14,0.92
+91,6,arco cirurgico,OEC One CFD,GE HealthCare,indisponivel,2021-06-25,2026-01-06,0.8526732949513333
+92,6,ultrassom,LOGIQ E10,GE HealthCare,ativo,2022-08-21,2026-01-10,0.9
+93,6,tc,SOMATOM go.Top,Siemens Healthineers,indisponivel,2018-02-25,2026-03-24,0.9125068750049812
+94,6,pet,Biograph Vision,Siemens Healthineers,em manutencao,2024-09-18,2026-03-15,0.413
+95,6,pet,Discovery MI,GE HealthCare,ativo,2022-08-21,2026-04-03,0.92
+96,6,arco cirurgico,Cios Alpha,Siemens Healthineers,em falha,2021-01-16,2026-01-06,0.8205194781239973
+97,7,arco cirurgico,OEC One CFD,GE HealthCare,indisponivel,2025-05-12,2026-01-21,0.7649481721408896
+98,7,ressonancia magnetica,Magnetom Altea,Siemens Healthineers,indisponivel,2024-09-12,2025-10-17,1.0
+99,7,arco cirurgico,OEC One CFD,GE HealthCare,ativo,2023-06-12,2026-01-28,0.5508445281609369
+100,7,pet,Discovery MI,GE HealthCare,ativo,2016-10-31,2025-12-29,0.69277786217358
+101,7,ultrassom,EPIQ Elite,Philips,ativo,2017-02-18,2026-04-08,0.92
+102,7,tc,SOMATOM go.Top,Siemens Healthineers,em manutencao,2017-01-08,2025-12-12,0.346
+103,7,arco cirurgico,OEC One CFD,GE HealthCare,ativo,2024-09-04,2026-05-14,0.47355576401714866
+104,7,arco cirurgico,OEC One CFD,GE HealthCare,em falha,2017-11-10,2026-03-22,0.7702203736166923
+105,7,ressonancia magnetica,Magnetom Altea,Siemens Healthineers,ativo,2019-05-27,2026-02-17,0.5171514983862681
+106,7,raio x,DigitalDiagnost C90,Philips,indisponivel,2018-06-23,2026-03-24,1.0
+107,7,ultrassom,LOGIQ E10,GE HealthCare,ativo,2020-09-14,2026-02-17,0.7195861070209852
+108,7,angiografia,Artis Q,Siemens Healthineers,em manutencao,2025-08-12,2026-02-11,0.083
+109,7,angiografia,Artis Q,Siemens Healthineers,ativo,2023-01-30,2026-03-02,0.4466586759330131
+110,7,angiografia,Azurion 7,Philips,ativo,2024-09-19,2026-03-01,0.7821808385101586
+111,7,raio x,Definium Tempo,GE HealthCare,ativo,2017-11-14,2026-01-16,0.9
+112,7,pet,Biograph Vision,Siemens Healthineers,em falha,2019-11-23,2026-05-11,0.4798121337585108
+113,8,tc,Revolution Apex,GE HealthCare,ativo,2024-07-06,2026-01-21,0.9
+114,8,ressonancia magnetica,SIGNA Explorer,GE HealthCare,em falha,2019-08-27,2026-02-09,0.8595956664390811
+115,8,raio x,Definium Tempo,GE HealthCare,ativo,2025-09-18,2026-01-12,0.8920987913751739
+116,8,angiografia,Azurion 7,Philips,em falha,2016-07-13,2026-02-28,0.5068239058898516
+117,8,raio x,DigitalDiagnost C90,Philips,ativo,2018-07-15,2026-03-17,0.7846118224606998
+118,8,ressonancia magnetica,SIGNA Explorer,GE HealthCare,ativo,2017-06-08,2026-03-02,0.763537932712066
+119,8,pet,Biograph Vision,Siemens Healthineers,ativo,2019-03-23,2026-01-09,0.8585263418522067
+120,8,angiografia,Artis Q,Siemens Healthineers,em falha,2024-05-12,2025-11-04,1.0
+121,8,raio x,Definium Tempo,GE HealthCare,em manutencao,2021-07-24,2025-11-23,0.044
+122,8,ressonancia magnetica,SIGNA Explorer,GE HealthCare,ativo,2017-05-30,2026-03-28,0.92
+123,8,tc,SOMATOM go.Top,Siemens Healthineers,ativo,2016-06-29,2026-03-20,0.92
+124,8,ressonancia magnetica,Magnetom Altea,Siemens Healthineers,ativo,2024-05-25,2026-02-25,0.92
+125,8,pet,Biograph Vision,Siemens Healthineers,indisponivel,2025-10-01,2026-04-04,1.0
+126,8,raio x,DigitalDiagnost C90,Philips,em falha,2017-01-10,2026-03-02,1.0
+127,8,ressonancia magnetica,Magnetom Altea,Siemens Healthineers,ativo,2016-12-25,2026-01-30,0.92
+128,8,raio x,DigitalDiagnost C90,Philips,em falha,2025-12-02,2026-02-17,1.0
+129,9,ressonancia magnetica,SIGNA Explorer,GE HealthCare,indisponivel,2023-01-22,2025-11-14,1.0
+130,9,ressonancia magnetica,Magnetom Altea,Siemens Healthineers,em falha,2022-03-31,2026-02-17,0.9330593377831348
+131,9,tc,SOMATOM go.Top,Siemens Healthineers,indisponivel,2016-09-21,2026-05-23,1.0
+132,9,arco cirurgico,OEC One CFD,GE HealthCare,ativo,2023-04-04,2026-01-01,0.49904309811581427
+133,9,arco cirurgico,Cios Alpha,Siemens Healthineers,em manutencao,2024-12-19,2026-03-03,0.37
+134,9,tc,Revolution Apex,GE HealthCare,ativo,2017-05-13,2026-02-16,0.7933572951275992
+135,9,ultrassom,LOGIQ E10,GE HealthCare,ativo,2024-11-20,2026-02-14,0.8425022261961839
+136,9,raio x,DigitalDiagnost C90,Philips,ativo,2023-04-30,2026-05-21,0.6269473206455044
+137,9,arco cirurgico,Cios Alpha,Siemens Healthineers,ativo,2020-05-09,2026-04-11,0.92
+138,9,tc,SOMATOM go.Top,Siemens Healthineers,ativo,2018-02-12,2026-02-26,0.9
+139,9,tc,SOMATOM go.Top,Siemens Healthineers,indisponivel,2023-12-22,2026-05-13,0.9681801532457185
+140,9,tc,SOMATOM go.Top,Siemens Healthineers,ativo,2022-06-25,2026-04-30,0.92
+141,9,angiografia,Artis Q,Siemens Healthineers,indisponivel,2024-10-14,2026-03-15,0.9531423546811965
+142,9,ultrassom,LOGIQ E10,GE HealthCare,ativo,2022-09-19,2026-03-07,0.92
+143,9,pet,Biograph Vision,Siemens Healthineers,indisponivel,2018-05-14,2026-04-28,0.6181666640443985
+144,9,raio x,DigitalDiagnost C90,Philips,ativo,2021-06-20,2026-01-29,0.92
+145,10,tc,SOMATOM go.Top,Siemens Healthineers,ativo,2017-10-17,2026-04-07,0.9
+146,10,ultrassom,EPIQ Elite,Philips,ativo,2022-10-23,2026-04-19,0.8068997359053712
+147,10,arco cirurgico,Cios Alpha,Siemens Healthineers,indisponivel,2022-10-11,2026-02-09,0.5820719981664401
+148,10,angiografia,Azurion 7,Philips,ativo,2019-09-06,2026-01-31,0.783305317177598
+149,10,pet,Discovery MI,GE HealthCare,ativo,2021-03-25,2026-03-18,0.6353654077564644
+150,10,ultrassom,LOGIQ E10,GE HealthCare,ativo,2020-11-16,2026-01-05,0.92
+151,10,tc,Revolution Apex,GE HealthCare,em manutencao,2024-04-12,2026-03-19,0.406
+152,10,ultrassom,LOGIQ E10,GE HealthCare,em falha,2018-09-27,2026-03-06,1.0
+153,10,arco cirurgico,OEC One CFD,GE HealthCare,indisponivel,2017-01-02,2026-03-31,1.0
+154,10,tc,SOMATOM go.Top,Siemens Healthineers,em falha,2022-09-14,2026-04-10,0.8397394329359176
+155,10,raio x,Definium Tempo,GE HealthCare,em manutencao,2025-11-28,2026-01-29,0.056
+156,10,ultrassom,EPIQ Elite,Philips,indisponivel,2016-08-27,2026-02-03,1.0
+157,10,pet,Biograph Vision,Siemens Healthineers,ativo,2019-02-14,2025-12-31,0.7249792982476707
+158,10,tc,Revolution Apex,GE HealthCare,ativo,2021-11-17,2026-02-03,0.9
+159,10,raio x,Definium Tempo,GE HealthCare,ativo,2018-10-29,2026-01-20,0.92
+160,10,angiografia,Azurion 7,Philips,em falha,2016-07-14,2026-05-03,1.0
+161,11,angiografia,Azurion 7,Philips,ativo,2021-06-01,2026-02-16,0.49339057186791463
+162,11,tc,Revolution Apex,GE HealthCare,em manutencao,2020-05-17,2026-01-08,0.295
+163,11,raio x,DigitalDiagnost C90,Philips,em falha,2016-09-02,2026-04-26,0.8340102175397665
+164,11,angiografia,Azurion 7,Philips,ativo,2020-12-21,2026-02-05,0.8289494201992684
+165,11,ultrassom,EPIQ Elite,Philips,ativo,2022-08-17,2026-01-22,0.92
+166,11,pet,Discovery MI,GE HealthCare,em falha,2019-04-25,2025-10-14,0.9967291448124449
+167,11,ultrassom,LOGIQ E10,GE HealthCare,em manutencao,2021-05-26,2026-01-10,0.503
+168,11,pet,Discovery MI,GE HealthCare,em falha,2024-05-26,2026-01-29,0.9464690457890346
+169,11,pet,Discovery MI,GE HealthCare,ativo,2023-04-12,2026-02-28,0.8526998774401454
+170,11,tc,SOMATOM go.Top,Siemens Healthineers,indisponivel,2023-01-28,2026-01-17,1.0
+171,11,pet,Discovery MI,GE HealthCare,em falha,2019-02-26,2026-02-07,0.6041720462637177
+172,11,arco cirurgico,OEC One CFD,GE HealthCare,ativo,2018-03-08,2026-02-05,0.48745633517036285
+173,11,ressonancia magnetica,SIGNA Explorer,GE HealthCare,ativo,2022-08-07,2026-04-13,0.9
+174,11,raio x,Definium Tempo,GE HealthCare,indisponivel,2024-06-29,2025-12-04,0.9026604063940816
+175,11,raio x,Definium Tempo,GE HealthCare,em falha,2018-04-06,2026-02-13,0.883282212919655
+176,11,pet,Biograph Vision,Siemens Healthineers,em falha,2022-06-22,2026-02-13,0.7986773332819188
+177,12,arco cirurgico,Cios Alpha,Siemens Healthineers,em manutencao,2023-11-12,2026-02-20,0.505
+178,12,angiografia,Azurion 7,Philips,ativo,2019-08-20,2026-01-07,0.92
+179,12,angiografia,Artis Q,Siemens Healthineers,em falha,2017-08-07,2026-01-28,0.8529829852996563
+180,12,arco cirurgico,Cios Alpha,Siemens Healthineers,em falha,2022-03-29,2026-02-20,0.5932294964719788
+181,12,angiografia,Artis Q,Siemens Healthineers,em manutencao,2016-10-23,2025-11-20,0.269
+182,12,tc,Revolution Apex,GE HealthCare,ativo,2020-01-23,2026-01-13,0.92
+183,12,raio x,DigitalDiagnost C90,Philips,ativo,2020-09-16,2025-12-30,0.7636560565787233
+184,12,pet,Discovery MI,GE HealthCare,ativo,2025-11-10,2026-01-05,0.588595357460514
+185,12,tc,SOMATOM go.Top,Siemens Healthineers,em manutencao,2017-03-26,2026-04-18,0.26
+186,12,angiografia,Artis Q,Siemens Healthineers,ativo,2020-12-10,2026-04-16,0.92
+187,12,ultrassom,LOGIQ E10,GE HealthCare,ativo,2025-11-18,2026-02-05,0.9
+188,12,ultrassom,EPIQ Elite,Philips,ativo,2018-10-01,2026-03-26,0.598678605261657
+189,12,pet,Biograph Vision,Siemens Healthineers,ativo,2024-08-30,2026-01-29,0.9
+190,12,arco cirurgico,Cios Alpha,Siemens Healthineers,em falha,2023-04-08,2026-04-06,0.6551345751571006
+191,12,pet,Discovery MI,GE HealthCare,em falha,2022-07-09,2025-10-17,0.65068124322761
+192,12,pet,Biograph Vision,Siemens Healthineers,ativo,2023-01-24,2026-01-07,0.8607078316887605
+193,13,pet,Biograph Vision,Siemens Healthineers,ativo,2023-05-10,2026-01-16,0.911645792162764
+194,13,arco cirurgico,Cios Alpha,Siemens Healthineers,em falha,2017-10-13,2026-03-02,0.7684776585065085
+195,13,raio x,DigitalDiagnost C90,Philips,em falha,2018-11-23,2025-12-15,0.7646543851906051
+196,13,arco cirurgico,Cios Alpha,Siemens Healthineers,ativo,2017-09-22,2026-04-23,0.34318239570495546
+197,13,raio x,DigitalDiagnost C90,Philips,em falha,2016-10-09,2026-04-21,0.7200941829132217
+198,13,raio x,DigitalDiagnost C90,Philips,ativo,2024-10-07,2026-05-06,0.92
+199,13,ultrassom,EPIQ Elite,Philips,ativo,2023-09-28,2026-05-08,0.8801630156302049
+200,13,angiografia,Azurion 7,Philips,em falha,2022-01-18,2025-12-26,0.5863837363064082
+201,13,tc,Revolution Apex,GE HealthCare,ativo,2018-02-16,2026-02-15,0.6512568899349989
+202,13,raio x,Definium Tempo,GE HealthCare,ativo,2022-09-11,2026-02-13,0.6850243402869786
+203,13,ressonancia magnetica,Magnetom Altea,Siemens Healthineers,ativo,2019-09-23,2026-03-05,0.8305703775538039
+204,13,pet,Biograph Vision,Siemens Healthineers,ativo,2018-03-02,2026-02-25,0.5058241709154137
+205,13,tc,Revolution Apex,GE HealthCare,ativo,2016-11-13,2026-02-02,0.92
+206,13,tc,Revolution Apex,GE HealthCare,ativo,2017-07-09,2026-04-12,0.7840239486379672
+207,13,ultrassom,EPIQ Elite,Philips,indisponivel,2017-02-24,2026-01-06,0.7319769313988953
+208,13,angiografia,Azurion 7,Philips,ativo,2025-09-21,2026-04-08,0.5927596582716406
+209,14,tc,SOMATOM go.Top,Siemens Healthineers,ativo,2022-01-11,2026-01-15,0.6105690689288372
+210,14,ressonancia magnetica,SIGNA Explorer,GE HealthCare,em falha,2026-01-16,2025-11-01,1.0
+211,14,pet,Discovery MI,GE HealthCare,ativo,2024-12-31,2025-12-30,0.6729468154752576
+212,14,tc,SOMATOM go.Top,Siemens Healthineers,em falha,2016-11-21,2026-04-21,1.0
+213,14,pet,Biograph Vision,Siemens Healthineers,em manutencao,2024-03-17,2025-12-15,0.448
+214,14,ressonancia magnetica,Magnetom Altea,Siemens Healthineers,em falha,2019-04-12,2026-01-13,1.0
+215,14,angiografia,Azurion 7,Philips,ativo,2020-10-05,2026-05-25,0.6499864231803676
+216,14,tc,Revolution Apex,GE HealthCare,ativo,2019-07-17,2026-01-15,0.7673784718270296
+217,14,raio x,DigitalDiagnost C90,Philips,ativo,2016-11-13,2026-01-30,0.92
+218,14,pet,Discovery MI,GE HealthCare,em falha,2023-06-14,2026-01-05,0.9658446864818071
+219,14,ultrassom,EPIQ Elite,Philips,ativo,2018-09-10,2026-01-13,0.8665920684606289
+220,14,pet,Discovery MI,GE HealthCare,indisponivel,2016-08-22,2026-01-26,0.6626575183024863
+221,14,raio x,DigitalDiagnost C90,Philips,ativo,2022-03-16,2026-02-15,0.92
+222,14,ressonancia magnetica,Magnetom Altea,Siemens Healthineers,em falha,2019-07-02,2026-03-21,0.9909399890739753
+223,14,ultrassom,LOGIQ E10,GE HealthCare,ativo,2026-01-26,2026-01-09,0.9
+224,14,arco cirurgico,OEC One CFD,GE HealthCare,ativo,2023-06-24,2026-01-16,0.7989865407090314
+225,15,ultrassom,LOGIQ E10,GE HealthCare,em manutencao,2017-09-06,2026-01-29,0.167
+226,15,tc,SOMATOM go.Top,Siemens Healthineers,ativo,2018-03-15,2026-04-28,0.92
+227,15,arco cirurgico,Cios Alpha,Siemens Healthineers,ativo,2025-02-20,2026-03-26,0.4984904381616862
+228,15,tc,Revolution Apex,GE HealthCare,ativo,2023-06-16,2026-05-07,0.7601914139508517
+229,15,ressonancia magnetica,SIGNA Explorer,GE HealthCare,ativo,2020-11-16,2026-01-15,0.7914231176168973
+230,15,pet,Biograph Vision,Siemens Healthineers,ativo,2017-10-26,2025-12-28,0.7066184271362036
+231,15,tc,Revolution Apex,GE HealthCare,ativo,2021-02-04,2026-04-04,0.7710275168565812
+232,15,raio x,DigitalDiagnost C90,Philips,em falha,2024-10-30,2026-03-11,1.0
+233,15,arco cirurgico,OEC One CFD,GE HealthCare,em falha,2017-11-08,2025-11-16,0.7826547156434492
+234,15,tc,Revolution Apex,GE HealthCare,ativo,2024-02-09,2026-02-11,0.7031778624854966
+235,15,pet,Discovery MI,GE HealthCare,indisponivel,2023-01-31,2025-11-17,0.9324052866047152
+236,15,ultrassom,LOGIQ E10,GE HealthCare,em falha,2019-06-29,2026-05-05,0.8470616477278323
+237,15,angiografia,Artis Q,Siemens Healthineers,indisponivel,2024-01-03,2026-02-27,0.6525285005571272
+238,15,raio x,Definium Tempo,GE HealthCare,ativo,2022-10-17,2026-01-09,0.7260504179492503
+239,15,raio x,Definium Tempo,GE HealthCare,em falha,2023-02-09,2026-05-17,0.7713185209624814
+240,15,ultrassom,LOGIQ E10,GE HealthCare,indisponivel,2022-11-28,2026-04-28,1.0
+241,16,tc,SOMATOM go.Top,Siemens Healthineers,ativo,2016-06-11,2026-02-28,0.9
+242,16,angiografia,Artis Q,Siemens Healthineers,ativo,2026-01-17,2026-03-19,0.7520715817859902
+243,16,pet,Discovery MI,GE HealthCare,em manutencao,2021-03-30,2026-05-17,0.224
+244,16,ressonancia magnetica,Magnetom Altea,Siemens Healthineers,ativo,2016-07-09,2026-03-06,0.7183999412156312
+245,16,arco cirurgico,OEC One CFD,GE HealthCare,em falha,2021-09-09,2026-01-03,0.7468973699279627
+246,16,tc,SOMATOM go.Top,Siemens Healthineers,em falha,2018-06-27,2026-04-22,0.7336107496252354
+247,16,angiografia,Azurion 7,Philips,ativo,2019-11-15,2026-05-19,0.92
+248,16,raio x,DigitalDiagnost C90,Philips,ativo,2024-11-08,2026-02-22,0.92
+249,16,ultrassom,EPIQ Elite,Philips,indisponivel,2019-07-02,2026-04-03,1.0
+250,16,angiografia,Azurion 7,Philips,ativo,2020-04-28,2026-04-14,0.6027090145534484
+251,16,pet,Discovery MI,GE HealthCare,em manutencao,2022-11-07,2026-02-10,0.52
+252,16,ressonancia magnetica,Magnetom Altea,Siemens Healthineers,em falha,2019-10-22,2025-12-25,0.920420011337728
+253,16,tc,Revolution Apex,GE HealthCare,ativo,2025-01-26,2026-01-26,0.9
+254,16,tc,SOMATOM go.Top,Siemens Healthineers,em falha,2023-10-26,2026-05-10,0.876056485682404
+255,16,raio x,Definium Tempo,GE HealthCare,ativo,2023-06-30,2026-01-25,0.804057442433537
+256,16,raio x,Definium Tempo,GE HealthCare,em falha,2026-02-26,2025-12-05,1.0
+257,17,ultrassom,EPIQ Elite,Philips,ativo,2020-11-30,2026-04-19,0.7457709512679725
+258,17,ressonancia magnetica,Magnetom Altea,Siemens Healthineers,ativo,2018-04-04,2026-01-19,0.5665908243006469
+259,17,pet,Discovery MI,GE HealthCare,ativo,2025-05-21,2026-02-06,0.8004267908343539
+260,17,angiografia,Azurion 7,Philips,ativo,2017-04-24,2026-02-22,0.7780421448801091
+261,17,angiografia,Azurion 7,Philips,ativo,2023-12-19,2026-04-07,0.6370204491138762
+262,17,raio x,DigitalDiagnost C90,Philips,ativo,2018-12-03,2026-01-13,0.7090648967705323
+263,17,angiografia,Artis Q,Siemens Healthineers,ativo,2024-08-03,2026-02-08,0.4744657265456481
+264,17,angiografia,Azurion 7,Philips,ativo,2022-09-26,2026-03-11,0.7648784374774423
+265,17,ultrassom,EPIQ Elite,Philips,ativo,2022-12-12,2026-05-18,0.828570348206637
+266,17,tc,Revolution Apex,GE HealthCare,em falha,2022-10-10,2026-03-22,1.0
+267,17,ultrassom,LOGIQ E10,GE HealthCare,em manutencao,2020-02-17,2026-05-10,0.311
+268,17,ultrassom,EPIQ Elite,Philips,em falha,2025-09-26,2025-11-23,1.0
+269,17,ressonancia magnetica,SIGNA Explorer,GE HealthCare,em falha,2019-06-01,2026-05-07,0.6548606819247721
+270,17,raio x,DigitalDiagnost C90,Philips,em manutencao,2018-08-16,2026-01-03,0.506
+271,17,ultrassom,EPIQ Elite,Philips,ativo,2025-12-14,2026-02-22,0.92
+272,17,angiografia,Artis Q,Siemens Healthineers,indisponivel,2023-03-01,2025-11-16,0.8515402427491187
+273,18,angiografia,Azurion 7,Philips,indisponivel,2024-03-21,2025-12-15,0.7778279138688147
+274,18,pet,Discovery MI,GE HealthCare,ativo,2023-01-24,2026-02-26,0.49832898810682114
+275,18,pet,Biograph Vision,Siemens Healthineers,em manutencao,2019-01-24,2026-05-07,0.494
+276,18,pet,Discovery MI,GE HealthCare,ativo,2022-04-13,2026-01-14,0.6553855463846635
+277,18,tc,SOMATOM go.Top,Siemens Healthineers,ativo,2025-01-04,2026-01-01,0.9
+278,18,pet,Biograph Vision,Siemens Healthineers,em falha,2018-05-28,2025-12-12,0.7616773677672506
+279,18,pet,Biograph Vision,Siemens Healthineers,ativo,2017-01-22,2026-01-08,0.8574363284266006
+280,18,pet,Discovery MI,GE HealthCare,em falha,2025-03-13,2026-03-09,0.6516028188817778
+281,18,arco cirurgico,OEC One CFD,GE HealthCare,ativo,2017-07-09,2026-04-06,0.5655446758602616
+282,18,angiografia,Artis Q,Siemens Healthineers,em falha,2026-03-04,2026-01-12,0.9311195273314861
+283,18,pet,Discovery MI,GE HealthCare,ativo,2021-07-20,2026-03-06,0.3832172329384279
+284,18,ressonancia magnetica,SIGNA Explorer,GE HealthCare,ativo,2019-03-15,2026-01-26,0.9085803756654728
+285,18,pet,Discovery MI,GE HealthCare,em falha,2017-08-30,2026-03-23,0.47453091576816253
+286,18,ultrassom,LOGIQ E10,GE HealthCare,ativo,2024-09-18,2026-01-28,0.92
+287,18,tc,Revolution Apex,GE HealthCare,em falha,2020-09-30,2025-12-20,0.7663880165152034
+288,18,ultrassom,EPIQ Elite,Philips,em manutencao,2017-03-22,2026-04-20,0.166
+289,19,ressonancia magnetica,Magnetom Altea,Siemens Healthineers,ativo,2020-01-03,2026-01-22,0.48127200316134155
+290,19,arco cirurgico,OEC One CFD,GE HealthCare,ativo,2023-08-31,2026-02-17,0.92
+291,19,arco cirurgico,OEC One CFD,GE HealthCare,em manutencao,2021-01-03,2025-12-16,0.57
+292,19,angiografia,Artis Q,Siemens Healthineers,ativo,2024-06-16,2026-02-15,0.6926420646369152
+293,19,ressonancia magnetica,Magnetom Altea,Siemens Healthineers,ativo,2020-06-23,2026-01-09,0.8796048880506776
+294,19,angiografia,Artis Q,Siemens Healthineers,ativo,2020-10-09,2026-03-07,0.9
+295,19,pet,Discovery MI,GE HealthCare,ativo,2020-01-02,2026-03-02,0.47612824232052076
+296,19,ultrassom,EPIQ Elite,Philips,em manutencao,2020-06-26,2026-04-26,0.455
+297,19,angiografia,Artis Q,Siemens Healthineers,ativo,2025-05-27,2026-01-01,0.5313252305366879
+298,19,angiografia,Artis Q,Siemens Healthineers,ativo,2021-07-13,2026-02-11,0.6238081504123189
+299,19,ultrassom,LOGIQ E10,GE HealthCare,ativo,2023-03-10,2026-04-22,0.92
+300,19,tc,Revolution Apex,GE HealthCare,em falha,2022-11-02,2026-01-02,1.0
+301,19,tc,SOMATOM go.Top,Siemens Healthineers,ativo,2020-09-10,2026-02-10,0.92
+302,19,ultrassom,LOGIQ E10,GE HealthCare,ativo,2020-10-02,2026-01-19,0.787236208835235
+303,19,angiografia,Azurion 7,Philips,ativo,2020-02-03,2026-02-25,0.6114408908881747
+304,19,angiografia,Artis Q,Siemens Healthineers,ativo,2024-01-26,2026-03-10,0.9
+305,20,ultrassom,EPIQ Elite,Philips,em falha,2021-11-21,2025-11-13,0.8321103445009463
+306,20,pet,Biograph Vision,Siemens Healthineers,ativo,2025-09-11,2026-01-23,0.5309597678547688
+307,20,tc,Revolution Apex,GE HealthCare,ativo,2017-01-31,2026-01-19,0.8432684505157045
+308,20,angiografia,Azurion 7,Philips,indisponivel,2016-12-24,2026-04-22,0.9148334377221992
+309,20,pet,Discovery MI,GE HealthCare,ativo,2025-10-08,2026-01-19,0.41995180875024885
+310,20,ressonancia magnetica,SIGNA Explorer,GE HealthCare,indisponivel,2025-01-21,2026-02-07,1.0
+311,20,arco cirurgico,OEC One CFD,GE HealthCare,ativo,2020-04-14,2026-03-27,0.92
+312,20,tc,Revolution Apex,GE HealthCare,em manutencao,2024-07-26,2025-12-14,0.264
+313,20,raio x,Definium Tempo,GE HealthCare,ativo,2025-05-06,2026-04-20,0.9
+314,20,ressonancia magnetica,SIGNA Explorer,GE HealthCare,ativo,2019-03-13,2026-02-20,0.8461954665155506
+315,20,arco cirurgico,OEC One CFD,GE HealthCare,ativo,2016-08-19,2026-01-18,0.5079678873936296
+316,20,angiografia,Artis Q,Siemens Healthineers,em manutencao,2020-03-14,2026-03-10,0.247
+317,20,tc,SOMATOM go.Top,Siemens Healthineers,indisponivel,2018-02-15,2026-01-26,1.0
+318,20,angiografia,Artis Q,Siemens Healthineers,em manutencao,2020-02-12,2026-05-13,0.05
+319,20,raio x,DigitalDiagnost C90,Philips,em falha,2019-02-08,2026-03-18,1.0
+320,20,raio x,DigitalDiagnost C90,Philips,indisponivel,2017-10-23,2026-05-05,0.8051794515420966
+321,21,angiografia,Azurion 7,Philips,ativo,2019-01-29,2026-01-11,0.8457783286547407
+322,21,pet,Discovery MI,GE HealthCare,ativo,2024-04-26,2026-02-15,0.7984847500817339
+323,21,arco cirurgico,Cios Alpha,Siemens Healthineers,indisponivel,2025-09-01,2026-05-16,0.6319296775339064
+324,21,ressonancia magnetica,Magnetom Altea,Siemens Healthineers,ativo,2022-03-01,2026-02-19,0.6709748015789628
+325,21,raio x,DigitalDiagnost C90,Philips,em falha,2020-03-24,2025-12-07,1.0
+326,21,angiografia,Azurion 7,Philips,ativo,2024-03-01,2026-04-08,0.49094443798873966
+327,21,ultrassom,EPIQ Elite,Philips,em falha,2021-11-23,2026-03-30,1.0
+328,21,pet,Discovery MI,GE HealthCare,em falha,2019-08-24,2026-02-01,0.5477620563905977
+329,21,tc,SOMATOM go.Top,Siemens Healthineers,ativo,2023-05-03,2026-04-10,0.9041134137655349
+330,21,arco cirurgico,Cios Alpha,Siemens Healthineers,ativo,2017-02-28,2026-05-02,0.6155053011117126
+331,21,tc,SOMATOM go.Top,Siemens Healthineers,ativo,2020-01-21,2026-04-16,0.675519693689352
+332,21,ressonancia magnetica,SIGNA Explorer,GE HealthCare,em manutencao,2019-08-06,2026-02-11,0.201
+333,21,tc,Revolution Apex,GE HealthCare,em falha,2023-05-19,2026-03-14,1.0
+334,21,raio x,DigitalDiagnost C90,Philips,em manutencao,2021-11-14,2026-05-03,0.516
+335,21,raio x,DigitalDiagnost C90,Philips,ativo,2021-11-27,2026-03-31,0.9
+336,21,ressonancia magnetica,Magnetom Altea,Siemens Healthineers,em falha,2018-05-05,2025-10-30,0.6959943774634233
+337,22,tc,SOMATOM go.Top,Siemens Healthineers,ativo,2021-09-29,2026-03-13,0.7689416251514685
+338,22,angiografia,Artis Q,Siemens Healthineers,ativo,2018-06-29,2026-04-26,0.8761609301902297
+339,22,ultrassom,EPIQ Elite,Philips,ativo,2017-10-29,2026-02-17,0.9031327422246942
+340,22,ressonancia magnetica,Magnetom Altea,Siemens Healthineers,ativo,2017-06-26,2026-03-22,0.9
+341,22,angiografia,Azurion 7,Philips,em falha,2022-03-26,2026-04-12,0.6225632288876756
+342,22,ultrassom,EPIQ Elite,Philips,indisponivel,2023-05-17,2025-11-27,1.0
+343,22,angiografia,Azurion 7,Philips,em manutencao,2018-10-16,2026-04-25,0.418
+344,22,tc,SOMATOM go.Top,Siemens Healthineers,indisponivel,2025-02-04,2025-12-16,1.0
+345,22,arco cirurgico,Cios Alpha,Siemens Healthineers,em falha,2022-09-20,2026-05-22,0.9550154078390501
+346,22,ultrassom,EPIQ Elite,Philips,em falha,2022-02-03,2026-05-07,1.0
+347,22,ressonancia magnetica,Magnetom Altea,Siemens Healthineers,ativo,2022-07-09,2026-03-20,0.9102110176740703
+348,22,raio x,DigitalDiagnost C90,Philips,em falha,2024-09-13,2025-10-18,1.0
+349,22,ressonancia magnetica,SIGNA Explorer,GE HealthCare,em manutencao,2020-03-25,2026-03-22,0.316
+350,22,angiografia,Artis Q,Siemens Healthineers,ativo,2024-05-04,2026-01-06,0.5154019082750305
+351,22,pet,Discovery MI,GE HealthCare,ativo,2017-02-20,2026-03-17,0.5524926968049161
+352,22,ressonancia magnetica,SIGNA Explorer,GE HealthCare,ativo,2017-03-01,2026-02-12,0.4600330147773876
+353,23,raio x,Definium Tempo,GE HealthCare,ativo,2017-09-22,2026-03-14,0.92
+354,23,tc,SOMATOM go.Top,Siemens Healthineers,ativo,2018-01-23,2026-04-19,0.92
+355,23,angiografia,Artis Q,Siemens Healthineers,ativo,2017-02-28,2026-02-15,0.7424012706971088
+356,23,angiografia,Azurion 7,Philips,indisponivel,2021-10-04,2026-01-13,0.49883791989211024
+357,23,arco cirurgico,OEC One CFD,GE HealthCare,em falha,2021-01-31,2025-11-20,0.656181280327175
+358,23,tc,SOMATOM go.Top,Siemens Healthineers,ativo,2023-03-31,2026-05-13,0.92
+359,23,tc,SOMATOM go.Top,Siemens Healthineers,indisponivel,2022-01-07,2026-04-01,0.7475143501617839
+360,23,pet,Discovery MI,GE HealthCare,indisponivel,2025-11-26,2026-01-07,0.8717865247228815
+361,23,ressonancia magnetica,SIGNA Explorer,GE HealthCare,ativo,2019-05-06,2026-04-06,0.5477163330332788
+362,23,tc,SOMATOM go.Top,Siemens Healthineers,em falha,2016-12-11,2025-12-02,1.0
+363,23,ressonancia magnetica,Magnetom Altea,Siemens Healthineers,em manutencao,2018-11-26,2026-04-25,0.263
+364,23,arco cirurgico,Cios Alpha,Siemens Healthineers,ativo,2025-10-07,2026-05-17,0.49036156660607666
+365,23,arco cirurgico,OEC One CFD,GE HealthCare,em falha,2025-02-03,2026-01-13,0.5679096484611984
+366,23,raio x,Definium Tempo,GE HealthCare,ativo,2021-10-29,2026-01-29,0.92
+367,23,tc,Revolution Apex,GE HealthCare,ativo,2018-05-17,2026-03-04,0.9
+368,23,ultrassom,EPIQ Elite,Philips,ativo,2017-11-10,2026-03-26,0.9
+369,24,pet,Biograph Vision,Siemens Healthineers,ativo,2018-11-03,2026-03-26,0.4305829405542221
+370,24,ultrassom,EPIQ Elite,Philips,ativo,2021-08-10,2026-05-24,0.9
+371,24,arco cirurgico,Cios Alpha,Siemens Healthineers,em falha,2018-06-11,2026-02-06,0.6507237211638458
+372,24,pet,Discovery MI,GE HealthCare,indisponivel,2023-07-15,2026-05-05,1.0
+373,24,tc,SOMATOM go.Top,Siemens Healthineers,ativo,2022-01-24,2026-03-02,0.9
+374,24,ressonancia magnetica,SIGNA Explorer,GE HealthCare,ativo,2025-07-03,2026-03-09,0.6680033332969647
+375,24,arco cirurgico,OEC One CFD,GE HealthCare,ativo,2016-09-03,2026-05-15,0.877195163417762
+376,24,tc,SOMATOM go.Top,Siemens Healthineers,ativo,2023-10-22,2026-04-07,0.92
+377,24,arco cirurgico,Cios Alpha,Siemens Healthineers,ativo,2025-08-13,2026-05-21,0.8416583994392324
+378,24,raio x,Definium Tempo,GE HealthCare,em manutencao,2017-05-11,2026-05-13,0.352
+379,24,angiografia,Artis Q,Siemens Healthineers,em falha,2017-08-08,2025-12-31,0.8428080680179115
+380,24,raio x,DigitalDiagnost C90,Philips,em falha,2017-01-24,2026-03-07,1.0
+381,24,angiografia,Azurion 7,Philips,em falha,2024-07-12,2025-12-29,1.0
+382,24,arco cirurgico,Cios Alpha,Siemens Healthineers,em manutencao,2023-01-28,2026-04-23,0.519
+383,24,raio x,Definium Tempo,GE HealthCare,ativo,2020-02-16,2026-03-24,0.785809999706295
+384,24,arco cirurgico,OEC One CFD,GE HealthCare,ativo,2018-10-09,2026-05-07,0.8764438063761196
+385,25,arco cirurgico,Cios Alpha,Siemens Healthineers,em falha,2022-03-02,2026-03-31,0.9408046266963893
+386,25,ultrassom,EPIQ Elite,Philips,em falha,2022-07-21,2026-03-24,0.6467064802548583
+387,25,arco cirurgico,Cios Alpha,Siemens Healthineers,ativo,2024-10-05,2026-01-31,0.8045634918301271
+388,25,arco cirurgico,OEC One CFD,GE HealthCare,ativo,2017-10-27,2025-12-31,0.3658626730453271
+389,25,angiografia,Azurion 7,Philips,em falha,2022-02-15,2026-05-03,0.820016857912507
+390,25,pet,Discovery MI,GE HealthCare,ativo,2020-07-14,2026-03-09,0.5112574337582579
+391,25,arco cirurgico,Cios Alpha,Siemens Healthineers,ativo,2018-01-11,2026-01-14,0.8512368513712831
+392,25,tc,SOMATOM go.Top,Siemens Healthineers,indisponivel,2020-05-03,2025-12-17,0.9019325611585858
+393,25,arco cirurgico,Cios Alpha,Siemens Healthineers,em falha,2025-07-02,2025-10-26,1.0
+394,25,pet,Biograph Vision,Siemens Healthineers,ativo,2021-05-27,2026-02-12,0.7943846907102357
+395,25,tc,Revolution Apex,GE HealthCare,em falha,2021-03-18,2026-05-10,0.722037487226865
+396,25,ressonancia magnetica,SIGNA Explorer,GE HealthCare,ativo,2019-05-13,2026-02-15,0.5436809191612001
+397,25,ressonancia magnetica,Magnetom Altea,Siemens Healthineers,ativo,2019-03-08,2026-01-22,0.831318225423398
+398,25,tc,Revolution Apex,GE HealthCare,ativo,2022-07-16,2026-04-23,0.8168511659309112
+399,25,ultrassom,LOGIQ E10,GE HealthCare,ativo,2022-11-17,2025-12-23,0.9
+400,25,pet,Biograph Vision,Siemens Healthineers,em falha,2025-01-26,2026-05-01,0.9735844428477914
+401,26,angiografia,Artis Q,Siemens Healthineers,ativo,2018-11-04,2026-02-09,0.8026685926683599
+402,26,ultrassom,LOGIQ E10,GE HealthCare,em manutencao,2018-02-06,2026-02-09,0.523
+403,26,pet,Discovery MI,GE HealthCare,ativo,2023-08-16,2026-05-16,0.6045329742869483
+404,26,pet,Discovery MI,GE HealthCare,ativo,2021-09-17,2026-01-22,0.6063969057816041
+405,26,ressonancia magnetica,SIGNA Explorer,GE HealthCare,ativo,2021-05-25,2026-04-29,0.5808758190191081
+406,26,ressonancia magnetica,SIGNA Explorer,GE HealthCare,em falha,2024-06-21,2026-01-29,0.9570377559245504
+407,26,arco cirurgico,OEC One CFD,GE HealthCare,em falha,2025-02-28,2026-05-07,0.9781500009991866
+408,26,pet,Biograph Vision,Siemens Healthineers,ativo,2025-02-06,2026-02-28,0.8433520935483827
+409,26,angiografia,Azurion 7,Philips,indisponivel,2024-09-22,2025-12-31,0.8602776694154155
+410,26,ultrassom,LOGIQ E10,GE HealthCare,indisponivel,2019-11-20,2026-04-29,0.8837715035151311
+411,26,pet,Biograph Vision,Siemens Healthineers,em manutencao,2022-03-21,2025-11-19,0.528
+412,26,pet,Biograph Vision,Siemens Healthineers,indisponivel,2016-06-13,2026-05-17,1.0
+413,26,ressonancia magnetica,Magnetom Altea,Siemens Healthineers,ativo,2019-06-14,2026-05-05,0.5772573752382499
+414,26,ultrassom,EPIQ Elite,Philips,ativo,2020-06-29,2026-02-08,0.700058070631822
+415,26,pet,Discovery MI,GE HealthCare,ativo,2023-09-02,2026-05-07,0.917567049080517
+416,26,angiografia,Artis Q,Siemens Healthineers,em falha,2019-12-12,2025-11-16,0.7126534788402004
+417,27,ressonancia magnetica,Magnetom Altea,Siemens Healthineers,ativo,2019-09-30,2026-02-02,0.5922380912029707
+418,27,angiografia,Artis Q,Siemens Healthineers,ativo,2019-11-23,2025-12-24,0.9
+419,27,ultrassom,EPIQ Elite,Philips,indisponivel,2019-04-21,2026-01-08,1.0
+420,27,arco cirurgico,Cios Alpha,Siemens Healthineers,ativo,2019-05-10,2026-05-12,0.9
+421,27,tc,Revolution Apex,GE HealthCare,em falha,2023-03-09,2026-03-22,0.7152902104897372
+422,27,tc,Revolution Apex,GE HealthCare,em manutencao,2017-08-20,2026-03-05,0.206
+423,27,ressonancia magnetica,SIGNA Explorer,GE HealthCare,ativo,2026-02-11,2026-01-05,0.4969498906891057
+424,27,ultrassom,EPIQ Elite,Philips,ativo,2018-10-24,2026-03-10,0.8283309021062569
+425,27,tc,Revolution Apex,GE HealthCare,ativo,2019-01-31,2026-04-15,0.92
+426,27,tc,Revolution Apex,GE HealthCare,ativo,2020-03-27,2026-03-09,0.7462046183476383
+427,27,pet,Discovery MI,GE HealthCare,ativo,2022-05-12,2026-03-16,0.4324267732792994
+428,27,tc,Revolution Apex,GE HealthCare,ativo,2022-07-19,2026-05-03,0.92
+429,27,ultrassom,EPIQ Elite,Philips,ativo,2025-03-26,2026-03-27,0.9
+430,27,raio x,Definium Tempo,GE HealthCare,indisponivel,2017-09-21,2025-12-09,1.0
+431,27,arco cirurgico,OEC One CFD,GE HealthCare,ativo,2023-02-18,2026-03-29,0.6066794232454988
+432,27,pet,Discovery MI,GE HealthCare,indisponivel,2019-05-18,2026-03-22,0.7291403190929895
+433,28,raio x,DigitalDiagnost C90,Philips,ativo,2017-09-19,2026-01-29,0.92
+434,28,pet,Biograph Vision,Siemens Healthineers,indisponivel,2024-12-09,2025-12-08,0.6163690460956762
+435,28,ultrassom,EPIQ Elite,Philips,ativo,2020-09-22,2025-12-28,0.9
+436,28,arco cirurgico,Cios Alpha,Siemens Healthineers,indisponivel,2023-09-17,2025-12-28,0.6714223288579687
+437,28,arco cirurgico,Cios Alpha,Siemens Healthineers,indisponivel,2026-02-05,2026-04-06,0.55482528336632
+438,28,angiografia,Azurion 7,Philips,indisponivel,2024-08-23,2026-03-17,1.0
+439,28,ressonancia magnetica,SIGNA Explorer,GE HealthCare,ativo,2024-11-02,2026-01-26,0.3910029414544382
+440,28,pet,Biograph Vision,Siemens Healthineers,ativo,2024-03-19,2026-03-13,0.4593443522524061
+441,28,tc,Revolution Apex,GE HealthCare,em manutencao,2023-08-09,2025-10-29,0.315
+442,28,tc,SOMATOM go.Top,Siemens Healthineers,em manutencao,2017-02-21,2026-02-18,0.232
+443,28,angiografia,Artis Q,Siemens Healthineers,em falha,2017-11-11,2026-05-26,0.5098246101558952
+444,28,pet,Discovery MI,GE HealthCare,ativo,2025-04-24,2026-04-23,0.92
+445,28,pet,Biograph Vision,Siemens Healthineers,em falha,2019-10-03,2025-12-18,0.711058143563596
+446,28,pet,Biograph Vision,Siemens Healthineers,ativo,2022-12-09,2026-05-13,0.4174932959372913
+447,28,ressonancia magnetica,SIGNA Explorer,GE HealthCare,ativo,2024-04-04,2026-01-01,0.92
+448,28,pet,Discovery MI,GE HealthCare,em falha,2016-11-08,2026-02-27,0.910764065988829
+449,29,arco cirurgico,OEC One CFD,GE HealthCare,ativo,2021-04-15,2026-04-21,0.8677903289923323
+450,29,pet,Biograph Vision,Siemens Healthineers,em falha,2019-07-31,2026-05-10,0.6998011804618816
+451,29,pet,Biograph Vision,Siemens Healthineers,indisponivel,2022-09-15,2026-04-04,0.9455368180217517
+452,29,ressonancia magnetica,SIGNA Explorer,GE HealthCare,em falha,2017-06-12,2026-01-20,0.5994291559133251
+453,29,tc,SOMATOM go.Top,Siemens Healthineers,em falha,2024-11-26,2026-04-11,1.0
+454,29,angiografia,Azurion 7,Philips,ativo,2022-04-07,2026-05-25,0.56216670868705
+455,29,tc,SOMATOM go.Top,Siemens Healthineers,em manutencao,2017-01-16,2026-05-04,0.114
+456,29,raio x,Definium Tempo,GE HealthCare,em manutencao,2023-04-25,2025-12-27,0.142
+457,29,raio x,Definium Tempo,GE HealthCare,ativo,2017-08-29,2026-03-03,0.92
+458,29,raio x,Definium Tempo,GE HealthCare,ativo,2017-07-08,2026-05-19,0.92
+459,29,angiografia,Azurion 7,Philips,indisponivel,2019-11-11,2026-02-05,0.9852836106671247
+460,29,tc,SOMATOM go.Top,Siemens Healthineers,ativo,2019-11-08,2026-01-28,0.9
+461,29,ressonancia magnetica,SIGNA Explorer,GE HealthCare,em falha,2016-06-29,2026-03-11,1.0
+462,29,raio x,Definium Tempo,GE HealthCare,ativo,2021-04-02,2026-01-07,0.7612179424045983
+463,29,tc,SOMATOM go.Top,Siemens Healthineers,em manutencao,2022-10-15,2025-12-30,0.484
+464,29,arco cirurgico,Cios Alpha,Siemens Healthineers,ativo,2022-03-28,2026-01-18,0.6400044628070424
+465,30,pet,Discovery MI,GE HealthCare,ativo,2021-02-11,2026-01-10,0.37023634046271625
+466,30,angiografia,Artis Q,Siemens Healthineers,em falha,2022-12-19,2025-10-21,0.5289024509162268
+467,30,angiografia,Artis Q,Siemens Healthineers,em falha,2025-03-04,2026-01-21,0.8825176068940332
+468,30,pet,Biograph Vision,Siemens Healthineers,em falha,2020-12-29,2025-11-09,0.8465185947859509
+469,30,tc,Revolution Apex,GE HealthCare,ativo,2025-09-21,2026-04-11,0.8934920276545424
+470,30,ultrassom,EPIQ Elite,Philips,em falha,2018-11-16,2025-12-27,0.7817934590440259
+471,30,pet,Discovery MI,GE HealthCare,ativo,2020-07-24,2026-02-12,0.49044761689833005
+472,30,pet,Discovery MI,GE HealthCare,em falha,2025-01-09,2025-10-28,1.0
+473,30,ressonancia magnetica,SIGNA Explorer,GE HealthCare,ativo,2018-03-05,2026-02-13,0.44024793662972034
+474,30,raio x,Definium Tempo,GE HealthCare,ativo,2025-09-29,2026-05-24,0.7574003187212817
+475,30,pet,Discovery MI,GE HealthCare,em falha,2020-04-22,2026-04-20,0.8020645884691375
+476,30,ressonancia magnetica,SIGNA Explorer,GE HealthCare,indisponivel,2022-01-01,2026-02-20,1.0
+477,30,pet,Biograph Vision,Siemens Healthineers,indisponivel,2017-07-01,2025-12-28,0.6633262207860816
+478,30,arco cirurgico,Cios Alpha,Siemens Healthineers,ativo,2017-05-02,2026-01-30,0.7406918624440504
+479,30,arco cirurgico,OEC One CFD,GE HealthCare,em falha,2022-06-27,2025-12-08,0.4803775063128808
+480,30,pet,Biograph Vision,Siemens Healthineers,em falha,2022-12-31,2025-10-24,0.6147461615443024
+481,31,tc,SOMATOM go.Top,Siemens Healthineers,em manutencao,2019-06-05,2026-03-06,0.528
+482,31,arco cirurgico,OEC One CFD,GE HealthCare,em falha,2019-08-26,2026-03-02,0.8507668539021882
+483,31,ressonancia magnetica,Magnetom Altea,Siemens Healthineers,em falha,2018-10-29,2026-02-19,0.9750903158602858
+484,31,raio x,Definium Tempo,GE HealthCare,ativo,2019-07-06,2026-01-08,0.92
+485,31,ressonancia magnetica,Magnetom Altea,Siemens Healthineers,em falha,2019-12-01,2025-11-09,0.7470287881398385
+486,31,ressonancia magnetica,SIGNA Explorer,GE HealthCare,ativo,2017-01-24,2026-02-26,0.47034400925217396
+487,31,angiografia,Artis Q,Siemens Healthineers,ativo,2017-11-24,2026-05-03,0.9
+488,31,ultrassom,LOGIQ E10,GE HealthCare,em falha,2025-02-19,2026-02-11,1.0
+489,31,ultrassom,LOGIQ E10,GE HealthCare,indisponivel,2022-02-15,2026-03-12,0.6470282046703125
+490,31,raio x,Definium Tempo,GE HealthCare,em manutencao,2023-10-13,2025-11-15,0.225
+491,31,pet,Discovery MI,GE HealthCare,em falha,2024-01-12,2026-04-25,0.5979464433411098
+492,31,raio x,Definium Tempo,GE HealthCare,ativo,2025-04-26,2026-02-06,0.86368865835989
+493,31,arco cirurgico,OEC One CFD,GE HealthCare,em falha,2020-06-28,2025-10-29,0.9379645456293225
+494,31,tc,Revolution Apex,GE HealthCare,indisponivel,2020-04-12,2026-03-05,0.722569011135169
+495,31,angiografia,Azurion 7,Philips,ativo,2019-04-03,2026-02-02,0.515459529274046
+496,31,raio x,Definium Tempo,GE HealthCare,ativo,2024-05-13,2026-02-15,0.7829152981071371
+497,32,angiografia,Azurion 7,Philips,ativo,2019-03-07,2026-03-23,0.9
+498,32,tc,Revolution Apex,GE HealthCare,ativo,2021-04-11,2026-03-07,0.5980572292937817
+499,32,tc,SOMATOM go.Top,Siemens Healthineers,ativo,2018-02-11,2026-03-11,0.7576420399593558
+500,32,ultrassom,EPIQ Elite,Philips,indisponivel,2022-12-27,2025-11-11,1.0
+501,32,pet,Discovery MI,GE HealthCare,ativo,2023-07-24,2026-05-06,0.6961406705714808
+502,32,angiografia,Azurion 7,Philips,indisponivel,2017-05-22,2025-10-29,0.7944033472131511
+503,32,raio x,DigitalDiagnost C90,Philips,ativo,2022-01-22,2026-04-11,0.92
+504,32,pet,Discovery MI,GE HealthCare,em falha,2021-01-02,2025-11-12,0.9771058495010011
+505,32,pet,Biograph Vision,Siemens Healthineers,ativo,2020-07-18,2026-03-09,0.693391387050305
+506,32,angiografia,Artis Q,Siemens Healthineers,indisponivel,2023-12-12,2026-04-25,1.0
+507,32,angiografia,Artis Q,Siemens Healthineers,ativo,2023-05-19,2026-01-03,0.4852132118879968
+508,32,angiografia,Artis Q,Siemens Healthineers,em manutencao,2022-01-08,2026-05-04,0.346
+509,32,tc,Revolution Apex,GE HealthCare,em falha,2016-09-12,2026-04-29,1.0
+510,32,ressonancia magnetica,Magnetom Altea,Siemens Healthineers,ativo,2025-03-30,2026-03-23,0.9197681810477297
+511,32,pet,Discovery MI,GE HealthCare,ativo,2020-06-05,2026-03-12,0.44053234399644375
+512,32,arco cirurgico,OEC One CFD,GE HealthCare,ativo,2023-09-11,2026-04-27,0.8414573057254713
+513,33,ressonancia magnetica,SIGNA Explorer,GE HealthCare,indisponivel,2025-11-19,2026-02-18,0.7762608931606346
+514,33,ultrassom,LOGIQ E10,GE HealthCare,ativo,2021-12-28,2026-01-31,0.7685965005700609
+515,33,ressonancia magnetica,SIGNA Explorer,GE HealthCare,ativo,2023-09-01,2026-04-07,0.41235220413935947
+516,33,angiografia,Artis Q,Siemens Healthineers,ativo,2018-03-03,2026-02-25,0.7916478130253211
+517,33,raio x,Definium Tempo,GE HealthCare,ativo,2024-08-22,2026-05-09,0.6320114705114075
+518,33,pet,Discovery MI,GE HealthCare,ativo,2018-05-18,2026-05-20,0.8840796973363014
+519,33,tc,Revolution Apex,GE HealthCare,em falha,2020-12-03,2026-05-29,1.0
+520,33,arco cirurgico,OEC One CFD,GE HealthCare,em falha,2025-12-21,2025-10-29,0.5888658691510138
+521,33,raio x,Definium Tempo,GE HealthCare,ativo,2020-01-12,2026-04-15,0.9
+522,33,ultrassom,LOGIQ E10,GE HealthCare,ativo,2021-06-09,2026-02-27,0.6718483375728437
+523,33,raio x,DigitalDiagnost C90,Philips,indisponivel,2022-10-22,2026-03-30,0.7926931444030096
+524,33,pet,Biograph Vision,Siemens Healthineers,ativo,2019-01-07,2026-04-30,0.8842758203134469
+525,33,arco cirurgico,OEC One CFD,GE HealthCare,ativo,2024-12-09,2026-01-16,0.8812005273127475
+526,33,ultrassom,EPIQ Elite,Philips,ativo,2020-03-04,2026-02-22,0.6239780334564758
+527,33,ultrassom,EPIQ Elite,Philips,ativo,2023-06-22,2026-02-10,0.9
+528,33,pet,Biograph Vision,Siemens Healthineers,ativo,2026-03-02,2026-01-14,0.7564648360539847
+529,34,ultrassom,EPIQ Elite,Philips,indisponivel,2021-07-06,2025-12-10,0.7795469686425386
+530,34,arco cirurgico,OEC One CFD,GE HealthCare,ativo,2020-04-24,2026-04-06,0.92
+531,34,ultrassom,LOGIQ E10,GE HealthCare,em falha,2020-01-31,2026-01-21,1.0
+532,34,ultrassom,LOGIQ E10,GE HealthCare,em falha,2025-12-15,2026-01-30,0.9368434426687057
+533,34,arco cirurgico,Cios Alpha,Siemens Healthineers,em falha,2019-01-21,2026-02-24,0.6580253497353795
+534,34,ressonancia magnetica,Magnetom Altea,Siemens Healthineers,ativo,2017-10-20,2026-04-11,0.40779698523788305
+535,34,arco cirurgico,OEC One CFD,GE HealthCare,ativo,2022-04-26,2026-02-02,0.5161770441768772
+536,34,tc,SOMATOM go.Top,Siemens Healthineers,ativo,2025-01-08,2026-03-04,0.9
+537,34,angiografia,Azurion 7,Philips,em manutencao,2022-06-16,2026-03-01,0.106
+538,34,ultrassom,LOGIQ E10,GE HealthCare,em falha,2022-05-22,2026-04-16,1.0
+539,34,angiografia,Artis Q,Siemens Healthineers,ativo,2017-06-12,2026-01-16,0.8380897839212743
+540,34,pet,Discovery MI,GE HealthCare,em manutencao,2019-02-06,2026-04-26,0.134
+541,34,arco cirurgico,OEC One CFD,GE HealthCare,indisponivel,2018-02-26,2026-02-02,0.9372724963697293
+542,34,arco cirurgico,Cios Alpha,Siemens Healthineers,em falha,2022-11-23,2025-11-09,0.5440394123559666
+543,34,raio x,DigitalDiagnost C90,Philips,em falha,2025-09-18,2026-03-12,0.9710884683074307
+544,34,ultrassom,LOGIQ E10,GE HealthCare,ativo,2021-09-19,2026-04-17,0.92
+545,35,pet,Discovery MI,GE HealthCare,ativo,2023-05-06,2026-02-07,0.4253700504589951
+546,35,raio x,DigitalDiagnost C90,Philips,ativo,2022-12-23,2026-02-12,0.8894681753271049
+547,35,arco cirurgico,Cios Alpha,Siemens Healthineers,ativo,2016-06-22,2026-01-23,0.7522088779563869
+548,35,arco cirurgico,OEC One CFD,GE HealthCare,ativo,2017-03-21,2026-04-13,0.5481146409312276
+549,35,pet,Biograph Vision,Siemens Healthineers,indisponivel,2017-11-06,2026-02-21,0.7281884165594132
+550,35,ressonancia magnetica,SIGNA Explorer,GE HealthCare,ativo,2024-02-02,2026-01-10,0.7208054206455236
+551,35,ressonancia magnetica,SIGNA Explorer,GE HealthCare,ativo,2017-03-30,2026-01-22,0.7694687565872247
+552,35,arco cirurgico,OEC One CFD,GE HealthCare,em manutencao,2018-01-11,2026-02-09,0.272
+553,35,ultrassom,EPIQ Elite,Philips,ativo,2016-12-17,2026-03-28,0.6761087060015478
+554,35,ressonancia magnetica,SIGNA Explorer,GE HealthCare,ativo,2025-01-12,2026-03-05,0.43925219611857697
+555,35,ressonancia magnetica,Magnetom Altea,Siemens Healthineers,ativo,2022-09-30,2026-02-25,0.6851049522726734
+556,35,pet,Biograph Vision,Siemens Healthineers,ativo,2024-04-25,2026-02-02,0.8087103255963392
+557,35,pet,Discovery MI,GE HealthCare,ativo,2025-09-16,2025-12-31,0.8431452423758649
+558,35,ressonancia magnetica,SIGNA Explorer,GE HealthCare,em falha,2019-04-16,2026-03-21,1.0
+559,35,tc,SOMATOM go.Top,Siemens Healthineers,ativo,2017-04-23,2026-03-02,0.92
+560,35,tc,SOMATOM go.Top,Siemens Healthineers,ativo,2019-01-13,2026-01-25,0.8972761958992239
+561,36,angiografia,Azurion 7,Philips,ativo,2017-10-10,2026-01-08,0.8386222502966703
+562,36,raio x,Definium Tempo,GE HealthCare,indisponivel,2016-08-31,2025-11-11,1.0
+563,36,pet,Discovery MI,GE HealthCare,em falha,2025-10-17,2026-03-31,0.5324116981132122
+564,36,angiografia,Azurion 7,Philips,ativo,2018-12-13,2026-05-09,0.584327240818786
+565,36,ultrassom,EPIQ Elite,Philips,em falha,2025-10-27,2025-12-08,1.0
+566,36,pet,Discovery MI,GE HealthCare,ativo,2022-01-09,2026-01-30,0.5711322068180268
+567,36,arco cirurgico,OEC One CFD,GE HealthCare,ativo,2019-10-01,2025-12-29,0.47407521019234766
+568,36,pet,Biograph Vision,Siemens Healthineers,em falha,2022-08-29,2026-03-28,0.8692066484346685
+569,36,arco cirurgico,OEC One CFD,GE HealthCare,ativo,2025-11-22,2026-03-18,0.8093230642876988
+570,36,ultrassom,LOGIQ E10,GE HealthCare,ativo,2021-11-04,2026-04-30,0.9
+571,36,ressonancia magnetica,Magnetom Altea,Siemens Healthineers,em falha,2017-06-29,2026-02-05,0.6445955745758853
+572,36,raio x,DigitalDiagnost C90,Philips,ativo,2019-04-28,2026-03-18,0.8102815009766692
+573,36,raio x,DigitalDiagnost C90,Philips,ativo,2024-10-22,2026-03-10,0.7351676643557151
+574,36,pet,Discovery MI,GE HealthCare,em manutencao,2024-03-31,2026-02-06,0.542
+575,36,arco cirurgico,OEC One CFD,GE HealthCare,ativo,2017-02-04,2026-03-03,0.7561024660258437
+576,36,ressonancia magnetica,SIGNA Explorer,GE HealthCare,ativo,2018-09-11,2026-04-21,0.6186290687946936
+577,37,ultrassom,LOGIQ E10,GE HealthCare,indisponivel,2020-02-08,2026-03-15,0.8750474051605259
+578,37,angiografia,Artis Q,Siemens Healthineers,indisponivel,2024-06-01,2025-12-02,0.9492405601176144
+579,37,tc,SOMATOM go.Top,Siemens Healthineers,ativo,2024-03-25,2026-03-02,0.9
+580,37,raio x,DigitalDiagnost C90,Philips,ativo,2024-10-27,2026-01-11,0.9
+581,37,raio x,Definium Tempo,GE HealthCare,em falha,2023-07-13,2026-05-24,1.0
+582,37,ressonancia magnetica,SIGNA Explorer,GE HealthCare,em manutencao,2019-12-21,2026-01-31,0.356
+583,37,angiografia,Azurion 7,Philips,indisponivel,2019-12-31,2025-10-16,0.564414911089096
+584,37,arco cirurgico,OEC One CFD,GE HealthCare,ativo,2025-06-12,2026-05-19,0.49675255614580727
+585,37,tc,Revolution Apex,GE HealthCare,ativo,2020-10-25,2026-04-05,0.92
+586,37,pet,Biograph Vision,Siemens Healthineers,ativo,2016-12-13,2026-05-08,0.7265919693012105
+587,37,ressonancia magnetica,SIGNA Explorer,GE HealthCare,ativo,2018-12-24,2026-02-09,0.5006082899870725
+588,37,tc,SOMATOM go.Top,Siemens Healthineers,indisponivel,2020-05-19,2025-10-18,0.9153648469895421
+589,37,angiografia,Artis Q,Siemens Healthineers,ativo,2017-06-08,2026-05-05,0.7378778874727314
+590,37,raio x,Definium Tempo,GE HealthCare,em falha,2017-07-29,2026-02-09,1.0
+591,37,ultrassom,LOGIQ E10,GE HealthCare,em falha,2016-06-12,2026-04-29,0.7076851398356432
+592,37,ultrassom,LOGIQ E10,GE HealthCare,em falha,2024-06-20,2026-04-19,0.859400793384568
+593,38,ressonancia magnetica,SIGNA Explorer,GE HealthCare,ativo,2018-03-25,2026-03-07,0.5354213660938726
+594,38,ressonancia magnetica,Magnetom Altea,Siemens Healthineers,ativo,2016-09-12,2026-02-05,0.5096313246863926
+595,38,tc,SOMATOM go.Top,Siemens Healthineers,ativo,2020-01-03,2026-01-12,0.834026755666614
+596,38,ressonancia magnetica,Magnetom Altea,Siemens Healthineers,ativo,2019-04-18,2026-02-19,0.749634121173911
+597,38,tc,SOMATOM go.Top,Siemens Healthineers,ativo,2024-04-17,2025-12-31,0.92
+598,38,raio x,Definium Tempo,GE HealthCare,ativo,2024-04-06,2026-04-12,0.9
+599,38,ultrassom,EPIQ Elite,Philips,ativo,2022-05-26,2026-05-11,0.92
+600,38,arco cirurgico,Cios Alpha,Siemens Healthineers,ativo,2016-12-05,2026-03-28,0.8756690582632656
+601,38,arco cirurgico,Cios Alpha,Siemens Healthineers,indisponivel,2018-12-28,2026-03-24,0.9420151328032683
+602,38,tc,SOMATOM go.Top,Siemens Healthineers,ativo,2023-10-27,2026-01-04,0.92
+603,38,ultrassom,EPIQ Elite,Philips,ativo,2019-01-07,2026-05-21,0.5493994092329773
+604,38,tc,SOMATOM go.Top,Siemens Healthineers,ativo,2020-01-25,2026-03-16,0.7737108410542565
+605,38,pet,Discovery MI,GE HealthCare,em falha,2023-06-09,2025-12-06,1.0
+606,38,pet,Biograph Vision,Siemens Healthineers,ativo,2022-11-06,2026-02-09,0.6378186052777024
+607,38,arco cirurgico,Cios Alpha,Siemens Healthineers,em manutencao,2024-05-30,2026-01-27,0.281
+608,38,pet,Discovery MI,GE HealthCare,indisponivel,2023-11-24,2026-04-24,0.6486734444208957
+609,39,ressonancia magnetica,SIGNA Explorer,GE HealthCare,ativo,2016-07-10,2026-03-05,0.8835148882399553
+610,39,angiografia,Artis Q,Siemens Healthineers,em manutencao,2022-04-24,2026-04-27,0.586
+611,39,angiografia,Azurion 7,Philips,indisponivel,2022-01-11,2026-05-03,0.8284801311854586
+612,39,ressonancia magnetica,SIGNA Explorer,GE HealthCare,ativo,2023-06-22,2026-02-14,0.72000863537717
+613,39,pet,Discovery MI,GE HealthCare,em falha,2023-05-28,2026-05-18,0.5442116830409284
+614,39,ressonancia magnetica,Magnetom Altea,Siemens Healthineers,indisponivel,2021-11-16,2026-02-12,1.0
+615,39,raio x,DigitalDiagnost C90,Philips,ativo,2016-06-24,2026-04-15,0.92
+616,39,ressonancia magnetica,SIGNA Explorer,GE HealthCare,em falha,2019-09-15,2026-04-12,0.995808762226905
+617,39,angiografia,Azurion 7,Philips,ativo,2024-05-25,2026-02-25,0.6952770295416925
+618,39,pet,Discovery MI,GE HealthCare,ativo,2020-08-04,2026-04-15,0.9
+619,39,arco cirurgico,Cios Alpha,Siemens Healthineers,ativo,2025-03-05,2026-04-22,0.9
+620,39,pet,Discovery MI,GE HealthCare,em falha,2023-06-26,2026-03-01,0.5672707180990724
+621,39,arco cirurgico,Cios Alpha,Siemens Healthineers,ativo,2025-08-13,2026-05-08,0.4840546296200513
+622,39,angiografia,Artis Q,Siemens Healthineers,ativo,2018-11-06,2026-04-04,0.8001609148199013
+623,39,ultrassom,LOGIQ E10,GE HealthCare,ativo,2026-02-03,2026-02-09,0.92
+624,39,raio x,Definium Tempo,GE HealthCare,ativo,2023-03-21,2025-12-27,0.9
+625,40,pet,Biograph Vision,Siemens Healthineers,em manutencao,2022-01-30,2026-05-17,0.056
+626,40,ultrassom,EPIQ Elite,Philips,ativo,2019-11-19,2026-01-18,0.6771511299785056
+627,40,ressonancia magnetica,Magnetom Altea,Siemens Healthineers,indisponivel,2025-05-11,2026-02-04,0.7509034237340751
+628,40,angiografia,Azurion 7,Philips,em manutencao,2020-01-07,2025-12-22,0.189
+629,40,tc,SOMATOM go.Top,Siemens Healthineers,ativo,2019-05-02,2026-05-01,0.6387356520952903
+630,40,pet,Biograph Vision,Siemens Healthineers,indisponivel,2021-12-31,2026-03-05,0.9763478857388858
+631,40,ultrassom,LOGIQ E10,GE HealthCare,ativo,2022-01-31,2026-01-31,0.9
+632,40,ultrassom,EPIQ Elite,Philips,ativo,2020-06-22,2026-05-16,0.8345290001097582
+633,40,arco cirurgico,Cios Alpha,Siemens Healthineers,indisponivel,2025-09-30,2026-03-06,0.5141342301535212
+634,40,angiografia,Azurion 7,Philips,ativo,2020-11-14,2026-01-28,0.7067995529723337
+635,40,ultrassom,EPIQ Elite,Philips,em manutencao,2020-05-27,2025-12-25,0.11
+636,40,ressonancia magnetica,SIGNA Explorer,GE HealthCare,ativo,2024-05-12,2026-05-19,0.6222234760966301
+637,40,tc,Revolution Apex,GE HealthCare,ativo,2016-09-25,2026-04-17,0.7848600843724983
+638,40,ultrassom,LOGIQ E10,GE HealthCare,ativo,2016-11-23,2026-04-16,0.8836711938158961
+639,40,tc,Revolution Apex,GE HealthCare,em manutencao,2019-11-15,2025-11-03,0.201
+640,40,arco cirurgico,Cios Alpha,Siemens Healthineers,ativo,2022-01-20,2026-02-24,0.5587567216303221
+641,41,pet,Biograph Vision,Siemens Healthineers,ativo,2019-08-22,2026-04-15,0.5281856699821317
+642,41,tc,Revolution Apex,GE HealthCare,indisponivel,2018-06-20,2025-12-29,1.0
+643,41,pet,Discovery MI,GE HealthCare,em falha,2023-03-17,2025-11-11,1.0
+644,41,angiografia,Azurion 7,Philips,em manutencao,2019-09-12,2025-11-27,0.359
+645,41,arco cirurgico,Cios Alpha,Siemens Healthineers,em manutencao,2019-08-22,2026-01-16,0.304
+646,41,tc,SOMATOM go.Top,Siemens Healthineers,em falha,2018-02-05,2025-10-27,1.0
+647,41,pet,Biograph Vision,Siemens Healthineers,ativo,2024-07-11,2026-02-22,0.8971011439626037
+648,41,arco cirurgico,Cios Alpha,Siemens Healthineers,ativo,2019-10-06,2026-01-28,0.92
+649,41,raio x,DigitalDiagnost C90,Philips,ativo,2025-12-21,2026-04-17,0.92
+650,41,raio x,Definium Tempo,GE HealthCare,ativo,2021-07-21,2026-04-05,0.9
+651,41,ultrassom,LOGIQ E10,GE HealthCare,indisponivel,2017-06-29,2026-01-30,1.0
+652,41,angiografia,Artis Q,Siemens Healthineers,em manutencao,2016-09-02,2026-05-15,0.449
+653,41,tc,Revolution Apex,GE HealthCare,ativo,2024-08-20,2026-02-19,0.92
+654,41,ressonancia magnetica,SIGNA Explorer,GE HealthCare,ativo,2018-10-04,2026-02-02,0.7149631554447944
+655,41,ressonancia magnetica,SIGNA Explorer,GE HealthCare,indisponivel,2024-03-29,2026-01-14,0.8185025610027958
+656,41,ressonancia magnetica,SIGNA Explorer,GE HealthCare,em falha,2020-01-22,2025-11-14,0.7175901518308453
+657,42,angiografia,Artis Q,Siemens Healthineers,ativo,2018-02-06,2026-01-04,0.8311916961094727
+658,42,tc,Revolution Apex,GE HealthCare,ativo,2023-03-22,2026-02-22,0.9
+659,42,raio x,DigitalDiagnost C90,Philips,ativo,2023-01-21,2026-05-05,0.92
+660,42,ressonancia magnetica,Magnetom Altea,Siemens Healthineers,ativo,2017-07-15,2026-01-01,0.5753431044581658
+661,42,tc,Revolution Apex,GE HealthCare,ativo,2018-04-12,2026-01-28,1.0
+662,42,ressonancia magnetica,SIGNA Explorer,GE HealthCare,ativo,2019-11-25,2026-03-18,0.9
+663,42,tc,Revolution Apex,GE HealthCare,ativo,2023-02-12,2026-04-17,0.7770832180691937
+664,42,tc,SOMATOM go.Top,Siemens Healthineers,ativo,2020-02-04,2026-03-14,0.8377355615600811
+665,42,angiografia,Artis Q,Siemens Healthineers,ativo,2022-04-25,2026-05-18,0.92
+666,42,raio x,Definium Tempo,GE HealthCare,ativo,2022-12-05,2026-01-08,0.631386552123826
+667,42,arco cirurgico,OEC One CFD,GE HealthCare,ativo,2022-04-20,2026-03-18,0.92
+668,42,ressonancia magnetica,Magnetom Altea,Siemens Healthineers,ativo,2017-10-20,2026-04-09,0.7944645114462775
+669,42,angiografia,Artis Q,Siemens Healthineers,ativo,2020-02-22,2026-01-23,0.598198622919679
+670,42,tc,Revolution Apex,GE HealthCare,ativo,2023-02-20,2026-03-17,0.6683226235449664
+671,42,tc,Revolution Apex,GE HealthCare,ativo,2019-08-09,2026-05-18,0.8161207603305985
+672,42,tc,SOMATOM go.Top,Siemens Healthineers,ativo,2020-03-24,2026-04-01,0.8081403940163894
+673,43,arco cirurgico,Cios Alpha,Siemens Healthineers,ativo,2025-01-22,2025-11-28,0.6588901981833177
+674,43,pet,Discovery MI,GE HealthCare,ativo,2025-01-21,2026-04-16,0.7761612538015694
+675,43,arco cirurgico,Cios Alpha,Siemens Healthineers,ativo,2020-01-05,2026-01-12,0.9
+676,43,pet,Biograph Vision,Siemens Healthineers,ativo,2018-11-11,2025-10-18,1.0
+677,43,pet,Discovery MI,GE HealthCare,ativo,2020-10-30,2025-11-18,0.8593924685071517
+678,43,ressonancia magnetica,Magnetom Altea,Siemens Healthineers,ativo,2022-08-01,2025-12-31,0.5681876096879122
+679,43,angiografia,Azurion 7,Philips,ativo,2025-03-07,2026-02-16,0.8142972620387222
+680,43,ultrassom,LOGIQ E10,GE HealthCare,ativo,2017-11-25,2026-05-08,0.92
+681,43,raio x,Definium Tempo,GE HealthCare,ativo,2021-07-01,2026-04-23,0.92
+682,43,arco cirurgico,Cios Alpha,Siemens Healthineers,ativo,2016-10-21,2026-01-25,0.5694684386298546
+683,43,raio x,Definium Tempo,GE HealthCare,ativo,2017-10-14,2026-02-19,0.92
+684,43,arco cirurgico,Cios Alpha,Siemens Healthineers,ativo,2026-01-30,2026-04-14,0.49581948038988494
+685,43,arco cirurgico,OEC One CFD,GE HealthCare,em manutencao,2022-06-05,2025-12-17,0.192
+686,43,ultrassom,LOGIQ E10,GE HealthCare,ativo,2020-04-21,2026-04-26,0.9818315968438284
+687,43,angiografia,Artis Q,Siemens Healthineers,ativo,2020-07-12,2026-01-11,0.7189269125289321
+688,43,angiografia,Azurion 7,Philips,em manutencao,2024-12-02,2025-11-24,0.218
+689,44,pet,Discovery MI,GE HealthCare,ativo,2018-11-30,2026-04-30,0.501232749047141
+690,44,arco cirurgico,Cios Alpha,Siemens Healthineers,ativo,2017-12-03,2026-03-16,0.610196883972067
+691,44,ultrassom,EPIQ Elite,Philips,ativo,2018-08-15,2026-01-14,0.9
+692,44,ultrassom,EPIQ Elite,Philips,ativo,2016-08-01,2026-02-04,0.9
+693,44,angiografia,Artis Q,Siemens Healthineers,em manutencao,2021-05-22,2026-05-08,0.324
+694,44,pet,Biograph Vision,Siemens Healthineers,ativo,2018-09-05,2026-02-13,0.4057752092957807
+695,44,pet,Discovery MI,GE HealthCare,ativo,2022-07-22,2026-02-26,0.92
+696,44,ressonancia magnetica,Magnetom Altea,Siemens Healthineers,em manutencao,2021-11-18,2025-11-19,0.164
+697,44,ressonancia magnetica,Magnetom Altea,Siemens Healthineers,ativo,2022-06-27,2025-12-28,0.6619649649491458
+698,44,ultrassom,EPIQ Elite,Philips,ativo,2026-01-21,2026-01-17,0.7340723520493431
+699,44,tc,Revolution Apex,GE HealthCare,ativo,2023-07-15,2026-04-23,0.6162679500103331
+700,44,pet,Discovery MI,GE HealthCare,ativo,2022-09-29,2026-04-25,0.43885790552640375
+701,44,ultrassom,LOGIQ E10,GE HealthCare,em manutencao,2018-04-18,2025-12-05,0.469
+702,44,arco cirurgico,OEC One CFD,GE HealthCare,ativo,2019-01-08,2026-04-07,0.9
+703,44,ressonancia magnetica,SIGNA Explorer,GE HealthCare,ativo,2019-04-17,2026-03-08,0.529026809957168
+704,44,pet,Discovery MI,GE HealthCare,ativo,2024-06-19,2026-04-18,0.6372381466518019
+705,45,ressonancia magnetica,SIGNA Explorer,GE HealthCare,ativo,2021-07-09,2025-10-09,0.9558864893613407
+706,45,pet,Discovery MI,GE HealthCare,ativo,2017-09-09,2026-04-22,0.6984640544215246
+707,45,angiografia,Artis Q,Siemens Healthineers,ativo,2023-09-26,2025-12-07,0.9697761088413827
+708,45,angiografia,Azurion 7,Philips,ativo,2019-07-03,2026-05-11,0.92
+709,45,ultrassom,LOGIQ E10,GE HealthCare,ativo,2021-03-05,2026-01-20,0.92
+710,45,arco cirurgico,OEC One CFD,GE HealthCare,ativo,2019-11-10,2026-01-24,0.3920686412223345
+711,45,ultrassom,LOGIQ E10,GE HealthCare,ativo,2020-07-07,2026-01-28,0.6912046324296559
+712,45,raio x,Definium Tempo,GE HealthCare,em manutencao,2024-05-04,2026-01-17,0.217
+713,45,pet,Discovery MI,GE HealthCare,ativo,2024-11-17,2026-04-12,0.8040398496592389
+714,45,ultrassom,EPIQ Elite,Philips,ativo,2020-09-13,2026-05-11,0.5899725484518081
+715,45,pet,Discovery MI,GE HealthCare,ativo,2017-02-11,2026-05-15,0.38430751051631507
+716,45,ultrassom,LOGIQ E10,GE HealthCare,ativo,2021-07-11,2026-05-12,0.8690300563221619
+717,45,ultrassom,LOGIQ E10,GE HealthCare,ativo,2020-12-31,2026-03-03,0.9
+718,45,tc,Revolution Apex,GE HealthCare,ativo,2025-12-09,2026-01-27,0.8538750602213346
+719,45,arco cirurgico,Cios Alpha,Siemens Healthineers,ativo,2017-10-27,2026-04-23,0.4584026218526379
+720,45,arco cirurgico,Cios Alpha,Siemens Healthineers,em manutencao,2021-06-07,2026-05-14,0.226
+721,46,ultrassom,LOGIQ E10,GE HealthCare,ativo,2025-07-05,2026-05-13,1.0
+722,46,pet,Discovery MI,GE HealthCare,ativo,2025-10-30,2026-03-30,0.5385587166860033
+723,46,angiografia,Azurion 7,Philips,ativo,2024-08-31,2026-01-21,0.891268857368767
+724,46,tc,SOMATOM go.Top,Siemens Healthineers,ativo,2021-06-21,2026-03-24,0.8245062448973975
+725,46,pet,Biograph Vision,Siemens Healthineers,em manutencao,2021-02-25,2025-10-10,0.526
+726,46,pet,Biograph Vision,Siemens Healthineers,ativo,2021-12-21,2026-02-06,0.45031402005631715
+727,46,angiografia,Artis Q,Siemens Healthineers,ativo,2020-02-20,2026-02-14,0.4458993657292903
+728,46,ressonancia magnetica,SIGNA Explorer,GE HealthCare,ativo,2024-11-08,2026-05-12,0.4901118190356079
+729,46,pet,Biograph Vision,Siemens Healthineers,ativo,2020-04-02,2026-01-20,0.42349672510661956
+730,46,angiografia,Artis Q,Siemens Healthineers,ativo,2026-02-22,2026-01-04,0.8791166188756624
+731,46,pet,Discovery MI,GE HealthCare,em manutencao,2018-08-19,2026-02-11,0.44
+732,46,ultrassom,LOGIQ E10,GE HealthCare,ativo,2021-12-06,2026-04-04,0.9
+733,46,pet,Discovery MI,GE HealthCare,ativo,2022-04-21,2026-04-12,0.5313568225226694
+734,46,tc,Revolution Apex,GE HealthCare,ativo,2017-08-07,2026-02-01,0.6549513239768866
+735,46,tc,SOMATOM go.Top,Siemens Healthineers,ativo,2021-06-25,2026-03-12,0.9
+736,46,arco cirurgico,Cios Alpha,Siemens Healthineers,em manutencao,2023-06-27,2026-05-05,0.147
+737,47,ultrassom,EPIQ Elite,Philips,em manutencao,2025-10-22,2025-12-09,0.284
+738,47,tc,Revolution Apex,GE HealthCare,ativo,2025-08-21,2026-05-19,0.8211388938550175
+739,47,pet,Biograph Vision,Siemens Healthineers,ativo,2021-04-06,2026-04-27,0.47980705747252955
+740,47,angiografia,Azurion 7,Philips,ativo,2016-07-01,2026-01-07,0.8987809428189898
+741,47,ultrassom,LOGIQ E10,GE HealthCare,ativo,2022-12-10,2026-01-05,0.7074562511353042
+742,47,ultrassom,EPIQ Elite,Philips,ativo,2022-08-10,2026-03-10,0.92
+743,47,tc,SOMATOM go.Top,Siemens Healthineers,ativo,2017-01-02,2026-03-14,0.8770495052283399
+744,47,raio x,Definium Tempo,GE HealthCare,ativo,2018-10-12,2026-02-14,1.0
+745,47,ressonancia magnetica,Magnetom Altea,Siemens Healthineers,ativo,2023-02-05,2025-12-30,0.5274069929345473
+746,47,tc,Revolution Apex,GE HealthCare,ativo,2024-03-21,2026-04-06,0.92
+747,47,ultrassom,LOGIQ E10,GE HealthCare,ativo,2020-08-16,2026-03-03,0.6515924564540687
+748,47,tc,SOMATOM go.Top,Siemens Healthineers,ativo,2018-08-28,2026-03-05,0.8467396905620854
+749,47,ressonancia magnetica,SIGNA Explorer,GE HealthCare,ativo,2018-05-17,2026-03-08,0.6810386908097865
+750,47,ressonancia magnetica,Magnetom Altea,Siemens Healthineers,ativo,2021-12-18,2026-01-13,0.595081546397766
+751,47,pet,Discovery MI,GE HealthCare,ativo,2023-06-25,2025-12-27,0.92
+752,47,angiografia,Artis Q,Siemens Healthineers,ativo,2018-04-01,2026-02-01,0.5495973077748195
+753,48,arco cirurgico,Cios Alpha,Siemens Healthineers,ativo,2019-11-17,2026-05-13,0.5782267031387136
+754,48,ultrassom,LOGIQ E10,GE HealthCare,ativo,2020-03-29,2026-01-09,0.7322448381221354
+755,48,ressonancia magnetica,Magnetom Altea,Siemens Healthineers,ativo,2023-11-27,2026-01-06,0.5951725349590384
+756,48,pet,Discovery MI,GE HealthCare,ativo,2016-09-07,2026-01-20,0.5749632655539607
+757,48,tc,Revolution Apex,GE HealthCare,ativo,2016-11-18,2026-03-10,0.7014233922381788
+758,48,pet,Biograph Vision,Siemens Healthineers,ativo,2018-08-18,2026-03-03,0.7347958716840733
+759,48,angiografia,Artis Q,Siemens Healthineers,ativo,2025-05-14,2026-01-16,0.47654273461685
+760,48,ultrassom,EPIQ Elite,Philips,ativo,2018-01-23,2026-03-29,0.92
+761,48,pet,Discovery MI,GE HealthCare,ativo,2023-11-04,2026-05-14,0.92
+762,48,ressonancia magnetica,Magnetom Altea,Siemens Healthineers,ativo,2026-01-05,2026-04-12,0.6068781637407086
+763,48,tc,Revolution Apex,GE HealthCare,ativo,2024-11-13,2025-11-18,1.0
+764,48,pet,Discovery MI,GE HealthCare,ativo,2023-06-19,2025-12-01,0.8931712775024
+765,48,raio x,DigitalDiagnost C90,Philips,ativo,2021-09-26,2026-03-27,0.92
+766,48,ressonancia magnetica,SIGNA Explorer,GE HealthCare,ativo,2017-06-27,2026-02-11,0.5718067867770696
+767,48,ultrassom,LOGIQ E10,GE HealthCare,ativo,2018-11-28,2026-04-03,0.8001427770553562
+768,48,ressonancia magnetica,SIGNA Explorer,GE HealthCare,ativo,2020-06-07,2026-01-31,1.0
+769,49,arco cirurgico,OEC One CFD,GE HealthCare,ativo,2017-03-07,2026-01-22,0.92
+770,49,angiografia,Azurion 7,Philips,ativo,2016-10-07,2026-04-08,0.6496015201703345
+771,49,ressonancia magnetica,SIGNA Explorer,GE HealthCare,ativo,2022-09-04,2026-01-06,0.7455749755109281
+772,49,angiografia,Artis Q,Siemens Healthineers,ativo,2023-09-14,2026-01-31,0.8747219601538919
+773,49,ressonancia magnetica,Magnetom Altea,Siemens Healthineers,ativo,2019-12-24,2026-04-14,0.9
+774,49,tc,Revolution Apex,GE HealthCare,em manutencao,2021-07-02,2026-04-10,0.198
+775,49,ressonancia magnetica,SIGNA Explorer,GE HealthCare,ativo,2023-08-09,2025-10-29,0.7211378732176856
+776,49,raio x,DigitalDiagnost C90,Philips,ativo,2020-08-01,2026-04-29,0.92
+777,49,ressonancia magnetica,SIGNA Explorer,GE HealthCare,em manutencao,2023-04-19,2026-01-25,0.465
+778,49,tc,Revolution Apex,GE HealthCare,ativo,2018-12-27,2026-05-02,0.9
+779,49,raio x,Definium Tempo,GE HealthCare,ativo,2017-12-19,2026-04-17,1.0
+780,49,raio x,Definium Tempo,GE HealthCare,ativo,2018-02-08,2026-02-03,0.9
+781,49,ultrassom,LOGIQ E10,GE HealthCare,ativo,2018-12-27,2025-12-28,0.92
+782,49,arco cirurgico,Cios Alpha,Siemens Healthineers,ativo,2016-10-10,2025-11-02,0.9722777312639491
+783,49,tc,SOMATOM go.Top,Siemens Healthineers,em manutencao,2025-08-22,2026-02-14,0.466
+784,49,raio x,Definium Tempo,GE HealthCare,ativo,2016-09-25,2026-05-13,1.0
+785,50,tc,Revolution Apex,GE HealthCare,ativo,2024-06-28,2026-03-02,0.6372646350930187
+786,50,pet,Discovery MI,GE HealthCare,ativo,2021-12-31,2026-05-25,0.3750065402681899
+787,50,tc,SOMATOM go.Top,Siemens Healthineers,ativo,2019-04-09,2025-12-13,1.0
+788,50,pet,Discovery MI,GE HealthCare,ativo,2026-01-03,2026-03-15,0.34677818552178985
+789,50,pet,Biograph Vision,Siemens Healthineers,ativo,2026-01-19,2025-11-27,0.447868267099615
+790,50,ressonancia magnetica,Magnetom Altea,Siemens Healthineers,ativo,2020-03-05,2026-05-26,1.0
+791,50,ultrassom,LOGIQ E10,GE HealthCare,ativo,2017-01-24,2026-03-26,0.9
+792,50,angiografia,Azurion 7,Philips,ativo,2024-03-04,2026-05-06,0.5284400591225371
+793,50,ultrassom,LOGIQ E10,GE HealthCare,ativo,2024-07-07,2026-02-09,0.7620101114056133
+794,50,ultrassom,LOGIQ E10,GE HealthCare,ativo,2023-05-10,2026-03-23,1.0
+795,50,angiografia,Azurion 7,Philips,ativo,2021-09-25,2026-02-13,0.4745314979436006
+796,50,pet,Discovery MI,GE HealthCare,ativo,2019-11-06,2026-02-06,0.4868093704719701
+797,50,raio x,DigitalDiagnost C90,Philips,ativo,2022-10-27,2026-01-21,0.9
+798,50,arco cirurgico,OEC One CFD,GE HealthCare,ativo,2018-11-08,2025-12-15,1.0
+799,50,angiografia,Azurion 7,Philips,ativo,2025-10-30,2026-02-22,0.5186893251605659
+800,50,pet,Biograph Vision,Siemens Healthineers,ativo,2019-12-27,2026-01-18,0.6498085190276724
+801,51,arco cirurgico,Cios Alpha,Siemens Healthineers,ativo,2018-04-21,2026-03-13,0.4258049901225897
+802,51,angiografia,Artis Q,Siemens Healthineers,em manutencao,2021-04-26,2026-03-07,0.398
+803,51,ultrassom,EPIQ Elite,Philips,ativo,2016-07-24,2026-02-22,0.92
+804,51,ultrassom,LOGIQ E10,GE HealthCare,ativo,2025-09-15,2026-02-26,0.7057354587549703
+805,51,angiografia,Artis Q,Siemens Healthineers,ativo,2018-06-03,2026-01-29,1.0
+806,51,ressonancia magnetica,Magnetom Altea,Siemens Healthineers,ativo,2025-08-30,2025-12-06,1.0
+807,51,ressonancia magnetica,Magnetom Altea,Siemens Healthineers,ativo,2020-02-04,2026-05-22,0.8546966536242357
+808,51,raio x,Definium Tempo,GE HealthCare,ativo,2016-08-24,2026-04-07,0.9106965696839324
+809,51,ultrassom,EPIQ Elite,Philips,ativo,2024-07-26,2025-11-29,1.0
+810,51,angiografia,Artis Q,Siemens Healthineers,ativo,2021-09-19,2026-03-15,1.0
+811,51,raio x,Definium Tempo,GE HealthCare,ativo,2019-11-11,2026-01-08,0.7810978066943022
+812,51,angiografia,Artis Q,Siemens Healthineers,ativo,2021-10-27,2026-05-04,0.8048084549245387
+813,51,ressonancia magnetica,SIGNA Explorer,GE HealthCare,em manutencao,2021-11-17,2026-04-25,0.461
+814,51,angiografia,Azurion 7,Philips,ativo,2018-06-15,2026-01-22,0.941690416568386
+815,51,tc,Revolution Apex,GE HealthCare,ativo,2022-04-22,2026-02-08,0.683587971958202
+816,51,raio x,DigitalDiagnost C90,Philips,ativo,2016-10-11,2026-04-10,0.6632065089072828
+817,52,angiografia,Azurion 7,Philips,ativo,2019-04-20,2026-01-22,0.9
+818,52,angiografia,Azurion 7,Philips,ativo,2022-07-11,2026-03-22,0.4845560690696444
+819,52,angiografia,Azurion 7,Philips,ativo,2021-02-17,2026-05-01,0.6875561478374761
+820,52,ultrassom,LOGIQ E10,GE HealthCare,ativo,2021-12-22,2026-03-26,0.8549120383088603
+821,52,ultrassom,EPIQ Elite,Philips,em manutencao,2018-10-10,2025-11-14,0.247
+822,52,ultrassom,EPIQ Elite,Philips,ativo,2022-11-15,2026-05-13,0.9
+823,52,arco cirurgico,OEC One CFD,GE HealthCare,ativo,2025-04-06,2026-02-22,0.5704152335882172
+824,52,tc,Revolution Apex,GE HealthCare,ativo,2017-05-24,2026-03-21,0.92
+825,52,pet,Biograph Vision,Siemens Healthineers,ativo,2022-08-19,2025-12-28,0.5730951372614564
+826,52,arco cirurgico,Cios Alpha,Siemens Healthineers,em manutencao,2022-09-23,2025-11-17,0.283
+827,52,ressonancia magnetica,Magnetom Altea,Siemens Healthineers,ativo,2025-01-14,2026-04-13,0.5644309913300216
+828,52,pet,Biograph Vision,Siemens Healthineers,ativo,2021-02-24,2026-01-19,0.7920279050922824
+829,52,pet,Biograph Vision,Siemens Healthineers,ativo,2025-01-09,2026-05-07,0.36361528208628424
+830,52,ultrassom,LOGIQ E10,GE HealthCare,ativo,2025-02-20,2025-11-11,1.0
+831,52,ressonancia magnetica,SIGNA Explorer,GE HealthCare,ativo,2016-07-01,2026-03-17,0.725483411593527
+832,52,pet,Biograph Vision,Siemens Healthineers,em manutencao,2021-11-01,2025-11-26,0.474
+833,53,ultrassom,LOGIQ E10,GE HealthCare,ativo,2023-06-18,2026-04-17,1.0
+834,53,tc,SOMATOM go.Top,Siemens Healthineers,em manutencao,2021-11-30,2026-03-23,0.127
+835,53,ressonancia magnetica,Magnetom Altea,Siemens Healthineers,ativo,2023-03-05,2026-01-14,0.7607895589576779
+836,53,raio x,Definium Tempo,GE HealthCare,ativo,2021-04-23,2026-03-14,0.8097232316477393
+837,53,pet,Discovery MI,GE HealthCare,ativo,2017-05-29,2026-03-27,0.48879841471450197
+838,53,raio x,DigitalDiagnost C90,Philips,ativo,2018-02-06,2025-12-29,1.0
+839,53,ultrassom,EPIQ Elite,Philips,ativo,2023-12-29,2026-04-26,0.9523579401000419
+840,53,ressonancia magnetica,Magnetom Altea,Siemens Healthineers,ativo,2026-02-09,2026-02-26,0.9
+841,53,angiografia,Artis Q,Siemens Healthineers,ativo,2019-03-25,2026-03-15,0.6121752882743933
+842,53,ressonancia magnetica,SIGNA Explorer,GE HealthCare,ativo,2021-03-31,2026-02-23,0.6005956643624737
+843,53,angiografia,Artis Q,Siemens Healthineers,ativo,2016-07-18,2026-04-21,0.7860241278595197
+844,53,raio x,Definium Tempo,GE HealthCare,ativo,2022-10-25,2026-02-07,0.8388270001843015
+845,53,raio x,DigitalDiagnost C90,Philips,ativo,2020-10-23,2026-04-19,0.8051363917245723
+846,53,ressonancia magnetica,SIGNA Explorer,GE HealthCare,ativo,2022-12-01,2026-04-27,0.8947827325922906
+847,53,pet,Discovery MI,GE HealthCare,ativo,2019-09-23,2026-03-05,0.8505469779908241
+848,53,pet,Biograph Vision,Siemens Healthineers,em manutencao,2023-01-15,2026-02-19,0.495
+849,54,ressonancia magnetica,SIGNA Explorer,GE HealthCare,ativo,2024-11-27,2026-04-09,1.0
+850,54,ultrassom,EPIQ Elite,Philips,ativo,2020-01-25,2026-02-07,0.6750897231481984
+851,54,ultrassom,LOGIQ E10,GE HealthCare,ativo,2025-11-18,2026-04-21,0.9
+852,54,tc,Revolution Apex,GE HealthCare,ativo,2023-11-01,2026-02-25,0.8772915719761323
+853,54,angiografia,Artis Q,Siemens Healthineers,ativo,2018-06-01,2025-10-25,0.5030893317949933
+854,54,angiografia,Azurion 7,Philips,ativo,2017-04-08,2026-01-23,0.7127728709955713
+855,54,raio x,Definium Tempo,GE HealthCare,ativo,2019-01-30,2026-03-27,0.9033961051003988
+856,54,tc,SOMATOM go.Top,Siemens Healthineers,ativo,2024-06-15,2025-11-09,1.0
+857,54,pet,Biograph Vision,Siemens Healthineers,ativo,2025-05-10,2026-02-02,0.6281661220789009
+858,54,pet,Discovery MI,GE HealthCare,ativo,2019-08-28,2026-04-26,0.5990058689620855
+859,54,angiografia,Artis Q,Siemens Healthineers,ativo,2018-06-05,2026-03-20,0.6447114322971148
+860,54,angiografia,Azurion 7,Philips,ativo,2022-02-25,2025-11-04,0.9270498202961185
+861,54,ultrassom,LOGIQ E10,GE HealthCare,ativo,2019-07-11,2026-01-05,0.9
+862,54,arco cirurgico,OEC One CFD,GE HealthCare,em manutencao,2017-07-24,2025-12-11,0.171
+863,54,ressonancia magnetica,SIGNA Explorer,GE HealthCare,ativo,2024-04-26,2026-05-19,0.9174472491385645
+864,54,ultrassom,EPIQ Elite,Philips,ativo,2018-12-13,2026-03-16,0.92
+865,55,angiografia,Azurion 7,Philips,ativo,2022-06-19,2026-02-09,1.0
+866,55,arco cirurgico,OEC One CFD,GE HealthCare,ativo,2026-01-24,2026-04-22,0.393585853407153
+867,55,ultrassom,LOGIQ E10,GE HealthCare,ativo,2017-10-22,2026-01-07,0.9153983598798915
+868,55,tc,Revolution Apex,GE HealthCare,ativo,2019-09-25,2026-04-05,0.7241987051734873
+869,55,pet,Biograph Vision,Siemens Healthineers,ativo,2020-12-28,2026-03-24,0.8417925417011668
+870,55,tc,Revolution Apex,GE HealthCare,ativo,2020-07-28,2026-01-15,0.7601732111062515
+871,55,pet,Discovery MI,GE HealthCare,ativo,2025-01-04,2026-04-17,0.5312584601051451
+872,55,arco cirurgico,OEC One CFD,GE HealthCare,ativo,2016-11-10,2026-01-23,0.9
+873,55,ressonancia magnetica,SIGNA Explorer,GE HealthCare,ativo,2022-09-08,2026-01-31,0.659621507054013
+874,55,raio x,DigitalDiagnost C90,Philips,ativo,2020-05-04,2025-12-26,0.9
+875,55,arco cirurgico,OEC One CFD,GE HealthCare,ativo,2021-04-09,2026-02-23,0.7961754423937089
+876,55,ressonancia magnetica,SIGNA Explorer,GE HealthCare,ativo,2025-06-06,2026-03-30,0.5772617958215486
+877,55,tc,Revolution Apex,GE HealthCare,ativo,2024-11-22,2026-04-15,0.5820214308769247
+878,55,tc,SOMATOM go.Top,Siemens Healthineers,ativo,2024-12-16,2026-04-18,1.0
+879,55,tc,Revolution Apex,GE HealthCare,em manutencao,2023-06-13,2026-01-09,0.324
+880,55,raio x,Definium Tempo,GE HealthCare,ativo,2022-06-22,2026-02-01,1.0
+881,56,raio x,DigitalDiagnost C90,Philips,ativo,2017-03-28,2026-01-11,0.9
+882,56,raio x,Definium Tempo,GE HealthCare,ativo,2019-01-01,2026-01-26,0.9
+883,56,arco cirurgico,Cios Alpha,Siemens Healthineers,ativo,2017-11-30,2026-04-10,0.8047594941252482
+884,56,pet,Discovery MI,GE HealthCare,em manutencao,2019-07-18,2026-05-29,0.275
+885,56,tc,Revolution Apex,GE HealthCare,ativo,2023-10-11,2026-03-12,0.7146964161529084
+886,56,tc,Revolution Apex,GE HealthCare,ativo,2017-02-11,2026-03-25,0.92
+887,56,arco cirurgico,OEC One CFD,GE HealthCare,ativo,2017-03-21,2026-04-30,0.8858600972168558
+888,56,ressonancia magnetica,SIGNA Explorer,GE HealthCare,ativo,2022-07-12,2026-04-23,0.5086966222269661
+889,56,ressonancia magnetica,Magnetom Altea,Siemens Healthineers,ativo,2018-08-30,2026-01-28,0.92
+890,56,tc,SOMATOM go.Top,Siemens Healthineers,ativo,2022-09-02,2025-12-25,1.0
+891,56,pet,Biograph Vision,Siemens Healthineers,ativo,2019-08-08,2026-02-11,0.4163796085688937
+892,56,angiografia,Artis Q,Siemens Healthineers,ativo,2021-01-18,2025-11-03,0.8660723538574705
+893,56,tc,SOMATOM go.Top,Siemens Healthineers,ativo,2018-04-08,2026-02-02,0.92
+894,56,ultrassom,EPIQ Elite,Philips,ativo,2025-03-26,2026-03-11,1.0
+895,56,arco cirurgico,OEC One CFD,GE HealthCare,ativo,2023-07-05,2026-02-01,0.49661512918502054
+896,56,ressonancia magnetica,SIGNA Explorer,GE HealthCare,ativo,2018-05-29,2026-01-24,0.5514246632100851
+897,57,pet,Biograph Vision,Siemens Healthineers,ativo,2019-07-01,2026-05-12,0.42973001239579306
+898,57,pet,Biograph Vision,Siemens Healthineers,ativo,2024-02-07,2026-04-03,0.6600408379027755
+899,57,tc,Revolution Apex,GE HealthCare,ativo,2018-12-13,2026-02-18,0.9
+900,57,ultrassom,LOGIQ E10,GE HealthCare,em manutencao,2024-04-24,2026-04-25,0.309
+901,57,raio x,Definium Tempo,GE HealthCare,ativo,2022-08-28,2025-12-23,1.0
+902,57,arco cirurgico,Cios Alpha,Siemens Healthineers,ativo,2016-06-23,2026-05-28,0.6212971963751892
+903,57,pet,Discovery MI,GE HealthCare,ativo,2024-08-26,2026-02-21,0.5529498021896667
+904,57,ultrassom,LOGIQ E10,GE HealthCare,ativo,2020-07-07,2026-02-15,1.0
+905,57,tc,SOMATOM go.Top,Siemens Healthineers,ativo,2020-09-01,2026-02-09,0.8622610559266262
+906,57,pet,Discovery MI,GE HealthCare,ativo,2020-09-14,2026-01-06,0.5415338602332805
+907,57,arco cirurgico,Cios Alpha,Siemens Healthineers,ativo,2017-04-05,2026-03-17,0.9099911958862816
+908,57,arco cirurgico,Cios Alpha,Siemens Healthineers,ativo,2023-02-07,2026-02-24,0.5000303336105818
+909,57,raio x,Definium Tempo,GE HealthCare,ativo,2017-06-06,2026-05-19,0.9
+910,57,angiografia,Azurion 7,Philips,ativo,2017-08-05,2026-01-20,0.7764495849699732
+911,57,arco cirurgico,OEC One CFD,GE HealthCare,ativo,2019-10-06,2025-11-13,0.48477917439066653
+912,57,ultrassom,LOGIQ E10,GE HealthCare,ativo,2016-12-13,2026-01-12,1.0
+913,58,angiografia,Artis Q,Siemens Healthineers,ativo,2017-09-12,2025-11-27,0.4914941088131316
+914,58,pet,Discovery MI,GE HealthCare,ativo,2020-01-22,2026-02-11,0.564328493797546
+915,58,arco cirurgico,OEC One CFD,GE HealthCare,ativo,2017-12-06,2026-02-07,0.8817739218377023
+916,58,raio x,DigitalDiagnost C90,Philips,ativo,2022-11-05,2026-05-22,1.0
+917,58,pet,Discovery MI,GE HealthCare,em manutencao,2023-03-28,2025-11-02,0.229
+918,58,arco cirurgico,OEC One CFD,GE HealthCare,ativo,2021-04-05,2026-01-09,0.9097718551639467
+919,58,angiografia,Azurion 7,Philips,ativo,2017-01-29,2026-04-13,0.5053645934072455
+920,58,tc,Revolution Apex,GE HealthCare,ativo,2019-08-04,2025-10-22,1.0
+921,58,tc,Revolution Apex,GE HealthCare,ativo,2019-05-05,2026-03-29,0.9
+922,58,ultrassom,EPIQ Elite,Philips,ativo,2024-08-15,2025-12-24,0.9
+923,58,raio x,DigitalDiagnost C90,Philips,em manutencao,2017-02-24,2026-03-02,0.064
+924,58,ultrassom,LOGIQ E10,GE HealthCare,ativo,2023-01-12,2026-05-20,0.9
+925,58,ressonancia magnetica,SIGNA Explorer,GE HealthCare,ativo,2018-04-16,2026-01-04,0.6594323143410372
+926,58,ressonancia magnetica,Magnetom Altea,Siemens Healthineers,ativo,2016-07-24,2025-10-12,0.8202586934661168
+927,58,tc,SOMATOM go.Top,Siemens Healthineers,ativo,2017-01-16,2025-11-19,0.709949872769568
+928,58,angiografia,Azurion 7,Philips,ativo,2021-07-27,2026-02-06,0.92
+929,59,angiografia,Artis Q,Siemens Healthineers,ativo,2018-10-30,2026-03-30,0.44734495327883145
+930,59,raio x,Definium Tempo,GE HealthCare,ativo,2023-05-21,2026-02-12,0.7690564918422484
+931,59,angiografia,Artis Q,Siemens Healthineers,ativo,2023-05-30,2026-04-06,0.8872332149637544
+932,59,pet,Biograph Vision,Siemens Healthineers,ativo,2020-09-11,2026-03-08,0.43032458472415186
+933,59,ressonancia magnetica,Magnetom Altea,Siemens Healthineers,ativo,2019-02-22,2026-02-27,0.6801687324201476
+934,59,arco cirurgico,OEC One CFD,GE HealthCare,em manutencao,2019-01-29,2025-11-15,0.483
+935,59,arco cirurgico,OEC One CFD,GE HealthCare,em manutencao,2021-08-31,2026-03-20,0.324
+936,59,tc,Revolution Apex,GE HealthCare,ativo,2022-01-17,2026-03-23,0.8705752069508348
+937,59,ressonancia magnetica,SIGNA Explorer,GE HealthCare,ativo,2019-08-29,2025-11-13,0.4900928526674876
+938,59,angiografia,Artis Q,Siemens Healthineers,ativo,2017-12-19,2026-02-02,0.5174187719266539
+939,59,tc,SOMATOM go.Top,Siemens Healthineers,ativo,2018-09-26,2025-10-25,1.0
+940,59,arco cirurgico,OEC One CFD,GE HealthCare,em manutencao,2017-04-05,2026-04-05,0.335
+941,59,pet,Biograph Vision,Siemens Healthineers,ativo,2016-12-07,2026-03-23,0.5664024890916523
+942,59,ressonancia magnetica,SIGNA Explorer,GE HealthCare,ativo,2016-11-23,2026-01-03,0.5739489308422181
+943,59,ultrassom,EPIQ Elite,Philips,ativo,2024-09-20,2026-01-28,0.92
+944,59,angiografia,Azurion 7,Philips,em manutencao,2022-05-01,2025-11-16,0.54

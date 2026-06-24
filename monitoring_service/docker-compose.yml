@@ -1,0 +1,108 @@
+
+services:
+  kafka:
+    image: apache/kafka:3.7.0
+    container_name: kafka
+    ports:
+      - "9092:9092"
+      - "29092:29092"
+    environment:
+      KAFKA_NODE_ID: 1
+      KAFKA_PROCESS_ROLES: 'broker,controller'
+      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: 'CONTROLLER:PLAINTEXT,PLAINTEXT:PLAINTEXT,PLAINTEXT_HOST:PLAINTEXT'
+      KAFKA_CONTROLLER_QUORUM_VOTERS: '1@kafka:29093'
+      KAFKA_LISTENERS: 'PLAINTEXT://0.0.0.0:9092,CONTROLLER://0.0.0.0:29093,PLAINTEXT_HOST://0.0.0.0:29092'
+      KAFKA_ADVERTISED_LISTENERS: 'PLAINTEXT://kafka:9092,PLAINTEXT_HOST://localhost:29092'
+      KAFKA_CONTROLLER_LISTENER_NAMES: 'CONTROLLER'
+      KAFKA_INTER_BROKER_LISTENER_NAME: 'PLAINTEXT'
+      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+      KAFKA_GROUP_INITIAL_REBALANCE_DELAY_MS: 0
+      KAFKA_TRANSACTION_STATE_LOG_MIN_ISR: 1
+      KAFKA_TRANSACTION_STATE_LOG_REPLICATION_FACTOR: 1
+
+  monitoring_service:
+    build: .
+    container_name: monitoring_service
+    depends_on:
+      - kafka
+    environment:
+      - KAFKA_BOOTSTRAP_SERVERS=kafka:9092
+      - TELEMETRY_TOPIC=telemetry
+      - FAILURES_TOPIC=failures
+      - SIMULATION_INTERVAL_SEC=3600.0 # 1 hour simulated = 1 hour real time
+      - HOSPITAL_ID=1
+      - HOSPITAL_IDS=1,2,3,4,5,6,7,8,9,10
+      - CSV_PATH=/app/csv_export/equipamentos.csv
+      - PYTHONUNBUFFERED=1
+    volumes:
+      - ./persistence:/app/monitoring_service/persistence
+      - ../csv_export:/app/csv_export:ro
+
+  minio:
+    image: minio/minio:latest
+    container_name: minio
+    ports:
+      - "9000:9000"
+      - "9001:9001"
+    environment:
+      MINIO_ROOT_USER: admin
+      MINIO_ROOT_PASSWORD: strongpassword123
+    command: server /data --console-address ":9001"
+
+  data_pipeline:
+    build:
+      context: ..
+      dockerfile: data_pipeline/Dockerfile
+    container_name: data_pipeline
+    depends_on:
+      - kafka
+      - minio
+      - postgres
+    environment:
+      - KAFKA_BOOTSTRAP_SERVERS=kafka:9092
+      - TELEMETRY_TOPIC=telemetry
+      - S3_ENDPOINT_URL=http://minio:9000
+      - S3_ACCESS_KEY=admin
+      - S3_SECRET_KEY=strongpassword123
+      - DB_USER=postgres
+      - DB_PASSWORD=strongpassword123
+      - DB_HOST=postgres
+      - DB_PORT=5432
+      - DB_NAME=serving_db
+      - USE_POSTGRES=true
+      - PYTHONUNBUFFERED=1
+
+  postgres:
+    image: postgres:15-alpine
+    container_name: postgres
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: strongpassword123
+      POSTGRES_DB: serving_db
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  serving_api:
+    build:
+      context: ..
+      dockerfile: serving_api/Dockerfile
+    container_name: serving_api
+    ports:
+      - "8000:8000"
+    depends_on:
+      - postgres
+    environment:
+      - DB_USER=postgres
+      - DB_PASSWORD=strongpassword123
+      - DB_HOST=postgres
+      - DB_PORT=5432
+      - DB_NAME=serving_db
+      - USE_POSTGRES=true
+      - PYTHONUNBUFFERED=1
+
+volumes:
+  postgres_data:
+
+
