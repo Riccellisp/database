@@ -70,6 +70,7 @@ def import_equipments_from_csv(session, csv_path):
             
             # Initialize temporal physics parameters
             estado_fisico = inicializar_estado_temporal(tipo, desgaste)
+            estado_fisico["desgaste"] = desgaste
             
             if "scan_count" in estado_fisico:
                 carga_acumulada = estado_fisico["scan_count"]
@@ -109,7 +110,6 @@ def import_equipments_from_csv(session, csv_path):
                 modelo=modelo,
                 fabricante=fabricante,
                 idade_dias=0,
-                desgaste=desgaste,
                 carga_acumulada=carga_acumulada,
                 ultima_manutencao=data_manut,
                 estado_operacional_interno=estado_op,
@@ -160,6 +160,7 @@ def generate_default_equipments_in_db(session):
         
         # Initialize temporal physics parameters
         estado_fisico = inicializar_estado_temporal(tipo, desgaste)
+        estado_fisico["desgaste"] = desgaste
         
         if "scan_count" in estado_fisico:
             carga_acumulada = estado_fisico["scan_count"]
@@ -189,7 +190,6 @@ def generate_default_equipments_in_db(session):
             modelo=modelo,
             fabricante=fabricante,
             idade_dias=idade_dias,
-            desgaste=desgaste,
             carga_acumulada=carga_acumulada,
             ultima_manutencao=data_manut,
             estado_operacional_interno=estado_op,
@@ -228,7 +228,6 @@ def get_all_equipments():
                 "modelo": r.modelo,
                 "fabricante": r.fabricante,
                 "idade_dias": r.idade_dias,
-                "desgaste": r.desgaste,
                 "carga_acumulada": r.carga_acumulada,
                 "ultima_manutencao": r.ultima_manutencao,
                 "estado_operacional_interno": r.estado_operacional_interno,
@@ -254,7 +253,6 @@ def update_equipment(eq):
         db_eq = session.query(SimEquipment).filter(SimEquipment.equipamento_id == eq["equipamento_id"]).first()
         if db_eq:
             db_eq.idade_dias = eq["idade_dias"]
-            db_eq.desgaste = eq["desgaste"]
             db_eq.carga_acumulada = eq["carga_acumulada"]
             db_eq.ultima_manutencao = eq["ultima_manutencao"]
             db_eq.estado_operacional_interno = eq["estado_operacional_interno"]

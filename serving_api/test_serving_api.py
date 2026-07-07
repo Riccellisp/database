@@ -230,7 +230,6 @@ class TestServingAPI(unittest.TestCase):
             "tipo": "tc",
             "modelo": "Test Model",
             "fabricante": "Test Manufacturer",
-            "desgaste_acumulado": 0.15,
             "data_instalacao": "2026-01-01",
             "data_ultima_manutencao": "2026-06-01",
             "ip_address": "192.168.1.15",

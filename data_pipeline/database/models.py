@@ -161,7 +161,6 @@ class SimEquipment(Base):
     modelo = Column(String(100), nullable=False)
     fabricante = Column(String(100), nullable=False)
     idade_dias = Column(Integer, default=0, nullable=False)
-    desgaste = Column(Float, default=0.0, nullable=False)
     carga_acumulada = Column(Float, default=0.0, nullable=False)
     ultima_manutencao = Column(String(50), nullable=True)
     estado_operacional_interno = Column(String(50), default="NORMAL", nullable=False)

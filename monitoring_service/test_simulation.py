@@ -40,7 +40,7 @@ def test_offline_run():
     # Check if we can read columns properly
     first_eq = eqs[0]
     test_eq_id = first_eq['equipamento_id']
-    initial_wear = first_eq['desgaste']
+    initial_wear = first_eq['ultimo_estado_temporal'].get('desgaste', 0.15)
     print(f"Equipamento de teste inicial: ID={test_eq_id}, Tipo={first_eq['tipo']}, Desgaste={initial_wear}")
     assert initial_wear > 0.0, "Desgaste inicial deve ser maior que 0"
     
@@ -57,11 +57,11 @@ def test_offline_run():
         for eq in eqs:
             eq_id = eq["equipamento_id"]
             tipo_eq = eq["tipo"]
-            desgaste = eq["desgaste"]
+            estado_fisico = eq["ultimo_estado_temporal"]
+            desgaste = estado_fisico.get("desgaste", 0.15)
             estado_op = eq["estado_operacional_interno"]
             modo_falha = eq["modo_falha_ativo"]
             intensidade_falha = eq["intensidade_falha"]
-            estado_fisico = eq["ultimo_estado_temporal"]
             
             # Simple simulation step
             uso = ciclo_uso_hospitalar(sim_time, tipo_eq)
@@ -92,7 +92,7 @@ def test_offline_run():
             logger.info(eq_id, "publicando_telemetria")
                 
             # Update local list for next iteration
-            eq["desgaste"] = desgaste_novo
+            estado_fisico["desgaste"] = desgaste_novo
             eq["ultimo_estado_temporal"] = estado_fisico
             eq["estado_operacional_interno"] = estado_op
             eq["modo_falha_ativo"] = modo_falha
@@ -108,11 +108,11 @@ def test_offline_run():
     eq1_updated = next(e for e in updated_eqs if e["equipamento_id"] == test_eq_id)
     
     print("\n=== Verificação pós-simulação ===")
-    print(f"Equipamento 1 Desgaste Inicial: {initial_wear} -> Atual: {eq1_updated['desgaste']}")
+    print(f"Equipamento 1 Desgaste Inicial: {initial_wear} -> Atual: {eq1_updated['ultimo_estado_temporal'].get('desgaste')}")
     print(f"Equipamento 1 Estado Operacional: {eq1_updated['estado_operacional_interno']}")
     print(f"Equipamento 1 Último Estado Físico: {eq1_updated['ultimo_estado_temporal']}")
     
-    assert eq1_updated["desgaste"] != initial_wear, "O desgaste deveria ter evoluído."
+    assert eq1_updated["ultimo_estado_temporal"].get("desgaste") != initial_wear, "O desgaste deveria ter evoluído."
     print("\n[TEST] Todos os testes passaram com sucesso!")
 
 if __name__ == "__main__":

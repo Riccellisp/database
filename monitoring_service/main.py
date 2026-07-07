@@ -36,12 +36,12 @@ def run_simulation():
             for eq in equipments:
                 eq_id = eq["equipamento_id"]
                 tipo_eq = eq["tipo"]
-                desgaste = eq["desgaste"]
                 estado_op = eq["estado_operacional_interno"]
                 modo_falha = eq["modo_falha_ativo"]
                 intensidade_falha = eq["intensidade_falha"]
                 horas_restantes = eq["horas_falha_restantes"]
                 estado_fisico = eq["ultimo_estado_temporal"]
+                desgaste = estado_fisico.get("desgaste", 0.15)
                 
                 # Check for state transitions and maintenance
                 if estado_op == "EM_MANUTENCAO":
@@ -137,7 +137,7 @@ def run_simulation():
                     eq["idade_dias"] += 1
                 
                 # Save state changes
-                eq["desgaste"] = desgaste
+                estado_fisico["desgaste"] = desgaste
                 eq["estado_operacional_interno"] = estado_op
                 eq["ultimo_estado_temporal"] = estado_fisico
                 db.update_equipment(eq)

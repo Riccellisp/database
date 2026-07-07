@@ -71,7 +71,6 @@ class TestDataPipeline(unittest.TestCase):
             tipo=tipo_eq,
             modelo="Test Model",
             fabricante="Test Manufacturer",
-            desgaste=0.1,
             carga_acumulada=1000.0,
             ultimo_estado_temporal={}
         )

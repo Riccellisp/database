@@ -176,7 +176,6 @@ class EquipmentCreate(BaseModel):
     tipo: str = Field(..., description="Tipo do equipamento (ex: tc, raio x, ressonancia magnetica, etc.)")
     modelo: str = Field(..., description="Modelo do equipamento")
     fabricante: str = Field(..., description="Fabricante do equipamento")
-    desgaste_acumulado: Optional[float] = Field(0.0, description="Desgaste acumulado inicial")
     data_instalacao: Optional[str] = Field(None, description="Data de instalação (YYYY-MM-DD)")
     data_ultima_manutencao: Optional[str] = Field(None, description="Data da última manutenção (YYYY-MM-DD)")
     ip_address: Optional[str] = Field(None, description="Endereço IP (IPv4 ou IPv6)")
@@ -196,7 +195,7 @@ def register_equipment(eq: EquipmentCreate, db: Session = Depends(get_db)):
     # Normalizar valores
     tipo_norm = eq.tipo.lower().strip()
     data_manut = eq.data_ultima_manutencao or datetime.today().strftime("%Y-%m-%d")
-    desgaste = eq.desgaste_acumulado if eq.desgaste_acumulado is not None else 0.0
+    desgaste = 0.15 # Default wear for a newly registered equipment
 
     # 1. Verificar duplicidade no banco
     exists = db.query(SimEquipment).filter(SimEquipment.equipamento_id == eq.equipamento_id).first()
@@ -209,6 +208,7 @@ def register_equipment(eq: EquipmentCreate, db: Session = Depends(get_db)):
     # 2. Inicializar estado físico temporal
     try:
         estado_fisico = inicializar_estado_temporal(tipo_norm, desgaste)
+        estado_fisico["desgaste"] = desgaste
     except KeyError:
         raise HTTPException(
             status_code=status.HTTP_400_BAD_REQUEST,
@@ -231,7 +231,6 @@ def register_equipment(eq: EquipmentCreate, db: Session = Depends(get_db)):
             modelo=eq.modelo,
             fabricante=eq.fabricante,
             idade_dias=0,
-            desgaste=desgaste,
             carga_acumulada=carga_acumulada,
             ultima_manutencao=data_manut,
             estado_operacional_interno=estado_op,
