@@ -3,7 +3,7 @@ from sqlalchemy.orm import Session
 from sqlalchemy import text
 from typing import List, Dict, Any
 from serving_api.database.connection import get_db
-from data_pipeline.database.models import SilverTelemetry, GoldEquipmentFeatures
+from data_pipeline.database.models import SilverTelemetry, GoldEquipmentFeatures, SimEquipment
 
 app = FastAPI(
     title="Hospital Telemetry Serving API",
@@ -26,7 +26,7 @@ def health_check(db: Session = Depends(get_db)):
         )
 
 @app.get("/api/v1/equipments/{id}/telemetry")
-def get_equipment_telemetry(id: int, limit: int = 48, db: Session = Depends(get_db)):
+def get_equipment_telemetry(id: str, limit: int = 48, db: Session = Depends(get_db)):
     """
     Retorna o historico de telemetrias limpas (camada Silver) para um determinado equipamento,
     ordenado do mais recente para o mais antigo.
@@ -56,7 +56,7 @@ def get_equipment_telemetry(id: int, limit: int = 48, db: Session = Depends(get_
     return result
 
 @app.get("/api/v1/equipments/{id}/features")
-def get_latest_ml_features(id: int, db: Session = Depends(get_db)):
+def get_latest_ml_features(id: str, db: Session = Depends(get_db)):
     """
     Retorna o vetor de features agregadas mais recente (camada Gold) para servir a predicao de MLOps online.
     """
@@ -153,7 +153,7 @@ def get_hospital_latest_features(hospital_id: int, db: Session = Depends(get_db)
 @app.get("/api/v1/hospitals/{hospital_id}/equipments/{equipment_id}")
 def get_hospital_equipment_data(
     hospital_id: int, 
-    equipment_id: int, 
+    equipment_id: str, 
     limit: int = 48, 
     db: Session = Depends(get_db)
 ):
@@ -207,4 +207,96 @@ def get_hospital_equipment_data(
         "features": features_dict
     }
 
+from pydantic import BaseModel, Field
+from typing import Optional
 
+class EquipmentCreate(BaseModel):
+    equipamento_id: str = Field(..., description="ID ou número de série do equipamento (pode ser IPv6)")
+    hospital_id: int = Field(..., description="ID do hospital proprietário")
+    tipo: str = Field(..., description="Tipo do equipamento (ex: tc, raio x, ressonancia magnetica, etc.)")
+    modelo: str = Field(..., description="Modelo do equipamento")
+    fabricante: str = Field(..., description="Fabricante do equipamento")
+    desgaste_acumulado: Optional[float] = Field(0.0, description="Desgaste acumulado inicial")
+    data_instalacao: Optional[str] = Field(None, description="Data de instalação (YYYY-MM-DD)")
+    data_ultima_manutencao: Optional[str] = Field(None, description="Data da última manutenção (YYYY-MM-DD)")
+    ip_address: Optional[str] = Field(None, description="Endereço IP (IPv4 ou IPv6)")
+    porta_conexao: Optional[int] = Field(None, description="Porta de conexão de rede")
+    endereco_mac: Optional[str] = Field(None, description="Endereço MAC físico")
+    protocolo: Optional[str] = Field(None, description="Protocolo de comunicação (ex: DICOM, HL7, HTTP)")
+
+@app.post("/api/v1/equipments", status_code=status.HTTP_201_CREATED)
+def register_equipment(eq: EquipmentCreate, db: Session = Depends(get_db)):
+    """
+    Cadastra um novo equipamento no banco de dados de simulação centralizado (MySQL).
+    Permite que o simulador comece a gerar telemetrias para o novo ativo dinamicamente.
+    """
+    from datetime import datetime
+    from monitoring_service.simulators.base import inicializar_estado_temporal
+
+    # Normalizar valores
+    tipo_norm = eq.tipo.lower().strip()
+    data_inst = eq.data_instalacao or datetime.today().strftime("%Y-%m-%d")
+    data_manut = eq.data_ultima_manutencao or datetime.today().strftime("%Y-%m-%d")
+    desgaste = eq.desgaste_acumulado if eq.desgaste_acumulado is not None else 0.0
+
+    # 1. Verificar duplicidade no banco
+    exists = db.query(SimEquipment).filter(SimEquipment.equipamento_id == eq.equipamento_id).first()
+    if exists:
+        raise HTTPException(
+            status_code=status.HTTP_400_BAD_REQUEST,
+            detail=f"Equipamento com ID '{eq.equipamento_id}' já está cadastrado no simulador."
+        )
+
+    # 2. Inicializar estado físico temporal
+    try:
+        estado_fisico = inicializar_estado_temporal(tipo_norm, desgaste)
+    except KeyError:
+        raise HTTPException(
+            status_code=status.HTTP_400_BAD_REQUEST,
+            detail=f"Tipo de equipamento '{eq.tipo}' não é suportado pelo simulador."
+        )
+
+    if "scan_count" in estado_fisico:
+        carga_acumulada = estado_fisico["scan_count"]
+    elif "exposure_count" in estado_fisico:
+        carga_acumulada = estado_fisico["exposure_count"]
+    else:
+        carga_acumulada = 0.0
+
+    estado_op = "DEGRADANDO" if desgaste >= 0.55 else "NORMAL"
+
+    try:
+        new_eq = SimEquipment(
+            equipamento_id=eq.equipamento_id,
+            hospital_id=eq.hospital_id,
+            tipo=tipo_norm,
+            modelo=eq.modelo,
+            fabricante=eq.fabricante,
+            idade_dias=0,
+            desgaste=desgaste,
+            carga_acumulada=carga_acumulada,
+            ultima_manutencao=data_manut,
+            estado_operacional_interno=estado_op,
+            modo_falha_ativo=None,
+            intensidade_falha=0.0,
+            horas_falha_restantes=0,
+            ultimo_estado_temporal=estado_fisico,
+            ip_address=eq.ip_address,
+            porta_conexao=eq.porta_conexao,
+            endereco_mac=eq.endereco_mac,
+            protocolo=eq.protocolo
+        )
+        db.add(new_eq)
+        db.commit()
+    except Exception as e:
+        db.rollback()
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail=f"Erro ao salvar no banco de dados: {str(e)}"
+        )
+
+    return {
+        "status": "created",
+        "detail": "Equipamento cadastrado com sucesso no banco de dados.",
+        "equipment": eq
+    }

@@ -81,7 +81,7 @@ def process_silver_to_gold(hospital_id, equipamento_id, tipo_eq, df_eq):
             ts = row["timestamp"]
             if hasattr(ts, "to_pydatetime"):
                 ts = ts.to_pydatetime()
-            eq_id = int(row["equipamento_id"])
+            eq_id = str(row["equipamento_id"])
             
             # Find or create record
             rec = session.query(GoldEquipmentFeatures).filter_by(timestamp=ts, equipamento_id=eq_id).first()

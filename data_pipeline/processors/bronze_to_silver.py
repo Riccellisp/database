@@ -41,7 +41,7 @@ def process_bronze_to_silver(hospital_id, equipamento_id, tipo_eq, new_telemetry
     sensors = new_telemetry_msg["telemetria"]
     row_data = {
         "timestamp": pd.to_datetime(date_obj),
-        "equipamento_id": int(equipamento_id),
+        "equipamento_id": str(equipamento_id),
         "is_interpolated": False
     }
     for k, v in sensors.items():
@@ -138,7 +138,7 @@ def process_bronze_to_silver(hospital_id, equipamento_id, tipo_eq, new_telemetry
             ts = row["timestamp"]
             if hasattr(ts, "to_pydatetime"):
                 ts = ts.to_pydatetime()
-            eq_id = int(row["equipamento_id"])
+            eq_id = str(row["equipamento_id"])
             
             # Find or create record
             rec = session.query(StgSilverTelemetry).filter_by(timestamp=ts, equipamento_id=eq_id).first()

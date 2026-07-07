@@ -149,7 +149,6 @@ def run_simulation():
                 # Publish telemetry to Kafka
                 telemetry_msg = {
                     "timestamp": sim_time_str,
-                    "hospital_id": h_id,
                     "equipamento_id": eq_id,
                     "tipo": tipo_eq,
                     "telemetria": telemetry_payload

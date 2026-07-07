@@ -20,7 +20,8 @@ def test_offline_run():
     print("=== [TEST] Iniciando Teste de Validação Offline ===")
     
     # Reset local test simulation DB if exists to guarantee a fresh initial state
-    db_path = Config.SIMULATION_DB_PATH
+    db_dir = os.path.dirname(os.path.abspath(db.__file__))
+    db_path = os.path.join(db_dir, "..", "persistence", "simulation.db")
     if os.path.exists(db_path):
         try:
             os.remove(db_path)
@@ -34,12 +35,14 @@ def test_offline_run():
     # Load equipments
     eqs = db.get_all_equipments()
     print(f"Carregados {len(eqs)} equipamentos para simulação.")
-    assert len(eqs) == 16, f"Deveria ter carregado exatamente 16 equipamentos, encontrou {len(eqs)}"
+    expected_count = 16 if getattr(Config, "CSV_PATH", None) and os.path.exists(Config.CSV_PATH) else 10
+    assert len(eqs) == expected_count, f"Deveria ter carregado exatamente {expected_count} equipamentos, encontrou {len(eqs)}"
     
     # Check if we can read columns properly
     first_eq = eqs[0]
+    test_eq_id = first_eq['equipamento_id']
     initial_wear = first_eq['desgaste']
-    print(f"Equipamento de teste inicial: ID={first_eq['equipamento_id']}, Tipo={first_eq['tipo']}, Desgaste={initial_wear}")
+    print(f"Equipamento de teste inicial: ID={test_eq_id}, Tipo={first_eq['tipo']}, Desgaste={initial_wear}")
     assert initial_wear > 0.0, "Desgaste inicial deve ser maior que 0"
     
     # Run exactly 5 simulated hours
@@ -65,7 +68,7 @@ def test_offline_run():
             uso = ciclo_uso_hospitalar(sim_time, tipo_eq)
             
             # Mock entering pre-failure on hour 2 for equipment 1 to test degradation
-            if hour == 2 and eq_id == 1:
+            if hour == 2 and eq_id == test_eq_id:
                 estado_op = "PRE_FALHA"
                 modo_falha = "superaquecimento do tubo"
                 intensidade_falha = 0.5
@@ -103,7 +106,7 @@ def test_offline_run():
         
     # Verify database updates
     updated_eqs = db.get_all_equipments()
-    eq1_updated = next(e for e in updated_eqs if e["equipamento_id"] == 1)
+    eq1_updated = next(e for e in updated_eqs if e["equipamento_id"] == test_eq_id)
     
     print("\n=== Verificação pós-simulação ===")
     print(f"Equipamento 1 Desgaste Inicial: {initial_wear} -> Atual: {eq1_updated['desgaste']}")

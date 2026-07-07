@@ -50,7 +50,7 @@ class TestDataPipeline(unittest.TestCase):
         
         # 0. Clean and Initialize local SQL Serving DB
         from data_pipeline.database.connection import init_sql_db, get_db_session
-        from data_pipeline.database.models import SilverTelemetry, GoldEquipmentFeatures
+        from data_pipeline.database.models import SilverTelemetry, GoldEquipmentFeatures, SimEquipment
         
         db_path = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "serving_database.db"))
         if os.path.exists(db_path):
@@ -61,14 +61,30 @@ class TestDataPipeline(unittest.TestCase):
                 pass
         init_sql_db()
         
+        hospital_id = 1
+        equipamento_id = "1"
+        tipo_eq = "tc"
+        
+        # Insert a mock SimEquipment so pipeline lookup resolves hospital_id correctly
+        session = get_db_session()
+        mock_eq = SimEquipment(
+            equipamento_id=equipamento_id,
+            hospital_id=hospital_id,
+            tipo=tipo_eq,
+            modelo="Test Model",
+            fabricante="Test Manufacturer",
+            desgaste=0.1,
+            carga_acumulada=1000.0,
+            ultimo_estado_temporal={}
+        )
+        session.add(mock_eq)
+        session.commit()
+        session.close()
+        
         # Instantiate a single mock storage client shared by both patches
         mock_s3 = MockS3Client()
         mock_s3_silver.return_value = mock_s3
         mock_s3_gold.return_value = mock_s3
-        
-        hospital_id = 1
-        equipamento_id = 1
-        tipo_eq = "tc"
         
         base_time = datetime(2026, 6, 7, 12, 0, 0)
         
@@ -81,7 +97,6 @@ class TestDataPipeline(unittest.TestCase):
         telemetries = [
             {
                 "timestamp": (base_time + timedelta(hours=0)).isoformat(),
-                "hospital_id": hospital_id,
                 "equipamento_id": equipamento_id,
                 "tipo": tipo_eq,
                 "telemetria": {
@@ -97,7 +112,6 @@ class TestDataPipeline(unittest.TestCase):
             },
             {
                 "timestamp": (base_time + timedelta(hours=1)).isoformat(),
-                "hospital_id": hospital_id,
                 "equipamento_id": equipamento_id,
                 "tipo": tipo_eq,
                 "telemetria": {
@@ -114,7 +128,6 @@ class TestDataPipeline(unittest.TestCase):
             # HOUR 2 is missing here!
             {
                 "timestamp": (base_time + timedelta(hours=3)).isoformat(),
-                "hospital_id": hospital_id,
                 "equipamento_id": equipamento_id,
                 "tipo": tipo_eq,
                 "telemetria": {
@@ -130,7 +143,6 @@ class TestDataPipeline(unittest.TestCase):
             },
             {
                 "timestamp": (base_time + timedelta(hours=4)).isoformat(),
-                "hospital_id": hospital_id,
                 "equipamento_id": equipamento_id,
                 "tipo": tipo_eq,
                 "telemetria": {

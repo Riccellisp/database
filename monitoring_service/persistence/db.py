@@ -1,154 +1,273 @@
 import os
 import json
-import sqlite3
 import random
-from datetime import datetime
-from pathlib import Path
+from datetime import datetime, timedelta
+from sqlalchemy import create_engine
+from sqlalchemy.orm import sessionmaker
 from monitoring_service.config import Config
-from monitoring_service.simulators.base import inicializar_estado_temporal
 
-DB_PATH = Config.SIMULATION_DB_PATH
+# Initialize connection URL based on Config
+if Config.USE_MYSQL:
+    DATABASE_URL = f"mysql+pymysql://{Config.DB_USER}:{Config.DB_PASSWORD}@{Config.DB_HOST}:{Config.DB_PORT}/{Config.DB_NAME}"
+    engine = create_engine(DATABASE_URL, pool_size=10, max_overflow=20)
+else:
+    # SQLite local file fallback for offline testing/development
+    db_dir = os.path.dirname(os.path.abspath(__file__))
+    os.makedirs(os.path.join(db_dir, "..", "persistence"), exist_ok=True)
+    sqlite_path = os.path.join(db_dir, "..", "persistence", "simulation.db")
+    DATABASE_URL = f"sqlite:///{sqlite_path}"
+    engine = create_engine(DATABASE_URL, connect_args={"check_same_thread": False})
+
+SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 
 def init_db():
-    # Ensure directory exists
-    os.makedirs(os.path.dirname(DB_PATH), exist_ok=True)
+    from data_pipeline.database.models import Base, SimEquipment
     
-    conn = sqlite3.connect(DB_PATH)
-    cur = conn.cursor()
-    
-    # Create the simulation table
-    cur.execute("""
-        CREATE TABLE IF NOT EXISTS sim_equipamentos (
-            equipamento_id INTEGER PRIMARY KEY,
-            hospital_id INTEGER NOT NULL DEFAULT 1,
-            tipo TEXT NOT NULL,
-            modelo TEXT NOT NULL,
-            fabricante TEXT NOT NULL,
-            idade_dias INTEGER NOT NULL,
-            desgaste REAL NOT NULL,
-            carga_acumulada REAL NOT NULL,
-            ultima_manutencao TEXT,
-            estado_operacional_interno TEXT NOT NULL,
-            modo_falha_ativo TEXT,
-            intensidade_falha REAL NOT NULL,
-            horas_falha_restantes INTEGER NOT NULL,
-            ultimo_estado_temporal TEXT NOT NULL
-        )
-    """)
-    conn.commit()
+    # Create the simulation tables in the target database
+    Base.metadata.create_all(bind=engine)
     
     # Check if table already contains data
-    cur.execute("SELECT COUNT(*) FROM sim_equipamentos")
-    count = cur.fetchone()[0]
-    if count == 0:
-        print("Banco de simulação local vazio. Inicializando a partir do arquivo CSV...")
-        initialize_equipments_from_csv(conn)
-        
-    conn.close()
- 
-def initialize_equipments_from_csv(sim_conn):
+    session = SessionLocal()
+    try:
+        # 1. Load/merge from CSV if CSV_PATH is set and exists
+        csv_path = getattr(Config, "CSV_PATH", None)
+        if csv_path and os.path.exists(csv_path):
+            print(f"Importando/sincronizando equipamentos a partir do CSV: {csv_path}")
+            try:
+                import_equipments_from_csv(session, csv_path)
+            except Exception as e:
+                print(f"Erro ao importar equipamentos do CSV: {e}")
+                
+        # 2. Fallback: if table is still empty, generate dynamically
+        count = session.query(SimEquipment).count()
+        if count == 0:
+            print("Banco de simulação vazio. Inicializando equipamentos gerados dinamicamente...")
+            generate_default_equipments_in_db(session)
+    finally:
+        session.close()
+
+def import_equipments_from_csv(session, csv_path):
     import csv
-    
-    csv_path = Config.CSV_PATH
-    
-    if not os.path.exists(csv_path):
-        raise FileNotFoundError(f"Arquivo CSV de equipamentos não encontrado em: {csv_path}")
-        
-    sim_cur = sim_conn.cursor()
-    hoje = datetime.now()
-    equipamentos_carregados = 0
+    from data_pipeline.database.models import SimEquipment
+    from monitoring_service.simulators.base import inicializar_estado_temporal
     
     with open(csv_path, mode="r", encoding="utf-8") as f:
         reader = csv.DictReader(f)
+        equipamentos_importados = 0
         for row in reader:
+            eq_id = str(row["equipamento_id"])
+            
+            # Check if equipment already exists in DB
+            exists = session.query(SimEquipment).filter(SimEquipment.equipamento_id == eq_id).first()
+            if exists:
+                continue # Skip existing to preserve simulation state
+                
             h_id = int(row["hospital_id"])
-            if h_id in Config.HOSPITAL_IDS:
-                eq_id = int(row["equipamento_id"])
-                tipo = row["tipo_equipamento"]
-                modelo = row["modelo"]
-                fabricante = row["fabricante"]
-                desgaste = float(row["desgaste_acumulado"])
-                data_instalacao_str = row["data_instalacao"]
-                data_ultima_manut_str = row["data_ultima_manutencao"]
+            tipo = row["tipo_equipamento"].lower().strip()
+            modelo = row["modelo"]
+            fabricante = row["fabricante"]
+            desgaste = float(row["desgaste_acumulado"])
+            data_manut = row["data_ultima_manutencao"]
+            
+            # Initialize temporal physics parameters
+            estado_fisico = inicializar_estado_temporal(tipo, desgaste)
+            
+            if "scan_count" in estado_fisico:
+                carga_acumulada = estado_fisico["scan_count"]
+            elif "exposure_count" in estado_fisico:
+                carga_acumulada = estado_fisico["exposure_count"]
+            else:
+                carga_acumulada = random.randint(100, 10000)
                 
-                # Parse age in days
-                try:
-                    data_inst = datetime.strptime(data_instalacao_str, "%Y-%m-%d")
-                    idade_dias = (hoje - data_inst).days
-                except Exception:
-                    idade_dias = random.randint(100, 1000)
-                    
-                # Initialize temporal physics parameters
-                estado_fisico = inicializar_estado_temporal(tipo, desgaste)
+            estado_op = "DEGRADANDO" if desgaste >= 0.55 else "NORMAL"
+            
+            # Generate network credentials for simulation (defaults for CSV import)
+            protocols_map = {
+                "tc": ("DICOM", 11112),
+                "raio x": ("DICOM", 11112),
+                "ressonancia magnetica": ("DICOM", 11112),
+                "pet": ("DICOM", 11112),
+                "ultrassom": ("DICOM", 11112),
+                "arco cirurgico": ("DICOM", 11112)
+            }
+            protocolo, porta = protocols_map.get(tipo, ("HTTP", 80))
+            ip_address = f"192.168.{h_id}.{100 + random.randint(1, 150)}"
+            mac_address = f"00:25:90:{h_id:02X}:{random.randint(1, 254):02X}:FF"
+            
+            # Get IP and port from CSV if they exist (just in case they are added in CSV)
+            if "ip_address" in row and row["ip_address"]:
+                ip_address = row["ip_address"]
+            if "porta_conexao" in row and row["porta_conexao"]:
+                porta = int(row["porta_conexao"])
+            if "endereco_mac" in row and row["endereco_mac"]:
+                mac_address = row["endereco_mac"]
+            if "protocolo" in row and row["protocolo"]:
+                protocolo = row["protocolo"]
+
+            eq = SimEquipment(
+                equipamento_id=eq_id,
+                hospital_id=h_id,
+                tipo=tipo,
+                modelo=modelo,
+                fabricante=fabricante,
+                idade_dias=0,
+                desgaste=desgaste,
+                carga_acumulada=carga_acumulada,
+                ultima_manutencao=data_manut,
+                estado_operacional_interno=estado_op,
+                modo_falha_ativo=None,
+                intensidade_falha=0.0,
+                horas_falha_restantes=0,
+                ultimo_estado_temporal=estado_fisico,
+                ip_address=ip_address,
+                porta_conexao=porta,
+                endereco_mac=mac_address,
+                protocolo=protocolo
+            )
+            session.add(eq)
+            equipamentos_importados += 1
+            
+        session.commit()
+        if equipamentos_importados > 0:
+            print(f"Importados/sincronizados {equipamentos_importados} novos equipamentos a partir do CSV.")
+
+def generate_default_equipments_in_db(session):
+    from data_pipeline.database.models import SimEquipment
+    from monitoring_service.simulators.base import inicializar_estado_temporal
+    
+    eq_specs = [
+        ("tc", "SOMATOM go.Top", "Siemens Healthineers"),
+        ("tc", "Aquilion One", "Canon Medical Systems"),
+        ("raio x", "DigitalDiagnost C90", "Philips"),
+        ("raio x", "Brivo XR115", "GE HealthCare"),
+        ("ressonancia magnetica", "Magnetom Altea", "Siemens Healthineers"),
+        ("ressonancia magnetica", "Signa Pioneer", "GE HealthCare"),
+        ("ultrassom", "EPIQ Elite", "Philips"),
+        ("ultrassom", "LOGIQ E10", "GE HealthCare"),
+        ("pet", "Biograph Vision", "Siemens Healthineers"),
+        ("arco cirurgico", "Azurion 7", "Philips")
+    ]
+    
+    hoje = datetime.now()
+    equipamentos_gerados = 0
+    
+    for h_id in Config.HOSPITAL_IDS:
+        for idx, (tipo, modelo, fabricante) in enumerate(eq_specs):
+            # Unique equipment ID using a standard serial number format
+            eq_id = f"SN-H{h_id}-{tipo.upper().replace(' ', '')}-{idx+1:02d}"
+            
+            # Random wear and age
+            desgaste = random.uniform(0.05, 0.95)
+            idade_dias = random.randint(30, 1800)
+            data_inst = (hoje - timedelta(days=idade_dias)).strftime("%Y-%m-%d")
+            data_manut = (hoje - timedelta(days=random.randint(10, 180))).strftime("%Y-%m-%d")
+            
+            # Initialize temporal physics parameters
+            estado_fisico = inicializar_estado_temporal(tipo, desgaste)
+            
+            if "scan_count" in estado_fisico:
+                carga_acumulada = estado_fisico["scan_count"]
+            elif "exposure_count" in estado_fisico:
+                carga_acumulada = estado_fisico["exposure_count"]
+            else:
+                carga_acumulada = random.randint(100, 10000)
                 
-                # Set workload counter
-                if "scan_count" in estado_fisico:
-                    carga_acumulada = estado_fisico["scan_count"]
-                elif "exposure_count" in estado_fisico:
-                    carga_acumulada = estado_fisico["exposure_count"]
-                else:
-                    carga_acumulada = random.randint(100, 10000)
-                    
-                # Store starting operational state internally based on wear
-                estado_op = "DEGRADANDO" if desgaste >= 0.55 else "NORMAL"
-                
-                sim_cur.execute("""
-                    INSERT INTO sim_equipamentos (
-                        equipamento_id, hospital_id, tipo, modelo, fabricante, idade_dias, desgaste, carga_acumulada,
-                        ultima_manutencao, estado_operacional_interno, modo_falha_ativo,
-                        intensidade_falha, horas_falha_restantes, ultimo_estado_temporal
-                    ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, NULL, 0.0, 0, ?)
-                """, (
-                    eq_id, h_id, tipo, modelo, fabricante, idade_dias, desgaste, carga_acumulada,
-                    data_ultima_manut_str, estado_op, json.dumps(estado_fisico)
-                ))
-                equipamentos_carregados += 1
-                
-    sim_conn.commit()
-    print(f"Banco de dados de simulação local inicializado com {equipamentos_carregados} equipamentos de {len(Config.HOSPITAL_IDS)} hospitais a partir do arquivo CSV.")
+            # Generate network credentials for simulation
+            protocols_map = {
+                "tc": ("DICOM", 11112),
+                "raio x": ("DICOM", 11112),
+                "ressonancia magnetica": ("DICOM", 11112),
+                "pet": ("DICOM", 11112),
+                "ultrassom": ("DICOM", 11112),
+                "arco cirurgico": ("DICOM", 11112)
+            }
+            protocolo, porta = protocols_map.get(tipo, ("HTTP", 80))
+            ip_address = f"192.168.{h_id}.{10 + idx}"
+            mac_address = f"00:25:90:{h_id:02X}:{idx+1:02X}:FF"
+            
+            estado_op = "DEGRADANDO" if desgaste >= 0.55 else "NORMAL"
+            
+            eq = SimEquipment(
+                equipamento_id=eq_id,
+                hospital_id=h_id,
+                tipo=tipo,
+                modelo=modelo,
+                fabricante=fabricante,
+                idade_dias=idade_dias,
+                desgaste=desgaste,
+                carga_acumulada=carga_acumulada,
+                ultima_manutencao=data_manut,
+                estado_operacional_interno=estado_op,
+                modo_falha_ativo=None,
+                intensidade_falha=0.0,
+                horas_falha_restantes=0,
+                ultimo_estado_temporal=estado_fisico,
+                ip_address=ip_address,
+                porta_conexao=porta,
+                endereco_mac=mac_address,
+                protocolo=protocolo
+            )
+            session.add(eq)
+            equipamentos_gerados += 1
+            
+    session.commit()
+    print(f"Banco de dados de simulação inicializado com {equipamentos_gerados} equipamentos dinâmicos.")
 
 def get_all_equipments():
-    conn = sqlite3.connect(DB_PATH)
-    conn.row_factory = sqlite3.Row
-    cur = conn.cursor()
-    cur.execute("SELECT * FROM sim_equipamentos")
-    rows = cur.fetchall()
+    session = SessionLocal()
+    from data_pipeline.database.models import SimEquipment
     
-    equipments = []
-    for r in rows:
-        eq = dict(r)
-        eq["ultimo_estado_temporal"] = json.loads(eq["ultimo_estado_temporal"])
-        equipments.append(eq)
-        
-    conn.close()
-    return equipments
+    try:
+        if Config.EQUIPAMENTO_ID is not None:
+            query = session.query(SimEquipment).filter(SimEquipment.equipamento_id == Config.EQUIPAMENTO_ID)
+        else:
+            query = session.query(SimEquipment).filter(SimEquipment.hospital_id.in_(Config.HOSPITAL_IDS))
+            
+        rows = query.all()
+        equipments = []
+        for r in rows:
+            # Convert to dictionary for backward compatibility with main.py
+            eq_dict = {
+                "equipamento_id": r.equipamento_id,
+                "hospital_id": r.hospital_id,
+                "tipo": r.tipo,
+                "modelo": r.modelo,
+                "fabricante": r.fabricante,
+                "idade_dias": r.idade_dias,
+                "desgaste": r.desgaste,
+                "carga_acumulada": r.carga_acumulada,
+                "ultima_manutencao": r.ultima_manutencao,
+                "estado_operacional_interno": r.estado_operacional_interno,
+                "modo_falha_ativo": r.modo_falha_ativo,
+                "intensidade_falha": r.intensidade_falha,
+                "horas_falha_restantes": r.horas_falha_restantes,
+                "ultimo_estado_temporal": r.ultimo_estado_temporal,
+                "ip_address": r.ip_address,
+                "porta_conexao": r.porta_conexao,
+                "endereco_mac": r.endereco_mac,
+                "protocolo": r.protocolo
+            }
+            equipments.append(eq_dict)
+        return equipments
+    finally:
+        session.close()
 
 def update_equipment(eq):
-    conn = sqlite3.connect(DB_PATH)
-    cur = conn.cursor()
-    cur.execute("""
-        UPDATE sim_equipamentos
-        SET idade_dias = ?,
-            desgaste = ?,
-            carga_acumulada = ?,
-            ultima_manutencao = ?,
-            estado_operacional_interno = ?,
-            modo_falha_ativo = ?,
-            intensidade_falha = ?,
-            horas_falha_restantes = ?,
-            ultimo_estado_temporal = ?
-        WHERE equipamento_id = ?
-    """, (
-        eq["idade_dias"],
-        eq["desgaste"],
-        eq["carga_acumulada"],
-        eq["ultima_manutencao"],
-        eq["estado_operacional_interno"],
-        eq["modo_falha_ativo"],
-        eq["intensidade_falha"],
-        eq["horas_falha_restantes"],
-        json.dumps(eq["ultimo_estado_temporal"]),
-        eq["equipamento_id"]
-    ))
-    conn.commit()
-    conn.close()
+    session = SessionLocal()
+    from data_pipeline.database.models import SimEquipment
+    
+    try:
+        db_eq = session.query(SimEquipment).filter(SimEquipment.equipamento_id == eq["equipamento_id"]).first()
+        if db_eq:
+            db_eq.idade_dias = eq["idade_dias"]
+            db_eq.desgaste = eq["desgaste"]
+            db_eq.carga_acumulada = eq["carga_acumulada"]
+            db_eq.ultima_manutencao = eq["ultima_manutencao"]
+            db_eq.estado_operacional_interno = eq["estado_operacional_interno"]
+            db_eq.modo_falha_ativo = eq["modo_falha_ativo"]
+            db_eq.intensidade_falha = eq["intensidade_falha"]
+            db_eq.horas_falha_restantes = eq["horas_falha_restantes"]
+            db_eq.ultimo_estado_temporal = eq["ultimo_estado_temporal"]
+            session.commit()
+    finally:
+        session.close()

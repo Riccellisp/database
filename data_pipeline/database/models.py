@@ -6,7 +6,7 @@ class StgSilverTelemetry(Base):
 
     # Composite Primary Key
     timestamp = Column(DateTime, primary_key=True)
-    equipamento_id = Column(Integer, primary_key=True)
+    equipamento_id = Column(String(100), primary_key=True)
     
     # Metadata
     hospital_id = Column(Integer, nullable=False)
@@ -76,7 +76,7 @@ class SilverTelemetry(Base):
 
     # Composite Primary Key
     timestamp = Column(DateTime, primary_key=True)
-    equipamento_id = Column(Integer, primary_key=True)
+    equipamento_id = Column(String(100), primary_key=True)
     
     # Metadata
     hospital_id = Column(Integer, nullable=False)
@@ -146,10 +146,35 @@ class GoldEquipmentFeatures(Base):
 
     # Composite Primary Key
     timestamp = Column(DateTime, primary_key=True)
-    equipamento_id = Column(Integer, primary_key=True)
+    equipamento_id = Column(String(100), primary_key=True)
     
     # Metadata
     is_interpolated = Column(Boolean, default=False, nullable=False)
     
     # Features Store (Stores all 130+ rolling features as a flat JSON dictionary)
     features = Column(JSON, nullable=False)
+
+
+class SimEquipment(Base):
+    __tablename__ = "sim_equipamentos"
+
+    equipamento_id = Column(String(100), primary_key=True)
+    hospital_id = Column(Integer, nullable=False)
+    tipo = Column(String(50), nullable=False)
+    modelo = Column(String(100), nullable=False)
+    fabricante = Column(String(100), nullable=False)
+    idade_dias = Column(Integer, default=0, nullable=False)
+    desgaste = Column(Float, default=0.0, nullable=False)
+    carga_acumulada = Column(Float, default=0.0, nullable=False)
+    ultima_manutencao = Column(String(50), nullable=True)
+    estado_operacional_interno = Column(String(50), default="NORMAL", nullable=False)
+    modo_falha_ativo = Column(String(100), nullable=True)
+    intensidade_falha = Column(Float, default=0.0, nullable=False)
+    horas_falha_restantes = Column(Integer, default=0, nullable=False)
+    ultimo_estado_temporal = Column(JSON, nullable=False)
+    
+    # Network connection parameters for simulated data fetching
+    ip_address = Column(String(45), nullable=True)
+    porta_conexao = Column(Integer, nullable=True)
+    endereco_mac = Column(String(17), nullable=True)
+    protocolo = Column(String(20), nullable=True)

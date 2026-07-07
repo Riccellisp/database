@@ -4,8 +4,8 @@ from sqlalchemy.orm import sessionmaker, declarative_base
 from serving_api.config import Config
 
 # DB URL resolution
-if Config.USE_POSTGRES:
-    DATABASE_URL = f"postgresql://{Config.DB_USER}:{Config.DB_PASSWORD}@{Config.DB_HOST}:{Config.DB_PORT}/{Config.DB_NAME}"
+if Config.USE_MYSQL:
+    DATABASE_URL = f"mysql+pymysql://{Config.DB_USER}:{Config.DB_PASSWORD}@{Config.DB_HOST}:{Config.DB_PORT}/{Config.DB_NAME}"
     engine = create_engine(DATABASE_URL, pool_size=5, max_overflow=10)
 else:
     # Fallback to local SQLite file for offline testing / development

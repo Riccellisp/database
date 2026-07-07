@@ -12,8 +12,13 @@ class Config:
     KAFKA_BOOTSTRAP_SERVERS = os.getenv("KAFKA_BOOTSTRAP_SERVERS", "localhost:9092").split(",")
     TELEMETRY_TOPIC = os.getenv("TELEMETRY_TOPIC", "telemetry")
     
-    # Database Settings
-    SIMULATION_DB_PATH = os.getenv("SIMULATION_DB_PATH", str(BASE_DIR / "persistence" / "simulation.db"))
+    # Database Settings (MySQL Configuration)
+    DB_USER = os.getenv("DB_USER", "root")
+    DB_PASSWORD = os.getenv("DB_PASSWORD", "strongpassword123")
+    DB_HOST = os.getenv("DB_HOST", "localhost")
+    DB_PORT = os.getenv("DB_PORT", "13306")
+    DB_NAME = os.getenv("DB_NAME", "serving_db")
+    USE_MYSQL = os.getenv("USE_MYSQL", "false").lower() == "true" or os.getenv("DB_HOST") is not None
     CSV_PATH = os.getenv("CSV_PATH", "c:/Dev/database/csv_export/equipamentos.csv")
     
     # Simulation Settings
@@ -34,3 +39,7 @@ class Config:
     
     # Other settings
     ANOMALY_CHANCE = float(os.getenv("ANOMALY_CHANCE", "0.03"))
+    
+    # Support filtering by individual equipment ID
+    equip_id_env = os.getenv("EQUIPAMENTO_ID")
+    EQUIPAMENTO_ID = str(equip_id_env) if equip_id_env else None
