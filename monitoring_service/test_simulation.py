@@ -7,7 +7,7 @@ from datetime import datetime, timedelta
 os.environ["SIMULATION_INTERVAL_SEC"] = "0.1"
 os.environ["KAFKA_BOOTSTRAP_SERVERS"] = "localhost:9999" # Forced offline fallback
 os.environ["ANOMALY_CHANCE"] = "0.3" # Increase anomaly chance for test visibility
-os.environ["HOSPITAL_IDS"] = "1"
+os.environ["CSV_PATH"] = ""
 
 from monitoring_service.persistence import db
 from monitoring_service.config import Config
@@ -35,8 +35,7 @@ def test_offline_run():
     # Load equipments
     eqs = db.get_all_equipments()
     print(f"Carregados {len(eqs)} equipamentos para simulação.")
-    expected_count = 16 if getattr(Config, "CSV_PATH", None) and os.path.exists(Config.CSV_PATH) else 10
-    assert len(eqs) == expected_count, f"Deveria ter carregado exatamente {expected_count} equipamentos, encontrou {len(eqs)}"
+    assert len(eqs) == 10, f"Deveria ter carregado exatamente 10 equipamentos, encontrou {len(eqs)}"
     
     # Check if we can read columns properly
     first_eq = eqs[0]

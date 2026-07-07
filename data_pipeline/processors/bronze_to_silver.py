@@ -8,13 +8,13 @@ from data_pipeline.config import Config
 from data_pipeline.storage.s3_client import get_s3_client
 from monitoring_service.simulators.base import LIMITES_FISICOS
 
-def get_silver_s3_path(hospital_id, tipo_eq, date_obj):
+def get_silver_s3_path(tipo_eq, date_obj):
     """
     Returns the Silver bucket object key format.
     """
-    return f"silver/equipments/hospital_id={hospital_id}/type={tipo_eq}/year={date_obj.year}/month={date_obj.month:02d}/data.parquet"
+    return f"silver/equipments/type={tipo_eq}/year={date_obj.year}/month={date_obj.month:02d}/data.parquet"
 
-def process_bronze_to_silver(hospital_id, equipamento_id, tipo_eq, new_telemetry_msg):
+def process_bronze_to_silver(equipamento_id, tipo_eq, new_telemetry_msg):
     """
     Ingests raw telemetry from Kafka into the Bronze bucket,
     then processes, interpolates, and saves it into the Silver bucket as Parquet.
@@ -24,7 +24,7 @@ def process_bronze_to_silver(hospital_id, equipamento_id, tipo_eq, new_telemetry
     date_obj = datetime.fromisoformat(timestamp_str)
     
     # 1. Save Raw JSON to Bronze bucket
-    bronze_key = f"bronze/hospital_id={hospital_id}/year={date_obj.year}/month={date_obj.month:02d}/day={date_obj.day:02d}/{timestamp_str.replace(':', '-')}_{equipamento_id}.json"
+    bronze_key = f"bronze/year={date_obj.year}/month={date_obj.month:02d}/day={date_obj.day:02d}/{timestamp_str.replace(':', '-')}_{equipamento_id}.json"
     try:
         s3.put_object(
             Bucket=Config.BRONZE_BUCKET,
@@ -35,7 +35,7 @@ def process_bronze_to_silver(hospital_id, equipamento_id, tipo_eq, new_telemetry
         print(f"Erro ao salvar no bucket Bronze: {e}")
 
     # 2. Process Silver Layer (Incremental Update)
-    silver_key = get_silver_s3_path(hospital_id, tipo_eq, date_obj)
+    silver_key = get_silver_s3_path(tipo_eq, date_obj)
     
     # Initialize variables to extract from telemetry
     sensors = new_telemetry_msg["telemetria"]
@@ -147,7 +147,6 @@ def process_bronze_to_silver(hospital_id, equipamento_id, tipo_eq, new_telemetry
                 session.add(rec)
             
             # Populate fields
-            rec.hospital_id = int(hospital_id)
             rec.tipo = tipo_eq
             rec.is_interpolated = bool(row["is_interpolated"])
             

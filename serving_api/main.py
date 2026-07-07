@@ -6,8 +6,8 @@ from serving_api.database.connection import get_db
 from data_pipeline.database.models import SilverTelemetry, GoldEquipmentFeatures, SimEquipment
 
 app = FastAPI(
-    title="Hospital Telemetry Serving API",
-    description="Interface de serving de dados para expor tabelas Silver (telemetrias tratadas) e Gold (features de MLOps) para o Backend e Modelos de Machine Learning.",
+    title="Equipment Telemetry Serving API",
+    description="Interface de serving de dados para expor tabelas Silver (telemetrias tratadas) e Gold (features de MLOps) de equipamentos.",
     version="1.0.0"
 )
 
@@ -77,22 +77,12 @@ def get_latest_ml_features(id: str, db: Session = Depends(get_db)):
         "features": latest_record.features
     }
 
-@app.get("/api/v1/hospitals/{hospital_id}/telemetry")
-def get_hospital_telemetry(hospital_id: int, limit: int = 100, db: Session = Depends(get_db)):
+@app.get("/api/v1/telemetry")
+def get_all_telemetry(limit: int = 100, db: Session = Depends(get_db)):
     """
-    Retorna o historico de telemetrias limpas (camada Silver) para todos os equipamentos
-    de um determinado hospital, ordenado do mais recente para o mais antigo.
+    Retorna o histórico geral de telemetrias limpas (camada Silver) de todos os equipamentos.
     """
-    records = db.query(SilverTelemetry).filter(
-        SilverTelemetry.hospital_id == hospital_id
-    ).order_by(SilverTelemetry.timestamp.desc()).limit(limit).all()
-
-    if not records:
-        raise HTTPException(
-            status_code=status.HTTP_404_NOT_FOUND,
-            detail=f"Nenhuma telemetria encontrada para o hospital com ID {hospital_id}."
-        )
-
+    records = db.query(SilverTelemetry).order_by(SilverTelemetry.timestamp.desc()).limit(limit).all()
     result = []
     for r in records:
         row_dict = {}
@@ -107,27 +97,15 @@ def get_hospital_telemetry(hospital_id: int, limit: int = 100, db: Session = Dep
 
     return result
 
-@app.get("/api/v1/hospitals/{hospital_id}/features")
-def get_hospital_latest_features(hospital_id: int, db: Session = Depends(get_db)):
+@app.get("/api/v1/features")
+def get_all_latest_features(db: Session = Depends(get_db)):
     """
-    Retorna o vetor de features agregadas mais recente (camada Gold) de todos os equipamentos
-    de um determinado hospital, pronto para inferencias de MLOps em lote.
+    Retorna o vetor de features agregadas mais recente de todas as máquinas.
     """
-    # 1. Get unique equipment IDs belonging to this hospital from Silver telemetry
-    equipments = db.query(SilverTelemetry.equipamento_id).filter(
-        SilverTelemetry.hospital_id == hospital_id
-    ).distinct().all()
-    
-    if not equipments:
-        raise HTTPException(
-            status_code=status.HTTP_404_NOT_FOUND,
-            detail=f"Nenhum equipamento encontrado com telemetria registrada para o hospital com ID {hospital_id}."
-        )
-        
+    equipments = db.query(SimEquipment.equipamento_id).all()
     eq_ids = [e[0] for e in equipments]
     result = []
-    
-    # 2. Query the latest Gold features row for each of these equipments
+
     for eq_id in eq_ids:
         latest_record = db.query(GoldEquipmentFeatures).filter(
             GoldEquipmentFeatures.equipamento_id == eq_id
@@ -141,39 +119,24 @@ def get_hospital_latest_features(hospital_id: int, db: Session = Depends(get_db)
                 "features": latest_record.features
             })
             
-    if not result:
-        raise HTTPException(
-            status_code=status.HTTP_404_NOT_FOUND,
-            detail=f"Nenhuma feature de MLOps encontrada para os equipamentos do hospital com ID {hospital_id}."
-        )
-        
     return result
 
-
-@app.get("/api/v1/hospitals/{hospital_id}/equipments/{equipment_id}")
-def get_hospital_equipment_data(
-    hospital_id: int, 
-    equipment_id: str, 
-    limit: int = 48, 
-    db: Session = Depends(get_db)
-):
+@app.get("/api/v1/equipments/{equipment_id}")
+def get_equipment_data(equipment_id: str, limit: int = 48, db: Session = Depends(get_db)):
     """
-    Retorna o histórico de telemetrias limpas (camada Silver, para o Backend) e as features
-    agregadas mais recentes (camada Gold, para MLOps) de um equipamento específico em um hospital.
+    Retorna o histórico de telemetrias limpas (camada Silver) e as features
+    agregadas mais recentes (camada Gold) de um equipamento específico.
     """
-    # 1. Buscar telemetrias da camada Silver para validar a associação entre hospital e equipamento
     records = db.query(SilverTelemetry).filter(
-        SilverTelemetry.hospital_id == hospital_id,
         SilverTelemetry.equipamento_id == equipment_id
     ).order_by(SilverTelemetry.timestamp.desc()).limit(limit).all()
 
     if not records:
         raise HTTPException(
             status_code=status.HTTP_404_NOT_FOUND,
-            detail=f"Nenhum registro encontrado para o equipamento {equipment_id} no hospital {hospital_id}."
+            detail=f"Nenhum registro encontrado para o equipamento {equipment_id}."
         )
 
-    # 2. Formatar telemetrias (ocultando campos nulos específicos)
     telemetry_list = []
     for r in records:
         row_dict = {}
@@ -186,7 +149,6 @@ def get_hospital_equipment_data(
                     row_dict[col.name] = val
         telemetry_list.append(row_dict)
 
-    # 3. Buscar as features de MLOps mais recentes (camada Gold)
     latest_features = db.query(GoldEquipmentFeatures).filter(
         GoldEquipmentFeatures.equipamento_id == equipment_id
     ).order_by(GoldEquipmentFeatures.timestamp.desc()).first()
@@ -201,7 +163,6 @@ def get_hospital_equipment_data(
         }
 
     return {
-        "hospital_id": hospital_id,
         "equipamento_id": equipment_id,
         "telemetry": telemetry_list,
         "features": features_dict
@@ -212,7 +173,6 @@ from typing import Optional
 
 class EquipmentCreate(BaseModel):
     equipamento_id: str = Field(..., description="ID ou número de série do equipamento (pode ser IPv6)")
-    hospital_id: int = Field(..., description="ID do hospital proprietário")
     tipo: str = Field(..., description="Tipo do equipamento (ex: tc, raio x, ressonancia magnetica, etc.)")
     modelo: str = Field(..., description="Modelo do equipamento")
     fabricante: str = Field(..., description="Fabricante do equipamento")
@@ -235,7 +195,6 @@ def register_equipment(eq: EquipmentCreate, db: Session = Depends(get_db)):
 
     # Normalizar valores
     tipo_norm = eq.tipo.lower().strip()
-    data_inst = eq.data_instalacao or datetime.today().strftime("%Y-%m-%d")
     data_manut = eq.data_ultima_manutencao or datetime.today().strftime("%Y-%m-%d")
     desgaste = eq.desgaste_acumulado if eq.desgaste_acumulado is not None else 0.0
 
@@ -268,7 +227,6 @@ def register_equipment(eq: EquipmentCreate, db: Session = Depends(get_db)):
     try:
         new_eq = SimEquipment(
             equipamento_id=eq.equipamento_id,
-            hospital_id=eq.hospital_id,
             tipo=tipo_norm,
             modelo=eq.modelo,
             fabricante=eq.fabricante,

@@ -61,15 +61,13 @@ class TestDataPipeline(unittest.TestCase):
                 pass
         init_sql_db()
         
-        hospital_id = 1
         equipamento_id = "1"
         tipo_eq = "tc"
         
-        # Insert a mock SimEquipment so pipeline lookup resolves hospital_id correctly
+        # Insert a mock SimEquipment so pipeline lookup resolves correctly
         session = get_db_session()
         mock_eq = SimEquipment(
             equipamento_id=equipamento_id,
-            hospital_id=hospital_id,
             tipo=tipo_eq,
             modelo="Test Model",
             fabricante="Test Manufacturer",
@@ -163,10 +161,10 @@ class TestDataPipeline(unittest.TestCase):
         for i, t_msg in enumerate(telemetries):
             print(f"Enviando telemetria {i+1}/4 para processamento...")
             # 1. Run Bronze-to-Silver
-            last_df_silver = process_bronze_to_silver(hospital_id, equipamento_id, tipo_eq, t_msg)
+            last_df_silver = process_bronze_to_silver(equipamento_id, tipo_eq, t_msg)
             
             # 2. Run Silver-to-Gold
-            process_silver_to_gold(hospital_id, equipamento_id, tipo_eq, last_df_silver)
+            process_silver_to_gold(equipamento_id, tipo_eq, last_df_silver)
             
         print("\n--- [VALIDATION] Verificando resultados da Silver ---")
         self.assertIsNotNone(last_df_silver)
@@ -188,7 +186,7 @@ class TestDataPipeline(unittest.TestCase):
         
         print("\n--- [VALIDATION] Verificando resultados da Gold ---")
         # Read gold features from mock S3
-        gold_key = f"gold/features/hospital_id={hospital_id}/equipment_id={equipamento_id}/features.parquet"
+        gold_key = f"gold/features/equipment_id={equipamento_id}/features.parquet"
         self.assertIn((Config.GOLD_BUCKET, gold_key), mock_s3.storage, "O arquivo Gold não foi gerado no bucket")
         
         gold_bytes = mock_s3.storage[(Config.GOLD_BUCKET, gold_key)]

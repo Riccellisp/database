@@ -65,7 +65,6 @@ class TestServingAPI(unittest.TestCase):
         mock_record = SilverTelemetry(
             timestamp=t_now,
             equipamento_id="1",
-            hospital_id=1,
             tipo="tc",
             is_interpolated=False,
             tube_temp=42.5,
@@ -117,13 +116,12 @@ class TestServingAPI(unittest.TestCase):
         self.assertTrue(data["is_interpolated"])
         self.assertEqual(data["features"]["tube_temp_mean_6h"], 44.0)
 
-    def test_get_hospital_telemetry_success(self):
-        print("\n=== [API TEST] Testando Endpoint /hospitals/{id}/telemetry (Sucesso) ===")
+    def test_get_all_telemetry_success(self):
+        print("\n=== [API TEST] Testando Endpoint /telemetry (Sucesso) ===")
         t_now = datetime(2026, 6, 7, 12, 0, 0)
         mock_record = SilverTelemetry(
             timestamp=t_now,
             equipamento_id="1",
-            hospital_id=1,
             tipo="tc",
             is_interpolated=False,
             tube_temp=42.5
@@ -132,18 +130,17 @@ class TestServingAPI(unittest.TestCase):
         # Setup query chain
         mock_query = MagicMock()
         mock_db.query.return_value = mock_query
-        mock_query.filter.return_value = mock_query
         mock_query.order_by.return_value = mock_query
         mock_query.limit.return_value = mock_query
         mock_query.all.return_value = [mock_record]
         
-        response = self.client.get("/api/v1/hospitals/1/telemetry")
+        response = self.client.get("/api/v1/telemetry")
         print("Response:", response.json())
         self.assertEqual(response.status_code, status.HTTP_200_OK)
-        self.assertEqual(response.json()[0]["hospital_id"], 1)
+        self.assertEqual(response.json()[0]["equipamento_id"], "1")
 
-    def test_get_hospital_features_success(self):
-        print("\n=== [API TEST] Testando Endpoint /hospitals/{id}/features (Sucesso) ===")
+    def test_get_all_features_success(self):
+        print("\n=== [API TEST] Testando Endpoint /features (Sucesso) ===")
         t_now = datetime(2026, 6, 7, 12, 0, 0)
         mock_feature_record = GoldEquipmentFeatures(
             timestamp=t_now,
@@ -152,30 +149,28 @@ class TestServingAPI(unittest.TestCase):
             features={"tube_temp_mean_6h": 44.0}
         )
         
-        # Mocking db.query.filter.distinct.all() to return [(1,)] for equipment IDs
+        # Mocking db.query(SimEquipment.equipamento_id).all() to return [("1",)]
         mock_query = MagicMock()
         mock_db.query.return_value = mock_query
-        mock_query.filter.return_value = mock_query
-        mock_query.distinct.return_value = mock_query
         mock_query.all.return_value = [("1",)]
         
         # Mocking the subsequent loop query
+        mock_query.filter.return_value = mock_query
         mock_query.order_by.return_value = mock_query
         mock_query.first.return_value = mock_feature_record
         
-        response = self.client.get("/api/v1/hospitals/1/features")
+        response = self.client.get("/api/v1/features")
         print("Response:", response.json())
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         self.assertEqual(response.json()[0]["equipamento_id"], "1")
         self.assertEqual(response.json()[0]["features"]["tube_temp_mean_6h"], 44.0)
 
-    def test_get_hospital_equipment_data_success(self):
-        print("\n=== [API TEST] Testando Endpoint /hospitals/{h_id}/equipments/{e_id} (Sucesso) ===")
+    def test_get_equipment_data_success(self):
+        print("\n=== [API TEST] Testando Endpoint /equipments/{id} (Sucesso) ===")
         t_now = datetime(2026, 6, 7, 12, 0, 0)
         mock_record = SilverTelemetry(
             timestamp=t_now,
             equipamento_id="1",
-            hospital_id=1,
             tipo="tc",
             is_interpolated=False,
             tube_temp=42.5
@@ -198,19 +193,18 @@ class TestServingAPI(unittest.TestCase):
         # Mocking the features query (first)
         mock_query_telemetry.first.return_value = mock_feature_record
 
-        response = self.client.get("/api/v1/hospitals/1/equipments/1")
+        response = self.client.get("/api/v1/equipments/1")
         print("Response:", response.json())
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         
         data = response.json()
-        self.assertEqual(data["hospital_id"], 1)
         self.assertEqual(data["equipamento_id"], "1")
         self.assertEqual(len(data["telemetry"]), 1)
         self.assertEqual(data["telemetry"][0]["tube_temp"], 42.5)
         self.assertEqual(data["features"]["features"]["tube_temp_mean_6h"], 44.0)
 
-    def test_get_hospital_equipment_data_not_found(self):
-        print("\n=== [API TEST] Testando Endpoint /hospitals/{h_id}/equipments/{e_id} (Não Encontrado) ===")
+    def test_get_equipment_data_not_found(self):
+        print("\n=== [API TEST] Testando Endpoint /equipments/{id} (Não Encontrado) ===")
         # Setup telemetry query chain to return empty list
         mock_query = MagicMock()
         mock_db.query.return_value = mock_query
@@ -219,7 +213,7 @@ class TestServingAPI(unittest.TestCase):
         mock_query.limit.return_value = mock_query
         mock_query.all.return_value = []
 
-        response = self.client.get("/api/v1/hospitals/1/equipments/999")
+        response = self.client.get("/api/v1/equipments/999")
         print("Response:", response.json())
         self.assertEqual(response.status_code, status.HTTP_404_NOT_FOUND)
 
@@ -230,9 +224,9 @@ class TestServingAPI(unittest.TestCase):
         mock_db.query.return_value = mock_query
         mock_query.filter.return_value = mock_query
         mock_query.first.return_value = None
+        
         payload = {
             "equipamento_id": "test-ipv6-id-123",
-            "hospital_id": 1,
             "tipo": "tc",
             "modelo": "Test Model",
             "fabricante": "Test Manufacturer",
@@ -257,4 +251,3 @@ class TestServingAPI(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
-

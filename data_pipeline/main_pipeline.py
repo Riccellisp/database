@@ -7,31 +7,6 @@ from data_pipeline.processors.bronze_to_silver import process_bronze_to_silver
 from data_pipeline.processors.silver_to_gold import process_silver_to_gold
 from data_pipeline.storage.s3_client import init_buckets
 
-# In-memory cache to resolve hospital_id for equipments without hitting DB every message
-EQUIPMENT_HOSPITAL_CACHE = {}
-
-def get_hospital_id_for_equipment(equipamento_id):
-    if not equipamento_id:
-        return None
-    if equipamento_id in EQUIPMENT_HOSPITAL_CACHE:
-        return EQUIPMENT_HOSPITAL_CACHE[equipamento_id]
-        
-    from data_pipeline.database.connection import get_db_session
-    from data_pipeline.database.models import SimEquipment
-    
-    session = get_db_session()
-    try:
-        db_eq = session.query(SimEquipment).filter(SimEquipment.equipamento_id == equipamento_id).first()
-        if db_eq:
-            h_id = db_eq.hospital_id
-            EQUIPMENT_HOSPITAL_CACHE[equipamento_id] = h_id
-            return h_id
-    except Exception as e:
-        print(f"Erro ao buscar hospital_id no banco para o equipamento {equipamento_id}: {e}")
-    finally:
-        session.close()
-    return None
-
 def start_pipeline():
     try:
         init_buckets()
@@ -75,18 +50,12 @@ def start_pipeline():
                 equipamento_id = telemetry_msg.get("equipamento_id")
                 tipo_eq = telemetry_msg.get("tipo")
                 
-                # Resolve hospital_id (from cache/DB)
-                hospital_id = telemetry_msg.get("hospital_id")
-                if not hospital_id and equipamento_id:
-                    hospital_id = get_hospital_id_for_equipment(equipamento_id)
-                
-                if not hospital_id or not equipamento_id or not tipo_eq:
-                    print(f"Mensagem de telemetria inválida, incompleta ou hospital não resolvido. Ignorando... eq_id={equipamento_id}, hospital={hospital_id}")
+                if not equipamento_id or not tipo_eq:
+                    print(f"Mensagem de telemetria inválida ou incompleta. Ignorando... eq_id={equipamento_id}, tipo_eq={tipo_eq}")
                     continue
                 
                 # Step 1: Bronze to Silver
                 df_eq = process_bronze_to_silver(
-                    hospital_id=hospital_id,
                     equipamento_id=equipamento_id,
                     tipo_eq=tipo_eq,
                     new_telemetry_msg=telemetry_msg
@@ -94,7 +63,6 @@ def start_pipeline():
                 
                 # Step 2: Silver to Gold
                 process_silver_to_gold(
-                    hospital_id=hospital_id,
                     equipamento_id=equipamento_id,
                     tipo_eq=tipo_eq,
                     df_eq=df_eq

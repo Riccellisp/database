@@ -62,7 +62,6 @@ def import_equipments_from_csv(session, csv_path):
             if exists:
                 continue # Skip existing to preserve simulation state
                 
-            h_id = int(row["hospital_id"])
             tipo = row["tipo_equipamento"].lower().strip()
             modelo = row["modelo"]
             fabricante = row["fabricante"]
@@ -91,8 +90,8 @@ def import_equipments_from_csv(session, csv_path):
                 "arco cirurgico": ("DICOM", 11112)
             }
             protocolo, porta = protocols_map.get(tipo, ("HTTP", 80))
-            ip_address = f"192.168.{h_id}.{100 + random.randint(1, 150)}"
-            mac_address = f"00:25:90:{h_id:02X}:{random.randint(1, 254):02X}:FF"
+            ip_address = f"192.168.1.{100 + random.randint(1, 150)}"
+            mac_address = f"00:25:90:01:{random.randint(1, 254):02X}:FF"
             
             # Get IP and port from CSV if they exist (just in case they are added in CSV)
             if "ip_address" in row and row["ip_address"]:
@@ -106,7 +105,6 @@ def import_equipments_from_csv(session, csv_path):
 
             eq = SimEquipment(
                 equipamento_id=eq_id,
-                hospital_id=h_id,
                 tipo=tipo,
                 modelo=modelo,
                 fabricante=fabricante,
@@ -151,65 +149,62 @@ def generate_default_equipments_in_db(session):
     hoje = datetime.now()
     equipamentos_gerados = 0
     
-    for h_id in Config.HOSPITAL_IDS:
-        for idx, (tipo, modelo, fabricante) in enumerate(eq_specs):
-            # Unique equipment ID using a standard serial number format
-            eq_id = f"SN-H{h_id}-{tipo.upper().replace(' ', '')}-{idx+1:02d}"
+    for idx, (tipo, modelo, fabricante) in enumerate(eq_specs):
+        # Unique equipment ID using a standard serial number format
+        eq_id = f"SN-{tipo.upper().replace(' ', '')}-{idx+1:02d}"
+        
+        # Random wear and age
+        desgaste = random.uniform(0.05, 0.95)
+        idade_dias = random.randint(30, 1800)
+        data_manut = (hoje - timedelta(days=random.randint(10, 180))).strftime("%Y-%m-%d")
+        
+        # Initialize temporal physics parameters
+        estado_fisico = inicializar_estado_temporal(tipo, desgaste)
+        
+        if "scan_count" in estado_fisico:
+            carga_acumulada = estado_fisico["scan_count"]
+        elif "exposure_count" in estado_fisico:
+            carga_acumulada = estado_fisico["exposure_count"]
+        else:
+            carga_acumulada = random.randint(100, 10000)
             
-            # Random wear and age
-            desgaste = random.uniform(0.05, 0.95)
-            idade_dias = random.randint(30, 1800)
-            data_inst = (hoje - timedelta(days=idade_dias)).strftime("%Y-%m-%d")
-            data_manut = (hoje - timedelta(days=random.randint(10, 180))).strftime("%Y-%m-%d")
-            
-            # Initialize temporal physics parameters
-            estado_fisico = inicializar_estado_temporal(tipo, desgaste)
-            
-            if "scan_count" in estado_fisico:
-                carga_acumulada = estado_fisico["scan_count"]
-            elif "exposure_count" in estado_fisico:
-                carga_acumulada = estado_fisico["exposure_count"]
-            else:
-                carga_acumulada = random.randint(100, 10000)
-                
-            # Generate network credentials for simulation
-            protocols_map = {
-                "tc": ("DICOM", 11112),
-                "raio x": ("DICOM", 11112),
-                "ressonancia magnetica": ("DICOM", 11112),
-                "pet": ("DICOM", 11112),
-                "ultrassom": ("DICOM", 11112),
-                "arco cirurgico": ("DICOM", 11112)
-            }
-            protocolo, porta = protocols_map.get(tipo, ("HTTP", 80))
-            ip_address = f"192.168.{h_id}.{10 + idx}"
-            mac_address = f"00:25:90:{h_id:02X}:{idx+1:02X}:FF"
-            
-            estado_op = "DEGRADANDO" if desgaste >= 0.55 else "NORMAL"
-            
-            eq = SimEquipment(
-                equipamento_id=eq_id,
-                hospital_id=h_id,
-                tipo=tipo,
-                modelo=modelo,
-                fabricante=fabricante,
-                idade_dias=idade_dias,
-                desgaste=desgaste,
-                carga_acumulada=carga_acumulada,
-                ultima_manutencao=data_manut,
-                estado_operacional_interno=estado_op,
-                modo_falha_ativo=None,
-                intensidade_falha=0.0,
-                horas_falha_restantes=0,
-                ultimo_estado_temporal=estado_fisico,
-                ip_address=ip_address,
-                porta_conexao=porta,
-                endereco_mac=mac_address,
-                protocolo=protocolo
-            )
-            session.add(eq)
-            equipamentos_gerados += 1
-            
+        # Generate network credentials for simulation
+        protocols_map = {
+            "tc": ("DICOM", 11112),
+            "raio x": ("DICOM", 11112),
+            "ressonancia magnetica": ("DICOM", 11112),
+            "pet": ("DICOM", 11112),
+            "ultrassom": ("DICOM", 11112),
+            "arco cirurgico": ("DICOM", 11112)
+        }
+        protocolo, porta = protocols_map.get(tipo, ("HTTP", 80))
+        ip_address = f"192.168.1.{10 + idx}"
+        mac_address = f"00:25:90:01:{idx+1:02X}:FF"
+        
+        estado_op = "DEGRADANDO" if desgaste >= 0.55 else "NORMAL"
+        
+        eq = SimEquipment(
+            equipamento_id=eq_id,
+            tipo=tipo,
+            modelo=modelo,
+            fabricante=fabricante,
+            idade_dias=idade_dias,
+            desgaste=desgaste,
+            carga_acumulada=carga_acumulada,
+            ultima_manutencao=data_manut,
+            estado_operacional_interno=estado_op,
+            modo_falha_ativo=None,
+            intensidade_falha=0.0,
+            horas_falha_restantes=0,
+            ultimo_estado_temporal=estado_fisico,
+            ip_address=ip_address,
+            porta_conexao=porta,
+            endereco_mac=mac_address,
+            protocolo=protocolo
+        )
+        session.add(eq)
+        equipamentos_gerados += 1
+        
     session.commit()
     print(f"Banco de dados de simulação inicializado com {equipamentos_gerados} equipamentos dinâmicos.")
 
@@ -221,7 +216,7 @@ def get_all_equipments():
         if Config.EQUIPAMENTO_ID is not None:
             query = session.query(SimEquipment).filter(SimEquipment.equipamento_id == Config.EQUIPAMENTO_ID)
         else:
-            query = session.query(SimEquipment).filter(SimEquipment.hospital_id.in_(Config.HOSPITAL_IDS))
+            query = session.query(SimEquipment)
             
         rows = query.all()
         equipments = []
@@ -229,7 +224,6 @@ def get_all_equipments():
             # Convert to dictionary for backward compatibility with main.py
             eq_dict = {
                 "equipamento_id": r.equipamento_id,
-                "hospital_id": r.hospital_id,
                 "tipo": r.tipo,
                 "modelo": r.modelo,
                 "fabricante": r.fabricante,

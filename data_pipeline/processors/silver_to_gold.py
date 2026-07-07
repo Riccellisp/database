@@ -3,7 +3,7 @@ import pandas as pd
 from data_pipeline.config import Config
 from data_pipeline.storage.s3_client import get_s3_client
 
-def process_silver_to_gold(hospital_id, equipamento_id, tipo_eq, df_eq):
+def process_silver_to_gold(equipamento_id, tipo_eq, df_eq):
     """
     Reads Silver conformed telemetry for an equipment, calculates rolling window
     aggregates (6h, 12h, 24h, 72h), and saves the feature table to the Gold bucket.
@@ -23,7 +23,7 @@ def process_silver_to_gold(hospital_id, equipamento_id, tipo_eq, df_eq):
     sensor_cols = [c for c in df_eq.columns if c not in exclude_cols]
     
     # Target path in Gold
-    gold_key = f"gold/features/hospital_id={hospital_id}/equipment_id={equipamento_id}/features.parquet"
+    gold_key = f"gold/features/equipment_id={equipamento_id}/features.parquet"
     
     # Initialize base features DataFrame
     df_features = pd.DataFrame({

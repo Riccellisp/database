@@ -9,7 +9,6 @@ class StgSilverTelemetry(Base):
     equipamento_id = Column(String(100), primary_key=True)
     
     # Metadata
-    hospital_id = Column(Integer, nullable=False)
     tipo = Column(String(50), nullable=False)
     is_interpolated = Column(Boolean, default=False, nullable=False)
 
@@ -79,7 +78,6 @@ class SilverTelemetry(Base):
     equipamento_id = Column(String(100), primary_key=True)
     
     # Metadata
-    hospital_id = Column(Integer, nullable=False)
     tipo = Column(String(50), nullable=False)
     is_interpolated = Column(Boolean, default=False, nullable=False)
 
@@ -159,7 +157,6 @@ class SimEquipment(Base):
     __tablename__ = "sim_equipamentos"
 
     equipamento_id = Column(String(100), primary_key=True)
-    hospital_id = Column(Integer, nullable=False)
     tipo = Column(String(50), nullable=False)
     modelo = Column(String(100), nullable=False)
     fabricante = Column(String(100), nullable=False)

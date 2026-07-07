@@ -22,7 +22,7 @@ def run_simulation():
 
     # 3. Initialize virtual clock (starts at current time)
     sim_time = datetime.now()
-    print(f"\nIniciando simulação em tempo real para os Hospitais {Config.HOSPITAL_IDS}.")
+    print("\nIniciando simulação em tempo real de equipamentos.")
     print(f"Intervalo de ciclo: {Config.SIMULATION_INTERVAL_SEC} segundos por hora simulada.")
     print("Pressione Ctrl+C para encerrar.\n")
     try:
@@ -35,7 +35,6 @@ def run_simulation():
             
             for eq in equipments:
                 eq_id = eq["equipamento_id"]
-                h_id = eq["hospital_id"]
                 tipo_eq = eq["tipo"]
                 desgaste = eq["desgaste"]
                 estado_op = eq["estado_operacional_interno"]
@@ -156,7 +155,7 @@ def run_simulation():
                 producer.send_message(Config.TELEMETRY_TOPIC, telemetry_msg)
                 
                 # Output standard telemetry log
-                logger.info(eq_id, f"publicando_telemetria_hospital_{h_id}")
+                logger.info(eq_id, "publicando_telemetria")
             
             # Flush Kafka producer buffer
             producer.flush()

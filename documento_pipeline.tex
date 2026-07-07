@@ -1,0 +1,366 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[portuguese]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{hyperref}
+\usepackage{booktabs}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric, arrows, positioning}
+
+\geometry{left=2.5cm,right=2.5cm,top=3cm,bottom=3cm}
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{blue},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+\lstset{style=mystyle}
+
+\title{Documentação de Integração Técnica: Serving API e Feature Store \\ \large Guia de Referência para equipes de Backend e MLOps}
+\author{Engenharia de Dados e MLOps}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+\tableofcontents
+\newpage
+
+\section{Introdução}
+Este documento estabelece as especificações técnicas para a integração de sistemas com o pipeline de dados de telemetria hospitalar em tempo real e a sua respectiva \textbf{Serving API}. O sistema foi arquitetado para receber sinais de sensores de equipamentos médicos (tais como Tomógrafos, Aparelhos de Raio X, Ressonâncias Magnéticas, PET-Scans, Ultrassons e Arcos Cirúrgicos), submetê-los a um rigoroso tratamento de qualidade de dados (\textit{Data Quality}) e transformações estatísticas causais, e disponibilizá-los em baixa latência.
+
+O objetivo deste manual é orientar:
+\begin{enumerate}
+    \item A equipe de \textbf{Backend (Desenvolvimento de Dashboards/Visualização)} no consumo das séries temporais tratadas na camada \textbf{Silver}.
+    \item A equipe de \textbf{MLOps (Engenharia de Machine Learning)} no consumo do vetor de features agregadas na camada \textbf{Gold} para alimentar modelos de predição de falhas online.
+\end{enumerate}
+
+\section{Arquitetura de Dados Geral}
+A arquitetura baseia-se no padrão \textbf{Medallion} combinado a um banco de dados relacional de \textit{serving} de alto desempenho e uma API RESTful baseada em FastAPI. O fluxo de dados opera conforme ilustrado no diagrama a seguir:
+
+\begin{center}
+\begin{tikzpicture}[node distance=1.0cm, >=stealth, thick]
+  \tikzset{
+      block/.style={rectangle, draw, fill=blue!10, rounded corners, minimum width=2.6cm, minimum height=1.1cm, align=center, font=\footnotesize},
+      db/.style={cylinder, draw, fill=green!10, shape border rotate=90, minimum width=1.8cm, minimum height=1.4cm, align=center, aspect=0.25, font=\footnotesize},
+      io/.style={trapezium, draw, fill=blue!20, trapezium left angle=70, trapezium right angle=110, minimum width=2.4cm, minimum height=1.1cm, align=center, font=\footnotesize}
+  }
+
+  % Nodes Layout
+  \node (sim) [block] {Simulador\\(Telemetria)};
+  \node (kafka) [io, right=of sim] {Kafka\\(telemetry)};
+  \node (pipeline) [block, right=of kafka, fill=orange!10] {Data Pipeline\\(Processamento)};
+  
+  \node (bronze) [db, above left=1.2cm and -0.3cm of pipeline] {S3 Bronze\\(JSON Bruto)};
+  \node (silver) [db, above=1.2cm of pipeline] {S3 Silver\\(Parquet)};
+  \node (gold) [db, above right=1.2cm and -0.3cm of pipeline] {S3 Gold\\(Parquet)};
+  
+  \node (db) [db, below=1.2cm of pipeline, fill=green!20] {PostgreSQL\\(Serving DB)};
+  \node (api) [block, right=1.5cm of db, fill=cyan!15] {Serving API\\(FastAPI)};
+  
+  \node (back) [block, above right=0.1cm and 1.0cm of api] {Backend\\(Dashboards)};
+  \node (mlops) [block, below right=0.1cm and 1.0cm of api] {MLOps\\(Inferência)};
+  
+  % Connections
+  \draw [->] (sim) -- (kafka);
+  \draw [->] (kafka) -- (pipeline);
+  
+  % Pipeline writes to S3
+  \draw [->] (pipeline.west) -- ++(-0.2,0) |- (bronze.west);
+  \draw [->] (pipeline.north) -- (silver.south);
+  \draw [->] (pipeline.east) -- ++(0.2,0) |- (gold.east);
+  
+  % Pipeline writes to Postgres
+  \draw [->] (pipeline.south) -- (db.north);
+  
+  % API reads from Postgres
+  \draw [->] (db.east) -- (api.west);
+  
+  % Users consume API
+  \draw [->] (api.east) -- ++(0.3,0) |- (back.west);
+  \draw [->] (api.east) -- ++(0.3,0) |- (mlops.west);
+  
+\end{tikzpicture}
+\end{center}
+
+\begin{itemize}
+    \item \textbf{Data Lake (MinIO/S3)}: Atua como repositório analítico de persistência de longo prazo em formato colunar Apache Parquet.
+    \item \textbf{Serving DB (PostgreSQL)}: Armazena os dados mais recentes das camadas Silver e Gold, otimizado para consultas pontuais de baixa latência solicitadas pela API.
+    \item \textbf{FastAPI Serving API}: Isola o banco de dados e expõe endpoints REST padronizados para consumo externo pelas equipes de Backend e MLOps.
+\end{itemize}
+
+\newpage
+
+\section{Tratamento e Processamento de Dados}
+
+\subsection{Camada Bronze: Ingestão Bruta}
+A camada Bronze realiza o arquivamento persistente do sinal original emitido pelos equipamentos. Cada payload de telemetria recebido do Kafka é gravado no MinIO como JSON bruto sem alterações. O particionamento é cronológico:
+\begin{verbatim}
+bronze-telemetry/hospital_id={id}/year={yyyy}/month={mm}/day={dd}/
+\end{verbatim}
+
+\subsection{Camada Silver: Limpeza e Qualidade de Dados}
+A camada Silver estrutura a série histórica de cada ativo sob regras rígidas de integridade física e temporal. O pipeline executa as seguintes etapas:
+\begin{enumerate}
+    \item \textbf{Reindexação Temporal}: Cria uma grade horária uniforme de registros com passo fixo de 1 hora ($t_{i} = t_{i-1} + 1\,\text{hora}$). Dados ausentes decorrentes de falhas de comunicação temporárias são inseridos como linhas de valores nulos.
+    \item \textbf{Interpolação Linear}: Se a lacuna de tempo sem sinal (\textit{gap}) for menor ou igual a 2 horas ($L \le 2$), os sensores são interpolados linearmente:
+    \begin{equation}
+        x(t) = x(t_{0}) + (t - t_{0}) \cdot \frac{x(t_{1}) - x(t_{0})}{t_{1} - t_{0}}
+    \end{equation}
+    Onde $t_0$ é o último timestamp válido anterior ao gap e $t_1$ é o primeiro timestamp válido posterior. Se o gap for superior a 2 horas, os dados permanecem como \texttt{NULL} (ou \texttt{NaN} no Pandas) para representar inatividade ou parada programada do equipamento.
+    \item \textbf{Clamping Físico}: Para impedir ruídos ou leituras impossíveis dos sensores, o pipeline limita as variáveis operacionais a seus limites de segurança definidos em regulamentações técnicas:
+    \begin{equation}
+        x_{\text{clamped}} = \max(x_{\text{min}}, \min(x_{\text{max}}, x))
+    \end{equation}
+    \item \textbf{Sinalização de Auditoria}: A coluna \texttt{is\_interpolated} é atualizada para \texttt{True} nas linhas geradas artificialmente pela interpolação, permitindo que consumidores auditem ou filtrem essas leituras.
+\end{enumerate}
+
+\subsection{Camada Gold: Engenharia de Features de MLOps}
+A camada Gold lê os dados tratados da Silver e gera indicadores estatísticos para modelos preditivos. O pipeline aplica agregações baseadas em janelas deslizantes (\textit{rolling windows}) causais de \textbf{6h, 12h, 24h e 72h}:
+\begin{itemize}
+    \item \textbf{Métricas}: Média (\texttt{mean}), Desvio Padrão (\texttt{std}), Mínimo (\texttt{min}) e Máximo (\texttt{max}).
+    \item \textbf{Prevenção de Data Leakage}: O cálculo é puramente retrospectivo (\textit{lookback}), o que significa que o cálculo no timestamp $t$ depende unicamente de observações no intervalo $[t - \text{janela}, t]$, impedindo que dados do futuro vazem para os conjuntos de treino e inferência.
+\end{itemize}
+
+\newpage
+
+\section{Modelagem do Banco de Dados de Serving}
+
+O PostgreSQL serve como a camada de dados de acesso rápido para a API. A estrutura lógica das duas tabelas principais é descrita a seguir:
+
+\subsection{Tabela Física \texttt{stg\_silver\_telemetry} e View \texttt{silver\_telemetry}}
+Armazena a série histórica confluída e limpa dos sensores. É uma tabela única e unificada de sensores. Colunas não aplicáveis a um tipo de equipamento permanecem como \texttt{NULL}. Para garantir compatibilidade com o Backend sem a necessidade de alterar consultas e schemas existentes, os dados são persistidos na tabela física \texttt{stg\_silver\_telemetry} e expostos através da view relacional \texttt{silver\_telemetry}.
+
+\begin{table}[h]
+\centering
+\caption{Esquema da Tabela \texttt{stg\_silver\_telemetry}}
+\begin{tabular}{lll}
+\toprule
+\textbf{Nome da Coluna} & \textbf{Tipo de Dado} & \textbf{Descrição} \\
+\midrule
+\texttt{timestamp} (PK) & TIMESTAMP & Registro temporal da leitura (grade horária regular). \\
+\texttt{equipamento\_id} (PK) & INTEGER & Código identificador do equipamento. \\
+\texttt{hospital\_id} & INTEGER & Código identificador do hospital. \\
+\texttt{tipo} & VARCHAR(50) & Tipo de equipamento (ex: \texttt{tc}, \texttt{rx}, \texttt{rm}, \texttt{pet}). \\
+\texttt{is\_interpolated} & BOOLEAN & Flag indicativo se a linha foi interpolada. \\
+\texttt{tube\_temp} & DOUBLE PRECISION & Temperatura da ampola (TC/Raio X) - Nullable. \\
+\texttt{tube\_current} & DOUBLE PRECISION & Corrente do tubo (TC) - Nullable. \\
+\texttt{anode\_rotation\_speed} & DOUBLE PRECISION & Rotação do ânodo (TC) - Nullable. \\
+\texttt{detector\_temp\_drift} & DOUBLE PRECISION & Desvio da temp. do detector (TC) - Nullable. \\
+\texttt{slip\_ring\_error\_rate} & DOUBLE PRECISION & Taxa de erro do slip ring (TC) - Nullable. \\
+\texttt{gantry\_vibration\_fft} & DOUBLE PRECISION & Vibração da gantry (TC) - Nullable. \\
+\texttt{helium\_level} & DOUBLE PRECISION & Nível de Hélio líquido (RM) - Nullable. \\
+\texttt{transducer\_temp} & DOUBLE PRECISION & Temperatura do transdutor (US) - Nullable. \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Tabela \texttt{gold\_equipment\_features}}
+Armazena a feature store de MLOps. As variáveis calculadas em janelas móveis são consolidadas em uma única coluna JSONB para otimização e flexibilidade de schema (suporta mais de 130 colunas dinâmicas sem necessidade de alteração de DDL física no banco).
+
+\begin{table}[h]
+\centering
+\caption{Esquema da Tabela \texttt{gold\_equipment\_features}}
+\begin{tabular}{lll}
+\toprule
+\textbf{Nome da Coluna} & \textbf{Tipo de Dado} & \textbf{Descrição} \\
+\midrule
+\texttt{timestamp} (PK) & TIMESTAMP & Timestamp associado ao fechamento da janela. \\
+\texttt{equipamento\_id} (PK) & INTEGER & Código identificador do equipamento. \\
+\texttt{is\_interpolated} & BOOLEAN & Indica se a leitura base é interpolada. \\
+\texttt{features} & JSONB & Dicionário contendo as 130+ features de MLOps. \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\newpage
+
+\section{Especificação da Serving API}
+
+A Serving API está hospedada no ambiente Kubernetes e é acessada em:
+\begin{center}
+    \texttt{http://localhost:8000/api/v1}
+\end{center}
+
+\subsection{Endpoint: Liveness/Readiness Probe}
+*   \textbf{Método}: \texttt{GET}
+*   \textbf{Rota}: \texttt{/health}
+*   \textbf{Descrição}: Verifica a integridade da API e a conectividade com o banco de dados PostgreSQL.
+*   \textbf{Retorno de Sucesso (HTTP 200 OK)}:
+\begin{lstlisting}
+{
+  "status": "healthy",
+  "database": "connected"
+}
+\end{lstlisting}
+
+\subsection{Endpoints: Histórico de Telemetrias Silver}
+*   \textbf{Consulta por Equipamento}:
+    \begin{itemize}
+        \item \textbf{Método}: \texttt{GET}
+        \item \textbf{Rota}: \texttt{/equipments/\{id\}/telemetry}
+        \item \textbf{Query Params}: \texttt{limit} (inteiro, opcional, padrão = 48)
+    \end{itemize}
+*   \textbf{Consulta por Hospital (Multi-Hospital)}:
+    \begin{itemize}
+        \item \textbf{Método}: \texttt{GET}
+        \item \textbf{Rota}: \texttt{/hospitals/\{hospital\_id\}/telemetry}
+        \item \textbf{Query Params}: \texttt{limit} (inteiro, opcional, padrão = 100)
+    \end{itemize}
+*   \textbf{Descrição}: Retorna a série histórica confluída para o(s) equipamento(s) solicitado(s), ordenada de forma decrescente por timestamp. Colunas de sensores cujo valor é nulo para o tipo de equipamento consultado são omitidas da resposta JSON final para manter a eficiência do payload de rede.
+*   \textbf{Exemplo de Payload de Retorno (TC - Tomógrafo)}:
+\begin{lstlisting}
+[
+  {
+    "timestamp": "2026-06-16T21:33:01.450887",
+    "equipamento_id": 1,
+    "hospital_id": 1,
+    "tipo": "tc",
+    "is_interpolated": false,
+    "tube_temp": 105.0,
+    "tube_current": 349.341,
+    "anode_rotation_speed": 9760.093,
+    "detector_temp_drift": 3.676,
+    "slip_ring_error_rate": 0.003,
+    "gantry_vibration_fft": 0.274,
+    "gantry_rotation": 0.394
+  }
+]
+\end{lstlisting}
+
+\subsection{Endpoints: Últimas Features Gold}
+*   \textbf{Consulta por Equipamento (Online)}:
+    \begin{itemize}
+        \item \textbf{Método}: \texttt{GET}
+        \item \textbf{Rota}: \texttt{/equipments/\{id\}/features}
+        \item \textbf{Descrição}: Retorna as features mais recentes para predições de um ativo específico.
+    \end{itemize}
+*   \textbf{Consulta por Hospital (Batch / Lote)}:
+    \begin{itemize}
+        \item \textbf{Método}: \texttt{GET}
+        \item \textbf{Rota}: \texttt{/hospitals/\{hospital\_id\}/features}
+        \item \textbf{Descrição}: Retorna as features mais recentes de todos os equipamentos do hospital informado.
+    \end{itemize}
+*   \textbf{Exemplo de Payload de Retorno (Consulta por Equipamento)}:
+\begin{lstlisting}
+{
+  "timestamp": "2026-06-16T21:33:01.450887",
+  "equipamento_id": 1,
+  "is_interpolated": false,
+  "features": {
+    "tube_temp_mean_6h": 42.92,
+    "tube_temp_std_6h": 0.54,
+    "tube_temp_max_72h": 68.21,
+    "gantry_vibration_fft_mean_24h": 0.31,
+    "gantry_vibration_fft_std_24h": 0.005,
+    "slip_ring_error_rate_mean_12h": 0.003
+  }
+}
+\end{lstlisting}
+
+\newpage
+
+\section{Manual de Integração para a Equipe de Backend}
+
+O backend consome a rota de telemetria para desenhar gráficos e gauges nos painéis de monitoramento do hospital.
+
+\subsection{Diretrizes de Visualização no Dashboard (Frontend)}
+\begin{enumerate}
+    \item \textbf{Indicação de Dados Estimados (Interpolação)}: Quando o campo \texttt{is\_interpolated} for \texttt{True}, o frontend deve destacar visualmente o ponto correspondente na curva temporal (usando linhas tracejadas, cor de linha diferente, ou um ícone informativo no tooltip do ponto). Isso evita que os operadores tomem ações baseadas em leituras artificiais de segurança sem saberem do processamento de dados.
+    \item \textbf{Visualização de Inatividade (Downtime)}: Gaps superiores a 2 horas não são interpolados, resultando em dados ausentes na série cronológica horária (não haverá registro ou os campos estarão ausentes/nulos). O frontend deve quebrar a linha gráfica nestes pontos, deixando um \textbf{espaço vazio} que representa inequivocamente que o equipamento esteve \textit{offline} ou desligado.
+\end{enumerate}
+
+\subsection{Exemplo de Integração Frontend (JavaScript Fetch)}
+\begin{lstlisting}[caption=Implementação no Dashboard Client]
+async function carregarDadosGrafico(equipamentoId) {
+  const url = `http://localhost:8000/api/v1/equipments/${equipamentoId}/telemetry?limit=48`;
+  try {
+    const response = await fetch(url);
+    if (!response.ok) throw new Error("Erro ao consultar Serving API.");
+    
+    const dados = await response.json();
+    
+    // Processamento para biblioteca de graficos (ex: Chart.js)
+    const timestamps = dados.map(d => new Date(d.timestamp).toLocaleString("pt-BR"));
+    const temps = dados.map(d => d.tube_temp);
+    const flagsInterpolacao = dados.map(d => d.is_interpolated);
+    
+    desenharGrafico(timestamps, temps, flagsInterpolacao);
+  } catch (erro) {
+    console.error("Falha na integracao com a telemetria:", erro);
+  }
+}
+\end{lstlisting}
+
+\newpage
+
+\section{Manual de Integração para a Equipe de MLOps}
+
+A equipe de MLOps utiliza o endpoint de features para obter o estado atual de variáveis estatísticas e passá-las para os pipelines de inferência de falhas em tempo de execução.
+
+\subsection{Alimentando o Modelo de Machine Learning}
+Como as features de treino foram geradas a partir de agregação retrospectiva e o endpoint expõe exatamente o mesmo dicionário de forma achatada, a equipe de MLOps pode carregar o payload de resposta da API de forma instantânea em um DataFrame do Pandas e passá-lo ao estimador de classificação.
+
+\subsection{Exemplo de Script de Inferência Online (Python)}
+\begin{lstlisting}[language=python, caption=Consumo e Inferência Online com Serving API]
+import requests
+import pandas as pd
+import joblib
+
+# Carrega o modelo de classificacao treinado (pre-requisito)
+modelo = joblib.load("model_predictive_maintenance.pkl")
+
+def predizer_falha_equipamento(equipamento_id):
+    url = f"http://localhost:8000/api/v1/equipments/{equipamento_id}/features"
+    try:
+        response = requests.get(url)
+        if response.status_code == 404:
+            print(f"Sem features calculadas para o equipamento {equipamento_id}")
+            return None
+        response.raise_for_status()
+        
+        data = response.json()
+        
+        # Converte o dicionario de features em um DataFrame de 1 linha
+        df_features = pd.DataFrame([data["features"]])
+        
+        # O DataFrame ja contem todas as 130+ colunas no formato de treino:
+        # ex: 'tube_temp_mean_6h', 'gantry_vibration_fft_std_24h', etc.
+        probabilidade = modelo.predict_proba(df_features)[0][1]
+        
+        return {
+            "timestamp": data["timestamp"],
+            "equipamento_id": data["equipamento_id"],
+            "is_interpolated": data["is_interpolated"],
+            "probabilidade_falha": probabilidade
+        }
+    except Exception as e:
+        print(f"Falha na inferencia online para o ativo {equipamento_id}: {e}")
+        return None
+\end{lstlisting}
+
+\end{document}

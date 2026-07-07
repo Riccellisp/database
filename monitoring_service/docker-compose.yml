@@ -30,8 +30,6 @@ services:
       - TELEMETRY_TOPIC=telemetry
       - FAILURES_TOPIC=failures
       - SIMULATION_INTERVAL_SEC=3600.0 # 1 hour simulated = 1 hour real time
-      - HOSPITAL_ID=1
-      - NUM_HOSPITALS=10
       - DB_USER=root
       - DB_PASSWORD=strongpassword123
       - DB_HOST=mysql
