@@ -2,8 +2,8 @@
 
 Este guia técnico destina-se às equipes de **Backend (Visualização/Dashboards)** e **MLOps (Inferência Online)** para facilitar a integração com a API de Serving exposta pelo pipeline de dados Medalhão.
 
-A API roda por padrão na porta `8000` e possui documentação interativa OpenAPI (Swagger UI) disponível em:
-👉 **`http://localhost:8000/docs`** (ou `http://localhost:8000/redoc` para documentação alternativa)
+A API roda por padrão na porta `18000` e possui documentação interativa OpenAPI (Swagger UI) disponível em:
+👉 **`http://localhost:18000/docs`** (ou `http://localhost:18000/redoc` para documentação alternativa)
 
 ---
 
@@ -113,7 +113,7 @@ O time de Backend consome os dados históricos da camada **Silver** (via view/ta
 ```javascript
 async function carregarDadosGrafico(equipamentoId) {
   try {
-    const response = await fetch(`http://localhost:8000/api/v1/equipments/${equipamentoId}/telemetry?limit=24`);
+    const response = await fetch(`http://localhost:18000/api/v1/equipments/${equipamentoId}/telemetry?limit=24`);
     if (!response.ok) throw new Error("Falha ao carregar telemetrias");
     
     const dados = await response.json();
@@ -141,10 +141,10 @@ O time de MLOps consome os dados agregados da camada **Gold** para obter as últ
     *   **Método**: `GET`
     *   **Rota**: `/api/v1/equipments/{id}/features`
     *   **Comportamento**: Retorna um único objeto JSON contendo o dicionário com todas as **130+ features** calculadas do ativo específico.
-*   **Consulta por Hospital (Multi-Hospital - Batch/Lote)**:
+*   **Consulta Geral (Multi-Equipamento - Batch/Lote)**:
     *   **Método**: `GET`
-    *   **Rota**: `/api/v1/hospitals/{hospital_id}/features`
-    *   **Comportamento**: Retorna uma lista de objetos contendo as features mais recentes de **todos os equipamentos** ativos do hospital informado.
+    *   **Rota**: `/api/v1/features`
+    *   **Comportamento**: Retorna uma lista de objetos contendo as features mais recentes de **todos os equipamentos** ativos.
 
 #### Exemplo de Resposta:
 ```json
@@ -176,7 +176,7 @@ import joblib
 modelo_classificador = joblib.load("modelo_falhas.pkl")
 
 def obter_previsao_falha(equipamento_id):
-    url = f"http://localhost:8000/api/v1/equipments/{equipamento_id}/features"
+    url = f"http://localhost:18000/api/v1/equipments/{equipamento_id}/features"
     try:
         response = requests.get(url)
         if response.status_code == 404:

@@ -90,7 +90,7 @@ services:
       dockerfile: serving_api/Dockerfile
     container_name: serving_api
     ports:
-      - "8000:8000"
+      - "18000:18000"
     depends_on:
       - mysql
     environment:

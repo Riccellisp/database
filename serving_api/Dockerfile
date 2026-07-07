@@ -15,7 +15,7 @@ COPY serving_api ./serving_api
 ENV PYTHONPATH=/app
 
 # Expose FastAPI default port
-EXPOSE 8000
+EXPOSE 18000
 
 # Start the application using Uvicorn
-CMD ["uvicorn", "serving_api.main:app", "--host", "0.0.0.0", "--port", "8000"]
+CMD ["uvicorn", "serving_api.main:app", "--host", "0.0.0.0", "--port", "18000"]

@@ -203,13 +203,13 @@ Armazena a feature store de MLOps. As variáveis calculadas em janelas móveis s
 
 A Serving API está hospedada no ambiente Kubernetes e é acessada em:
 \begin{center}
-    \texttt{http://localhost:8000/api/v1}
+    \texttt{http://localhost:18000/api/v1}
 \end{center}
 
 \subsection{Endpoint: Liveness/Readiness Probe}
 *   \textbf{Método}: \texttt{GET}
 *   \textbf{Rota}: \texttt{/health}
-*   \textbf{Descrição}: Verifica a integridade da API e a conectividade com o banco de dados PostgreSQL.
+*   \textbf{Descrição}: Verifica a integridade da API e a conectividade com o banco de dados MySQL.
 *   \textbf{Retorno de Sucesso (HTTP 200 OK)}:
 \begin{lstlisting}
 {
@@ -297,7 +297,7 @@ O backend consome a rota de telemetria para desenhar gráficos e gauges nos pain
 \subsection{Exemplo de Integração Frontend (JavaScript Fetch)}
 \begin{lstlisting}[caption=Implementação no Dashboard Client]
 async function carregarDadosGrafico(equipamentoId) {
-  const url = `http://localhost:8000/api/v1/equipments/${equipamentoId}/telemetry?limit=48`;
+  const url = `http://localhost:18000/api/v1/equipments/${equipamentoId}/telemetry?limit=48`;
   try {
     const response = await fetch(url);
     if (!response.ok) throw new Error("Erro ao consultar Serving API.");
@@ -335,7 +335,7 @@ import joblib
 modelo = joblib.load("model_predictive_maintenance.pkl")
 
 def predizer_falha_equipamento(equipamento_id):
-    url = f"http://localhost:8000/api/v1/equipments/{equipamento_id}/features"
+    url = f"http://localhost:18000/api/v1/equipments/{equipamento_id}/features"
     try:
         response = requests.get(url)
         if response.status_code == 404:

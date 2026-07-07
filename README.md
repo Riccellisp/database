@@ -18,10 +18,10 @@ Para rodar todo o ecossistema (Kafka, MinIO/S3, PostgreSQL Serving DB, Data Pipe
 
 ## 📡 Portas e Serviços Expostos
 
-* **FastAPI Serving API**: `http://localhost:8000`
-  * Documentação interativa (Swagger UI): `http://localhost:8000/docs`
+* **FastAPI Serving API**: `http://localhost:18000`
+  * Documentação interativa (Swagger UI): `http://localhost:18000/docs`
 * **MinIO Console (S3/Data Lake)**: `http://localhost:9001` (Usuário: `admin` | Senha: `strongpassword123`)
-* **PostgreSQL (Serving DB)**: `localhost:5432` (Usuário: `postgres` | Senha: `strongpassword123` | Banco: `serving_db`)
+* **MySQL (Serving DB)**: `localhost:13306` (Usuário: `root` | Senha: `strongpassword123` | Banco: `serving_db`)
 * **Apache Kafka Broker**: `localhost:29092`
 
 ---
